@@ -1,0 +1,6 @@
+<div class="navbar-menu">
+{{ $relLink := .RelPermalink }}
+  {{ range  sort .Site.Menus.main "Weight" "asc" }}
+  <a  {{if eq $relLink .URL }} class="active" {{end}} href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</div>

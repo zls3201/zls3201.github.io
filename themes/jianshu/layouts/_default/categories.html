@@ -1,0 +1,27 @@
+{{ partial "head.html" . }}
+<body>
+    {{ partial "sidebar.html" . }}
+    <div class="wrapper">
+        <div class="main">
+            {{ partial "header.html" . }}
+            <div class="main-container">
+                {{ if isset .Site.Taxonomies "categories" }} {{ if not (eq (len .Site.Taxonomies.categories) 0) }}
+                <div class="categorieslist">
+                    <h1>{{ .Site.Params.Strings.Categories }}</h1>
+                    {{ range $name, $items := .Site.Taxonomies.categories }}
+                    <h2> <a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}" title="{{ $name }}">{{ $name }}</a></h2>
+                    <ul>
+                        {{ range sort $items "Date" "desc" }}
+                        <li>  {{ .Date.Format .Site.Params.DateFormat }}  {{ .Title }}</li>
+                        {{ end }}
+                    </ul>
+                    {{ end }}
+                </div>
+                {{ end }} {{ end }}
+            </div>
+        </div>
+    </div>
+    
+  {{ partial "footer.html" . }}
+</body>
+</html>

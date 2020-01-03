@@ -1,0 +1,22 @@
+<h1 itemprop="name">
+    <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="url">{{ .Title }}</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    {{ if and (isset .Params "author") (isset .Params "author_homepage") }}
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="{{ .Params.author_homepage }}" rel="author">{{ .Params.author }}</a></li>
+    {{ else }}
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="{{ .Site.Params.AuthorHomepage }}" rel="author">{{ .Site.Author.Name }}</a></li>
+    {{ end }} {{ if isset .Params "categories" }} {{ if not (eq (len .Params.categories) 0) }} {{ $cate := (index .Params.categories 0)}}
+    <li><i class="fa fa-book"></i> <a href="{{ $.Site.BaseURL }}categories/{{ $cate | urlize }}">{{ $cate }}</a></li>
+    {{ end }} {{ end }}
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">{{ .Date.Format .Site.Params.DateFormat }}</time>
+    </li>
+    <!-- <li><i class="fa fa-eye"></i> 阅读 3</li>
+    <li itemprop="interactionCount"><a itemprop="discussionUrl" href="http://www.zls3201.com/index.php/archives/11/#respond-post-11"><i class="fa fa-comments-o"></i> 评论 0</a></li> -->
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>

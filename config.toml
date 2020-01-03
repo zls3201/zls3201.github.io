@@ -1,0 +1,106 @@
+baseURL = "http://www.zls3201.com/"
+languageCode = "zh-CN"
+title = "珍珑阁"
+DefaultContentLanguage = "zh_cn"
+HasCJKLanguage = true 
+Theme = "jianshu"
+pygmentsStyle = "default"
+pygmentsUseClasses = true
+
+Paginate=                10
+PaginatePath=            "page"
+
+[outputs]
+  home = ["HTML", "JSON",  "RSS"]
+  page = ["HTML", "JSON",  "RSS"]
+  section= ["HTML","RSS", "JSON"]
+
+[outputFormats]
+[outputFormats.RSS]
+baseName = "feed"
+
+[outputFormats.JSON]
+  [mediaType."application/json"]
+    baseName="index"
+    suffix= "index"
+    isPlainText= false
+	isHTML=false
+
+[Author]
+  Name = "zls3201"
+
+[Params]
+  AuthorHomepage = "http://www.zls3201.com/"
+  BottomIntroduce = "Introduce1 <br/> Introduce2"
+  Description = ""
+  Subtitle = "为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌"
+  Weibo = "coderzh"
+  WeiboID = 1816308191
+  Twitter = ""
+  GitHub = ""
+  Facebook = ""
+  LinkIn = ""
+  Imglogo = "img/avatar.png"
+  AuthorImg = "img/author.jpg"
+  DateFormat = "2006-01-02"
+  MonthFormat = "2006年01月"
+  FancyBox = true
+  # DuoShuoShortName = ""
+  DisqusShortName = ""
+  GoogleAnalyticsID = ""
+
+  [Params.Strings]
+    Search = "搜索"
+    PageNotFound = "你访问的页面不存在"
+    ShowSideBar = "显示侧边栏"
+    HideSideBar = "隐藏侧边栏"
+    Categories = "分类"
+    Archive = "归档"
+    Tags = "标签"
+    TagCloud = "标签云"
+    Rss = "RSS 订阅"
+    TableOfContents = "文章目录"
+
+[Menu]
+[[Menu.Main]]
+Name = "首页"
+URL = "/"
+Weight = 1
+[[Menu.Main]]
+Name = "归档"
+URL = "/post/"
+Weight = 2
+
+
+[[Menu.Main]]
+Name = "链接"
+URL = "/links/"
+Weight = 5
+
+
+[[Menu.Main]]
+Name = "分类"
+URL = "/categories/"
+Weight = 3
+
+
+[[Menu.Main]]
+Name = "标签"
+URL = "/tags/"
+Weight = 4
+
+
+[[Menu.Main]]
+Name = "关于"
+URL = "/about/"
+Weight = 6
+
+[[Menu.Main]]
+Name = "TODO"
+URL = "/todo/"
+Weight = 7
+
+
+
+
+

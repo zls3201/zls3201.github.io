@@ -1,0 +1,3 @@
+{{ define "response" }}
+	{{ dict "title" .Title  "date"  .Date   "type"  .Type   "permalink"  .Permalink    "summary"   .Summary   "Content"   .Content  | jsonify   }}
+{{ end }}

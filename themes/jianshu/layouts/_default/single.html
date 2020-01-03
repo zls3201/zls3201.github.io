@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "sidebar.html" . }}
+    <div class="wrapper">
+        {{ partial "sidebananer.html" . }}
+        <div class="main">
+            {{ partial "header.html" . }}
+            <div class="main-container">
+                {{ partial "article_content.html" . }}
+            </div>
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+    <script>
+    var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+      width: 96,//设置宽高
+      height: 96
+    });
+    if (qrcode) {
+      qrcode.makeCode("{{ .Permalink }}");
+}
+    </script>
+
+</body>
+
+</html>
