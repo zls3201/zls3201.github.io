@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -94,22 +94,27 @@
 
   <div class="post-content" itemprop="articleBody">
     <p>闲来无事 写了个圆周率计算</p>
+
 <p>算法推到如下
-<img src="/pi_cacl/1.jpg" alt="图片"></p>
+<img src="/pi_cacl/1.jpg" alt="图片" /></p>
+
 <p>代码实现</p>
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="c1">//sin30=0.5
-</span><span class="c1"></span><span class="kt">double</span> <span class="n">angle</span> <span class="p">=</span> <span class="m">3</span><span class="m">0</span><span class="p">,</span> <span class="n">sin</span> <span class="p">=</span> <span class="m">0.5</span><span class="p">;</span>
 
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">3</span><span class="m">0</span><span class="p">;</span> <span class="n">i</span><span class="p">+</span><span class="p">+</span><span class="p">)</span>
-<span class="p">{</span>
-	<span class="kt">var</span> <span class="n">s1</span> <span class="p">=</span> <span class="m">1</span><span class="m">8</span><span class="m">0</span> <span class="p">/</span> <span class="p">(</span><span class="n">angle</span> <span class="p">/</span> <span class="n">Math</span><span class="p">.</span><span class="n">Pow</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="p">)</span> <span class="p">*</span> <span class="n">sin</span><span class="p">;</span>
-	<span class="kt">var</span> <span class="n">s2</span> <span class="p">=</span> <span class="m">1</span><span class="m">8</span><span class="m">0</span> <span class="p">/</span> <span class="p">(</span><span class="n">angle</span> <span class="p">/</span> <span class="n">Math</span><span class="p">.</span><span class="n">Pow</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="p">)</span> <span class="p">*</span> <span class="n">sin</span> <span class="p">/</span> <span class="n">Math</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">(</span><span class="m">1</span> <span class="p">-</span> <span class="n">sin</span> <span class="p">*</span> <span class="n">sin</span><span class="p">)</span><span class="p">;</span>
-	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;角度为 {0}度,正弦值为{1} , {2} &lt; pi &lt;{3}&#34;</span><span class="p">,</span> <span class="n">angle</span> <span class="p">/</span> <span class="n">Math</span><span class="p">.</span><span class="n">Pow</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span><span class="p">;</span>
-	<span class="n">sin</span> <span class="p">=</span> <span class="n">sin</span> <span class="p">/</span> <span class="n">Math</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">(</span><span class="m">2</span> <span class="p">+</span> <span class="m">2</span> <span class="p">*</span> <span class="n">Math</span><span class="p">.</span><span class="n">Sqrt</span><span class="p">(</span><span class="m">1</span> <span class="p">-</span> <span class="n">sin</span> <span class="p">*</span> <span class="n">sin</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-csharp">//sin30=0.5
+double angle = 30, sin = 0.5;
 
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">PI</span><span class="p">)</span><span class="p">;</span>
-</code></pre></div><!-- raw HTML omitted -->
+for (int i = 0; i &lt; 30; i++)
+{
+	var s1 = 180 / (angle / Math.Pow(2, i)) * sin;
+	var s2 = 180 / (angle / Math.Pow(2, i)) * sin / Math.Sqrt(1 - sin * sin);
+	Console.WriteLine(&quot;角度为 {0}度,正弦值为{1} , {2} &lt; pi &lt;{3}&quot;, angle / Math.Pow(2, i), sin, s1, s2);
+	sin = sin / Math.Sqrt(2 + 2 * Math.Sqrt(1 - sin * sin));
+}
+
+Console.WriteLine(Math.PI);
+</code></pre>
+
+<iframe width="100%" height="475" src="https://dotnetfiddle.net/Widget/qNF6Em" frameborder="0"></iframe>
 
   </div>
   
