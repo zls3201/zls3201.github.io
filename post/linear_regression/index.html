@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>线性回归 - 珍珑阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="description" content="线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &#34;&#34;&#34;Created on Sat Jun 9 08:18:10 2018@author: zls3201@gmail.com&#34;&#34;&#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &#34;&#34;&#">
+    
+    <meta itemprop="name" content="线性回归 - 珍珑阁">
+    <meta itemprop="description" content="线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &#34;&#34;&#34;Created on Sat Jun 9 08:18:10 2018@author: zls3201@gmail.com&#34;&#34;&#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &#34;&#34;&#">
+    <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
+    
+    
+    <meta name="twitter:description" content="">
+    
+    <link rel="alternate" href="https://zls3201.github.io/feed.xml" title="珍珑阁" type="application/rss+xml" />
+    <link rel="shortcut icon" href="https://zls3201.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://zls3201.github.io/highlight/styles/solarized-light.css">
+    <script src="https://zls3201.github.io/highlight/highlight.pack.js"></script>
+    <script src="https://zls3201.github.io/js/qrcode.js"></script>
+    <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/style.css">
+</head>
+
+
+<body>
+    <div class="navbar-menu">
+
+  
+  <a   href="/">首页</a>
+  
+  <a   href="/post/">归档</a>
+  
+  <a   href="/categories/">分类</a>
+  
+  <a   href="/tags/">标签</a>
+  
+  <a   href="/links/">链接</a>
+  
+  <a   href="/about/">关于</a>
+  
+  <a   href="/todo/">TODO</a>
+  
+</div>
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
+    <ul class="navigation clearfix">
+        <li><a href="/">首页</a> »</li>
+        <li class="active"><a href="javascript:;">最近更新</a></li>
+        <li class="search">
+            <form class="search-form" method="post" action="./" role="search">
+                <input type="text" name="s" class="text" placeholder="输入关键字搜索" autocomplete="off">
+                <button type="submit" class="btn s3"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/linear_regression/" title="线性回归" itemprop="url">线性回归</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/ml">ml</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2018-07-12</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="heading">线性回归</h3>
+<h2 id="1">1.线性回归数学</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>\begin{aligned}
+J(\theta)=\frac 1 m  \sum^{m}<em>{i=1} \frac 1 2 (h</em>{\theta}(x^{(i)})-y^{(i)})^2
+\end{aligned}
+$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sa"></span><span class="s2">&#34;&#34;&#34;</span><span class="s2">
+</span><span class="s2"></span><span class="s2">Created on Sat Jun  9 08:18:10 2018</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">@author: zls3201@gmail.com</span><span class="s2">
+</span><span class="s2"></span><span class="s2">&#34;&#34;&#34;</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">animation</span> <span class="k">as</span> <span class="n">amat</span>
+
+<span class="k">def</span> <span class="nf">loadDataSet</span><span class="p">(</span><span class="n">fileName</span><span class="p">)</span><span class="p">:</span>
+    <span class="sa"></span><span class="s2">&#34;&#34;&#34;</span><span class="s2">从文本文件加载数据.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    文件内容格式.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    Args:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        path: 传入文件名称.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    Returns:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        返回一个参数矩阵x和一个结论列向量y. For</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        example:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">        {</span><span class="s2">&#39;</span><span class="s2">Serak</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Rigel VII</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Preparer</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
+</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Zim</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Irk</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Invader</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
+</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Lrrr</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Omicron Persei 8</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Emperor</span><span class="s2">&#39;</span><span class="s2">)}</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">        If a key from the keys argument is missing from the dictionary,</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        then that row was not found in the table.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    Raises:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        IOError: An error occurred accessing the bigtable.Table object.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">    </span><span class="s2">
+</span><span class="s2"></span><span class="s2">    </span><span class="s2">&#34;&#34;&#34;</span>
+    <span class="n">dataX</span><span class="o">=</span><span class="p">[</span><span class="p">]</span><span class="p">;</span><span class="n">dataY</span><span class="o">=</span><span class="p">[</span><span class="p">]</span>
+    <span class="n">fr</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fr</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
+        <span class="n">dataArr</span><span class="o">=</span> <span class="p">[</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span>  <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">:</span>
+            <span class="n">dataArr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">)</span><span class="p">)</span>
+       
+        <span class="n">dataX</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="p">)</span>
+        <span class="n">dataY</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="p">)</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">dataX</span><span class="p">)</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span><span class="p">:</span>
+    <span class="sa"></span><span class="s2">&#34;&#34;&#34;</span><span class="s2">对数据进行归一化处理.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    文件内容格式.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    Args:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        matriX: 参数组成的矩阵x，每行为一组样本个例参数.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        vertY: 结论值组成的向量y.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    Returns:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        返回归一化后的一个参数矩阵x和一个结论列向量y. For</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        example:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">        {</span><span class="s2">&#39;</span><span class="s2">Serak</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Rigel VII</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Preparer</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
+</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Zim</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Irk</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Invader</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
+</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Lrrr</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Omicron Persei 8</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Emperor</span><span class="s2">&#39;</span><span class="s2">)}</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">        If a key from the keys argument is missing from the dictionary,</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        then that row was not found in the table.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">
+</span><span class="s2"></span><span class="s2">    Raises:</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        IOError: An error occurred accessing the bigtable.Table object.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">    </span><span class="s2">
+</span><span class="s2"></span><span class="s2">    </span><span class="s2">&#34;&#34;&#34;</span>
+    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+    <span class="n">colMaxMin</span><span class="o">=</span><span class="p">[</span><span class="n">dataX</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="p">,</span><span class="n">dataX</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="p">:</span>
+            <span class="c1">#print (i,j,dataX[i][j])</span>
+            <span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span> <span class="p">(</span><span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="p">)</span><span class="o">/</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+    <span class="n">minY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="p">)</span><span class="p">;</span><span class="n">maxY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span><span class="p">)</span><span class="p">:</span>
+        <span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">minY</span><span class="p">)</span><span class="o">/</span><span class="n">maxY</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span>
+
+<span class="k">def</span> <span class="nf">computeCost</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span><span class="p">:</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1">#     J = (np.sum((X.dot(theta) - y)**2)) / (2*m)</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span>
+    <span class="n">J2</span> <span class="o">=</span> <span class="p">(</span><span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">C</span><span class="p">)</span><span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">J2</span>
+
+<span class="k">def</span> <span class="nf">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span><span class="p">:</span>
+    <span class="n">matX</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+    <span class="n">matY</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="p">)</span>
+    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matX</span><span class="p">)</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.001</span>
+    <span class="n">theta</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="p">)</span>
+    <span class="n">maxTimes</span><span class="o">=</span><span class="mi">500</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxTimes</span><span class="p">)</span><span class="p">:</span>
+        <span class="n">theta</span><span class="o">=</span><span class="n">theta</span><span class="o">-</span><span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">matY</span><span class="p">)</span><span class="p">)</span>
+        <span class="n">cost</span><span class="o">=</span><span class="n">computeCost</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">matY</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">theta</span>
+
+<span class="k">def</span> <span class="nf">stochastieGradientDeccent</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">3</span>
+
+<span class="k">def</span> <span class="nf">miniBatchGradientDescent</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">4</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">__main__</span><span class="s1">&#39;</span><span class="p">:</span>
+    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">loadDataSet</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">house_prize.txt</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
+    <span class="n">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
+
+
+</code></pre></div>
+  </div>
+  
+</article>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-inner">
+        <p>
+            <a href="https://zls3201.github.io/about" title="关于">关于</a> |
+            <a href="https://zls3201.github.io//feed.xml">RSS</a>
+        </p>
+        <p> © 2017 <a href="http://www.zls3201.com/" target="_blank"> 珍珑阁 </a> / Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>    </p>
+    </div>
+</footer>
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    var mathjaxBlocks = document.getElementsByClassName('language-mathjax');
+    for (i = 0; i < mathjaxBlocks.length; i++) {
+        mathjaxBlocks[i].parentNode.innerHTML = '$$' + mathjaxBlocks[i].innerHTML +'$$';
+    }
+
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre code'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script>
+    var mermaids = document.getElementsByClassName('language-mermaid');
+    for (i = 0; i < mermaids.length; i++) {
+        mermaids[i].className = 'nohighlight mermaid';
+    }
+
+    hljs.initHighlightingOnLoad();
+    mermaid.initialize({
+        
+        
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 },
+        
+    });
+</script>
+    <script>
+    var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+      width: 96,
+      height: 96
+    });
+    if (qrcode) {
+      qrcode.makeCode("https:\/\/zls3201.github.io\/post\/linear_regression\/");
+}
+    </script>
+
+</body>
+
+</html>

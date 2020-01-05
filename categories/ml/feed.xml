@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ml on 珍珑阁</title>
+    <link>https://zls3201.github.io/categories/ml/</link>
+    <description>Recent content in ml on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 06 Sep 2018 07:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://zls3201.github.io/categories/ml/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>机器学习笔记</title>
+      <link>https://zls3201.github.io/post/ml_note/</link>
+      <pubDate>Thu, 06 Sep 2018 07:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/ml_note/</guid>
+      <description>ML 资料整理 机器学习课程 网易公开课_吴恩达_机器学习_2008 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习基础：案例研究 神经网</description>
+    </item>
+    
+    <item>
+      <title>逻辑回归</title>
+      <link>https://zls3201.github.io/post/logistic_regression/</link>
+      <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/logistic_regression/</guid>
+      <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$\end{aligned}} $$</description>
+    </item>
+    
+    <item>
+      <title>线性回归</title>
+      <link>https://zls3201.github.io/post/linear_regression/</link>
+      <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/linear_regression/</guid>
+      <description>线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &amp;#34;&amp;#34;&amp;#34;Created on Sat Jun 9 08:18:10 2018@author: zls3201@gmail.com&amp;#34;&amp;#34;&amp;#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &amp;#34;&amp;#34;&amp;#</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>树莓派安装mono运行环境 - 珍珑阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="description" content="sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install">
+    
+    <meta itemprop="name" content="树莓派安装mono运行环境 - 珍珑阁">
+    <meta itemprop="description" content="sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install">
+    <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
+    
+    
+    <meta name="twitter:description" content="">
+    
+    <link rel="alternate" href="https://zls3201.github.io/feed.xml" title="珍珑阁" type="application/rss+xml" />
+    <link rel="shortcut icon" href="https://zls3201.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://zls3201.github.io/highlight/styles/solarized-light.css">
+    <script src="https://zls3201.github.io/highlight/highlight.pack.js"></script>
+    <script src="https://zls3201.github.io/js/qrcode.js"></script>
+    <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/style.css">
+</head>
+
+
+<body>
+    <div class="navbar-menu">
+
+  
+  <a   href="/">首页</a>
+  
+  <a   href="/post/">归档</a>
+  
+  <a   href="/categories/">分类</a>
+  
+  <a   href="/tags/">标签</a>
+  
+  <a   href="/links/">链接</a>
+  
+  <a   href="/about/">关于</a>
+  
+  <a   href="/todo/">TODO</a>
+  
+</div>
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
+    <ul class="navigation clearfix">
+        <li><a href="/">首页</a> »</li>
+        <li class="active"><a href="javascript:;">最近更新</a></li>
+        <li class="search">
+            <form class="search-form" method="post" action="./" role="search">
+                <input type="text" name="s" class="text" placeholder="输入关键字搜索" autocomplete="off">
+                <button type="submit" class="btn s3"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/rasp_install_mono_runtime/" title="树莓派安装mono运行环境" itemprop="url">树莓派安装mono运行环境</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/rasp">rasp</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2016-06-01</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
+sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev
+sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev
+
+sudo apt-get install libcairo2-dev
+
+
+wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz
+tar zxf libgdiplus-4.2.tar.gz
+<span class="nb">cd</span> libgdiplus-4.2 
+./configure --prefix<span class="o">=</span>/usr
+make
+sudo make install
+
+wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2
+tar jvxf mono-4.4.0.122.tar.bz2
+<span class="nb">cd</span> mono-4.4.0.122
+./configure --prefix<span class="o">=</span>/usr
+make
+sudo make install
+</code></pre></div>
+  </div>
+  
+</article>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-inner">
+        <p>
+            <a href="https://zls3201.github.io/about" title="关于">关于</a> |
+            <a href="https://zls3201.github.io//feed.xml">RSS</a>
+        </p>
+        <p> © 2017 <a href="http://www.zls3201.com/" target="_blank"> 珍珑阁 </a> / Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>    </p>
+    </div>
+</footer>
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    var mathjaxBlocks = document.getElementsByClassName('language-mathjax');
+    for (i = 0; i < mathjaxBlocks.length; i++) {
+        mathjaxBlocks[i].parentNode.innerHTML = '$$' + mathjaxBlocks[i].innerHTML +'$$';
+    }
+
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre code'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script>
+    var mermaids = document.getElementsByClassName('language-mermaid');
+    for (i = 0; i < mermaids.length; i++) {
+        mermaids[i].className = 'nohighlight mermaid';
+    }
+
+    hljs.initHighlightingOnLoad();
+    mermaid.initialize({
+        
+        
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 },
+        
+    });
+</script>
+    <script>
+    var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+      width: 96,
+      height: 96
+    });
+    if (qrcode) {
+      qrcode.makeCode("https:\/\/zls3201.github.io\/post\/rasp_install_mono_runtime\/");
+}
+    </script>
+
+</body>
+
+</html>

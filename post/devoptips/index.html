@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>分布式运维Tips - 珍珑阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="description" content="系统管理与自动化 ansible salt puppet chef 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比较Puppet、Chef、An">
+    
+    <meta itemprop="name" content="分布式运维Tips - 珍珑阁">
+    <meta itemprop="description" content="系统管理与自动化 ansible salt puppet chef 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比较Puppet、Chef、An">
+    <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
+    
+    
+    <meta name="twitter:description" content="">
+    
+    <link rel="alternate" href="https://zls3201.github.io/feed.xml" title="珍珑阁" type="application/rss+xml" />
+    <link rel="shortcut icon" href="https://zls3201.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://zls3201.github.io/highlight/styles/solarized-light.css">
+    <script src="https://zls3201.github.io/highlight/highlight.pack.js"></script>
+    <script src="https://zls3201.github.io/js/qrcode.js"></script>
+    <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/style.css">
+</head>
+
+
+<body>
+    <div class="navbar-menu">
+
+  
+  <a   href="/">首页</a>
+  
+  <a   href="/post/">归档</a>
+  
+  <a   href="/categories/">分类</a>
+  
+  <a   href="/tags/">标签</a>
+  
+  <a   href="/links/">链接</a>
+  
+  <a   href="/about/">关于</a>
+  
+  <a   href="/todo/">TODO</a>
+  
+</div>
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
+    <ul class="navigation clearfix">
+        <li><a href="/">首页</a> »</li>
+        <li class="active"><a href="javascript:;">最近更新</a></li>
+        <li class="search">
+            <form class="search-form" method="post" action="./" role="search">
+                <input type="text" name="s" class="text" placeholder="输入关键字搜索" autocomplete="off">
+                <button type="submit" class="btn s3"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/devoptips/" title="分布式运维Tips" itemprop="url">分布式运维Tips</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/dev">dev</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2018-05-23</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    <h3 id="heading">系统管理与自动化</h3>
+<ul>
+<li><a href="https://github.com/ansible/ansible">ansible</a><!-- raw HTML omitted --></li>
+<li><a href="https://github.com/saltstack/salt">salt</a><!-- raw HTML omitted --></li>
+<li><a href="https://github.com/puppetlabs/puppet">puppet</a><!-- raw HTML omitted --></li>
+<li><a href="https://github.com/chef/chef">chef</a><!-- raw HTML omitted --></li>
+</ul>
+<p>阅读资料<!-- raw HTML omitted -->
+<a href="https://blog.csdn.net/wn_hello/article/details/52130573">ansible和puppet的安装和比较</a><!-- raw HTML omitted -->
+<a href="http://www.cnblogs.com/huang0925/p/4664608.html">翻译-Salt与Ansible全方位比较</a><!-- raw HTML omitted -->
+<a href="http://blog.51cto.com/liqilong2010/1850617">Puppet、Chef、Ansible和SaltStack四大运维管理工具</a><!-- raw HTML omitted -->
+<a href="http://ansible-tran.readthedocs.io/en/latest/index.html">Ansible中文权威指南</a></p>
+<h3 id="heading-1">容器与容器管理</h3>
+<ul>
+<li><a href="https://github.com/docker/docker-ce">Docker</a></li>
+<li><a href="https://github.com/rkt/rkt">Rocket（已改名rkt）</a></li>
+<li><a href="https://hyper.sh/">hyper</a></li>
+<li><a href="https://github.com/opencontainers/runc">runC</a></li>
+<li><a href="https://github.com/google/gvisor">gvisor</a></li>
+</ul>
+<p>阅读资料<!-- raw HTML omitted -->
+<a href="http://www.yunweipai.com/archives/10328.html">容器，你还只用Docker吗？（上）</a><!-- raw HTML omitted -->
+<a href="http://www.yunweipai.com/archives/10358.html">容器，你还只用Docker吗？（下）</a><!-- raw HTML omitted -->
+<a href="http://dockone.io/article/680">安装并运行RunC</a><!-- raw HTML omitted -->
+<a href="https://github.com/genuinetools/riddler">riddler</a> docker image to runc转换工具<!-- raw HTML omitted -->
+<a href="http://dockone.io/article/2097">30个不可不知的容器技术工具和资源</a><!-- raw HTML omitted --></p>
+<h3 id="heading-2">微服务相关</h3>
+<p><a href="https://www.consul.io/">Consul</a> 服务发现注册 健康监测 kv存储 leader选举 多数据中心<!-- raw HTML omitted -->
+<a href="https://github.com/fabiolb/fabio">fabio</a> Consul Load-Balancing<!-- raw HTML omitted -->
+<a href="https://github.com/ThreeMammals/Ocelot">Ocelot</a> .NET core API Gateway<!-- raw HTML omitted -->
+<a href="https://github.com/ButterflyAPM/butterfly">butterfly</a> A distributed tracing system and application performance monitoring.<!-- raw HTML omitted -->
+<a href="https://www.app-metrics.io/">Appmetrics</a> an open-source and cross-platform .NET library used to record metrics within an application<!-- raw HTML omitted --></p>
+<p>Consul 阅读资料<!-- raw HTML omitted -->
+<a href="https://www.jianshu.com/p/f8746b81d65d">https://www.jianshu.com/p/f8746b81d65d</a>
+<a href="https://cecilphillip.com/using-consul-for-service-discovery-with-asp-net-core/">https://cecilphillip.com/using-consul-for-service-discovery-with-asp-net-core/</a>
+<a href="https://www.cnblogs.com/lori/p/8391351.html">https://www.cnblogs.com/lori/p/8391351.html</a>
+<a href="https://github.com/PlayFab/consuldotnet">https://github.com/PlayFab/consuldotnet</a>
+<a href="http://www.cnblogs.com/shanyou/p/4714838.html">http://www.cnblogs.com/shanyou/p/4714838.html</a>
+<a href="http://www.csharpkit.com/2017-10-07_55898.html">http://www.csharpkit.com/2017-10-07_55898.html</a>
+<a href="http://www.cnblogs.com/xishuai/p/ubuntu-docker-consul-fabio-aspnet-core.html">http://www.cnblogs.com/xishuai/p/ubuntu-docker-consul-fabio-aspnet-core.html</a></p>
+<p>Ocelot<!-- raw HTML omitted -->
+<a href="https://www.cnblogs.com/axzxs2001/p/8478340.html">https://www.cnblogs.com/axzxs2001/p/8478340.html</a>
+<a href="https://www.cnblogs.com/axzxs2001/p/8005041.html">https://www.cnblogs.com/axzxs2001/p/8005041.html</a>
+<a href="http://www.cnblogs.com/shanyou/p/7787183.html">http://www.cnblogs.com/shanyou/p/7787183.html</a>
+<a href="https://www.cnblogs.com/axzxs2001/p/8487521.html">https://www.cnblogs.com/axzxs2001/p/8487521.html</a>
+<a href="http://www.cnblogs.com/axzxs2001/p/8005101.html">http://www.cnblogs.com/axzxs2001/p/8005101.html</a></p>
+<p><a href="http://www.cnblogs.com/axzxs2001/p/8478340.html">Ocelot中使用Butterfly实践</a></p>
+<h3 id="tsdb">时序数据库TSDB</h3>
+<p><a href="https://portal.influxdata.com/downloads">InfluxDB</a></p>
+
+  </div>
+  
+</article>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-inner">
+        <p>
+            <a href="https://zls3201.github.io/about" title="关于">关于</a> |
+            <a href="https://zls3201.github.io//feed.xml">RSS</a>
+        </p>
+        <p> © 2017 <a href="http://www.zls3201.com/" target="_blank"> 珍珑阁 </a> / Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>    </p>
+    </div>
+</footer>
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    var mathjaxBlocks = document.getElementsByClassName('language-mathjax');
+    for (i = 0; i < mathjaxBlocks.length; i++) {
+        mathjaxBlocks[i].parentNode.innerHTML = '$$' + mathjaxBlocks[i].innerHTML +'$$';
+    }
+
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre code'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script>
+    var mermaids = document.getElementsByClassName('language-mermaid');
+    for (i = 0; i < mermaids.length; i++) {
+        mermaids[i].className = 'nohighlight mermaid';
+    }
+
+    hljs.initHighlightingOnLoad();
+    mermaid.initialize({
+        
+        
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 },
+        
+    });
+</script>
+    <script>
+    var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+      width: 96,
+      height: 96
+    });
+    if (qrcode) {
+      qrcode.makeCode("https:\/\/zls3201.github.io\/post\/devoptips\/");
+}
+    </script>
+
+</body>
+
+</html>
