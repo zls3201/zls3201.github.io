@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on 珍珑阁</title>
+    <link>https://zls3201.github.io/categories/dev/</link>
+    <description>Recent content in dev on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 08 Feb 2019 08:00:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://zls3201.github.io/categories/dev/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github CI测试</title>
+      <link>https://zls3201.github.io/post/test_ci/</link>
+      <pubDate>Fri, 08 Feb 2019 08:00:35 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/test_ci/</guid>
+      <description>Github和TravisCI测试 使用Github和TravisCI对Hugo内容和发布管理的测试 https://travis-ci.com/zls3201/blog/ https://github.com/zls3201/blog</description>
+    </item>
+    
+    <item>
+      <title>Mathjax测试</title>
+      <link>https://zls3201.github.io/post/mathjax_test/</link>
+      <pubDate>Mon, 11 Jun 2018 08:00:35 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/mathjax_test/</guid>
+      <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
+    </item>
+    
+    <item>
+      <title>分布式运维Tips</title>
+      <link>https://zls3201.github.io/post/devoptips/</link>
+      <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/devoptips/</guid>
+      <description>系统管理与自动化 ansible salt puppet chef 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比较Puppet、Chef、An</description>
+    </item>
+    
+  </channel>
+</rss>

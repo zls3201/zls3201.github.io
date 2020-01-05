@@ -1,5 +1,5 @@
 {
 	"data" : 
-	{"Content":"\n\n\u003ch3 id=\"github和travisci测试\"\u003eGithub和TravisCI测试\u003c/h3\u003e\n\n\u003cp\u003e使用Github和TravisCI对Hugo内容和发布管理的测试\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003ehttps://travis-ci.com/zls3201/blog/\u003c/a\u003e\n\u003ca href=\"https://github.com/zls3201/blog\"\u003ehttps://github.com/zls3201/blog\u003c/a\u003e\u003c/p\u003e\n","date":"2019-02-08T08:00:35+08:00","permalink":"https://zls3201.github.io/post/test_ci/","summary":"Github和TravisCI测试 使用Github和TravisCI对Hugo内容和发布管理的测试 https://travis-ci.com/zls3201/blog/ https://github.com/zls3201/blog","title":"Github CI测试","type":"post"}
+	{"Content":"\u003ch3 id=\"githubtravisci\"\u003eGithub和TravisCI测试\u003c/h3\u003e\n\u003cp\u003e使用Github和TravisCI对Hugo内容和发布管理的测试\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003ehttps://travis-ci.com/zls3201/blog/\u003c/a\u003e\n\u003ca href=\"https://github.com/zls3201/blog\"\u003ehttps://github.com/zls3201/blog\u003c/a\u003e\u003c/p\u003e\n","date":"2019-02-08T08:00:35+08:00","permalink":"https://zls3201.github.io/post/test_ci/","summary":"Github和TravisCI测试 使用Github和TravisCI对Hugo内容和发布管理的测试 https://travis-ci.com/zls3201/blog/ https://github.com/zls3201/blog","title":"Github CI测试","type":"post"}
 
 }

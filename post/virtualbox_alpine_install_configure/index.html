@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -91,49 +91,29 @@
 </ul>
 
   <div class="post-content" itemprop="articleBody">
-    
-
-<h1 id="1-安装virtualbox">1.安装virtualbox</h1>
-
-<h1 id="2-安装alpine-linux">2.安装alpine linux</h1>
-
+    <h1 id="1virtualbox">1.安装virtualbox</h1>
+<h1 id="2alpine-linux">2.安装alpine linux</h1>
 <p>参考 <a href="https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox">https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox</a></p>
-
 <pre><code>    apk add nano vim curl wget git mercurial subversion
     curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh
     nano /etc/ssh/sshd_config
     rc-service sshd restart
 
-</code></pre>
-
-<p>服务管理
+</code></pre><p>服务管理
 <a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System">https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System</a></p>
-
-<h1 id="3-在alpine-linux中安装共享文件夹支持">3.在alpine linux中安装共享文件夹支持</h1>
-
+<h1 id="3alpine-linux">3.在alpine linux中安装共享文件夹支持</h1>
 <p>参考 <a href="https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders">https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders</a></p>
-
 <pre><code>echo &quot;http://dl-cdn.alpinelinux.org/alpine/edge/community&quot; &gt;&gt; /etc/apk/repositories
 apk update
 apk add virtualbox-guest-additions virtualbox-guest-modules-virt
-</code></pre>
-
-<h1 id="4-在alpine-linux中安装docker">4.在alpine linux中安装Docker</h1>
-
+</code></pre><h1 id="4alpine-linuxdocker">4.在alpine linux中安装Docker</h1>
 <p>参考 <a href="https://wiki.alpinelinux.org/wiki/Docker">https://wiki.alpinelinux.org/wiki/Docker</a></p>
-
-<h1 id="5-安装dotnet-core-sdk">5.安装dotnet core sdk</h1>
-
+<h1 id="5dotnet-core-sdk">5.安装dotnet core sdk</h1>
 <p>下载 <a href="https://dotnet.microsoft.com/download/dotnet-core/2.2">https://dotnet.microsoft.com/download/dotnet-core/2.2</a>
 参考 <a href="https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.100-linux-x64-binaries">https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.100-linux-x64-binaries</a></p>
-
 <pre><code>    apk add --no-cache libstdc++ gettext libunwind-dev icu openssl-dev
-</code></pre>
-
-<h1 id="6-安装mariadb">6.安装mariadb</h1>
-
+</code></pre><h1 id="6mariadb">6.安装mariadb</h1>
 <p>参考 <a href="https://wiki.alpinelinux.org/wiki/MariaDB">https://wiki.alpinelinux.org/wiki/MariaDB</a></p>
-
 <pre><code>    apk add mariadb mariadb-client
     chown -R mysql:root /var/lib/mysql
     /etc/init.d/mariadb setup
@@ -141,7 +121,6 @@ apk add virtualbox-guest-additions virtualbox-guest-modules-virt
     mysql -u
     GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'  IDENTIFIED BY 'root' WITH GRANT OPTION;
 </code></pre>
-
   </div>
   
 </article>
