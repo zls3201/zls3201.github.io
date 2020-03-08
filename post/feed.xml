@@ -2,210 +2,210 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 珍珑阁</title>
-    <link>https://zls3201.github.io/post/</link>
+    <link>https://www.zls3201.com/post/</link>
     <description>Recent content in Posts on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 06 May 2019 01:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://zls3201.github.io/post/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.zls3201.com/post/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>随感</title>
-      <link>https://zls3201.github.io/post/20190506_think/</link>
+      <link>https://www.zls3201.com/post/20190506_think/</link>
       <pubDate>Mon, 06 May 2019 01:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/20190506_think/</guid>
+      <guid>https://www.zls3201.com/post/20190506_think/</guid>
       <description>随感 有时，觉得生活索然无味，还畅想着远方。 有时想我若是不再在乎这些小节，是不是会好过一点。 这天下，其想去看看了。 我种的花，有些发芽了啊。</description>
     </item>
     
     <item>
       <title>FLV协议分析与实现</title>
-      <link>https://zls3201.github.io/post/flv_protocol_analyze/</link>
+      <link>https://www.zls3201.com/post/flv_protocol_analyze/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/flv_protocol_analyze/</guid>
+      <guid>https://www.zls3201.com/post/flv_protocol_analyze/</guid>
       <description>处理中</description>
     </item>
     
     <item>
       <title>Hls协议分析与实现</title>
-      <link>https://zls3201.github.io/post/hls_protocol_analyze/</link>
+      <link>https://www.zls3201.com/post/hls_protocol_analyze/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/hls_protocol_analyze/</guid>
+      <guid>https://www.zls3201.com/post/hls_protocol_analyze/</guid>
       <description>处理中</description>
     </item>
     
     <item>
       <title>RTSP协议分析与实现</title>
-      <link>https://zls3201.github.io/post/rtsp_protocol_analyze/</link>
+      <link>https://www.zls3201.com/post/rtsp_protocol_analyze/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/rtsp_protocol_analyze/</guid>
+      <guid>https://www.zls3201.com/post/rtsp_protocol_analyze/</guid>
       <description>处理中</description>
     </item>
     
     <item>
       <title>萤石摄像头视频网页播放</title>
-      <link>https://zls3201.github.io/post/camera_video_rtsp_player/</link>
+      <link>https://www.zls3201.com/post/camera_video_rtsp_player/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/camera_video_rtsp_player/</guid>
+      <guid>https://www.zls3201.com/post/camera_video_rtsp_player/</guid>
       <description>1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu</description>
     </item>
     
     <item>
       <title>Github CI测试</title>
-      <link>https://zls3201.github.io/post/test_ci/</link>
+      <link>https://www.zls3201.com/post/test_ci/</link>
       <pubDate>Fri, 08 Feb 2019 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/test_ci/</guid>
+      <guid>https://www.zls3201.com/post/test_ci/</guid>
       <description>Github和TravisCI测试 使用Github和TravisCI对Hugo内容和发布管理的测试 https://travis-ci.com/zls3201/blog/ https://github.com/zls3201/blog</description>
     </item>
     
     <item>
       <title>Blender学习资料</title>
-      <link>https://zls3201.github.io/post/blender_study_resources/</link>
+      <link>https://www.zls3201.com/post/blender_study_resources/</link>
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
+      <guid>https://www.zls3201.com/post/blender_study_resources/</guid>
       <description>Blender学习资料 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X BlenderGuru Blender Beginner Tutorial Series https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P 视频下载 youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P youtube-dl --write-sub --convert-subs srt</description>
     </item>
     
     <item>
       <title>Virtualbox安装配置alpine</title>
-      <link>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</link>
+      <link>https://www.zls3201.com/post/virtualbox_alpine_install_configure/</link>
       <pubDate>Sat, 08 Dec 2018 09:56:19 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</guid>
+      <guid>https://www.zls3201.com/post/virtualbox_alpine_install_configure/</guid>
       <description>1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中</description>
     </item>
     
     <item>
       <title>CentOS服务器安装配置</title>
-      <link>https://zls3201.github.io/post/centos_config/</link>
+      <link>https://www.zls3201.com/post/centos_config/</link>
       <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/centos_config/</guid>
+      <guid>https://www.zls3201.com/post/centos_config/</guid>
       <description>CentOS服务器安装配置 安装git hg svn 安装v2ray https://www.v2ray.com/chapter_00/install.html 安装openvpn https://github.com/Nyr/openvpn-install 安装 mono https://www.mono-project.com/download/stable/#download-lin-centos 安装 dotnet core https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current 安装caddy https://3mile.github.io/archives/118/ journalctl -xe 安装gitea https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service</description>
     </item>
     
     <item>
       <title>机器学习笔记</title>
-      <link>https://zls3201.github.io/post/ml_note/</link>
+      <link>https://www.zls3201.com/post/ml_note/</link>
       <pubDate>Thu, 06 Sep 2018 07:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/ml_note/</guid>
+      <guid>https://www.zls3201.com/post/ml_note/</guid>
       <description>ML 资料整理 机器学习课程 网易公开课_吴恩达_机器学习_2008 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习基础：案例研究 神经网</description>
     </item>
     
     <item>
       <title>Wireshark查看网络通讯数据包</title>
-      <link>https://zls3201.github.io/post/wireshark_tip/</link>
+      <link>https://www.zls3201.com/post/wireshark_tip/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/wireshark_tip/</guid>
+      <guid>https://www.zls3201.com/post/wireshark_tip/</guid>
       <description>过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下 (ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090) 关于localhost通讯抓包 要求卸载winpcap</description>
     </item>
     
     <item>
       <title>常用导数</title>
-      <link>https://zls3201.github.io/post/useful_derivative/</link>
+      <link>https://www.zls3201.com/post/useful_derivative/</link>
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/useful_derivative/</guid>
+      <guid>https://www.zls3201.com/post/useful_derivative/</guid>
       <description>常用导数 1.常用导数 导数列表 Katex语法</description>
     </item>
     
     <item>
       <title>逻辑回归</title>
-      <link>https://zls3201.github.io/post/logistic_regression/</link>
+      <link>https://www.zls3201.com/post/logistic_regression/</link>
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/logistic_regression/</guid>
+      <guid>https://www.zls3201.com/post/logistic_regression/</guid>
       <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$\end{aligned}} $$</description>
     </item>
     
     <item>
       <title>线性回归</title>
-      <link>https://zls3201.github.io/post/linear_regression/</link>
+      <link>https://www.zls3201.com/post/linear_regression/</link>
       <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/linear_regression/</guid>
+      <guid>https://www.zls3201.com/post/linear_regression/</guid>
       <description>线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &amp;#34;&amp;#34;&amp;#34;Created on Sat Jun 9 08:18:10 2018@author: zls3201@gmail.com&amp;#34;&amp;#34;&amp;#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &amp;#34;&amp;#34;&amp;#</description>
     </item>
     
     <item>
       <title>Mathjax测试</title>
-      <link>https://zls3201.github.io/post/mathjax_test/</link>
+      <link>https://www.zls3201.com/post/mathjax_test/</link>
       <pubDate>Mon, 11 Jun 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/mathjax_test/</guid>
+      <guid>https://www.zls3201.com/post/mathjax_test/</guid>
       <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
     </item>
     
     <item>
       <title>分布式运维Tips</title>
-      <link>https://zls3201.github.io/post/devoptips/</link>
+      <link>https://www.zls3201.com/post/devoptips/</link>
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/devoptips/</guid>
+      <guid>https://www.zls3201.com/post/devoptips/</guid>
       <description>系统管理与自动化 ansible salt puppet chef 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比较Puppet、Chef、An</description>
     </item>
     
     <item>
       <title>随感</title>
-      <link>https://zls3201.github.io/post/impression/</link>
+      <link>https://www.zls3201.com/post/impression/</link>
       <pubDate>Tue, 13 Dec 2016 15:49:50 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/impression/</guid>
+      <guid>https://www.zls3201.com/post/impression/</guid>
       <description>最近总是想起小说里的那句话：“很多年以后，孩子会记得这个时代的。再没什么时代天空这么美了，紫色的流星落下来，紫色的大丽花盛开、破碎，它的花瓣</description>
     </item>
     
     <item>
       <title>树莓派使用root账户</title>
-      <link>https://zls3201.github.io/post/rasp_use_root_accout/</link>
+      <link>https://www.zls3201.com/post/rasp_use_root_accout/</link>
       <pubDate>Wed, 01 Jun 2016 15:32:51 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/rasp_use_root_accout/</guid>
+      <guid>https://www.zls3201.com/post/rasp_use_root_accout/</guid>
       <description>树莓派默认账户是pi 默认密码是raspberry 在默认账户下激活root账户 输入一下命令 sudo passwd root 在执行完该命令后 系统会提示 输入两次密码 那么就输</description>
     </item>
     
     <item>
       <title>树莓派安装mono运行环境</title>
-      <link>https://zls3201.github.io/post/rasp_install_mono_runtime/</link>
+      <link>https://www.zls3201.com/post/rasp_install_mono_runtime/</link>
       <pubDate>Wed, 01 Jun 2016 15:25:04 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/rasp_install_mono_runtime/</guid>
+      <guid>https://www.zls3201.com/post/rasp_install_mono_runtime/</guid>
       <description>sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install</description>
     </item>
     
     <item>
       <title>碎语</title>
-      <link>https://zls3201.github.io/post/chatter/</link>
+      <link>https://www.zls3201.com/post/chatter/</link>
       <pubDate>Mon, 30 May 2016 15:16:44 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/chatter/</guid>
+      <guid>https://www.zls3201.com/post/chatter/</guid>
       <description>有时会突然想 要是她一个人冷清了 还要不要去照顾她。 你时常关心一个人，会不会有时会突然想让她关心你一下。 《蓟门秋》-燕然 对事情不热心，不主动跟人</description>
     </item>
     
     <item>
       <title>first</title>
-      <link>https://zls3201.github.io/post/first/</link>
+      <link>https://www.zls3201.com/post/first/</link>
       <pubDate>Mon, 21 Mar 2016 12:13:19 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/first/</guid>
+      <guid>https://www.zls3201.com/post/first/</guid>
       <description>主题概况 Balalalalala&amp;hellip; Balalalalala&amp;hellip; 安装指南 aaaaaaa bbbbbbb ccccccc 安装 bold 启用 print(&#39;hello world!&#39;) 更新 Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. 配置指南 Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 属性 说明 First ordered list item</description>
     </item>
     
     <item>
       <title>hello hugo</title>
-      <link>https://zls3201.github.io/post/hello-hugo/</link>
+      <link>https://www.zls3201.com/post/hello-hugo/</link>
       <pubDate>Sat, 20 Feb 2016 15:34:05 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/hello-hugo/</guid>
+      <guid>https://www.zls3201.com/post/hello-hugo/</guid>
       <description>Hello Hugo Balalala&amp;hellip; Balalala&amp;hellip; Balalala&amp;hellip;</description>
     </item>
     

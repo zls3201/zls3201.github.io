@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>思考感悟 on 珍珑阁</title>
-    <link>https://zls3201.github.io/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</link>
+    <link>https://www.zls3201.com/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</link>
     <description>Recent content in 思考感悟 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 20 Feb 2016 15:34:05 +0800</lastBuildDate>
     
-	<atom:link href="https://zls3201.github.io/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.zls3201.com/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hello hugo</title>
-      <link>https://zls3201.github.io/post/hello-hugo/</link>
+      <link>https://www.zls3201.com/post/hello-hugo/</link>
       <pubDate>Sat, 20 Feb 2016 15:34:05 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/hello-hugo/</guid>
+      <guid>https://www.zls3201.com/post/hello-hugo/</guid>
       <description>Hello Hugo Balalala&amp;hellip; Balalala&amp;hellip; Balalala&amp;hellip;</description>
     </item>
     

@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>study on 珍珑阁</title>
-    <link>https://zls3201.github.io/tags/study/</link>
+    <link>https://www.zls3201.com/tags/study/</link>
     <description>Recent content in study on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 31 Jan 2019 08:00:35 +0800</lastBuildDate>
     
-	<atom:link href="https://zls3201.github.io/tags/study/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.zls3201.com/tags/study/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blender学习资料</title>
-      <link>https://zls3201.github.io/post/blender_study_resources/</link>
+      <link>https://www.zls3201.com/post/blender_study_resources/</link>
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
+      <guid>https://www.zls3201.com/post/blender_study_resources/</guid>
       <description>Blender学习资料 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X BlenderGuru Blender Beginner Tutorial Series https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P 视频下载 youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P youtube-dl --write-sub --convert-subs srt</description>
     </item>
     
     <item>
       <title>CentOS服务器安装配置</title>
-      <link>https://zls3201.github.io/post/centos_config/</link>
+      <link>https://www.zls3201.com/post/centos_config/</link>
       <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/centos_config/</guid>
+      <guid>https://www.zls3201.com/post/centos_config/</guid>
       <description>CentOS服务器安装配置 安装git hg svn 安装v2ray https://www.v2ray.com/chapter_00/install.html 安装openvpn https://github.com/Nyr/openvpn-install 安装 mono https://www.mono-project.com/download/stable/#download-lin-centos 安装 dotnet core https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current 安装caddy https://3mile.github.io/archives/118/ journalctl -xe 安装gitea https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service</description>
     </item>
     
     <item>
       <title>机器学习笔记</title>
-      <link>https://zls3201.github.io/post/ml_note/</link>
+      <link>https://www.zls3201.com/post/ml_note/</link>
       <pubDate>Thu, 06 Sep 2018 07:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/ml_note/</guid>
+      <guid>https://www.zls3201.com/post/ml_note/</guid>
       <description>ML 资料整理 机器学习课程 网易公开课_吴恩达_机器学习_2008 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习基础：案例研究 神经网</description>
     </item>
     
     <item>
       <title>常用导数</title>
-      <link>https://zls3201.github.io/post/useful_derivative/</link>
+      <link>https://www.zls3201.com/post/useful_derivative/</link>
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/useful_derivative/</guid>
+      <guid>https://www.zls3201.com/post/useful_derivative/</guid>
       <description>常用导数 1.常用导数 导数列表 Katex语法</description>
     </item>
     
     <item>
       <title>逻辑回归</title>
-      <link>https://zls3201.github.io/post/logistic_regression/</link>
+      <link>https://www.zls3201.com/post/logistic_regression/</link>
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/logistic_regression/</guid>
+      <guid>https://www.zls3201.com/post/logistic_regression/</guid>
       <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$\end{aligned}} $$</description>
     </item>
     
     <item>
       <title>线性回归</title>
-      <link>https://zls3201.github.io/post/linear_regression/</link>
+      <link>https://www.zls3201.com/post/linear_regression/</link>
       <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/linear_regression/</guid>
+      <guid>https://www.zls3201.com/post/linear_regression/</guid>
       <description>线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &amp;#34;&amp;#34;&amp;#34;Created on Sat Jun 9 08:18:10 2018@author: zls3201@gmail.com&amp;#34;&amp;#34;&amp;#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &amp;#34;&amp;#34;&amp;#</description>
     </item>
     
     <item>
       <title>Mathjax测试</title>
-      <link>https://zls3201.github.io/post/mathjax_test/</link>
+      <link>https://www.zls3201.com/post/mathjax_test/</link>
       <pubDate>Mon, 11 Jun 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/mathjax_test/</guid>
+      <guid>https://www.zls3201.com/post/mathjax_test/</guid>
       <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
     </item>
     
     <item>
       <title>分布式运维Tips</title>
-      <link>https://zls3201.github.io/post/devoptips/</link>
+      <link>https://www.zls3201.com/post/devoptips/</link>
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/devoptips/</guid>
+      <guid>https://www.zls3201.com/post/devoptips/</guid>
       <description>系统管理与自动化 ansible salt puppet chef 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比较Puppet、Chef、An</description>
     </item>
     

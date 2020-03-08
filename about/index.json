@@ -1,5 +1,5 @@
 {
 	"data" : 
-	{"Content":"\u003cp\u003e本博客基于\u003ca href=\"https://github.com/gohugoio/hugo\"\u003eHugo\u003c/a\u003e，使用\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003eGithub\u003c/a\u003e管理内容，使用\u003ca href=\"https://travis-ci.com/zls3201/blog\"\u003eTravisCI\u003c/a\u003e进行构建发布。\u003c/p\u003e\n","date":"2016-03-21T23:28:02+08:00","permalink":"https://zls3201.github.io/about/","summary":"本博客基于Hugo，使用Github管理内容，使用TravisCI进行构建发布。","title":"关于","type":"page"}
+	{"Content":"\u003cp\u003e本博客基于\u003ca href=\"https://github.com/gohugoio/hugo\"\u003eHugo\u003c/a\u003e，使用\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003eGithub\u003c/a\u003e管理内容，使用\u003ca href=\"https://travis-ci.com/zls3201/blog\"\u003eTravisCI\u003c/a\u003e进行构建发布。\u003c/p\u003e\n","date":"2016-03-21T23:28:02+08:00","permalink":"https://www.zls3201.com/about/","summary":"本博客基于Hugo，使用Github管理内容，使用TravisCI进行构建发布。","title":"关于","type":"page"}
 
 }
