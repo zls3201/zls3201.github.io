@@ -6,19 +6,10 @@
     <description>Recent content on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 05 Apr 2020 01:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2019 01:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://www.zls3201.com/feed.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>随感</title>
-      <link>https://www.zls3201.com/post/20200405_think/</link>
-      <pubDate>Sun, 05 Apr 2020 01:00:00 +0800</pubDate>
-      
-      <guid>https://www.zls3201.com/post/20200405_think/</guid>
-      <description>随感 Pan,你已经去上海奔现了，4月1日，你和我一起吃晚饭，2日中午的飞机。 晚饭时，我说了很多上海的环境和生活工作的事，你又有点烦我了，说我</description>
-    </item>
     
     <item>
       <title>随感</title>
@@ -198,15 +189,6 @@
       
       <guid>https://www.zls3201.com/post/rasp_install_mono_runtime/</guid>
       <description>sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install</description>
-    </item>
-    
-    <item>
-      <title>碎语</title>
-      <link>https://www.zls3201.com/post/chatter/</link>
-      <pubDate>Mon, 30 May 2016 15:16:44 +0800</pubDate>
-      
-      <guid>https://www.zls3201.com/post/chatter/</guid>
-      <description>有时会突然想 要是她一个人冷清了 还要不要去照顾她。 你时常关心一个人，会不会有时会突然想让她关心你一下。 《蓟门秋》-燕然 对事情不热心，不主动跟人</description>
     </item>
     
     <item>
