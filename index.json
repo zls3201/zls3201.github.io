@@ -62,7 +62,7 @@
 					"type": "page",
 					"permalink" : "/links/",
 					"summary" : "关于 Hugo 主题 balabalbalbalbal&hellip;",
-					"Content" : "\u003ch2 id=\"heading\"\u003e关于\u003c/h2\u003e\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\u003ch3 id=\"heading-1\"\u003e主题\u003c/h3\u003e\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n"
+					"Content" : "\n\n\u003ch2 id=\"关于\"\u003e关于\u003c/h2\u003e\n\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\n\u003ch3 id=\"主题\"\u003e主题\u003c/h3\u003e\n\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n"
 				}
 				 , 
 			
