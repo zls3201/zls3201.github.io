@@ -10,7 +10,7 @@
 					"title": "Posts",
 					"date": "2019-05-06 01:00:00 +0800 +0800",
 					"type": "post",
-					"permalink" : "https://www.zls3201.com/post/",
+					"permalink" : "/post/",
 					"summary" : "",
 					"Content" : ""
 				}
@@ -20,7 +20,7 @@
 					"title": "Todos",
 					"date": "2017-08-28 17:22:52 +0800 +0800",
 					"type": "todo",
-					"permalink" : "https://www.zls3201.com/todo/",
+					"permalink" : "/todo/",
 					"summary" : "",
 					"Content" : ""
 				}
@@ -30,7 +30,7 @@
 					"title": "关于",
 					"date": "2016-03-21 23:28:02 +0800 +0800",
 					"type": "page",
-					"permalink" : "https://www.zls3201.com/about/",
+					"permalink" : "/about/",
 					"summary" : "本博客基于Hugo，使用Github管理内容，使用TravisCI进行构建发布。",
 					"Content" : "\u003cp\u003e本博客基于\u003ca href=\"https://github.com/gohugoio/hugo\"\u003eHugo\u003c/a\u003e，使用\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003eGithub\u003c/a\u003e管理内容，使用\u003ca href=\"https://travis-ci.com/zls3201/blog\"\u003eTravisCI\u003c/a\u003e进行构建发布。\u003c/p\u003e\n"
 				}
@@ -40,7 +40,7 @@
 					"title": "分类",
 					"date": "2016-03-20 23:28:02 +0800 +0800",
 					"type": "page",
-					"permalink" : "https://www.zls3201.com/categories/",
+					"permalink" : "/categories/",
 					"summary" : "",
 					"Content" : ""
 				}
@@ -50,7 +50,7 @@
 					"title": "标签",
 					"date": "2016-03-20 23:28:02 +0800 +0800",
 					"type": "page",
-					"permalink" : "https://www.zls3201.com/tags/",
+					"permalink" : "/tags/",
 					"summary" : "",
 					"Content" : ""
 				}
@@ -60,7 +60,7 @@
 					"title": "链接",
 					"date": "2016-03-20 23:28:02 +0800 +0800",
 					"type": "page",
-					"permalink" : "https://www.zls3201.com/links/",
+					"permalink" : "/links/",
 					"summary" : "关于 Hugo 主题 balabalbalbalbal&hellip;",
 					"Content" : "\u003ch2 id=\"heading\"\u003e关于\u003c/h2\u003e\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\u003ch3 id=\"heading-1\"\u003e主题\u003c/h3\u003e\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n"
 				}

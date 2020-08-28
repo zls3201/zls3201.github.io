@@ -12,7 +12,7 @@
 					"title": "Working",
 					"date": "2017-08-28 17:22:52 +0800 +0800",
 					"type": "todo",
-					"permalink" : "https://www.zls3201.com/todo/wf2/",
+					"permalink" : "/todo/wf2/",
 					"summary" : "工作流服务 Model设计 ContentType定义 Property Validator Formator RenderTemplate 代码行为执行 已初步通过 返回委托 委托缓存",
 					"Content" : "\u003ch2 id=\"heading\"\u003e工作流服务\u003c/h2\u003e\n\u003cp\u003eModel设计\u003c/p\u003e\n\u003cp\u003eContentType定义  Property   Validator Formator  RenderTemplate\n代码行为执行  已初步通过  返回委托 委托缓存\u003c/p\u003e\n"
 				}
