@@ -116,9 +116,12 @@ sudo make install</code></pre></div>
   
 </article>
 
+                <div id="git-comments"></div>
             </div>
         </div>
     </div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 
     <footer>
     <div class="footer-inner">
@@ -180,13 +183,24 @@ sudo make install</code></pre></div>
     });
 </script>
     <script>
-    var qrcode = new QRCode(document.getElementById("qrcode-img"), {
-      width: 96,
-      height: 96
-    });
-    if (qrcode) {
-      qrcode.makeCode("https:\/\/www.zls3201.com\/post\/rasp_install_mono_runtime\/");
-}
+        var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+        width: 96,
+        height: 96
+        });
+        if (qrcode) {
+            qrcode.makeCode("https:\/\/www.zls3201.com\/post\/rasp_install_mono_runtime\/");
+        }
+
+        var gitment = new Gitment({
+                id: '',  
+                owner: 'zls3201',
+                repo: 'blog',
+                oauth: {
+                    client_id: 'f30e6d1c19a090b63dd4',
+                    client_secret: '1077257e72fc36ea9845a9f8385ba0f140616431',
+                }
+            });
+        gitment.render('git-comments')
     </script>
 
 </body>
