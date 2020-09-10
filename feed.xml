@@ -6,18 +6,27 @@
     <description>Recent content on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Aug 2020 15:49:50 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://www.zls3201.com/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>测试文章</title>
-      <link>https://www.zls3201.com/post/20200829/</link>
-      <pubDate>Sat, 29 Aug 2020 15:49:50 +0800</pubDate>
+      <title>GPU计算与编程</title>
+      <link>https://www.zls3201.com/post/gpu_program/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/20200829/</guid>
-      <description>aaaaaaa aaaa bbb aaa</description>
+      <guid>https://www.zls3201.com/post/gpu_program/</guid>
+      <description>1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow</description>
+    </item>
+    
+    <item>
+      <title>dotnet微服务</title>
+      <link>https://www.zls3201.com/post/dotnet_micro_services/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://www.zls3201.com/post/dotnet_micro_services/</guid>
+      <description>eShopOnContainers API网关 服务注册 发现 治理 限流 熔断 缓存 日志与跟踪 服务拆分设计 分布式事务同步 性能优化优化 dotnet docker微服务 ASP.NET Core 3.0 使用gRPC MediatR Clean ASP.NET Core API using MediatR</description>
     </item>
     
     <item>

@@ -3,38 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.zls3201.com/tags/calcute/</loc>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.zls3201.com/categories/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zls3201.com/categories/dev/</loc>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zls3201.com/post/gpu_program/</loc>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.zls3201.com/post/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zls3201.com/tags/study/</loc>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.zls3201.com/tags/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zls3201.com/tags/%E4%B8%AA%E4%BA%BA/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zls3201.com/categories/%E6%83%85%E7%BB%AA/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zls3201.com/post/20200829/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.zls3201.com/</loc>
-    <lastmod>2020-08-29T15:49:50+08:00</lastmod>
+    <lastmod>2020-09-11T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zls3201.com/post/dotnet_micro_services/</loc>
+    <lastmod>2020-09-10T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zls3201.com/tags/%E4%B8%AA%E4%BA%BA/</loc>
+    <lastmod>2019-05-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zls3201.com/categories/%E6%83%85%E7%BB%AA/</loc>
+    <lastmod>2019-05-06T01:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -83,22 +103,17 @@
   </url>
   
   <url>
-    <loc>https://www.zls3201.com/categories/dev/</loc>
-    <lastmod>2019-02-08T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.zls3201.com/post/test_ci/</loc>
     <lastmod>2019-02-08T08:00:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.zls3201.com/categories/3d/</loc>
+    <loc>https://www.zls3201.com/tags/3d/</loc>
     <lastmod>2019-01-31T08:00:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.zls3201.com/tags/3d/</loc>
+    <loc>https://www.zls3201.com/categories/3d/</loc>
     <lastmod>2019-01-31T08:00:35+08:00</lastmod>
   </url>
   
@@ -114,11 +129,6 @@
   
   <url>
     <loc>https://www.zls3201.com/categories/game/</loc>
-    <lastmod>2019-01-31T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zls3201.com/tags/study/</loc>
     <lastmod>2019-01-31T08:00:35+08:00</lastmod>
   </url>
   
@@ -149,11 +159,6 @@
   
   <url>
     <loc>https://www.zls3201.com/categories/ai/</loc>
-    <lastmod>2018-09-06T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.zls3201.com/tags/calcute/</loc>
     <lastmod>2018-09-06T07:00:00+08:00</lastmod>
   </url>
   
