@@ -116,7 +116,7 @@
       <pubDate>Thu, 06 Sep 2018 07:00:00 +0800</pubDate>
       
       <guid>https://www.zls3201.com/post/ml_note/</guid>
-      <description>ML 资料整理 机器学习课程 网易公开课_吴恩达_机器学习_2008 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习基础：案例研究 神经网</description>
+      <description>ML 资料整理 机器学习课程 CS229 网易公开课_吴恩达_机器学习_2008 CS229 课程讲义中文翻译 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习</description>
     </item>
     
     <item>
@@ -215,7 +215,7 @@
       <pubDate>Mon, 21 Mar 2016 23:28:02 +0800</pubDate>
       
       <guid>https://www.zls3201.com/about/</guid>
-      <description>本博客基于Hugo，使用Github管理内容，使用TravisCI进行构建发布。</description>
+      <description>本博客基于Hugo，使用Github管理内容，使用TravisCI进行构建发布。 Mathjax语法参考Latex https://en.wikibooks.org/wiki/LaTeX/Mathematics https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics</description>
     </item>
     
     <item>

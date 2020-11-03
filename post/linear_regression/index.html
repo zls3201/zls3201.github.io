@@ -174,6 +174,7 @@ $$
 &:=\theta_j- \alpha\cdot(h_{\theta}(x)-y)x_j
 \end{aligned}}
 $$
+其中$\theta_j$为标量，是$\theta$的第j行,j属于(1,2..,n+1)中的一个值，$x_j$是矩阵X的第j列
 </p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="sa"></span><span class="s2">&#34;&#34;&#34;</span><span class="s2">
@@ -195,18 +196,7 @@ $$
 </span><span class="s2"></span><span class="s2">        path: 传入文件名称.</span><span class="s2">
 </span><span class="s2"></span><span class="s2">
 </span><span class="s2"></span><span class="s2">    Returns:</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        返回一个参数矩阵x和一个结论列向量y. For</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        example:</span><span class="s2">
-</span><span class="s2"></span><span class="s2">
-</span><span class="s2"></span><span class="s2">        {</span><span class="s2">&#39;</span><span class="s2">Serak</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Rigel VII</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Preparer</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
-</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Zim</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Irk</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Invader</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
-</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Lrrr</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Omicron Persei 8</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Emperor</span><span class="s2">&#39;</span><span class="s2">)}</span><span class="s2">
-</span><span class="s2"></span><span class="s2">
-</span><span class="s2"></span><span class="s2">        If a key from the keys argument is missing from the dictionary,</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        then that row was not found in the table.</span><span class="s2">
-</span><span class="s2"></span><span class="s2">
-</span><span class="s2"></span><span class="s2">    Raises:</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        IOError: An error occurred accessing the bigtable.Table object.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        返回一个参数矩阵x和一个结论列向量y. </span><span class="s2">
 </span><span class="s2"></span><span class="s2">    </span><span class="s2">
 </span><span class="s2"></span><span class="s2">    </span><span class="s2">&#34;&#34;&#34;</span>
     <span class="n">dataX</span><span class="o">=</span><span class="p">[</span><span class="p">]</span><span class="p">;</span><span class="n">dataY</span><span class="o">=</span><span class="p">[</span><span class="p">]</span>
@@ -233,18 +223,7 @@ $$
 </span><span class="s2"></span><span class="s2">        vertY: 结论值组成的向量y.</span><span class="s2">
 </span><span class="s2"></span><span class="s2">
 </span><span class="s2"></span><span class="s2">    Returns:</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        返回归一化后的一个参数矩阵x和一个结论列向量y. For</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        example:</span><span class="s2">
-</span><span class="s2"></span><span class="s2">
-</span><span class="s2"></span><span class="s2">        {</span><span class="s2">&#39;</span><span class="s2">Serak</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Rigel VII</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Preparer</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
-</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Zim</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Irk</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Invader</span><span class="s2">&#39;</span><span class="s2">),</span><span class="s2">
-</span><span class="s2"></span><span class="s2">         </span><span class="s2">&#39;</span><span class="s2">Lrrr</span><span class="s2">&#39;</span><span class="s2">: (</span><span class="s2">&#39;</span><span class="s2">Omicron Persei 8</span><span class="s2">&#39;</span><span class="s2">, </span><span class="s2">&#39;</span><span class="s2">Emperor</span><span class="s2">&#39;</span><span class="s2">)}</span><span class="s2">
-</span><span class="s2"></span><span class="s2">
-</span><span class="s2"></span><span class="s2">        If a key from the keys argument is missing from the dictionary,</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        then that row was not found in the table.</span><span class="s2">
-</span><span class="s2"></span><span class="s2">
-</span><span class="s2"></span><span class="s2">    Raises:</span><span class="s2">
-</span><span class="s2"></span><span class="s2">        IOError: An error occurred accessing the bigtable.Table object.</span><span class="s2">
+</span><span class="s2"></span><span class="s2">        返回归一化后的一个参数矩阵x和一个结论列向量y</span><span class="s2">
 </span><span class="s2"></span><span class="s2">    </span><span class="s2">
 </span><span class="s2"></span><span class="s2">    </span><span class="s2">&#34;&#34;&#34;</span>
     <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
