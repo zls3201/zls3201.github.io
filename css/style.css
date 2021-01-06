@@ -600,13 +600,15 @@ body {
 
     .navbar-menu {
         background: none;
-        width: 280px;
+        width: 100%;
+        height: 50px;
     }
 
         .navbar-menu a {
             background-color: none;
             text-shadow: none;
             display: inline-block;
+            font-size: 14px;
         }
 
     .navbar-user .set-view-mode {
