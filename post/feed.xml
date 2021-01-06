@@ -39,48 +39,12 @@
     </item>
     
     <item>
-      <title>FLV协议分析与实现</title>
-      <link>https://www.zls3201.com/post/flv_protocol_analyze/</link>
-      <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
-      
-      <guid>https://www.zls3201.com/post/flv_protocol_analyze/</guid>
-      <description>处理中</description>
-    </item>
-    
-    <item>
-      <title>Hls协议分析与实现</title>
-      <link>https://www.zls3201.com/post/hls_protocol_analyze/</link>
-      <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
-      
-      <guid>https://www.zls3201.com/post/hls_protocol_analyze/</guid>
-      <description>处理中</description>
-    </item>
-    
-    <item>
-      <title>RTSP协议分析与实现</title>
-      <link>https://www.zls3201.com/post/rtsp_protocol_analyze/</link>
-      <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
-      
-      <guid>https://www.zls3201.com/post/rtsp_protocol_analyze/</guid>
-      <description>处理中</description>
-    </item>
-    
-    <item>
       <title>萤石摄像头视频网页播放</title>
       <link>https://www.zls3201.com/post/camera_video_rtsp_player/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
       
       <guid>https://www.zls3201.com/post/camera_video_rtsp_player/</guid>
       <description>1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu</description>
-    </item>
-    
-    <item>
-      <title>Github CI测试</title>
-      <link>https://www.zls3201.com/post/test_ci/</link>
-      <pubDate>Fri, 08 Feb 2019 08:00:35 +0800</pubDate>
-      
-      <guid>https://www.zls3201.com/post/test_ci/</guid>
-      <description>Github和TravisCI测试 使用Github和TravisCI对Hugo内容和发布管理的测试 https://travis-ci.com/zls3201/blog/ https://github.com/zls3201/blog</description>
     </item>
     
     <item>
@@ -198,6 +162,15 @@
       
       <guid>https://www.zls3201.com/post/rasp_install_mono_runtime/</guid>
       <description>sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install</description>
+    </item>
+    
+    <item>
+      <title>碎语</title>
+      <link>https://www.zls3201.com/post/chatter/</link>
+      <pubDate>Mon, 30 May 2016 15:16:44 +0800</pubDate>
+      
+      <guid>https://www.zls3201.com/post/chatter/</guid>
+      <description>有时会突然想 要是她一个人冷清了 还要不要去照顾她。 你时常关心一个人，会不会有时会突然想让她关心你一下。 《蓟门秋》-燕然 对事情不热心，不主动跟人</description>
     </item>
     
     <item>

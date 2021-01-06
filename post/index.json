@@ -5,7 +5,7 @@
             "section" : "post",
         
         
-        "count" : "23",
+        "count" : "20",
         "items" : [
 			
 				{
@@ -39,52 +39,12 @@
 				 , 
 			
 				{
-					"title": "FLV协议分析与实现",
-					"date": "2019-03-27 02:00:00 +0800 +0800",
-					"type": "post",
-					"permalink" : "/post/flv_protocol_analyze/",
-					"summary" : "处理中",
-					"Content" : "\n\n\u003ch3 id=\"处理中\"\u003e处理中\u003c/h3\u003e\n"
-				}
-				 , 
-			
-				{
-					"title": "Hls协议分析与实现",
-					"date": "2019-03-27 02:00:00 +0800 +0800",
-					"type": "post",
-					"permalink" : "/post/hls_protocol_analyze/",
-					"summary" : "处理中",
-					"Content" : "\n\n\u003ch3 id=\"处理中\"\u003e处理中\u003c/h3\u003e\n"
-				}
-				 , 
-			
-				{
-					"title": "RTSP协议分析与实现",
-					"date": "2019-03-27 02:00:00 +0800 +0800",
-					"type": "post",
-					"permalink" : "/post/rtsp_protocol_analyze/",
-					"summary" : "处理中",
-					"Content" : "\n\n\u003ch3 id=\"处理中\"\u003e处理中\u003c/h3\u003e\n"
-				}
-				 , 
-			
-				{
 					"title": "萤石摄像头视频网页播放",
 					"date": "2019-03-27 02:00:00 +0800 +0800",
 					"type": "post",
 					"permalink" : "/post/camera_video_rtsp_player/",
 					"summary" : "1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu",
 					"Content" : "\n\n\u003ch3 id=\"1-获取摄像头的局域网rtsp地址\"\u003e1.获取摄像头的局域网rtsp地址\u003c/h3\u003e\n\n\u003ch3 id=\"2-将rtsp视频流转换为hls视频\"\u003e2.将rtsp视频流转换为Hls视频\u003c/h3\u003e\n\n\u003ch4 id=\"a-采用ffmpeg转换-较为耗费资源\"\u003ea.采用FFMpeg转换，较为耗费资源\u003c/h4\u003e\n\n\u003ch4 id=\"b-使用srs服务-基于linux\"\u003eb.使用srs服务，基于linux\u003c/h4\u003e\n\n\u003ch4 id=\"c-使用-live555-http-www-live555-com-相关代码自定义开发\"\u003ec.使用\u003ca href=\"http://www.live555.com/\"\u003eLive555\u003c/a\u003e相关代码自定义开发\u003c/h4\u003e\n\n\u003ch3 id=\"3-网页采用hls-js播放\"\u003e3.网页采用Hls.js播放\u003c/h3\u003e\n\n\u003cp\u003e相关项目\n\u003ca href=\"https://github.com/arut/nginx-rtmp-module\"\u003enginx-rtmp-module\u003c/a\u003e\n\u003ca href=\"https://github.com/ossrs/srs\"\u003esrs\u003c/a\u003e\n\u003ca href=\"https://github.com/xiongziliang/ZLMediaKit\"\u003eZLMediaKit\u003c/a\u003e\n\u003ca href=\"https://github.com/xiongziliang/ZLMediaKit\"\u003eZLMediaKit\u003c/a\u003e\n\u003ca href=\"https://github.com/sheepbao/sms\"\u003esms\u003c/a\u003e\n\u003ca href=\"https://github.com/gwuhaolin/livego\"\u003elivego\u003c/a\u003e\u003c/p\u003e\n"
-				}
-				 , 
-			
-				{
-					"title": "Github CI测试",
-					"date": "2019-02-08 08:00:35 +0800 +0800",
-					"type": "post",
-					"permalink" : "/post/test_ci/",
-					"summary" : "Github和TravisCI测试 使用Github和TravisCI对Hugo内容和发布管理的测试 https://travis-ci.com/zls3201/blog/ https://github.com/zls3201/blog",
-					"Content" : "\n\n\u003ch3 id=\"github和travisci测试\"\u003eGithub和TravisCI测试\u003c/h3\u003e\n\n\u003cp\u003e使用Github和TravisCI对Hugo内容和发布管理的测试\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003ehttps://travis-ci.com/zls3201/blog/\u003c/a\u003e\n\u003ca href=\"https://github.com/zls3201/blog\"\u003ehttps://github.com/zls3201/blog\u003c/a\u003e\u003c/p\u003e\n"
 				}
 				 , 
 			
@@ -215,6 +175,16 @@
 					"permalink" : "/post/rasp_install_mono_runtime/",
 					"summary" : "sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install",
 					"Content" : "\u003cdiv class=\"highlight\"\u003e\u003cpre class=\"chroma\"\u003e\u003ccode class=\"language-bash\" data-lang=\"bash\"\u003esudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev\nsudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev\n\nsudo apt-get install libcairo2-dev\n\n\nwget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz\ntar zxf libgdiplus-4.2.tar.gz\n\u003cspan class=\"nb\"\u003ecd\u003c/span\u003e libgdiplus-4.2 \n./configure --prefix\u003cspan class=\"o\"\u003e=\u003c/span\u003e/usr\nmake\nsudo make install\n\nwget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2\ntar jvxf mono-4.4.0.122.tar.bz2\n\u003cspan class=\"nb\"\u003ecd\u003c/span\u003e mono-4.4.0.122\n./configure --prefix\u003cspan class=\"o\"\u003e=\u003c/span\u003e/usr\nmake\nsudo make install\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e"
+				}
+				 , 
+			
+				{
+					"title": "碎语",
+					"date": "2016-05-30 15:16:44 +0800 +0800",
+					"type": "post",
+					"permalink" : "/post/chatter/",
+					"summary" : "有时会突然想 要是她一个人冷清了 还要不要去照顾她。 你时常关心一个人，会不会有时会突然想让她关心你一下。 《蓟门秋》-燕然 对事情不热心，不主动跟人",
+					"Content" : "\n\n\u003cp\u003e有时会突然想 要是她一个人冷清了 还要不要去照顾她。\u003c/p\u003e\n\n\u003cp\u003e你时常关心一个人，会不会有时会突然想让她关心你一下。\u003c/p\u003e\n\n\u003ch2 id=\"蓟门秋-燕然\"\u003e《蓟门秋》-燕然\u003c/h2\u003e\n\n\u003cp\u003e对事情不热心，不主动跟人联络，喜欢一个人宅着。这并非是我不喜交际，而是和没有趣味的人们交际，也像是一个人冷冷坐着，那种感觉就好像在人潮汹涌的十字路口，自己如同透明人一样被绑在一把同样透明的椅子上。我常在想，兴许有一天就这么发了霉，打个喷嚏，白色的菌丝漫天飞舞，像是下了一场没人看得见的雪。\u003c/p\u003e\n\n\u003cp\u003e我常常也会觉得，一个人的生命，长度有限，宽度有限，那么面积自然是有限的。生而有涯，而人事无涯，我这辈子是注定不会去经历一些事了。我的生活和大多数人一样平淡无奇，日子一望望不到头，有时候也会想要遁逃，第二天好像什么都没发生一样继续作为一个齿轮开始运转。有时候总会想，有那么多让我心驰神往的世界、那么多波澜壮阔的时代，我永远无法亲历了。\u003c/p\u003e\n\n\u003cp\u003e原小说是找不到了，有声读物采自于《喜马拉雅》\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"http://www.ximalaya.com/56629099/sound/34824376/\"\u003ehttp://www.ximalaya.com/56629099/sound/34824376/\u003c/a\u003e\n\u003ca href=\"http://www.ximalaya.com/56629099/sound/35371500/\"\u003ehttp://www.ximalaya.com/56629099/sound/35371500/\u003c/a\u003e\n\u003ca href=\"http://www.ximalaya.com/56629099/sound/36567345/\"\u003ehttp://www.ximalaya.com/56629099/sound/36567345/\u003c/a\u003e\n\u003ca href=\"http://www.ximalaya.com/56629099/sound/37200426/\"\u003ehttp://www.ximalaya.com/56629099/sound/37200426/\u003c/a\u003e\u003c/p\u003e\n\n\u003cp\u003e有些之前看《这个男人来自地球》的感触。\u003c/p\u003e\n\n\u003cp\u003e最近人是俨然有些慵懒了，不该啊。\u003c/p\u003e\n"
 				}
 				 , 
 			

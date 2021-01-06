@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>深度学习 on 珍珑阁</title>
+    <link>https://www.zls3201.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 深度学习 on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 06 Sep 2018 07:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.zls3201.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>机器学习笔记</title>
+      <link>https://www.zls3201.com/post/ml_note/</link>
+      <pubDate>Thu, 06 Sep 2018 07:00:00 +0800</pubDate>
+      
+      <guid>https://www.zls3201.com/post/ml_note/</guid>
+      <description>ML 资料整理 机器学习课程 CS229 网易公开课_吴恩达_机器学习_2008 CS229 课程讲义中文翻译 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习</description>
+    </item>
+    
+  </channel>
+</rss>

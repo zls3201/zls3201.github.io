@@ -20,5 +20,14 @@
       <description>1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L spf13-vim.sh &amp;&amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中安</description>
     </item>
     
+    <item>
+      <title>分布式运维Tips</title>
+      <link>https://www.zls3201.com/post/devoptips/</link>
+      <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
+      
+      <guid>https://www.zls3201.com/post/devoptips/</guid>
+      <description>系统管理与自动化 ansible salt puppet chef 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位比较 Puppet、Chef、An</description>
+    </item>
+    
   </channel>
 </rss>
