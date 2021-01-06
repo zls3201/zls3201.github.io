@@ -1,0 +1,596 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>深度学习Tips - 珍珑阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="description" content="深度学习Tips 一.相关资料 Darknet c语言实现 thtrieu/darkflow Paddle NCNN实践 xboot/libonnx convnetjs ONNX Runtime onnxjs-demo ONNX Model Zoo 常见网络 paddle xiaohu2015/DeepLearning_tutorials tensorflow/models 刘建平Pinard - 博客园 超轻量级通用人脸检测模型 超轻">
+    
+    <meta itemprop="name" content="深度学习Tips - 珍珑阁">
+    <meta itemprop="description" content="深度学习Tips 一.相关资料 Darknet c语言实现 thtrieu/darkflow Paddle NCNN实践 xboot/libonnx convnetjs ONNX Runtime onnxjs-demo ONNX Model Zoo 常见网络 paddle xiaohu2015/DeepLearning_tutorials tensorflow/models 刘建平Pinard - 博客园 超轻量级通用人脸检测模型 超轻">
+    <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
+    
+    
+    <meta name="twitter:description" content="">
+    
+    <link rel="alternate" href="https://zls3201.github.io/feed.xml" title="珍珑阁" type="application/rss+xml" />
+    <link rel="shortcut icon" href="https://zls3201.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://zls3201.github.io/highlight/styles/solarized-light.css">
+    <script src="https://zls3201.github.io/highlight/highlight.pack.js"></script>
+    <script src="https://zls3201.github.io/js/qrcode.js"></script>
+    <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/style.css">
+</head>
+
+
+<body>
+    <div class="navbar-menu">
+
+  
+  <a   href="/">首页</a>
+  
+  <a   href="/post/">归档</a>
+  
+  <a   href="/categories/">分类</a>
+  
+  <a   href="/tags/">标签</a>
+  
+  <a   href="/links/">链接</a>
+  
+  <a   href="/about/">关于</a>
+  
+  <a   href="/todo/">TODO</a>
+  
+</div>
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
+    <ul class="navigation clearfix">
+        <li><a href="/">首页</a> »</li>
+        <li class="active"><a href="javascript:;">最近更新</a></li>
+        <li class="search">
+            <form class="search-form" method="post" action="./" role="search">
+                <input type="text" name="s" class="text" placeholder="输入关键字搜索" autocomplete="off">
+                <button type="submit" class="btn s3"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/deep_learning/" title="深度学习Tips" itemprop="url">深度学习Tips</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0">机器学习</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-01-06</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    
+
+<h2 id="深度学习tips">深度学习Tips</h2>
+
+<h1 id="一-相关资料">一.相关资料</h1>
+
+<p><a href="https://github.com/pjreddie/darknet/blob/master/include/darknet.h">Darknet</a> c语言实现</p>
+
+<p><a href="https://github.com/thtrieu/darkflow">thtrieu/darkflow</a></p>
+
+<p><a href="https://www.paddlepaddle.org.cn/">Paddle</a></p>
+
+<p><a href="https://github.com/Tencent/ncnn">NCNN</a>实践</p>
+
+<p><a href="https://github.com/xboot/libonnx">xboot/libonnx</a></p>
+
+<p><a href="https://github.com/karpathy/convnetjs">convnetjs</a></p>
+
+<p><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a></p>
+
+<p><a href="https://microsoft.github.io/onnxjs-demo">onnxjs-demo</a></p>
+
+<p><a href="https://github.com/onnx/models#onnx-model-zoo">ONNX Model Zoo</a> 常见网络</p>
+
+<p><a href="https://www.paddlepaddle.org.cn/">paddle</a></p>
+
+<p><a href="https://github.com/xiaohu2015/DeepLearning_tutorials">xiaohu2015/DeepLearning_tutorials</a></p>
+
+<p><a href="https://github.com/tensorflow/models">tensorflow/models</a></p>
+
+<p><a href="https://www.cnblogs.com/pinard/">刘建平Pinard - 博客园</a></p>
+
+<p><a href="https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB">超轻量级通用人脸检测模型</a></p>
+
+<p><a href="https://github.com/ouyanghuiyu/chineseocr_lite">超轻量级中文ocr</a></p>
+
+<p><a href="https://www.cnblogs.com/pinard/p/6007200.html">机器学习研究与开发平台的选择</a></p>
+
+<p><a href="https://www.cnblogs.com/wanbo/p/9100962.html">Javascript如何实现GPU加速？</a></p>
+
+<p><a href="https://www.cnblogs.com/massquantity/p/13842139.html">Flink + 强化学习 搭建实时推荐系统 - massquantity - 博客园</a></p>
+
+<p><a href="https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules">MuZero: Mastering Go, chess, shogi and Atari without rules</a></p>
+
+<h2 id="python相关">Python相关</h2>
+
+<p><a href="https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/">Google 开源项目风格指南 - 中文版
+</a></p>
+
+<p><a href="https://github.com/zh-google-styleguide/zh-google-styleguide">zh-google-styleguide</a></p>
+
+<p><a href="https://docs.python.org/zh-cn/3/library/pickle.html">pickle &mdash; Python 对象序列化</a></p>
+
+<p><a href="https://blog.csdn.net/abc13526222160/article/details/89061107">TensorFlow2.0中的索引和切片</a></p>
+
+<h2 id="开发环境">开发环境</h2>
+
+<p>Anaconda Pycharm Tensorflow</p>
+
+<p>安装 cuda_10.1.243_426.00_win10.exe 下载地址 <a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p>
+
+<p>安装 cudnn-10.1-windows10-x64-v7.6.5.32.zip 下载地址 <a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p>
+
+<p>安装 ananconda</p>
+
+<p>安装 pycharm</p>
+
+<p>conda create &ndash;name tensorflow python=3.8</p>
+
+<p>conda activate tensorflow</p>
+
+<p>conda deactivate</p>
+
+<p>pip install &ndash;upgrade &ndash;ignore-installed tensorflow</p>
+
+<p>测试文件 main.py 内容</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+
+  
+
+<span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+
+  
+
+<span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">GPU</span><span class="s1">&#39;</span><span class="p">)</span>
+
+  
+
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+  </code></pre></div>
+<h2 id="数学基础">数学基础</h2>
+
+<h3 id="微积分">微积分</h3>
+
+<h3 id="概率论与数理统计">概率论与数理统计</h3>
+
+<h3 id="线性代数">线性代数</h3>
+
+<p><a href="https://medium.com/@liangsuzhi/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5-452047a82664">线性代数核心概念</a></p>
+
+<h3 id="梯度下降算法">梯度下降算法</h3>
+
+<p><a href="https://zlearning.netlify.app/math/matrix/matrix-gradient.html"><strong>矩阵梯度</strong></a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/31630368"><strong>一文看懂常用的梯度下降算法</strong></a></p>
+
+<p><a href="https://www.cnblogs.com/pinard/p/5970503.html">梯度下降（Gradient Descent）小结</a></p>
+
+<p>GBM</p>
+
+<p>GBDT</p>
+
+<p><a href="https://xgboost.ai/about"><strong>XGBoost</strong></a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/99069186"><strong>LightGBM</strong></a></p>
+
+<p><a href="https://blog.csdn.net/Cdd2xd/article/details/77426622">GBM 与 GBDT 与 XgBoost_段哥哥的博客-CSDN博客</a></p>
+
+<h2 id="数据处理">数据处理</h2>
+
+<h3 id="lda线性判别分析">LDA线性判别分析</h3>
+
+<h3 id="数据的标准化-normalization-和归一化">数据的标准化（normalization）和归一化</h3>
+
+<p>[标准化和归一化什么区别？]{<a href="https://www.zhihu.com/question/20467170">https://www.zhihu.com/question/20467170</a>}</p>
+
+<h3 id="pca">PCA</h3>
+
+<h3 id="box-cox变换">Box-cox变换</h3>
+
+<h3 id="数据增强">数据增强</h3>
+
+<p>对比度
+饱和度
+明暗
+颜色
+扩张</p>
+
+<h2 id="机器学习常用算法">机器学习常用算法</h2>
+
+<h3 id="常用激活函数">常用激活函数</h3>
+
+<p>Sigmoid函数</p>
+
+<p>$$
+g(x)=\dfrac{1}{1+e^{-x}}
+$$</p>
+
+<p>tanh反正切函数</p>
+
+<p>$$
+g(x)=\dfrac{e^x-e^{-x}}{e^x+e^{-x}}
+$$</p>
+
+<p>relu修正线性单元</p>
+
+<p>$$
+g(x)=max(0,x)
+$$</p>
+
+<p>Leaky relu</p>
+
+<p>$$
+g(x)=\begin{cases}
+x &amp;\text{if } x&gt;0 <br />
+0.01x &amp;\text{otherwise}
+\end{cases}
+$$</p>
+
+<p>Mish</p>
+
+<p>$$
+g(x) = x * tanh(ln(1+e^x))
+$$</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/84418420">Mish：一个新的state-of-the-art激活函数，ReLU的继任者</a></p>
+
+<h3 id="knn算法">KNN算法</h3>
+
+<h3 id="线性回归">线性回归</h3>
+
+<h3 id="逻辑回归">逻辑回归</h3>
+
+<h3 id="softmax回归">Softmax回归</h3>
+
+<h3 id="决策树-dt">决策树（DT）</h3>
+
+<h3 id="感知器">感知器</h3>
+
+<h3 id="hnn隐马尔可夫模型">HNN隐马尔可夫模型</h3>
+
+<h3 id="crf条件随机场">CRF条件随机场</h3>
+
+<h3 id="k-means聚类算法">K-Means聚类算法</h3>
+
+<p><a href="https://www.cnblogs.com/pinard/p/6164214.html">K-Means聚类算法原理</a></p>
+
+<h2 id="深度学习">深度学习</h2>
+
+<h3 id="生成式模型">生成式模型</h3>
+
+<h3 id="深度强化学习">深度强化学习</h3>
+
+<h3 id="强化学习">强化学习</h3>
+
+<h3 id="迁移学习">迁移学习</h3>
+
+<h3 id="vae">VAE</h3>
+
+<h3 id="gan">GAN</h3>
+
+<h3 id="深层神经网络">深层神经网络</h3>
+
+<h3 id="cnn卷积神经网络">CNN卷积神经网络</h3>
+
+<p><a href="https://www.cnblogs.com/White-xzx/p/9497029.html">【TensorFlow】一文弄懂CNN中的padding参数</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/251068800">CNN卷积核与通道讲解</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/37910136">1x1卷积核的作用</a></p>
+
+<p><a href="https://zh.d2l.ai/chapter_convolutional-neural-networks/channels.html">多输入通道和多输出通道</a></p>
+
+<p><a href="https://blog.csdn.net/briblue/article/details/83063170">多通道图像卷积过程及计算方式</a></p>
+
+<p><a href="https://www.jianshu.com/p/ba51f8c6e348">CNN中，1X1卷积核到底有什么作用呢</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/40050371">一文读懂卷积神经网络中的1x1卷积核</a></p>
+
+<h3 id="rnn循环神经网络">RNN循环神经网络</h3>
+
+<h4 id="ltsm">LTSM</h4>
+
+<h4 id="gru">GRU</h4>
+
+<h4 id="seq2seq">Seq2Seq</h4>
+
+<p><a href="https://blog.csdn.net/weixin_43788143/article/details/107574547">tensorflow2.0之seq2seq+attention模型和实例</a></p>
+
+<p><a href="https://www.tensorflow.org/tutorials/text/nmt_with_attention?hl=zh-cn">https://www.tensorflow.org/tutorials/text/nmt_with_attention?hl=zh-cn</a></p>
+
+<h3 id="gan对抗神经网络">GAN对抗神经网络</h3>
+
+<h2 id="深度学习专题">深度学习专题</h2>
+
+<h3 id="tensorflow-2">Tensorflow 2</h3>
+
+<h3 id="中文相关">中文相关</h3>
+
+<p><a href="https://www.cnblogs.com/yanqiang/p/13535371.html">【数据集】中文语音识别可用的开源数据集整理</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/62894959">腾讯词向量实战：通过Annoy进行索引和快速查询</a></p>
+
+<h3 id="协同过滤推荐算法">协同过滤推荐算法</h3>
+
+<h3 id="手写文字识别">手写文字识别</h3>
+
+<h3 id="图像处理相关">图像处理相关</h3>
+
+<p><a href="https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/blob/master/README.md">深度学习在图像处理中的应用教程</a></p>
+
+<h4 id="图像分类">图像分类</h4>
+
+<h4 id="图像识别">图像识别</h4>
+
+<h3 id="知识图谱">知识图谱</h3>
+
+<h3 id="yolo">Yolo</h3>
+
+<p><a href="https://tangh.github.io/articles/yolo-from-v1-to-v4/">实时目标检测方法 YOLO — 从 V1 到 V4</a></p>
+
+<p><a href="https://www.cnblogs.com/ywheunji/p/10761239.html">YOLOv1到YOLOv3的演变过程及每个算法详解</a></p>
+
+<p><a href="https://cloud.tencent.com/developer/article/1541349?from=article.detail.1544276">YOLO目标检测从V1到V3结构详解</a></p>
+
+<p><a href="https://bbs.cvmart.net/topics/2365">深入浅出 Yolo 系列之 Yolov3&amp;Yolov4 核心基础知识完整讲解</a></p>
+
+<h4 id="v1">v1</h4>
+
+<p><a href="https://github.com/SHU-FLYMAN/Yolov1-TensorFlow">Yolov1-TensorFlow</a></p>
+
+<p><a href="https://blog.csdn.net/qq1483661204/article/details/79684050">tensorflow版yolo V1 逐行逐句解读</a></p>
+
+<p><a href="https://www.maskaravivek.com/post/yolov1/">Implementing YOLOV1 from scratch using Keras Tensorflow 2.0</a></p>
+
+<p><a href="https://hackernoon.com/understanding-yolo-f5a74bbc7967">understanding-yolo</a></p>
+
+<p><a href="https://github.com/hizhangp/yolo_tensorflow">hizhangp/yolo_tensorflow</a></p>
+
+<p><a href="https://github.com/dshahrokhian/YOLO_tensorflow">dshahrokhian/YOLO_tensorflow</a></p>
+
+<p><a href="https://github.com/JY-112553/yolov1-keras-voc">JY-112553/yolov1-keras-voc</a></p>
+
+<p><a href="https://github.com/yxlijun/tensorflow-yolov1">yxlijun/tensorflow-yolov1</a></p>
+
+<p><a href="https://github.com/MingtaoGuo/yolo_v1_v2_tensorflow">MingtaoGuo/yolo_v1_v2_tensorflow</a></p>
+
+<h4 id="v2">v2</h4>
+
+<p><a href="https://github.com/yhcc/yolo2">yhcc/yolo2</a></p>
+
+<h4 id="v3">v3</h4>
+
+<p><a href="https://blog.csdn.net/litt1e/article/details/88907542">一文看懂YOLO v3</a></p>
+
+<p><a href="https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial">YOLOv4-Cloud-Tutorial</a></p>
+
+<p><a href="https://blog.csdn.net/leviopku/article/details/82660381">yolo系列之yolo v3【深度解析】</a></p>
+
+<p><a href="https://github.com/YunYang1994/tensorflow-yolov3">tensorflow-yolov3</a></p>
+
+<p><a href="https://github.com/ultralytics/yolov3">pytorch实现</a></p>
+
+<p><a href="https://www.bilibili.com/video/BV1r5411t7Db?p=2">搭建yolov3+tensorflow2.0开发环境 模型训练 小白篇 机器视觉 神经网络学习</a> <a href="https://github.com/zzh8829/yolov3-tf2">代码</a></p>
+
+<p><a href="https://github.com/RahmadSadli/Deep-Learning/tree/master/YOLOv3_TF2">YOLOv3_TF2</a></p>
+
+<p><a href="https://github.com/pythonlessons/TensorFlow-2.x-YOLOv3">pythonlessons/TensorFlow-2.x-YOLOv3</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/143747206">深入浅出Yolo系列之Yolov3&amp;Yolov4&amp;Yolov5核心基础知识完整讲解</a></p>
+
+<h4 id="v4">v4</h4>
+
+<p><a href="https://github.com/AlexeyAB/darknet">作者实现</a></p>
+
+<p><a href="https://github.com/hunglc007/tensorflow-yolov4-tflite">hunglc007/tensorflow-yolov4-tflite</a></p>
+
+<p><a href="https://bbs.cvmart.net/articles/3674">YOLOv4 团队最新力作！1774fps、COCO 最佳精度，分别适合高低端 GPU 的 YOLO</a></p>
+
+<p><a href="https://github.com/WongKinYiu/PyTorch_YOLOv4">WongKinYiu/PyTorch_YOLOv4</a></p>
+
+<p><a href="https://www.bilibili.com/video/BV1LZ4y1W7Ve">https://www.bilibili.com/video/BV1LZ4y1W7Ve</a> 代码见 <a href="https://github.com/bubbliiiing/yolov4-tf2">https://github.com/bubbliiiing/yolov4-tf2</a></p>
+
+<p><a href="https://github.com/pythonlessons/TensorFlow-2.x-YOLOv3">pythonlessons/TensorFlow-2.x-YOLOv3</a></p>
+
+<p><a href="https://github.com/hunglc007/tensorflow-yolov4-tflite">tensorflow-yolov4-tflite</a></p>
+
+<h4 id="v5">v5</h4>
+
+<p><a href="https://github.com/ultralytics/yolov5">作者Pytorch实现</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/161083602">一文读懂YOLO V5 与 YOLO V4</a></p>
+
+<p><a href="https://github.com/PeterH0323/Smart_Construction">基于目标检测工地安全帽和禁入危险区域识别系统</a></p>
+
+<p><a href="https://github.com/avBuffer/Yolov5_tf">Tensorflow实现</a></p>
+
+<p><a href="https://github.com/jahongir7174/YOLOv5-tf">实现2——完善中</a></p>
+
+<h3 id="googlenet">GoogLeNet</h3>
+
+<p>inception的模块结构</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/32116277">ResNet, AlexNet, VGG, Inception: 理解各种各样的CNN架构</a></p>
+
+<p><a href="https://my.oschina.net/u/876354/blog/1637819">大话CNN经典模型：GoogLeNet（从Inception v1到v4的演进）</a></p>
+
+<p><a href="https://www.bilibili.com/video/BV1a7411T7Ht/">使用tensorflow搭建GoogLeNet网络</a> <a href="https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/blob/master/tensorflow_classification/Test4_goolenet/train.py">代码</a></p>
+
+<p><a href="https://github.com/conan7882/GoogLeNet-Inception/blob/master/README.md">GoogLeNet-Inception</a></p>
+
+<p><a href="https://blog.csdn.net/abc13526222160/article/details/95472241">GoogleNet-Iception实现Fashion mnist图像分类+BN介绍！</a></p>
+
+<h3 id="r-cnn">R-CNN</h3>
+
+<p><a href="https://zhuanlan.zhihu.com/p/23006190">RCNN- 将CNN引入目标检测的开山之作</a></p>
+
+<p><a href="https://zh.d2l.ai/chapter_computer-vision/rcnn.html">区域卷积神经网络（R-CNN）系列</a></p>
+
+<h3 id="alexnet">AlexNet</h3>
+
+<p>连续卷积 LRN ReLU DropOut 11x11</p>
+
+<p><a href="https://blog.csdn.net/weixin_42201701/article/details/98098281">AlexNet（附tensorflow2.0模型搭建）</a></p>
+
+<p><a href="http://datahacker.rs/tf-alexnet">TF Implementing AlexNet in TensorFlow 2.0</a></p>
+
+<p><a href="https://www.jianshu.com/p/c014f81242e7">局部响应归一化层（LRN）</a></p>
+
+<p><a href="https://github.com/henrypowell87/AlexNet_TF2.0/blob/master/main.py">AlexNet_TF2.0</a></p>
+
+<h3 id="vgg">VGG</h3>
+
+<p>卷积核 3x3</p>
+
+<h3 id="resnet">ResNet</h3>
+
+<p>shortcut</p>
+
+<h3 id="efficientdet">EfficientDet</h3>
+
+<p><a href="https://zhuanlan.zhihu.com/p/93241232">EfficientDet 算法解读</a>
+<a href="https://github.com/google/automl/blob/master/efficientdet/backbone/efficientnet_model.py">efficientnet_model</a>
+<a href="https://github.com/Guillem96/efficientdet-tf">efficientdet-tf</a></p>
+
+<h3 id="mobilenet">MobileNet</h3>
+
+<p><a href="https://github.com/Zehaos/MobileNet">Zehaos/MobileNet</a></p>
+
+<h2 id="人脸识别">人脸识别</h2>
+
+<p><a href="https://github.com/ageitgey/face_recognition/blob/master/README_Simplified_Chinese.md">Face Recognition 人脸识别</a> 99%准确率</p>
+
+<p><a href="https://github.com/cmusatyalab/openface">cmusatyalab/openface</a></p>
+
+<p><a href="https://github.com/davidsandberg/facenet">davidsandberg/facenet</a></p>
+
+  </div>
+  
+</article>
+
+                <div id="git-comments"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+    <div class="footer-inner">
+        <p>
+            <a href="https://zls3201.github.io/about" title="关于">关于</a> |
+            <a href="https://zls3201.github.io//feed.xml">RSS</a>
+        </p>
+        <p> © 2017 <a href="http://www.zls3201.com/" target="_blank"> 珍珑阁 </a> / Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>    </p>
+    </div>
+</footer>
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    var mathjaxBlocks = document.getElementsByClassName('language-mathjax');
+    for (i = 0; i < mathjaxBlocks.length; i++) {
+        mathjaxBlocks[i].parentNode.innerHTML = '$$' + mathjaxBlocks[i].innerHTML +'$$';
+    }
+
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre code'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script>
+    var mermaids = document.getElementsByClassName('language-mermaid');
+    for (i = 0; i < mermaids.length; i++) {
+        mermaids[i].className = 'nohighlight mermaid';
+    }
+
+    hljs.initHighlightingOnLoad();
+    mermaid.initialize({
+        
+        
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 },
+        
+    });
+</script>
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+        width: 96,
+        height: 96
+        });
+        if (qrcode) {
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/deep_learning\/");
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+
+</body>
+
+</html>
