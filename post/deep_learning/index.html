@@ -169,21 +169,13 @@
 <p>pip install &ndash;upgrade &ndash;ignore-installed tensorflow</p>
 
 <p>测试文件 main.py 内容</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>  
 
-  
+<span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>  
 
-<span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">GPU</span><span class="s1">&#39;</span><span class="p">)</span>  
 
-  
-
-<span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">GPU</span><span class="s1">&#39;</span><span class="p">)</span>
-
-  
-
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-
-  </code></pre></div>
+<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> </code></pre></div>
 <h2 id="数学基础">数学基础</h2>
 
 <h3 id="微积分">微积分</h3>
@@ -196,9 +188,9 @@
 
 <h3 id="梯度下降算法">梯度下降算法</h3>
 
-<p><a href="https://zlearning.netlify.app/math/matrix/matrix-gradient.html"><strong>矩阵梯度</strong></a></p>
+<p><a href="https://zlearning.netlify.app/math/matrix/matrix-gradient.html">矩阵梯度</a></p>
 
-<p><a href="https://zhuanlan.zhihu.com/p/31630368"><strong>一文看懂常用的梯度下降算法</strong></a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/31630368">一文看懂常用的梯度下降算法</a></p>
 
 <p><a href="https://www.cnblogs.com/pinard/p/5970503.html">梯度下降（Gradient Descent）小结</a></p>
 
@@ -292,6 +284,79 @@ $$</p>
 <p><a href="https://www.cnblogs.com/pinard/p/6164214.html">K-Means聚类算法原理</a></p>
 
 <h2 id="深度学习">深度学习</h2>
+
+<h3 id="常用网络结构">常用网络结构</h3>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>资料</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>全连接层</td>
+<td></td>
+</tr>
+
+<tr>
+<td>卷积层</td>
+<td>转化为矩阵计算见《Python深度学习基于pytorch》p114</td>
+</tr>
+
+<tr>
+<td>转置卷积层（反卷积）</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LocallyConnected</td>
+<td></td>
+</tr>
+
+<tr>
+<td>池化层</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LTSM</td>
+<td></td>
+</tr>
+
+<tr>
+<td>GRU</td>
+<td></td>
+</tr>
+
+<tr>
+<td>BN</td>
+<td></td>
+</tr>
+
+<tr>
+<td>LRU</td>
+<td>见于AlexNet</td>
+</tr>
+
+<tr>
+<td>Shortcut</td>
+<td>见于ResNet</td>
+</tr>
+
+<tr>
+<td>Inception</td>
+<td>见于GoogleNet</td>
+</tr>
+
+<tr>
+<td>router</td>
+<td>见于<a href="https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov4-tiny.cfg">Yolo-v4</a></td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="生成式模型">生成式模型</h3>
 
