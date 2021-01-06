@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>直播 on 珍珑阁</title>
-    <link>https://www.zls3201.com/categories/%E7%9B%B4%E6%92%AD/</link>
+    <link>https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/</link>
     <description>Recent content in 直播 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 27 Mar 2019 02:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://www.zls3201.com/categories/%E7%9B%B4%E6%92%AD/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>萤石摄像头视频网页播放</title>
-      <link>https://www.zls3201.com/post/camera_video_rtsp_player/</link>
+      <link>https://zls3201.github.io/post/camera_video_rtsp_player/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/camera_video_rtsp_player/</guid>
+      <guid>https://zls3201.github.io/post/camera_video_rtsp_player/</guid>
       <description>1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu</description>
     </item>
     

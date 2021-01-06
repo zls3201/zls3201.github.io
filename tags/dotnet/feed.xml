@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dotnet on 珍珑阁</title>
-    <link>https://www.zls3201.com/tags/dotnet/</link>
+    <link>https://zls3201.github.io/tags/dotnet/</link>
     <description>Recent content in dotnet on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://www.zls3201.com/tags/dotnet/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zls3201.github.io/tags/dotnet/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>dotnet微服务</title>
-      <link>https://www.zls3201.com/post/dotnet_micro_services/</link>
+      <link>https://zls3201.github.io/post/dotnet_micro_services/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/dotnet_micro_services/</guid>
+      <guid>https://zls3201.github.io/post/dotnet_micro_services/</guid>
       <description>eShopOnContainers API网关 服务注册 发现 治理 限流 熔断 缓存 日志与跟踪 服务拆分设计 分布式事务同步 性能优化优化 dotnet docker微服务 ASP.NET Core 3.0 使用gRPC MediatR Clean ASP.NET Core API using MediatR</description>
     </item>
     
     <item>
       <title>树莓派安装mono运行环境</title>
-      <link>https://www.zls3201.com/post/rasp_install_mono_runtime/</link>
+      <link>https://zls3201.github.io/post/rasp_install_mono_runtime/</link>
       <pubDate>Wed, 01 Jun 2016 15:25:04 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/rasp_install_mono_runtime/</guid>
+      <guid>https://zls3201.github.io/post/rasp_install_mono_runtime/</guid>
       <description>sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install</description>
     </item>
     

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>study on 珍珑阁</title>
-    <link>https://www.zls3201.com/tags/study/</link>
+    <link>https://zls3201.github.io/tags/study/</link>
     <description>Recent content in study on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="https://www.zls3201.com/tags/study/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zls3201.github.io/tags/study/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GPU计算与编程</title>
-      <link>https://www.zls3201.com/post/gpu_program/</link>
+      <link>https://zls3201.github.io/post/gpu_program/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/gpu_program/</guid>
+      <guid>https://zls3201.github.io/post/gpu_program/</guid>
       <description>1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow</description>
     </item>
     
     <item>
       <title>Blender学习资料</title>
-      <link>https://www.zls3201.com/post/blender_study_resources/</link>
+      <link>https://zls3201.github.io/post/blender_study_resources/</link>
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/blender_study_resources/</guid>
+      <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
       <description>Blender学习资料 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X BlenderGuru Blender Beginner Tutorial Series https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P 视频下载 youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P youtube-dl --write-sub --convert-subs srt</description>
     </item>
     
     <item>
       <title>CentOS服务器安装配置</title>
-      <link>https://www.zls3201.com/post/centos_config/</link>
+      <link>https://zls3201.github.io/post/centos_config/</link>
       <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/centos_config/</guid>
+      <guid>https://zls3201.github.io/post/centos_config/</guid>
       <description>CentOS服务器安装配置 安装git hg svn 安装v2ray https://www.v2ray.com/chapter_00/install.html 安装openvpn https://github.com/Nyr/openvpn-install 安装 mono https://www.mono-project.com/download/stable/#download-lin-centos 安装 dotnet core https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current 安装caddy https://3mile.github.io/archives/118/ journalctl -xe 安装gitea https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service</description>
     </item>
     

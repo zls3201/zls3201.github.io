@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on 珍珑阁</title>
-    <link>https://www.zls3201.com/tags/test/</link>
+    <link>https://zls3201.github.io/tags/test/</link>
     <description>Recent content in Test on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 20 Feb 2016 15:34:05 +0800</lastBuildDate>
     
-	<atom:link href="https://www.zls3201.com/tags/test/feed.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zls3201.github.io/tags/test/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hello hugo</title>
-      <link>https://www.zls3201.com/post/hello-hugo/</link>
+      <link>https://zls3201.github.io/post/hello-hugo/</link>
       <pubDate>Sat, 20 Feb 2016 15:34:05 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/hello-hugo/</guid>
+      <guid>https://zls3201.github.io/post/hello-hugo/</guid>
       <description>Hello Hugo Balalala&amp;hellip; Balalala&amp;hellip; Balalala&amp;hellip;</description>
     </item>
     
