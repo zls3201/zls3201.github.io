@@ -6,11 +6,7 @@
     <description>Recent content in dev on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate>
-    
-	<atom:link href="https://zls3201.github.io/categories/dev/feed.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/dev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPU计算与编程</title>
       <link>https://zls3201.github.io/post/gpu_program/</link>

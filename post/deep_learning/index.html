@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
+    
+    
     <meta charset="UTF-8">
     <title>深度学习Tips - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
@@ -24,7 +26,8 @@
     <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
     <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://zls3201.github.io/css/style.css">
+    
+    <link rel="stylesheet" href="https://zls3201.github.io/main.css" >
 </head>
 
 
@@ -173,7 +176,7 @@
 
 <span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>  
 
-<span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">GPU</span><span class="s1">&#39;</span><span class="p">)</span>  
+<span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="s1">&#39;GPU&#39;</span><span class="p">)</span>  
 
 <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> </code></pre></div>
 <h2 id="数学基础">数学基础</h2>
@@ -412,6 +415,8 @@ $$</p>
 
 <p><a href="https://zhuanlan.zhihu.com/p/62894959">腾讯词向量实战：通过Annoy进行索引和快速查询</a></p>
 
+<p><a href="https://github.com/CLUEbenchmark/CLUEDatasetSearch">搜索所有中文NLP数据集，附常用英文NLP数据集</a></p>
+
 <h3 id="协同过滤推荐算法">协同过滤推荐算法</h3>
 
 <h3 id="手写文字识别">手写文字识别</h3>
@@ -574,6 +579,105 @@ $$</p>
             </div>
         </div>
     </div>
+
+    <div class = "toc-wrapper">
+        <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>深度学习Tipsの字数: 1731</h4> 
+    </header><nav id="TableOfContents">
+<ul>
+<li><a href="#深度学习tips">深度学习Tips</a></li>
+</ul></li>
+<li><a href="#一-相关资料">一.相关资料</a>
+<ul>
+<li><a href="#python相关">Python相关</a></li>
+<li><a href="#开发环境">开发环境</a></li>
+<li><a href="#数学基础">数学基础</a>
+<ul>
+<li><a href="#微积分">微积分</a></li>
+<li><a href="#概率论与数理统计">概率论与数理统计</a></li>
+<li><a href="#线性代数">线性代数</a></li>
+<li><a href="#梯度下降算法">梯度下降算法</a></li>
+</ul></li>
+<li><a href="#数据处理">数据处理</a>
+<ul>
+<li><a href="#lda线性判别分析">LDA线性判别分析</a></li>
+<li><a href="#数据的标准化-normalization-和归一化">数据的标准化（normalization）和归一化</a></li>
+<li><a href="#pca">PCA</a></li>
+<li><a href="#box-cox变换">Box-cox变换</a></li>
+<li><a href="#数据增强">数据增强</a></li>
+</ul></li>
+<li><a href="#机器学习常用算法">机器学习常用算法</a>
+<ul>
+<li><a href="#常用激活函数">常用激活函数</a></li>
+<li><a href="#knn算法">KNN算法</a></li>
+<li><a href="#线性回归">线性回归</a></li>
+<li><a href="#逻辑回归">逻辑回归</a></li>
+<li><a href="#softmax回归">Softmax回归</a></li>
+<li><a href="#决策树-dt">决策树（DT）</a></li>
+<li><a href="#感知器">感知器</a></li>
+<li><a href="#hnn隐马尔可夫模型">HNN隐马尔可夫模型</a></li>
+<li><a href="#crf条件随机场">CRF条件随机场</a></li>
+<li><a href="#k-means聚类算法">K-Means聚类算法</a></li>
+</ul></li>
+<li><a href="#深度学习">深度学习</a>
+<ul>
+<li><a href="#常用网络结构">常用网络结构</a></li>
+<li><a href="#生成式模型">生成式模型</a></li>
+<li><a href="#深度强化学习">深度强化学习</a></li>
+<li><a href="#强化学习">强化学习</a></li>
+<li><a href="#迁移学习">迁移学习</a></li>
+<li><a href="#vae">VAE</a></li>
+<li><a href="#gan">GAN</a></li>
+<li><a href="#深层神经网络">深层神经网络</a></li>
+<li><a href="#cnn卷积神经网络">CNN卷积神经网络</a></li>
+<li><a href="#rnn循环神经网络">RNN循环神经网络</a>
+<ul>
+<li><a href="#ltsm">LTSM</a></li>
+<li><a href="#gru">GRU</a></li>
+<li><a href="#seq2seq">Seq2Seq</a></li>
+</ul></li>
+<li><a href="#gan对抗神经网络">GAN对抗神经网络</a></li>
+</ul></li>
+<li><a href="#深度学习专题">深度学习专题</a>
+<ul>
+<li><a href="#tensorflow-2">Tensorflow 2</a></li>
+<li><a href="#中文相关">中文相关</a></li>
+<li><a href="#协同过滤推荐算法">协同过滤推荐算法</a></li>
+<li><a href="#手写文字识别">手写文字识别</a></li>
+<li><a href="#图像处理相关">图像处理相关</a>
+<ul>
+<li><a href="#图像分类">图像分类</a></li>
+<li><a href="#图像识别">图像识别</a></li>
+</ul></li>
+<li><a href="#知识图谱">知识图谱</a></li>
+<li><a href="#yolo">Yolo</a>
+<ul>
+<li><a href="#v1">v1</a></li>
+<li><a href="#v2">v2</a></li>
+<li><a href="#v3">v3</a></li>
+<li><a href="#v4">v4</a></li>
+<li><a href="#v5">v5</a></li>
+</ul></li>
+<li><a href="#googlenet">GoogLeNet</a></li>
+<li><a href="#r-cnn">R-CNN</a></li>
+<li><a href="#alexnet">AlexNet</a></li>
+<li><a href="#vgg">VGG</a></li>
+<li><a href="#resnet">ResNet</a></li>
+<li><a href="#efficientdet">EfficientDet</a></li>
+<li><a href="#mobilenet">MobileNet</a></li>
+</ul></li>
+<li><a href="#人脸识别">人脸识别</a></li>
+</ul></li>
+</ul>
+</nav></aside>
+<a href="#" id="toc-toggle"></a>
+
+</div>
+    </div>
+    
     
 
     <footer>

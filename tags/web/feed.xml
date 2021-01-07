@@ -6,11 +6,7 @@
     <description>Recent content in web on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 11 Jun 2018 08:00:35 +0800</lastBuildDate>
-    
-	<atom:link href="https://zls3201.github.io/tags/web/feed.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Jun 2018 08:00:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/web/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mathjax测试</title>
       <link>https://zls3201.github.io/post/mathjax_test/</link>

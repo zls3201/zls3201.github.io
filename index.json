@@ -5,67 +5,25 @@
         
         "count" : "6",
         "items" : [
-			
-				{
-					"title": "Posts",
-					"date": "2021-01-06 01:00:00 +0800 +0800",
-					"type": "post",
-					"permalink" : "/post/",
-					"summary" : "",
-					"Content" : ""
-				}
+            
+                {"Content":"","date":"2021-01-06T01:00:00+08:00","permalink":"/post/","summary":"","title":"Posts","type":"post"}
 				
-			
-				{
-					"title": "Todos",
-					"date": "2017-08-28 17:22:52 +0800 +0800",
-					"type": "todo",
-					"permalink" : "/todo/",
-					"summary" : "",
-					"Content" : ""
-				}
+            
+                {"Content":"","date":"2017-08-28T17:22:52+08:00","permalink":"/todo/","summary":"","title":"Todos","type":"todo"}
 				 , 
-			
-				{
-					"title": "关于",
-					"date": "2016-03-21 23:28:02 +0800 +0800",
-					"type": "page",
-					"permalink" : "/about/",
-					"summary" : "本博客基于Hugo，使用Github管理内容，使用vercel进行构建发布。 镜像 代码仓库 github，github action 可用静态网页托管 github pages ，n",
-					"Content" : "\u003cp\u003e本博客基于\u003ca href=\"https://github.com/gohugoio/hugo\"\u003eHugo\u003c/a\u003e，使用\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003eGithub\u003c/a\u003e管理内容，使用\u003ca href=\"https://vercel.com/zls3201/blog\"\u003evercel\u003c/a\u003e进行构建发布。\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://zls3201.github.io/\"\u003e镜像\u003c/a\u003e\n代码仓库 github，github action\n可用静态网页托管 github pages ，netlify，vercel\u003c/p\u003e\n\n\u003cp\u003eMathjax语法参考Latex\n\u003ca href=\"https://en.wikibooks.org/wiki/LaTeX/Mathematics\"\u003ehttps://en.wikibooks.org/wiki/LaTeX/Mathematics\u003c/a\u003e\n\u003ca href=\"https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics\"\u003ehttps://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics\u003c/a\u003e\u003c/p\u003e\n"
-				}
+            
+                {"Content":"\u003cp\u003e本博客基于\u003ca href=\"https://github.com/gohugoio/hugo\"\u003eHugo\u003c/a\u003e，使用\u003ca href=\"https://travis-ci.com/zls3201/blog/\"\u003eGithub\u003c/a\u003e管理内容，使用\u003ca href=\"https://vercel.com/zls3201/blog\"\u003evercel\u003c/a\u003e进行构建发布。\u003c/p\u003e\n\n\u003cp\u003e\u003ca href=\"https://zls3201.github.io/\"\u003e镜像\u003c/a\u003e\n代码仓库 github，github action\n可用静态网页托管 github pages ，netlify，vercel\u003c/p\u003e\n\n\u003cp\u003eMathjax语法参考Latex\n\u003ca href=\"https://en.wikibooks.org/wiki/LaTeX/Mathematics\"\u003ehttps://en.wikibooks.org/wiki/LaTeX/Mathematics\u003c/a\u003e\n\u003ca href=\"https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics\"\u003ehttps://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics\u003c/a\u003e\u003c/p\u003e\n","date":"2016-03-21T23:28:02+08:00","permalink":"/about/","summary":"本博客基于Hugo，使用Github管理内容，使用vercel进行构建发布。 镜像 代码仓库 github，github action 可用静态网页托管 github pages ，n","title":"关于","type":"page"}
 				 , 
-			
-				{
-					"title": "分类",
-					"date": "2016-03-20 23:28:02 +0800 +0800",
-					"type": "page",
-					"permalink" : "/categories/",
-					"summary" : "",
-					"Content" : ""
-				}
+            
+                {"Content":"","date":"2016-03-20T23:28:02+08:00","permalink":"/categories/","summary":"","title":"分类","type":"page"}
 				 , 
-			
-				{
-					"title": "标签",
-					"date": "2016-03-20 23:28:02 +0800 +0800",
-					"type": "page",
-					"permalink" : "/tags/",
-					"summary" : "",
-					"Content" : ""
-				}
+            
+                {"Content":"","date":"2016-03-20T23:28:02+08:00","permalink":"/tags/","summary":"","title":"标签","type":"page"}
 				 , 
-			
-				{
-					"title": "链接",
-					"date": "2016-03-20 23:28:02 +0800 +0800",
-					"type": "page",
-					"permalink" : "/links/",
-					"summary" : "关于 Hugo 主题 balabalbalbalbal&hellip;",
-					"Content" : "\n\n\u003ch2 id=\"关于\"\u003e关于\u003c/h2\u003e\n\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\n\u003ch3 id=\"主题\"\u003e主题\u003c/h3\u003e\n\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n"
-				}
+            
+                {"Content":"\n\n\u003ch2 id=\"关于\"\u003e关于\u003c/h2\u003e\n\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\n\u003ch3 id=\"主题\"\u003e主题\u003c/h3\u003e\n\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n","date":"2016-03-20T23:28:02+08:00","permalink":"/links/","summary":"关于 Hugo 主题 balabalbalbalbal\u0026hellip;","title":"链接","type":"page"}
 				 , 
-			
+            
         ]
     }
 

@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
+    
+    
     <meta charset="UTF-8">
     <title>Virtualbox安装配置alpine - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L spf13-vim.sh && sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中安">
+    <meta name="description" content="1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中">
     
     <meta itemprop="name" content="Virtualbox安装配置alpine - 珍珑阁">
-    <meta itemprop="description" content="1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L spf13-vim.sh && sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中安">
+    <meta itemprop="description" content="1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -24,7 +26,8 @@
     <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
     <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://zls3201.github.io/css/style.css">
+    
+    <link rel="stylesheet" href="https://zls3201.github.io/main.css" >
 </head>
 
 
@@ -101,7 +104,7 @@
 
 <p>参考 <a href="https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox">https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox</a></p>
 <pre><code>    apk add nano vim curl wget git mercurial subversion
-    curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+    curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh
     nano /etc/ssh/sshd_config
     rc-service sshd restart</code></pre>
 <p>服务管理
@@ -110,7 +113,7 @@
 <h1 id="3-在alpine-linux中安装共享文件夹支持">3.在alpine linux中安装共享文件夹支持</h1>
 
 <p>参考 <a href="https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders">https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders</a></p>
-<pre><code>echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+<pre><code>echo &#34;http://dl-cdn.alpinelinux.org/alpine/edge/community&#34; &gt;&gt; /etc/apk/repositories
 apk update
 apk add virtualbox-guest-additions virtualbox-guest-modules-virt</code></pre>
 <h1 id="4-在alpine-linux中安装docker">4.在alpine linux中安装Docker</h1>
@@ -130,7 +133,7 @@ apk add virtualbox-guest-additions virtualbox-guest-modules-virt</code></pre>
     /etc/init.d/mariadb setup
     rc-update add mariadb default
     mysql -u
-    GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'  IDENTIFIED BY 'root' WITH GRANT OPTION;</code></pre>
+    GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39;  IDENTIFIED BY &#39;root&#39; WITH GRANT OPTION;</code></pre>
   </div>
   
 </article>
@@ -139,6 +142,28 @@ apk add virtualbox-guest-additions virtualbox-guest-modules-virt</code></pre>
             </div>
         </div>
     </div>
+
+    <div class = "toc-wrapper">
+        <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>Virtualbox安装配置alpineの字数: 187</h4> 
+    </header><nav id="TableOfContents">
+<ul>
+<li><a href="#1-安装virtualbox">1.安装virtualbox</a></li>
+<li><a href="#2-安装alpine-linux">2.安装alpine linux</a></li>
+<li><a href="#3-在alpine-linux中安装共享文件夹支持">3.在alpine linux中安装共享文件夹支持</a></li>
+<li><a href="#4-在alpine-linux中安装docker">4.在alpine linux中安装Docker</a></li>
+<li><a href="#5-安装dotnet-core-sdk">5.安装dotnet core sdk</a></li>
+<li><a href="#6-安装mariadb">6.安装mariadb</a></li>
+</ul>
+</nav></aside>
+<a href="#" id="toc-toggle"></a>
+
+</div>
+    </div>
+    
     
 
     <footer>
