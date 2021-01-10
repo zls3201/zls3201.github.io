@@ -161,23 +161,45 @@
 
 <h2 id="开发环境">开发环境</h2>
 
+<p>pip cache %LocalAppData%\pip\Cache</p>
+
 <p>Anaconda Pycharm Tensorflow</p>
 
 <p>安装 cuda_10.1.243_426.00_win10.exe 下载地址 <a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p>
 
 <p>安装 cudnn-10.1-windows10-x64-v7.6.5.32.zip 下载地址 <a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p>
 
+<p>查看cuda版本
+nvidia-smi</p>
+
 <p>安装 ananconda</p>
 
 <p>安装 pycharm</p>
 
-<p>conda create &ndash;name tensorflow python=3.8</p>
+<p>conda env list</p>
+
+<p>conda create &ndash;name tf-gpu python=3.8</p>
 
 <p>conda activate tensorflow</p>
 
+<p>conda env export &gt; environment.yml</p>
+
 <p>conda deactivate</p>
 
+<p>conda remove &ndash;name tf-gpu &ndash;all</p>
+
+<p>参考 <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/">https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/</a>
+conda create -n tf-gpu  conda-forge tensorflow-gpu cudatoolkit=11.1 cudnn==7.6.4</p>
+
+<p><a href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
+
+<p>pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio===0.7.2 -f <a href="https://download.pytorch.org/whl/torch_stable.html">https://download.pytorch.org/whl/torch_stable.html</a></p>
+
 <p>pip install &ndash;upgrade &ndash;ignore-installed tensorflow</p>
+
+<p>pip3 install <a href="https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl">https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl</a></p>
+
+<p>pip3 install ipykernel</p>
 
 <p>测试文件 main.py 内容</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>  
@@ -645,7 +667,7 @@ $$</p>
 
 <aside>
     <header>
-    <h4>深度学习Tipsの字数: 2046</h4> 
+    <h4>深度学习Tipsの字数: 2096</h4> 
     </header><nav id="TableOfContents">
 <ul>
 <li><a href="#深度学习tips">深度学习Tips</a></li>

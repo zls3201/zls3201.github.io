@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haxe on 珍珑阁</title>
+    <link>https://zls3201.github.io/tags/haxe/</link>
+    <description>Recent content in haxe on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/haxe/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>元编程</title>
+      <link>https://zls3201.github.io/post/meta_programming/</link>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/meta_programming/</guid>
+      <description>ChezScheme haxe nim 可输出js、c语言代码,相关资源 awesome-nim nimx wNim Ruby中的元编程 Python3 元编程实践 dotnet 代码生成</description>
+    </item>
+    
+  </channel>
+</rss>
