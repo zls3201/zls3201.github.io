@@ -6,7 +6,16 @@
     <description>Recent content in Bar on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 21 Mar 2016 12:13:19 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/bar/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/bar/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编译原理实践</title>
+      <link>https://zls3201.github.io/post/compilation_principle/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/compilation_principle/</guid>
+      <description>编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 lexer(词法分析) parser(语法解析) antlr4 Antlr - 强大的开源语法分析工具 Coco/R 较早</description>
+    </item>
+    
     <item>
       <title>first</title>
       <link>https://zls3201.github.io/post/first/</link>

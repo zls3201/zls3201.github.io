@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机原理 on 珍珑阁</title>
+    <link>https://zls3201.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</link>
+    <description>Recent content in 计算机原理 on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编译原理实践</title>
+      <link>https://zls3201.github.io/post/compilation_principle/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/compilation_principle/</guid>
+      <description>编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 lexer(词法分析) parser(语法解析) antlr4 Antlr - 强大的开源语法分析工具 Coco/R 较早</description>
+    </item>
+    
+  </channel>
+</rss>
