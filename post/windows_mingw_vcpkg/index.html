@@ -4,13 +4,13 @@
     
     
     <meta charset="UTF-8">
-    <title>CMS，元编程与Graphql - 珍珑阁</title>
+    <title>Windows 10 mingw vcpkg配置 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 目前orchardcore，个人认为最好的实现">
+    <meta name="description" content="安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置Mingw 解压Mingw 添加&rdquo;bin&rdquo; &ldq">
     
-    <meta itemprop="name" content="CMS，元编程与Graphql - 珍珑阁">
-    <meta itemprop="description" content="CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 目前orchardcore，个人认为最好的实现">
+    <meta itemprop="name" content="Windows 10 mingw vcpkg配置 - 珍珑阁">
+    <meta itemprop="description" content="安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置Mingw 解压Mingw 添加&rdquo;bin&rdquo; &ldq">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -76,18 +76,18 @@
                 <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
 
   <h1 itemprop="name">
-    <a href="https://zls3201.github.io/post/meta_programming/" title="CMS，元编程与Graphql" itemprop="url">CMS，元编程与Graphql</a>
+    <a href="https://zls3201.github.io/post/windows_mingw_vcpkg/" title="Windows 10 mingw vcpkg配置" itemprop="url">Windows 10 mingw vcpkg配置</a>
 </h1>
 
 <ul class="post-meta clearfix">
     
     <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
        
-    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/%E5%BC%80%E5%8F%91">开发</a></li>
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/dev">dev</a></li>
      
 
     <li><i class="fa fa-clock-o"></i>
-        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-01-08</time>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-02-24</time>
     </li>
     
     <li class="post-qrcode"><i class="fa fa-qrcode"></i>
@@ -98,50 +98,23 @@
   <div class="post-content" itemprop="articleBody">
     
 
-<h1 id="cms">CMS</h1>
+<h2 id="安装-git">安装 Git</h2>
 
-<p><a href="!https://strapi.io/documentation/developer-docs/latest/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project">StrAPI</a> Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作</p>
+<h2 id="安装-cmake">安装 CMake</h2>
 
-<p>目前orchardcore，个人认为最好的实现，问题是实际使用时可否自定义后端栏目，隐藏系统管理相关选项</p>
+<h2 id="安装-vcpkg">安装 vcpkg</h2>
 
-<p>支持自定义数据类型<br />
-支持工作流<br />
-支持触发器<br />
-动态代码生成:dotnet script,DotNetCliTool,<a href="https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples/">source-generator</a>
-Template Engine:Fluid</p>
+<p>查看triplet</p>
+<pre><code>vcpkg help triplet</code></pre>
+<p>配置环境变量 VCPKG_DEFAULT_TRIPLET</p>
+<pre><code>VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic</code></pre>
+<h2 id="安装配置mingw">安装配置Mingw</h2>
 
-<h1 id="元编程">元编程</h1>
+<p>解压Mingw<br />
+添加&rdquo;bin&rdquo; &ldquo;x86_64-w64-mingw32\bin&rdquo;两个子目录到Path</p>
 
-<p><a href="https://github.com/cisco/ChezScheme">ChezScheme</a></p>
-
-<p><a href="https://haxe.org/">haxe</a></p>
-
-<p><a href="https://nim-lang.org/documentation.html">nim</a> 可输出js、c语言代码,相关资源 <a href="https://github.com/xflywind/awesome-nim">awesome-nim</a>  nimx wNim</p>
-
-<p><a href="https://deathking.github.io/metaprogramming-in-ruby/chapter01.html">Ruby中的元编程</a></p>
-
-<p><a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p09_meta_programming.html">Python3 元编程实践</a></p>
-
-<p><a href="https://github.com/dotnet/roslyn-sdk/blob/master/samples/CSharp/SourceGenerators/SourceGeneratorSamples/AutoNotifyGenerator.cs">dotnet 代码生成</a></p>
-
-<p><a href="https://github.com/IronyProject/Irony">Irony自定义编程语言</a></p>
-
-<p>[LLVM编译原理实践]</p>
-
-<h2 id="graphql后端引擎">Graphql后端引擎</h2>
-
-<p><a href="https://github.com/strapi/strapi">Strapi</a></p>
-
-<p><a href="https://github.com/daptin/daptin">daptin</a></p>
-
-<p>OrchardCore</p>
-
-<p><a href="https://github.com/hasura/graphql-engine/">hasura/graphql-engine</a> 可视化设计 基于pgsql，mysql版本还是测试版</p>
-
-<p>NodeJS方案： apollo-server + prisma + express + graphql</p>
-
-<p><a href="https://github.com/SimonCropp/GraphQL.EntityFramework">GraphQL.EntityFramework</a></p>
-
+<h2 id="测试">测试</h2>
+<pre><code>vcpkg install sdl2:x64-mingw-dynamic   </code></pre>
   </div>
   
 </article>
@@ -153,6 +126,21 @@ Template Engine:Fluid</p>
 
     <div class = "toc-wrapper">
         <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>Windows 10 mingw vcpkg配置の字数: 117</h4> 
+    </header><nav id="TableOfContents">
+<ul>
+<li><a href="#安装-git">安装 Git</a></li>
+<li><a href="#安装-cmake">安装 CMake</a></li>
+<li><a href="#安装-vcpkg">安装 vcpkg</a></li>
+<li><a href="#安装配置mingw">安装配置Mingw</a></li>
+<li><a href="#测试">测试</a></li>
+</ul></li>
+</ul>
+</nav></aside>
+<a href="#" id="toc-toggle"></a>
 
 </div>
     </div>
@@ -224,7 +212,7 @@ Template Engine:Fluid</p>
         height: 96
         });
         if (qrcode) {
-            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/meta_programming\/");
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/windows_mingw_vcpkg\/");
         }
 
         

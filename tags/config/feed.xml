@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dev on 珍珑阁</title>
-    <link>https://zls3201.github.io/categories/dev/</link>
-    <description>Recent content in dev on 珍珑阁</description>
+    <title>config on 珍珑阁</title>
+    <link>https://zls3201.github.io/tags/config/</link>
+    <description>Recent content in config on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/dev/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/config/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 10 mingw vcpkg配置</title>
       <link>https://zls3201.github.io/post/windows_mingw_vcpkg/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
       <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置Mingw 解压Mingw 添加&amp;rdquo;bin&amp;rdquo; &amp;ldq</description>
-    </item>
-    
-    <item>
-      <title>GPU计算与编程</title>
-      <link>https://zls3201.github.io/post/gpu_program/</link>
-      <pubDate>Fri, 11 Sep 2020 00:00:00 +0800</pubDate>
-      
-      <guid>https://zls3201.github.io/post/gpu_program/</guid>
-      <description>1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow</description>
     </item>
     
   </channel>

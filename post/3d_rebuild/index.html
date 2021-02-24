@@ -4,13 +4,13 @@
     
     
     <meta charset="UTF-8">
-    <title>CMS，元编程与Graphql - 珍珑阁</title>
+    <title>三维重建 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 目前orchardcore，个人认为最好的实现">
+    <meta name="description" content="相关阅读 详解VR定位：如何在虚拟中自由行走？ 基于深度学习的三维重建算法综述 基于深度学习的视觉三维重建研究总结 3D重建传统算法对比深度学习，S">
     
-    <meta itemprop="name" content="CMS，元编程与Graphql - 珍珑阁">
-    <meta itemprop="description" content="CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 目前orchardcore，个人认为最好的实现">
+    <meta itemprop="name" content="三维重建 - 珍珑阁">
+    <meta itemprop="description" content="相关阅读 详解VR定位：如何在虚拟中自由行走？ 基于深度学习的三维重建算法综述 基于深度学习的视觉三维重建研究总结 3D重建传统算法对比深度学习，S">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -76,18 +76,18 @@
                 <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
 
   <h1 itemprop="name">
-    <a href="https://zls3201.github.io/post/meta_programming/" title="CMS，元编程与Graphql" itemprop="url">CMS，元编程与Graphql</a>
+    <a href="https://zls3201.github.io/post/3d_rebuild/" title="三维重建" itemprop="url">三维重建</a>
 </h1>
 
 <ul class="post-meta clearfix">
     
     <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
        
-    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/%E5%BC%80%E5%8F%91">开发</a></li>
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/3d">3D</a></li>
      
 
     <li><i class="fa fa-clock-o"></i>
-        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-01-08</time>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-02-22</time>
     </li>
     
     <li class="post-qrcode"><i class="fa fa-qrcode"></i>
@@ -98,49 +98,61 @@
   <div class="post-content" itemprop="articleBody">
     
 
-<h1 id="cms">CMS</h1>
+<p>相关阅读</p>
 
-<p><a href="!https://strapi.io/documentation/developer-docs/latest/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project">StrAPI</a> Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作</p>
+<p><a href="https://zhuanlan.zhihu.com/p/21595093">详解VR定位：如何在虚拟中自由行走？</a><br />
+<a href="https://zhuanlan.zhihu.com/p/108198728">基于深度学习的三维重建算法综述</a><br />
+<a href="https://zhuanlan.zhihu.com/p/79628068">基于深度学习的视觉三维重建研究总结</a><br />
+<a href="https://cloud.tencent.com/developer/article/1466577">3D重建传统算法对比深度学习，SFU谭平：更需要的是二者的融合</a><br />
+<a href="https://sensor.ofweek.com/2018-10/ART-81011-11000-30272433.html">盘点视觉SLAM技术在各领域的应用</a></p>
 
-<p>目前orchardcore，个人认为最好的实现，问题是实际使用时可否自定义后端栏目，隐藏系统管理相关选项</p>
+<p><a href="https://www.cnblogs.com/shang-slam/p/7044045.html">VINS（一）简介与代码结构</a></p>
 
-<p>支持自定义数据类型<br />
-支持工作流<br />
-支持触发器<br />
-动态代码生成:dotnet script,DotNetCliTool,<a href="https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples/">source-generator</a>
-Template Engine:Fluid</p>
+<p><a href="https://zhuanlan.zhihu.com/p/155683006">从零手写VIO</a></p>
 
-<h1 id="元编程">元编程</h1>
+<p><a href="https://github.com/iamwangyabin/VIO-SLAM">从零开始手写VIO</a></p>
 
-<p><a href="https://github.com/cisco/ChezScheme">ChezScheme</a></p>
+<p><a href="https://github.com/HKUST-Aerial-Robotics/VINS-Mono">VINS-Mono实现</a>，分析见 <a href="https://www.cnblogs.com/shang-slam/p/7044045.html">VINS（一）简介与代码结构</a></p>
 
-<p><a href="https://haxe.org/">haxe</a></p>
+<h2 id="基础知识">基础知识</h2>
 
-<p><a href="https://nim-lang.org/documentation.html">nim</a> 可输出js、c语言代码,相关资源 <a href="https://github.com/xflywind/awesome-nim">awesome-nim</a>  nimx wNim</p>
+<p>针孔成像与凸透镜成像<br />
+AR<br />
+VR<br />
+MR</p>
 
-<p><a href="https://deathking.github.io/metaprogramming-in-ruby/chapter01.html">Ruby中的元编程</a></p>
+<h2 id="slam">SLAM :</h2>
 
-<p><a href="https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p09_meta_programming.html">Python3 元编程实践</a></p>
+<p>同时定位与地图构建（英語：Simultaneous localization and mapping，一般直接称SLAM）<br />
+<a href="https://zhuanlan.zhihu.com/p/37161498">SLAM 技术基础</a><br />
+<a href="https://zhuanlan.zhihu.com/p/48728586">小觅智能 | VINS 学习笔记（持续更新中）</a><br />
+<a href="https://www.zhihu.com/question/37071486">SLAM在VR/AR领域重要吗？</a><br />
+<a href="https://zhuanlan.zhihu.com/p/34995102">SLAM/VIO学习总结</a><br />
+<a href="https://zhuanlan.zhihu.com/p/28574164">SLAM入门+典型SLAM应用及解决方案</a></p>
 
-<p><a href="https://github.com/dotnet/roslyn-sdk/blob/master/samples/CSharp/SourceGenerators/SourceGeneratorSamples/AutoNotifyGenerator.cs">dotnet 代码生成</a></p>
+<p>传感器<br />
+激光雷达<br />
+视觉SLAM</p>
 
-<p><a href="https://github.com/IronyProject/Irony">Irony自定义编程语言</a></p>
+<p>单目相机SLAM 简称MonoSLAM，涉及算法 <a href="https://blog.csdn.net/pj_find/article/details/83550116">相似变化sim3</a> 欧氏空间SE(3)
+双目相机 ，RGBD相机
+多目相机</p>
 
-<p>[LLVM编译原理实践]</p>
+<h2 id="opencv编程">OpenCV编程</h2>
 
-<h2 id="graphql后端引擎">Graphql后端引擎</h2>
+<p><a href="https://www.cnblogs.com/jclian91/p/9667669.html">OpenCV神技——人脸检测，猫脸检测</a></p>
 
-<p><a href="https://github.com/strapi/strapi">Strapi</a></p>
+<p><a href="https://juejin.cn/post/6844904064308903943">OpenCV实现人脸检测</a></p>
 
-<p><a href="https://github.com/daptin/daptin">daptin</a></p>
+<p><a href="https://blog.csdn.net/FontThrone/article/details/105314973">opencv快速入门人脸检测与人脸识别</a></p>
 
-<p>OrchardCore</p>
+<p><a href="https://www.jiqizhixin.com/articles/2019-05-30-3">如何用OpenCV在Python中实现人脸检测</a></p>
 
-<p><a href="https://github.com/hasura/graphql-engine/">hasura/graphql-engine</a> 可视化设计 基于pgsql，mysql版本还是测试版</p>
+<p><a href="https://bbs.cvmart.net/topics/728/OpenCV">用 OpenCV 实现八种不同的目标跟踪算法</a></p>
 
-<p>NodeJS方案： apollo-server + prisma + express + graphql</p>
+<p><a href="https://blog.csdn.net/LuohenYJ/article/details/89029816">使用OpenCV实现单目标跟踪</a></p>
 
-<p><a href="https://github.com/SimonCropp/GraphQL.EntityFramework">GraphQL.EntityFramework</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/47959726">多目标追踪器：用OpenCV实现多目标追踪（C++/Python)</a></p>
 
   </div>
   
@@ -153,6 +165,19 @@ Template Engine:Fluid</p>
 
     <div class = "toc-wrapper">
         <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>三维重建の字数: 507</h4> 
+    </header><nav id="TableOfContents">
+<ul>
+<li><a href="#基础知识">基础知识</a></li>
+<li><a href="#slam">SLAM :</a></li>
+<li><a href="#opencv编程">OpenCV编程</a></li>
+</ul></li>
+</ul>
+</nav></aside>
+<a href="#" id="toc-toggle"></a>
 
 </div>
     </div>
@@ -224,7 +249,7 @@ Template Engine:Fluid</p>
         height: 96
         });
         if (qrcode) {
-            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/meta_programming\/");
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/3d_rebuild\/");
         }
 
         

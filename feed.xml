@@ -6,7 +6,25 @@
     <description>Recent content on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 10 mingw vcpkg配置</title>
+      <link>https://zls3201.github.io/post/windows_mingw_vcpkg/</link>
+      <pubDate>Wed, 24 Feb 2021 07:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
+      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置Mingw 解压Mingw 添加&amp;rdquo;bin&amp;rdquo; &amp;ldq</description>
+    </item>
+    
+    <item>
+      <title>三维重建</title>
+      <link>https://zls3201.github.io/post/3d_rebuild/</link>
+      <pubDate>Mon, 22 Feb 2021 07:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/3d_rebuild/</guid>
+      <description>相关阅读 详解VR定位：如何在虚拟中自由行走？ 基于深度学习的三维重建算法综述 基于深度学习的视觉三维重建研究总结 3D重建传统算法对比深度学习，S</description>
+    </item>
+    
     <item>
       <title>编译原理实践</title>
       <link>https://zls3201.github.io/post/compilation_principle/</link>
