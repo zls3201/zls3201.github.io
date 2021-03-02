@@ -13,7 +13,7 @@
       <pubDate>Wed, 24 Feb 2021 07:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
-      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置Mingw 解压Mingw 添加&amp;rdquo;bin&amp;rdquo; &amp;ldq</description>
+      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&amp;rdquo;bin&amp;rdq</description>
     </item>
     
   </channel>
