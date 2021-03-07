@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blender on 珍珑阁</title>
-    <link>https://zls3201.github.io/categories/blender/</link>
+    <link>https://www.zls3201.com/categories/blender/</link>
     <description>Recent content in blender on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 31 Jan 2019 08:00:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/blender/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Jan 2019 08:00:35 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/categories/blender/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blender学习资料</title>
-      <link>https://zls3201.github.io/post/blender_study_resources/</link>
+      <link>https://www.zls3201.com/post/blender_study_resources/</link>
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
+      <guid>https://www.zls3201.com/post/blender_study_resources/</guid>
       <description>Blender学习资料 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X BlenderGuru Blender Beginner Tutorial Series https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P 视频下载 youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P youtube-dl --write-sub --convert-subs srt</description>
     </item>
     

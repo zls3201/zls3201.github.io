@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CMS，元编程与Graphql on 珍珑阁</title>
-    <link>https://zls3201.github.io/post/meta_programming/</link>
+    <link>https://www.zls3201.com/post/meta_programming/</link>
     <description>Recent content in CMS，元编程与Graphql on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/meta_programming/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/post/meta_programming/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>机器学习笔记 on 珍珑阁</title>
-    <link>https://zls3201.github.io/post/ml_note/</link>
+    <link>https://www.zls3201.com/post/ml_note/</link>
     <description>Recent content in 机器学习笔记 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Sep 2018 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/ml_note/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Sep 2018 07:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/post/ml_note/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

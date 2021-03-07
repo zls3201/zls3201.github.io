@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>运维 on 珍珑阁</title>
-    <link>https://zls3201.github.io/categories/%E8%BF%90%E7%BB%B4/</link>
+    <link>https://www.zls3201.com/categories/%E8%BF%90%E7%BB%B4/</link>
     <description>Recent content in 运维 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 23 May 2018 09:36:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E8%BF%90%E7%BB%B4/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 May 2018 09:36:35 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/categories/%E8%BF%90%E7%BB%B4/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分布式运维Tips</title>
-      <link>https://zls3201.github.io/post/devoptips/</link>
+      <link>https://www.zls3201.com/post/devoptips/</link>
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/devoptips/</guid>
+      <guid>https://www.zls3201.com/post/devoptips/</guid>
       <description>系统管理与自动化 ansible salt puppet chef 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位比较 Puppet、Chef、An</description>
     </item>
     

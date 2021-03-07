@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编程 on 珍珑阁</title>
-    <link>https://zls3201.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
+    <link>https://www.zls3201.com/tags/%E7%BC%96%E7%A8%8B/</link>
     <description>Recent content in 编程 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/%E7%BC%96%E7%A8%8B/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/tags/%E7%BC%96%E7%A8%8B/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dotnet微服务</title>
-      <link>https://zls3201.github.io/post/dotnet_micro_services/</link>
+      <link>https://www.zls3201.com/post/dotnet_micro_services/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/dotnet_micro_services/</guid>
+      <guid>https://www.zls3201.com/post/dotnet_micro_services/</guid>
       <description>eShopOnContainers API网关 服务注册 发现 治理 限流 熔断 缓存 日志与跟踪 服务拆分设计 分布式事务同步 性能优化优化 dotnet docker微服务 ASP.NET Core 3.0 使用gRPC MediatR Clean ASP.NET Core API using MediatR</description>
     </item>
     
     <item>
       <title>逻辑回归</title>
-      <link>https://zls3201.github.io/post/logistic_regression/</link>
+      <link>https://www.zls3201.com/post/logistic_regression/</link>
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/logistic_regression/</guid>
+      <guid>https://www.zls3201.com/post/logistic_regression/</guid>
       <description>逻辑回归 1.逻辑回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
     </item>
     
     <item>
       <title>线性回归</title>
-      <link>https://zls3201.github.io/post/linear_regression/</link>
+      <link>https://www.zls3201.com/post/linear_regression/</link>
       <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/linear_regression/</guid>
+      <guid>https://www.zls3201.com/post/linear_regression/</guid>
       <description>线性回归 1.线性回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
     </item>
     

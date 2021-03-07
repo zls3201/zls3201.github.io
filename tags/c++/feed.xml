@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on 珍珑阁</title>
-    <link>https://zls3201.github.io/tags/c&#43;&#43;/</link>
+    <link>https://www.zls3201.com/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/c++/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/tags/c++/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 10 mingw vcpkg配置</title>
-      <link>https://zls3201.github.io/post/windows_mingw_vcpkg/</link>
+      <link>https://www.zls3201.com/post/windows_mingw_vcpkg/</link>
       <pubDate>Wed, 24 Feb 2021 07:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
+      <guid>https://www.zls3201.com/post/windows_mingw_vcpkg/</guid>
       <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&amp;rdquo;bin&amp;rdq</description>
     </item>
     

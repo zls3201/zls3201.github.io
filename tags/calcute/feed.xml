@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>calcute on 珍珑阁</title>
-    <link>https://zls3201.github.io/tags/calcute/</link>
+    <link>https://www.zls3201.com/tags/calcute/</link>
     <description>Recent content in calcute on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/calcute/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/tags/calcute/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPU计算与编程</title>
-      <link>https://zls3201.github.io/post/gpu_program/</link>
+      <link>https://www.zls3201.com/post/gpu_program/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/gpu_program/</guid>
+      <guid>https://www.zls3201.com/post/gpu_program/</guid>
       <description>1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow</description>
     </item>
     
     <item>
       <title>分布式运维Tips</title>
-      <link>https://zls3201.github.io/post/devoptips/</link>
+      <link>https://www.zls3201.com/post/devoptips/</link>
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/devoptips/</guid>
+      <guid>https://www.zls3201.com/post/devoptips/</guid>
       <description>系统管理与自动化 ansible salt puppet chef 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位比较 Puppet、Chef、An</description>
     </item>
     

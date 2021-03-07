@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on 珍珑阁</title>
-    <link>https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://www.zls3201.com/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 08 Dec 2018 09:56:19 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Dec 2018 09:56:19 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/categories/%E6%8A%80%E6%9C%AF/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Virtualbox安装配置alpine</title>
-      <link>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</link>
+      <link>https://www.zls3201.com/post/virtualbox_alpine_install_configure/</link>
       <pubDate>Sat, 08 Dec 2018 09:56:19 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</guid>
+      <guid>https://www.zls3201.com/post/virtualbox_alpine_install_configure/</guid>
       <description>1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中</description>
     </item>
     
     <item>
       <title>Wireshark查看网络通讯数据包</title>
-      <link>https://zls3201.github.io/post/wireshark_tip/</link>
+      <link>https://www.zls3201.com/post/wireshark_tip/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/wireshark_tip/</guid>
+      <guid>https://www.zls3201.com/post/wireshark_tip/</guid>
       <description>过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下 (ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090) 关于localhost通讯抓包 要求卸载winpcap</description>
     </item>
     
     <item>
       <title>树莓派使用root账户</title>
-      <link>https://zls3201.github.io/post/rasp_use_root_accout/</link>
+      <link>https://www.zls3201.com/post/rasp_use_root_accout/</link>
       <pubDate>Wed, 01 Jun 2016 15:32:51 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/rasp_use_root_accout/</guid>
+      <guid>https://www.zls3201.com/post/rasp_use_root_accout/</guid>
       <description>树莓派默认账户是pi 默认密码是raspberry 在默认账户下激活root账户 输入一下命令 sudo passwd root 在执行完该命令后 系统会提示 输入两次密码 那么就输</description>
     </item>
     
     <item>
       <title>树莓派安装mono运行环境</title>
-      <link>https://zls3201.github.io/post/rasp_install_mono_runtime/</link>
+      <link>https://www.zls3201.com/post/rasp_install_mono_runtime/</link>
       <pubDate>Wed, 01 Jun 2016 15:25:04 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/rasp_install_mono_runtime/</guid>
+      <guid>https://www.zls3201.com/post/rasp_install_mono_runtime/</guid>
       <description>sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install</description>
     </item>
     

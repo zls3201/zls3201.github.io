@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>神经网络 on 珍珑阁</title>
-    <link>https://zls3201.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
+    <link>https://www.zls3201.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
     <description>Recent content in 神经网络 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 06 Jan 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>深度学习Tips</title>
-      <link>https://zls3201.github.io/post/deep_learning/</link>
+      <link>https://www.zls3201.com/post/deep_learning/</link>
       <pubDate>Wed, 06 Jan 2021 01:00:00 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/deep_learning/</guid>
+      <guid>https://www.zls3201.com/post/deep_learning/</guid>
       <description>深度学习Tips 一.相关资料 30天吃掉那只TensorFlow2 Darknet c语言实现 thtrieu/darkflow Paddle NCNN实践 xboot/libonnx convnetjs ONNX Runtime openvino onnxjs-demo ONNX Model Zoo 常见网络 paddle xiaohu2015/DeepLearning_tutorials tensorflow/models 刘建平Pinar</description>
     </item>
     

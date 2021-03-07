@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on 珍珑阁</title>
-    <link>https://zls3201.github.io/categories/linux/</link>
+    <link>https://www.zls3201.com/categories/linux/</link>
     <description>Recent content in linux on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Sep 2018 08:00:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Sep 2018 08:00:35 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/categories/linux/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CentOS服务器安装配置</title>
-      <link>https://zls3201.github.io/post/centos_config/</link>
+      <link>https://www.zls3201.com/post/centos_config/</link>
       <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://zls3201.github.io/post/centos_config/</guid>
+      <guid>https://www.zls3201.com/post/centos_config/</guid>
       <description>CentOS服务器安装配置 安装git hg svn 安装v2ray https://www.v2ray.com/chapter_00/install.html 安装openvpn https://github.com/Nyr/openvpn-install 安装 mono https://www.mono-project.com/download/stable/#download-lin-centos 安装 dotnet core https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current 安装caddy https://3mile.github.io/archives/118/ journalctl -xe 安装gitea https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service</description>
     </item>
     
