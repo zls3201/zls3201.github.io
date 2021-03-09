@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>随感 on 珍珑阁</title>
-    <link>https://www.zls3201.com/post/20190506_think/</link>
+    <link>https://zls3201.github.io/post/20190506_think/</link>
     <description>Recent content in 随感 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 06 May 2019 01:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/post/20190506_think/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 May 2019 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/20190506_think/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

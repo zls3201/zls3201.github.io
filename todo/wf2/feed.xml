@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Working on 珍珑阁</title>
-    <link>https://www.zls3201.com/todo/wf2/</link>
+    <link>https://zls3201.github.io/todo/wf2/</link>
     <description>Recent content in Working on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 28 Aug 2017 17:22:52 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/todo/wf2/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2017 17:22:52 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/todo/wf2/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

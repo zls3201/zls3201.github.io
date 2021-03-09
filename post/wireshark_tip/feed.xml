@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wireshark查看网络通讯数据包 on 珍珑阁</title>
-    <link>https://www.zls3201.com/post/wireshark_tip/</link>
+    <link>https://zls3201.github.io/post/wireshark_tip/</link>
     <description>Recent content in Wireshark查看网络通讯数据包 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/post/wireshark_tip/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/wireshark_tip/feed.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

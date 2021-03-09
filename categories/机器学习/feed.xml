@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>机器学习 on 珍珑阁</title>
-    <link>https://www.zls3201.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+    <link>https://zls3201.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 机器学习 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 06 Jan 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://www.zls3201.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>深度学习Tips</title>
-      <link>https://www.zls3201.com/post/deep_learning/</link>
+      <link>https://zls3201.github.io/post/deep_learning/</link>
       <pubDate>Wed, 06 Jan 2021 01:00:00 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/deep_learning/</guid>
+      <guid>https://zls3201.github.io/post/deep_learning/</guid>
       <description>深度学习Tips 一.相关资料 30天吃掉那只TensorFlow2 Darknet c语言实现 thtrieu/darkflow Paddle NCNN实践 xboot/libonnx convnetjs ONNX Runtime openvino onnxjs-demo ONNX Model Zoo 常见网络 paddle xiaohu2015/DeepLearning_tutorials tensorflow/models 刘建平Pinar</description>
     </item>
     
     <item>
       <title>机器学习笔记</title>
-      <link>https://www.zls3201.com/post/ml_note/</link>
+      <link>https://zls3201.github.io/post/ml_note/</link>
       <pubDate>Thu, 06 Sep 2018 07:00:00 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/ml_note/</guid>
+      <guid>https://zls3201.github.io/post/ml_note/</guid>
       <description>ML 资料整理 机器学习课程 CS229 网易公开课_吴恩达_机器学习_2008 CS229 课程讲义中文翻译 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习</description>
     </item>
     
     <item>
       <title>逻辑回归</title>
-      <link>https://www.zls3201.com/post/logistic_regression/</link>
+      <link>https://zls3201.github.io/post/logistic_regression/</link>
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/logistic_regression/</guid>
+      <guid>https://zls3201.github.io/post/logistic_regression/</guid>
       <description>逻辑回归 1.逻辑回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
     </item>
     
     <item>
       <title>线性回归</title>
-      <link>https://www.zls3201.com/post/linear_regression/</link>
+      <link>https://zls3201.github.io/post/linear_regression/</link>
       <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
       
-      <guid>https://www.zls3201.com/post/linear_regression/</guid>
+      <guid>https://zls3201.github.io/post/linear_regression/</guid>
       <description>线性回归 1.线性回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
     </item>
     
