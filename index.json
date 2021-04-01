@@ -6,7 +6,7 @@
         "count" : "6",
         "items" : [
             
-                {"Content":"","date":"2021-02-24T07:00:00+08:00","permalink":"/post/","summary":"","title":"Posts","type":"post"}
+                {"Content":"","date":"2021-04-01T01:00:00+08:00","permalink":"/post/","summary":"","title":"Posts","type":"post"}
 				
             
                 {"Content":"","date":"2017-08-28T17:22:52+08:00","permalink":"/todo/","summary":"","title":"Todos","type":"todo"}
@@ -21,7 +21,7 @@
                 {"Content":"","date":"2016-03-20T23:28:02+08:00","permalink":"/tags/","summary":"","title":"标签","type":"page"}
 				 , 
             
-                {"Content":"\n\n\u003ch2 id=\"关于\"\u003e关于\u003c/h2\u003e\n\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\n\u003ch3 id=\"主题\"\u003e主题\u003c/h3\u003e\n\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n\n\u003cvideo controls\u003e\n      \u003csource src=\"http://storage.live.com/items/D2F9826103223F89!1131:/单依纯与李治廷飘洋过海来看您.mp4\" type=\"video/mp4\" /\u003e\n      \u003ctrack kind=\"captions\" srcLang=\"en\" src={Captions} /\u003e\n\u003c/video\u003e\n","date":"2016-03-20T23:28:02+08:00","permalink":"/links/","summary":"关于 Hugo 主题 balabalbalbalbal\u0026hellip;","title":"链接","type":"page"}
+                {"Content":"\n\n\u003ch2 id=\"关于\"\u003e关于\u003c/h2\u003e\n\n\u003ch3 id=\"hugo\"\u003eHugo\u003c/h3\u003e\n\n\u003ch3 id=\"主题\"\u003e主题\u003c/h3\u003e\n\n\u003cp\u003ebalabalbalbalbal\u0026hellip;\u003c/p\u003e\n\n\u003cdiv class=\"container\"\u003e\n  \u003cdiv id=\"player-wrapper\" class=\"my-5\"\u003e\u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript \n  type=\"text/javascript\" \n  src=\"https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js\"\n\u003e\n\u003c/script\u003e\n\n\u003cscript\u003e\n  var playerElement = document.getElementById(\"player-wrapper\");\n\n  var player = new Clappr.Player({\n    source: \"https://storage.live.com/items/D2F9826103223F89!1131:/单依纯与李治廷飘洋过海来看您.mp4\",\n    mute: true,\n    height: 360,\n    width: 640\n  });\n\n  player.attachTo(playerElement);  \n\u003c/script\u003e\n","date":"2016-03-20T23:28:02+08:00","permalink":"/links/","summary":"关于 Hugo 主题 balabalbalbalbal\u0026hellip; var playerElement = document.getElementById(\"player-wrapper\"); var player = new Clappr.Player({ source: \"https://storage.live.com/items/D2F9826103223F89!1131:","title":"链接","type":"page"}
 				 , 
             
         ]

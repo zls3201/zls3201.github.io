@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blockchain on 珍珑阁</title>
+    <link>https://zls3201.github.io/categories/blockchain/</link>
+    <description>Recent content in blockchain on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 01 Apr 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/blockchain/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>区块链扫盲</title>
+      <link>https://zls3201.github.io/post/blockchain/</link>
+      <pubDate>Thu, 01 Apr 2021 01:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/blockchain/</guid>
+      <description>区块链扫盲 区块链教程 BlockGeeks 深入指南 区块链技术快速入门教程（非常详细） 区块链是什么，如何简单易懂地介绍区块链？</description>
+    </item>
+    
+  </channel>
+</rss>
