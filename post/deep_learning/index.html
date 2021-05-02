@@ -209,6 +209,11 @@ conda create -n tf-gpu  conda-forge tensorflow-gpu cudatoolkit=11.1 cudnn==7.6.4
 <span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="s1">&#39;GPU&#39;</span><span class="p">)</span>  
 
 <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> </code></pre></div>
+<p>tensorflow lite 2.3.2 编译</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">github 拉取 tag 2.3.2 的代码
+安装 msys bazel
+执行
+bazel build -c opt //tensorflow/lite/c:tensorflowlite_c.dll --action_env <span class="nv">PYTHON_BIN_PATH</span><span class="o">=</span><span class="s2">&#34;C://Program Files//Python38//python.exe&#34;</span>  --action_env  <span class="nv">BAZEL_SH</span><span class="o">=</span><span class="s2">&#34;C://msys64//usr//bin//bash.exe&#34;</span></code></pre></div>
 <h2 id="数学基础">数学基础</h2>
 
 <h3 id="微积分">微积分</h3>
@@ -638,6 +643,8 @@ $$</p>
 
 <p><a href="https://zh.d2l.ai/chapter_computer-vision/rcnn.html">区域卷积神经网络（R-CNN）系列</a></p>
 
+<p><a href="https://github.com/serengil/deepface">一文读懂Faster RCNN</a></p>
+
 <h2 id="transformer">Transformer</h2>
 
 <p><a href="https://zhuanlan.zhihu.com/p/44121378">【NLP】Transformer模型原理详解</a></p>
@@ -694,6 +701,8 @@ $$</p>
 
 <p><a href="https://github.com/davidsandberg/facenet">davidsandberg/facenet</a></p>
 
+<p><a href="https://github.com/serengil/deepface">serengil/deepface</a></p>
+
 <h2 id="dotnet-科学计算">dotnet 科学计算</h2>
 
 <p><a href="https://github.com/dotnet/corefx/blob/master/src/System.Numerics.Tensors/src/System/Numerics/Tensors/Tensor.cs">Tensor.cs</a></p>
@@ -730,7 +739,7 @@ $$</p>
 
 <aside>
     <header>
-    <h4>深度学习Tipsの字数: 2476</h4> 
+    <h4>深度学习Tipsの字数: 2517</h4> 
     </header><nav id="TableOfContents">
 <ul>
 <li><a href="#一-相关资料">一.相关资料</a></li>
