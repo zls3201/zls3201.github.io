@@ -6,7 +6,16 @@
     <description>Recent content on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Apr 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL 常用命令</title>
+      <link>https://zls3201.github.io/post/wsl_tips/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/wsl_tips/</guid>
+      <description># 查看实例 wsl -l -v # 查看实例IP wsl hostname -I 主机查看文件 type \\wsl$\zls-wsl\root\.profile</description>
+    </item>
+    
     <item>
       <title>区块链扫盲</title>
       <link>https://zls3201.github.io/post/blockchain/</link>

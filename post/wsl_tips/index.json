@@ -1,0 +1,5 @@
+{
+	"data" : 
+	{"Content":"\u003cpre\u003e\u003ccode\u003e# 查看实例\nwsl -l -v\n\n# 查看实例IP\nwsl hostname -I\n\n\n主机查看文件\ntype \\\\wsl$\\zls-wsl\\root\\.profile\u003c/code\u003e\u003c/pre\u003e","date":"2021-05-10T00:00:00+08:00","permalink":"https://zls3201.github.io/post/wsl_tips/","summary":"# 查看实例 wsl -l -v # 查看实例IP wsl hostname -I 主机查看文件 type \\\\wsl$\\zls-wsl\\root\\.profile","title":"WSL 常用命令","type":"post"}
+
+}
