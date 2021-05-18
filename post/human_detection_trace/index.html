@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <title>人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别 - 珍珑阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="description" content="关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人脸识别与人脸检测 ageitgey/face_recognition BlazeFace-PyTorch deepface davidsandberg/facenet libfacedetection facenet-pytorch 超轻量级通用人脸检测模型 一文道尽“人脸数据集” 2020 年">
+    
+    <meta itemprop="name" content="人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别 - 珍珑阁">
+    <meta itemprop="description" content="关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人脸识别与人脸检测 ageitgey/face_recognition BlazeFace-PyTorch deepface davidsandberg/facenet libfacedetection facenet-pytorch 超轻量级通用人脸检测模型 一文道尽“人脸数据集” 2020 年">
+    <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
+    
+    
+    <meta name="twitter:description" content="">
+    
+    <link rel="alternate" href="https://zls3201.github.io/feed.xml" title="珍珑阁" type="application/rss+xml" />
+    <link rel="shortcut icon" href="https://zls3201.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://zls3201.github.io/highlight/styles/solarized-light.css">
+    <script src="https://zls3201.github.io/highlight/highlight.pack.js"></script>
+    <script src="https://zls3201.github.io/js/qrcode.js"></script>
+    <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://zls3201.github.io/main.css" >
+</head>
+
+
+<body>
+    <div class="navbar-menu">
+
+  
+  <a   href="/">首页</a>
+  
+  <a   href="/post/">归档</a>
+  
+  <a   href="/categories/">分类</a>
+  
+  <a   href="/tags/">标签</a>
+  
+  <a   href="/links/">链接</a>
+  
+  <a   href="/about/">关于</a>
+  
+  <a   href="/todo/">TODO</a>
+  
+</div>
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
+    <ul class="navigation clearfix">
+        <li><a href="/">首页</a> »</li>
+        <li class="active"><a href="javascript:;">最近更新</a></li>
+        <li class="search">
+            <form class="search-form" method="post" action="./" role="search">
+                <input type="text" name="s" class="text" placeholder="输入关键字搜索" autocomplete="off">
+                <button type="submit" class="btn s3"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/human_detection_trace/" title="人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别" itemprop="url">人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author"></a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/dl">DL</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-05-17</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    
+
+<p><a href="https://mna12478.github.io/keypoint/">关键点检测</a></p>
+
+<p><a href="https://www.52cv.net/?p=5382">谷歌极速人脸、手、人体姿态分析Blaze算法家族</a></p>
+
+<p><a href="https://google.github.io/mediapipe/solutions/solutions.html">mediapipe/solutions</a></p>
+
+<h2 id="人脸识别与人脸检测">人脸识别与人脸检测</h2>
+
+<p><a href="https://github.com/ageitgey/face_recognition">ageitgey/face_recognition</a></p>
+
+<p><a href="https://github.com/hollance/BlazeFace-PyTorch">BlazeFace-PyTorch</a></p>
+
+<p><a href="https://github.com/serengil/deepface">deepface</a></p>
+
+<p><a href="https://github.com/davidsandberg/facenet">davidsandberg/facenet</a></p>
+
+<p><a href="https://github.com/ShiqiYu/libfacedetection">libfacedetection</a></p>
+
+<p><a href="https://github.com/timesler/facenet-pytorch">facenet-pytorch</a></p>
+
+<p><a href="https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB">超轻量级通用人脸检测模型</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/48347016">一文道尽“人脸数据集”</a></p>
+
+<p><a href="https://www.080910t.com/2020/03/09/face-recognition-data-collection-in-2020/">2020 年人脸识别数据集汇总</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/31378836">人脸识别常用数据集大全（6/11更新</a></p>
+
+<p><a href="https://blog.csdn.net/moxibingdao/article/details/112598140">分享几个业界新出人脸识别数据集</a></p>
+
+<p><a href="https://niuyuanyuanna.github.io/2018/11/08/computer_version/face-keypoint-detection">人脸关键点检测</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/42968117">人脸关键点检测综述</a></p>
+
+<p><a href="https://www.jiqizhixin.com/articles/2017-12-17-7">从传统方法到深度学习，人脸关键点检测方法综述</a></p>
+
+<p><a href="https://blog.csdn.net/flyfor2013/article/details/107724519">PFLD：高精度实时人脸关键点检测算法</a></p>
+
+<h2 id="视线追踪">视线追踪</h2>
+
+<p><a href="https://github.com/elucideye/drishti">elucideye/drishti</a> Mobile APP</p>
+
+<p><a href="https://github.com/antoinelame/GazeTracking">antoinelame/GazeTracking</a></p>
+
+<p><a href="https://github.com/CSAILVision/GazeCapture">CSAILVision/GazeCapture</a></p>
+
+<p><a href="https://github.com/pupil-labs/pupil">pupil-labs/pupil</a></p>
+
+<p><a href="https://github.com/trishume/eyeLike">eyeLike</a></p>
+
+<p><a href="https://github.com/cpury/lookie-lookie">cpury/lookie-lookie</a></p>
+
+<p><a href="https://github.com/simonarvin/eyeloop">simonarvin/eyeloop</a></p>
+
+<p><a href="https://github.com/psychoinformatics-de/remodnav">psychoinformatics-de/remodnav</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/97642772">用于交互式应用的视线追踪技术</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/44208978">三分钟训练眼球追踪术，AI就知道你在看哪个妹子</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/86909998">简述基于计算机视觉的各种追踪解决方案</a></p>
+
+  </div>
+  
+</article>
+
+                <div id="git-comments"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "toc-wrapper">
+        <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别の字数: 238</h4> 
+    </header><nav id="TableOfContents">
+<ul>
+<li><a href="#人脸识别与人脸检测">人脸识别与人脸检测</a></li>
+<li><a href="#视线追踪">视线追踪</a></li>
+</ul></li>
+</ul>
+</nav></aside>
+<a href="#" id="toc-toggle"></a>
+
+</div>
+    </div>
+    
+    
+
+    <footer>
+  <div class="footer-inner">
+    <p>
+      <a href="https://zls3201.github.io/about" title="关于">关于</a> |
+      <a href="https://zls3201.github.io//feed.xml">RSS</a>
+    </p>
+    <p>
+      © 2017 <a href="http://www.zls3201.com/" target="_blank"> 珍珑阁 </a> /
+      Powered by
+      <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    var mathjaxBlocks = document.getElementsByClassName('language-mathjax');
+    for (i = 0; i < mathjaxBlocks.length; i++) {
+        mathjaxBlocks[i].parentNode.innerHTML = '$$' + mathjaxBlocks[i].innerHTML +'$$';
+    }
+
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre code'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script>
+  var mermaids = document.getElementsByClassName("language-mermaid");
+  for (i = 0; i < mermaids.length; i++) {
+    mermaids[i].className = "nohighlight mermaid";
+  }
+
+  hljs.initHighlightingOnLoad();
+  mermaid.initialize({
+    
+    
+    logLevel: 3,
+    flowchart: { curve: "linear" },
+    gantt: { axisFormat: "%m/%d/%Y" },
+    sequence: { actorMargin: 50 }
+    
+  });
+</script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<div
+  style="
+    z-index: 1100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 356px;
+    height: 95px;
+  "
+>
+  <meting-js
+    name="我想和你一起去海边_钢琴版"
+    artist="刺客伍六七"
+    cover="https://rainymood.com/i/badge.jpg"
+    autoplay="true"
+    url="http://storage.live.com/items/D2F9826103223F89!1138:/我想和你一起去海边_钢琴版.mp3"
+  >
+  </meting-js>
+</div>
+
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+        width: 96,
+        height: 96
+        });
+        if (qrcode) {
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/human_detection_trace\/");
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+
+</body>
+
+</html>

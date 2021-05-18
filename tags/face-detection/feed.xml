@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Face Detection on 珍珑阁</title>
+    <link>https://zls3201.github.io/tags/face-detection/</link>
+    <description>Recent content in Face Detection on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/face-detection/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别</title>
+      <link>https://zls3201.github.io/post/human_detection_trace/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/human_detection_trace/</guid>
+      <description>关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人脸识别与人脸检测 ageitgey/face_recognition BlazeFace-PyTorch deepface davidsandberg/facenet libfacedetection facenet-pytorch 超轻量级通用人脸检测模型 一文道尽“人脸数据集” 2020 年</description>
+    </item>
+    
+  </channel>
+</rss>
