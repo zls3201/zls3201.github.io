@@ -6,7 +6,16 @@
     <description>Recent content in DL on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/dl/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/dl/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卡尔曼滤波器</title>
+      <link>https://zls3201.github.io/post/kalman_filter/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/kalman_filter/</guid>
+      <description>基础知识 协方差矩阵 如何直观地理解「协方差矩阵」 协方差 如何理解先验概率与后验概率 PID控制器 安装 卡尔曼滤波 图说卡尔曼滤波，一份通俗易懂的教程 从</description>
+    </item>
+    
     <item>
       <title>人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别</title>
       <link>https://zls3201.github.io/post/human_detection_trace/</link>

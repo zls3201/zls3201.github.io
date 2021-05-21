@@ -13,7 +13,7 @@
       <pubDate>Tue, 18 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/ros/</guid>
-      <description>ROS实践 ROS学习入门（抛砖引玉篇） 机器人操作系统ROS | 简介篇 古月居 Webots是一种免费的开源3D机器人 安装 https://docs.ros.org/en/dashing/Installation.html 验证 ros2 run demo_nodes_cpp talker https://github.com/ros2/examples</description>
+      <description>ROS实践 ROS学习入门（抛砖引玉篇） 机器人操作系统ROS | 简介篇 古月居 Webots是一种免费的开源3D机器人 安装 https://docs.ros.org/en/dashing/Installation.html 验证 ros2 run demo_nodes_cpp talker https://github.com/ros2/examples StartGuide Tutorials 读ca</description>
     </item>
     
   </channel>

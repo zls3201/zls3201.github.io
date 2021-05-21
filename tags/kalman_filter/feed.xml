@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kalman_filter on 珍珑阁</title>
+    <link>https://zls3201.github.io/tags/kalman_filter/</link>
+    <description>Recent content in kalman_filter on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/kalman_filter/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卡尔曼滤波器</title>
+      <link>https://zls3201.github.io/post/kalman_filter/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/kalman_filter/</guid>
+      <description>基础知识 协方差矩阵 如何直观地理解「协方差矩阵」 协方差 如何理解先验概率与后验概率 PID控制器 安装 卡尔曼滤波 图说卡尔曼滤波，一份通俗易懂的教程 从</description>
+    </item>
+    
+  </channel>
+</rss>

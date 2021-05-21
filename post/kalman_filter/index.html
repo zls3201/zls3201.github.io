@@ -4,13 +4,13 @@
     
     
     <meta charset="UTF-8">
-    <title>ROS实践 - 珍珑阁</title>
+    <title>卡尔曼滤波器 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="ROS实践 ROS学习入门（抛砖引玉篇） 机器人操作系统ROS | 简介篇 古月居 Webots是一种免费的开源3D机器人 安装 https://docs.ros.org/en/dashing/Installation.html 验证 ros2 run demo_nodes_cpp talker https://github.com/ros2/examples StartGuide Tutorials 读ca">
+    <meta name="description" content="基础知识 协方差矩阵 如何直观地理解「协方差矩阵」 协方差 如何理解先验概率与后验概率 PID控制器 安装 卡尔曼滤波 图说卡尔曼滤波，一份通俗易懂的教程 从">
     
-    <meta itemprop="name" content="ROS实践 - 珍珑阁">
-    <meta itemprop="description" content="ROS实践 ROS学习入门（抛砖引玉篇） 机器人操作系统ROS | 简介篇 古月居 Webots是一种免费的开源3D机器人 安装 https://docs.ros.org/en/dashing/Installation.html 验证 ros2 run demo_nodes_cpp talker https://github.com/ros2/examples StartGuide Tutorials 读ca">
+    <meta itemprop="name" content="卡尔曼滤波器 - 珍珑阁">
+    <meta itemprop="description" content="基础知识 协方差矩阵 如何直观地理解「协方差矩阵」 协方差 如何理解先验概率与后验概率 PID控制器 安装 卡尔曼滤波 图说卡尔曼滤波，一份通俗易懂的教程 从">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -76,18 +76,18 @@
                 <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
 
   <h1 itemprop="name">
-    <a href="https://zls3201.github.io/post/ros/" title="ROS实践" itemprop="url">ROS实践</a>
+    <a href="https://zls3201.github.io/post/kalman_filter/" title="卡尔曼滤波器" itemprop="url">卡尔曼滤波器</a>
 </h1>
 
 <ul class="post-meta clearfix">
     
     <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author"></a></li>
        
-    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/ros">ROS</a></li>
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/dl">DL</a></li>
      
 
     <li><i class="fa fa-clock-o"></i>
-        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-05-18</time>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-05-20</time>
     </li>
     
     <li class="post-qrcode"><i class="fa fa-qrcode"></i>
@@ -98,29 +98,29 @@
   <div class="post-content" itemprop="articleBody">
     
 
-<h1 id="ros实践">ROS实践</h1>
+<h1 id="基础知识">基础知识</h1>
 
-<p><a href="https://zhuanlan.zhihu.com/p/26007106">ROS学习入门（抛砖引玉篇）</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8D%8F%E6%96%B9%E5%B7%AE%E7%9F%A9%E9%98%B5">协方差矩阵</a></p>
 
-<p><a href="https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&amp;mid=2652786427&amp;idx=1&amp;sn=ac4b9a890fec3d68773c6cb65ed86946&amp;mpshare=1&amp;scene=1&amp;srcid=0326mGy0nXBqFqBWxQCeNv6B&amp;pass_ticket=1eHBdZLk6YjR3YAN0wCTt5ZXh4HtyqvVaLglwMh4ZRmOyALdqcjLhuOqe+BWkmJm#rd">机器人操作系统ROS | 简介篇</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/37609917">如何直观地理解「协方差矩阵」</a></p>
 
-<p><a href="https://www.guyuehome.com/">古月居</a></p>
+<p><a href="https://baike.baidu.com/item/%E5%8D%8F%E6%96%B9%E5%B7%AE">协方差</a></p>
 
-<p><a href="https://cyberbotics.com/">Webots是一种免费的开源3D机器人</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/26464206">如何理解先验概率与后验概率</a></p>
+
+<p><a href="https://zh.wikipedia.org/wiki/PID%E6%8E%A7%E5%88%B6%E5%99%A8">PID控制器</a></p>
 
 <h2 id="安装">安装</h2>
 
-<p><a href="https://docs.ros.org/en/dashing/Installation.html">https://docs.ros.org/en/dashing/Installation.html</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2">卡尔曼滤波</a></p>
 
-<p>验证</p>
-<pre><code>ros2 run demo_nodes_cpp talker</code></pre>
-<p><a href="https://github.com/ros2/examples">https://github.com/ros2/examples</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/39912633">图说卡尔曼滤波，一份通俗易懂的教程</a></p>
 
-<p><a href="http://wiki.ros.org/cn/ROS/StartGuide">StartGuide</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Rh41117MT">从放弃到精通！卡尔曼滤波从理论到实践~</a></p>
 
-<p><a href="http://wiki.ros.org/cn/ROS/Tutorials">Tutorials</a></p>
+<p><a href="https://blog.csdn.net/hjxu2016/article/details/114102906">卡尔曼滤波的五大公式及python代码示例</a></p>
 
-<p><a href="https://zhuanlan.zhihu.com/p/86537652">读cartographer源码前的一些重要知识储备</a></p>
+<p><a href="https://blog.csdn.net/qq_23981335/article/details/82968422">卡尔曼滤波器的两种python实现方法：（1）opencv自带的cv2.KalmanFilter （2）pykalman算法库</a></p>
 
   </div>
   
@@ -136,10 +136,10 @@
 
 <aside>
     <header>
-    <h4>ROS实践の字数: 92</h4> 
+    <h4>卡尔曼滤波器の字数: 171</h4> 
     </header><nav id="TableOfContents">
 <ul>
-<li><a href="#ros实践">ROS实践</a>
+<li><a href="#基础知识">基础知识</a>
 <ul>
 <li><a href="#安装">安装</a></li>
 </ul></li>
@@ -250,7 +250,7 @@
         height: 96
         });
         if (qrcode) {
-            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/ros\/");
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/kalman_filter\/");
         }
 
         
