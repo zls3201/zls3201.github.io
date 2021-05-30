@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filter on 珍珑阁</title>
+    <link>https://zls3201.github.io/tags/filter/</link>
+    <description>Recent content in Filter on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/filter/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>目标跟踪及相关滤波器</title>
+      <link>https://zls3201.github.io/post/object_trace/</link>
+      <pubDate>Sat, 29 May 2021 00:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/object_trace/</guid>
+      <description>可视化展示 One Euro Filter Noise Filtering Using 1€ Filter 从概念上理解滤波~ 1.核相关滤波跟踪算法（KCF） 【滤波器】各种滤波器的理解与学习 从放弃到精通！卡尔曼滤波从理论</description>
+    </item>
+    
+  </channel>
+</rss>
