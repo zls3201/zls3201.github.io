@@ -4,13 +4,13 @@
     
     
     <meta charset="UTF-8">
-    <title>MediaPipe - 珍珑阁</title>
+    <title>目标跟踪及相关滤波器 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="MediaPipe">
+    <meta name="description" content="可视化展示 One Euro Filter Noise Filtering Using 1€ Filter 从概念上理解滤波~ 1.核相关滤波跟踪算法（KCF） 【滤波器】各种滤波器的理解与学习 从放弃到精通！卡尔曼滤波从理论">
     
-    <meta itemprop="name" content="MediaPipe - 珍珑阁">
-    <meta itemprop="description" content="MediaPipe">
+    <meta itemprop="name" content="目标跟踪及相关滤波器 - 珍珑阁">
+    <meta itemprop="description" content="可视化展示 One Euro Filter Noise Filtering Using 1€ Filter 从概念上理解滤波~ 1.核相关滤波跟踪算法（KCF） 【滤波器】各种滤波器的理解与学习 从放弃到精通！卡尔曼滤波从理论">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -32,7 +32,7 @@
 
 
 <body>
-  <div class="navbar-menu">
+    <div class="navbar-menu">
 
   
   <a   href="/">首页</a>
@@ -50,9 +50,17 @@
   <a   href="/todo/">TODO</a>
   
 </div>
-  <div class="wrapper">
-    <div class="main">
-      <div class="page-title clearfix">
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
     <ul class="navigation clearfix">
         <li><a href="/">首页</a> »</li>
         <li class="active"><a href="javascript:;">最近更新</a></li>
@@ -64,19 +72,78 @@
         </li>
     </ul>
 </div>
-      <div id="main-container" class="main-container">
-        
-        <h2 id="2021-05">2021-05</h2>
-        
-        <li>
-          29日 <a itemtype="url" href="/post/object_trace/"> 目标跟踪及相关滤波器 </a></li> 
-        <li>
-          17日 <a itemtype="url" href="/post/human_detection_trace/"> 人体姿势识别、人脸跟踪、瞳孔跟踪、关键点识别 </a></li>  
-      </div>
-    </div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/object_trace/" title="目标跟踪及相关滤波器" itemprop="url">目标跟踪及相关滤波器</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author"></a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/dl">DL</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-05-29</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><a href="http://www.lifl.fr/~casiez/1euro/InteractiveDemo/">可视化展示</a></p>
+
+<p><a href="https://github.com/jaantollander/OneEuroFilter/blob/master/README.md">One Euro Filter</a></p>
+
+<p><a href="https://jaantollander.com/post/noise-filtering-using-one-euro-filter/">Noise Filtering Using 1€ Filter</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/39505138">从概念上理解滤波~</a></p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/327116748">1.核相关滤波跟踪算法（KCF）</a></p>
+
+<p><a href="https://blog.csdn.net/weixin_44229927/article/details/107956010">【滤波器】各种滤波器的理解与学习</a></p>
+
+<p><a href="https://www.bilibili.com/video/BV1Rh41117MT?from=search&amp;seid=224183406259408951">从放弃到精通！卡尔曼滤波从理论到实践~</a></p>
+
+<p>Kernelized Correlation Filters</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/48249974">KCF相关滤波跟踪算法</a></p>
+
+<p><a href="https://www.bilibili.com/video/BV1nT4y1u7LL?from=search&amp;seid=11990364806278138989">什么是滤波器？滤波器有什么功能？有哪些类型？RC无源、有源滤波器</a></p>
+
+<p><a href="https://www.bilibili.com/video/BV1HJ411d7YF?p=2&amp;spm_id_from=pageDriver">目标跟踪：相关滤波算法KCF实现代码讲解</a></p>
+
+<p><a href="https://github.com/Superlee506/Correlation_Filtering_Tracking_Lib">C++实现的与相关滤波相关的跟踪算法（KCF, DSST, Staple）</a></p>
+
   </div>
   
-  <footer>
+</article>
+
+                <div id="git-comments"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "toc-wrapper">
+        <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>目标跟踪及相关滤波器の字数: 171</h4> 
+    </header></aside>
+<a href="#" id="toc-toggle"></a>
+
+</div>
+    </div>
+    
+    
+
+    <footer>
   <div class="footer-inner">
     <p>
       <a href="https://zls3201.github.io/about" title="关于">关于</a> |
@@ -167,6 +234,27 @@
   >
   </meting-js>
 </div>
+
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+        width: 96,
+        height: 96
+        });
+        if (qrcode) {
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/object_trace\/");
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
 
 </body>
 

@@ -4,12 +4,47 @@
   
   <url>
     <loc>https://zls3201.github.io/categories/</loc>
-    <lastmod>2021-05-20T00:00:00+08:00</lastmod>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/dl/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zls3201.github.io/categories/dl/</loc>
-    <lastmod>2021-05-20T00:00:00+08:00</lastmod>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/face-detection/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/mediapipe/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/post/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/post/object_trace/</loc>
+    <lastmod>2021-05-29T00:00:00+08:00</lastmod>
   </url>
   
   <url>
@@ -18,22 +53,7 @@
   </url>
   
   <url>
-    <loc>https://zls3201.github.io/post/</loc>
-    <lastmod>2021-05-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/</loc>
-    <lastmod>2021-05-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zls3201.github.io/post/kalman_filter/</loc>
-    <lastmod>2021-05-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/</loc>
     <lastmod>2021-05-20T00:00:00+08:00</lastmod>
   </url>
   
@@ -50,21 +70,6 @@
   <url>
     <loc>https://zls3201.github.io/post/ros/</loc>
     <lastmod>2021-05-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/dl/</loc>
-    <lastmod>2021-05-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/face-detection/</loc>
-    <lastmod>2021-05-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/mediapipe/</loc>
-    <lastmod>2021-05-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
