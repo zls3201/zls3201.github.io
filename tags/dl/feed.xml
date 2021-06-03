@@ -22,7 +22,7 @@
       <pubDate>Mon, 17 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/human_detection_trace/</guid>
-      <description>关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人体姿态估计论文笔记-Hourglass lightweight-human-pose-estimation.pytorch 人脸识别与人脸检测 cmusatyalab/openface ageitgey/face_recognition 99%准确率 BlazeFace-PyTorch deepface</description>
+      <description>关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人体姿态估计论文笔记-Hourglass lightweight-human-pose-estimation.pytorch openpose 人脸识别与人脸检测 cmusatyalab/openface ageitgey/face_recognition 99%准确率 BlazeFace-PyTorch</description>
     </item>
     
   </channel>
