@@ -7,10 +7,10 @@
     <title>WSL 常用命令 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="# 安装 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I 主机查看文件 type \\wsl$\zls-wsl\root\.profile # 注册 LxRunOffline rg -n zls-wsl -d F:\wsl_ubuntu_2004 # 删除注册（保留文件） LxRunOffline ur -n zls-wsl # 卸载并删除文件！！！">
+    <meta name="description" content="# 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version">
     
     <meta itemprop="name" content="WSL 常用命令 - 珍珑阁">
-    <meta itemprop="description" content="# 安装 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I 主机查看文件 type \\wsl$\zls-wsl\root\.profile # 注册 LxRunOffline rg -n zls-wsl -d F:\wsl_ubuntu_2004 # 删除注册（保留文件） LxRunOffline ur -n zls-wsl # 卸载并删除文件！！！">
+    <meta itemprop="description" content="# 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -97,8 +97,12 @@
 
   <div class="post-content" itemprop="articleBody">
     <pre><code># 安装
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 
+wsl --set-default-version 2
 
 # 查看实例
 wsl -l -v
@@ -107,18 +111,30 @@ LxRunOffline l
 # 查看实例IP
 wsl hostname -I
 
+# 安装Ubuntu-16.04.2
+LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s
+
+wsl --set-version Ubuntu-16.04.2 2
+wsl --set-version Ubuntu-20.04 2
 
 主机查看文件
 type \\wsl$\zls-wsl\root\.profile
 
 # 注册
-LxRunOffline rg -n zls-wsl -d F:\wsl_ubuntu_2004
+LxRunOffline rg -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+LxRunOffline rg -n Ubuntu-16.04.2 f:\wsl\Ubuntu-16.04.2
 
 # 删除注册（保留文件）
 LxRunOffline ur -n zls-wsl
 
 # 卸载并删除文件！！！
-LxRunOffline ui -n zls-wsl</code></pre>
+LxRunOffline ui -n zls-wsl
+
+# 修改WSL安装路径
+LxRunOffline move -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+
+# 查看
+LxRunOffline get-dir -n Ubuntu-20.04</code></pre>
   </div>
   
 </article>
@@ -130,6 +146,12 @@ LxRunOffline ui -n zls-wsl</code></pre>
 
     <div class = "toc-wrapper">
         <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>WSL 常用命令の字数: 151</h4> 
+    </header></aside>
+<a href="#" id="toc-toggle"></a>
 
 </div>
     </div>

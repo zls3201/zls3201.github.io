@@ -49,7 +49,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/wsl_tips/</guid>
-      <description># 安装 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I 主机查看文件 type \\wsl$\zls-wsl\root\.profile # 注册 LxRunOffline rg -n zls-wsl -d F:\wsl_ubuntu_2004 # 删除注册（保留文件） LxRunOffline ur -n zls-wsl # 卸载并删除文件！！！</description>
+      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s wsl --set-version</description>
     </item>
     
     <item>

@@ -158,7 +158,7 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        # 安装 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I 主机查看文件 type \\wsl$\zls-wsl\root\.profile # 注册 LxRunOffline rg -n zls-wsl -d F:\wsl_ubuntu_2004 # 删除注册（保留文件） LxRunOffline ur -n zls-wsl # 卸载并删除文件！！！ </div>
+        # 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
