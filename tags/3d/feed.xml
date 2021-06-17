@@ -6,7 +6,16 @@
     <description>Recent content in 3d on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 31 Jan 2019 08:00:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/3d/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/3d/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WebGL WebGIS Tip</title>
+      <link>https://zls3201.github.io/post/webgl_webgis/</link>
+      <pubDate>Thu, 17 Jun 2021 07:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/webgl_webgis/</guid>
+      <description>[内部项目]3D大屏功能梳理,基于高德地图的大屏展示项目 图解WebGL&amp;amp;Three.js工作原理 WebGIS vs WebGL图形编程 高德地图 三维模</description>
+    </item>
+    
     <item>
       <title>Blender学习资料</title>
       <link>https://zls3201.github.io/post/blender_study_resources/</link>
