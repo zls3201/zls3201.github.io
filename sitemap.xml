@@ -3,6 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zls3201.github.io/categories/bi/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/bigdata/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/post/bi/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/categories/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/config/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/post/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/</loc>
+    <lastmod>2021-11-06T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2021-11-04T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/categories/dev/</loc>
+    <lastmod>2021-11-04T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zls3201.github.io/post/golang/</loc>
+    <lastmod>2021-11-04T01:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zls3201.github.io/categories/3d/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
   </url>
@@ -13,32 +68,12 @@
   </url>
   
   <url>
-    <loc>https://zls3201.github.io/categories/</loc>
-    <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/post/</loc>
-    <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/</loc>
-    <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zls3201.github.io/tags/web/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zls3201.github.io/post/webgl_webgis/</loc>
-    <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
   </url>
   
@@ -150,21 +185,6 @@
   <url>
     <loc>https://zls3201.github.io/post/blockchain/</loc>
     <lastmod>2021-04-01T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2021-02-24T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/config/</loc>
-    <lastmod>2021-02-24T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/categories/dev/</loc>
-    <lastmod>2021-02-24T07:00:00+08:00</lastmod>
   </url>
   
   <url>

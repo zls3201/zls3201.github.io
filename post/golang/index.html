@@ -4,13 +4,13 @@
     
     
     <meta charset="UTF-8">
-    <title>config - 珍珑阁</title>
+    <title>Go编程 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="config">
+    <meta name="description" content="Go类库 Go 日常开发常备第三方库和工具 分布式 事务 dtm">
     
-    <meta itemprop="name" content="config - 珍珑阁">
-    <meta itemprop="description" content="config">
+    <meta itemprop="name" content="Go编程 - 珍珑阁">
+    <meta itemprop="description" content="Go类库 Go 日常开发常备第三方库和工具 分布式 事务 dtm">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -32,7 +32,7 @@
 
 
 <body>
-  <div class="navbar-menu">
+    <div class="navbar-menu">
 
   
   <a   href="/">首页</a>
@@ -50,9 +50,17 @@
   <a   href="/todo/">TODO</a>
   
 </div>
-  <div class="wrapper">
-    <div class="main">
-      <div class="page-title clearfix">
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
     <ul class="navigation clearfix">
         <li><a href="/">首页</a> »</li>
         <li class="active"><a href="javascript:;">最近更新</a></li>
@@ -64,23 +72,56 @@
         </li>
     </ul>
 </div>
-      <div id="main-container" class="main-container">
-        
-        <h2 id="2021-11">2021-11</h2>
-        
-        <li>
-          06日 <a itemtype="url" href="/post/bi/"> BI杂记 </a></li> 
-        <li>
-          04日 <a itemtype="url" href="/post/golang/"> Go编程 </a></li>  
-        <h2 id="2021-02">2021-02</h2>
-        
-        <li>
-          24日 <a itemtype="url" href="/post/windows_mingw_vcpkg/"> Windows 10 mingw vcpkg配置 </a></li>  
-      </div>
-    </div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/golang/" title="Go编程" itemprop="url">Go编程</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/dev">dev</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2021-11-04</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    
+
+<h2 id="go类库">Go类库</h2>
+
+<p><a href="https://my.oschina.net/crossoverjie/blog/5292814">Go 日常开发常备第三方库和工具</a></p>
+
+<p>分布式 事务 <a href="https://github.com/yedf/dtm">dtm</a></p>
+
   </div>
   
-  <footer>
+</article>
+
+                <div id="git-comments"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "toc-wrapper">
+        <div class="post-toc">
+
+</div>
+    </div>
+    
+    
+
+    <footer>
   <div class="footer-inner">
     <p>
       <a href="https://zls3201.github.io/about" title="关于">关于</a> |
@@ -171,6 +212,27 @@
   >
   </meting-js>
 </div>
+
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+        width: 96,
+        height: 96
+        });
+        if (qrcode) {
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/golang\/");
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
 
 </body>
 

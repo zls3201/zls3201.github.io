@@ -6,7 +6,25 @@
     <description>Recent content in Posts on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 17 Jun 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BI杂记</title>
+      <link>https://zls3201.github.io/post/bi/</link>
+      <pubDate>Sat, 06 Nov 2021 01:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/bi/</guid>
+      <description>BI大数据分析 集算器 java 8 函数式 vavr</description>
+    </item>
+    
+    <item>
+      <title>Go编程</title>
+      <link>https://zls3201.github.io/post/golang/</link>
+      <pubDate>Thu, 04 Nov 2021 01:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/golang/</guid>
+      <description>Go类库 Go 日常开发常备第三方库和工具 分布式 事务 dtm</description>
+    </item>
+    
     <item>
       <title>WebGL WebGIS Tip</title>
       <link>https://zls3201.github.io/post/webgl_webgis/</link>
