@@ -22,7 +22,7 @@
       <pubDate>Thu, 04 Nov 2021 01:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/golang/</guid>
-      <description>Go类库 Go 日常开发常备第三方库和工具 分布式 事务 dtm</description>
+      <description>Go类库 Go 日常开发常备第三方库和工具 分布式 事务 dtm elastic errors excelize</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/compilation_principle/</guid>
-      <description>编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 lexer(词法分析) parser(语法解析) antlr4 Antlr - 强大的开源语法分析工具 Coco/R 较早</description>
+      <description>编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 OCaml lexer(词法分析) parser(语法解析) antlr4 Antlr - 强大的开源语法分析工具 Coco/R 较</description>
     </item>
     
     <item>
