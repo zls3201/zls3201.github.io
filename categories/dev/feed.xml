@@ -13,7 +13,7 @@
       <pubDate>Mon, 17 Jan 2022 01:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/rust_lang/</guid>
-      <description>KeyValue Storage sled tikv GUI druid</description>
+      <description>KeyValue Storage sled tikv GUI druid dioxus</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Thu, 04 Nov 2021 01:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/golang/</guid>
-      <description>Go类库 Go 日常开发常备第三方库和工具 分布式 事务 dtm elastic errors excelize GUI golang如何编译一个最小的带GUI的标准exe ying32/govcl lorca webview</description>
+      <description>Go类库 Go 日常开发常备第三方库和工具 sonic：基于 JIT 技术的开源全场景高性能 JSON 库 分布式 事务 dtm elastic errors excelize GUI go-gui-projects golang如何编译一个最小的带GUI</description>
     </item>
     
     <item>
