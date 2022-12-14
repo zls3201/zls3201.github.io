@@ -1,5 +1,5 @@
 {
 	"data" : 
-	{"Content":"\n\n\u003ch2 id=\"1-cpu-gpu-tpu\"\u003e1.CPU GPU TPU\u003c/h2\u003e\n\n\u003ch2 id=\"2-cuda-与-rocm\"\u003e2.CUDA 与 ROCm\u003c/h2\u003e\n\n\u003ch2 id=\"3-pytorch-与-tensorflow\"\u003e3.PyTorch 与 Tensorflow\u003c/h2\u003e\n","date":"2020-09-11T00:00:00+08:00","permalink":"https://zls3201.github.io/post/gpu_program/","summary":"1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow","title":"GPU计算与编程","type":"post"}
+	{"Content":"\u003ch2 id=\"1cpu-gpu-tpu\"\u003e1.CPU GPU TPU\u003c/h2\u003e\n\u003ch2 id=\"2cuda-与-rocm\"\u003e2.CUDA 与 ROCm\u003c/h2\u003e\n\u003ch2 id=\"3pytorch-与-tensorflow\"\u003e3.PyTorch 与 Tensorflow\u003c/h2\u003e\n","date":"2020-09-11T00:00:00+08:00","permalink":"https://zls3201.github.io/post/gpu_program/","summary":"1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow","title":"GPU计算与编程","type":"post"}
 
 }

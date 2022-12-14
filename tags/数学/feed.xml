@@ -13,7 +13,7 @@
       <pubDate>Mon, 11 Jun 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/mathjax_test/</guid>
-      <description>Hugo Mathjax测试 $$ \displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$ $$ \displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$ $$ \displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvertHere is inline math: $\sqrt{3x-1}+(1+x)^2$. $$ c^{2} = a^{2} + b^{2}.$$ When $a \ne 0$, there are</description>
+      <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
     </item>
     
   </channel>

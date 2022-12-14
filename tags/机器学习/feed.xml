@@ -22,7 +22,7 @@
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/logistic_regression/</guid>
-      <description>逻辑回归 1.逻辑回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
+      <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$\end{aligned}} $$</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/linear_regression/</guid>
-      <description>线性回归 1.线性回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
+      <description>线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &amp;#34;&amp;#34;&amp;#34; Created on Sat Jun 9 08:18:10 2018 @author: zls3201@gmail.com &amp;#34;&amp;#34;&amp;#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &amp;#34;&amp;#34</description>
     </item>
     
   </channel>

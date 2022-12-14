@@ -6,7 +6,16 @@
     <description>Recent content on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 May 2022 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Dec 2022 09:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro I3安装配置</title>
+      <link>https://zls3201.github.io/post/manjaro_i3/</link>
+      <pubDate>Wed, 14 Dec 2022 09:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/manjaro_i3/</guid>
+      <description>系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 驱动 声音设置 显卡驱动与Cuda 中文与字体 壁纸 系统软件安装 终</description>
+    </item>
+    
     <item>
       <title>Deno实践</title>
       <link>https://zls3201.github.io/post/deno/</link>
@@ -22,7 +31,7 @@
       <pubDate>Mon, 17 Jan 2022 01:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/rust_lang/</guid>
-      <description>KeyValue Storage sled tikv GUI druid dioxus ORM https://rbatis.github.io/rbatis.io</description>
+      <description>KeyValue Storage sled tikv GUI druid dioxus ORM https://rbatis.github.io/rbatis.io 语法解析 Rust can be difficult to learn and frustrating, but it&amp;rsquo;s also the most exciting thing in software development in a long time Monkey Rust</description>
     </item>
     
     <item>
@@ -31,7 +40,7 @@
       <pubDate>Sat, 06 Nov 2021 01:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/bi/</guid>
-      <description>BI大数据分析 集算器 java 8 函数式 vavr</description>
+      <description>BI大数据分析 集算器 java 8 函数式 vavr 这是注释</description>
     </item>
     
     <item>
@@ -85,7 +94,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/wsl_tips/</guid>
-      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s wsl --set-version</description>
+      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;quot;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;quot; -s wsl --set-version</description>
     </item>
     
     <item>
@@ -103,7 +112,7 @@
       <pubDate>Wed, 24 Feb 2021 07:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
-      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&amp;rdquo;bin&amp;rdq</description>
+      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&amp;quot;bin&amp;quot</description>
     </item>
     
     <item>
@@ -184,7 +193,7 @@
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
-      <description>Blender学习资料 零基础BLENDER2.8中文开源系统快速入门教程 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X</description>
+      <description>Blender学习资料 零基础BLENDER2.8中文开源系统快速入门教程\ 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov</description>
     </item>
     
     <item>
@@ -238,7 +247,7 @@
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/logistic_regression/</guid>
-      <description>逻辑回归 1.逻辑回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
+      <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$\end{aligned}} $$</description>
     </item>
     
     <item>
@@ -247,7 +256,7 @@
       <pubDate>Thu, 12 Jul 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/linear_regression/</guid>
-      <description>线性回归 1.线性回归数学 输入{x,y},参数$\theta$,假设函数为$H(\theta)$,损失函数为$J(\theta)$ 目标:根于样</description>
+      <description>线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &amp;#34;&amp;#34;&amp;#34; Created on Sat Jun 9 08:18:10 2018 @author: zls3201@gmail.com &amp;#34;&amp;#34;&amp;#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &amp;#34;&amp;#34</description>
     </item>
     
     <item>
@@ -256,7 +265,7 @@
       <pubDate>Mon, 11 Jun 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/mathjax_test/</guid>
-      <description>Hugo Mathjax测试 $$ \displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } $$ $$ \displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) $$ $$ \displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvertHere is inline math: $\sqrt{3x-1}+(1+x)^2$. $$ c^{2} = a^{2} + b^{2}.$$ When $a \ne 0$, there are</description>
+      <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
     </item>
     
     <item>
@@ -265,7 +274,7 @@
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/devoptips/</guid>
-      <description>系统管理与自动化 ansible salt puppet chef zipkin AB测试和灰度发布关系是什么 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位比</description>
+      <description>系统管理与自动化 ansible salt puppet chef zipkin AB测试和灰度发布关系是什么 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比</description>
     </item>
     
     <item>
@@ -328,7 +337,7 @@
       <pubDate>Mon, 21 Mar 2016 12:13:19 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/first/</guid>
-      <description>主题概况 Balalalalala&amp;hellip; Balalalalala&amp;hellip; 安装指南 aaaaaaa bbbbbbb ccccccc 安装 bold 启用 print(&amp;#39;hello world!&amp;#39;) 更新 Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. 配置指南 Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 属性 说明 First ordered list item</description>
+      <description>主题概况 Balalalalala&amp;hellip; Balalalalala&amp;hellip; 安装指南 aaaaaaa bbbbbbb ccccccc 安装 bold 启用 print(&#39;hello world!&#39;) 更新 Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. 配置指南 Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 属性 说明 First ordered list item</description>
     </item>
     
     <item>

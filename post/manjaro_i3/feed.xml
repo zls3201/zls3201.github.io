@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manjaro I3安装配置 on 珍珑阁</title>
+    <link>https://zls3201.github.io/post/manjaro_i3/</link>
+    <description>Recent content in Manjaro I3安装配置 on 珍珑阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 14 Dec 2022 09:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/manjaro_i3/feed.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

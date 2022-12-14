@@ -6,7 +6,25 @@
     <description>Recent content in Categories on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 May 2022 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Dec 2022 09:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://zls3201.github.io/categories/linux/</link>
+      <pubDate>Wed, 14 Dec 2022 09:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manjaro</title>
+      <link>https://zls3201.github.io/categories/manjaro/</link>
+      <pubDate>Wed, 14 Dec 2022 09:00:00 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/categories/manjaro/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dev</title>
       <link>https://zls3201.github.io/categories/dev/</link>
@@ -139,15 +157,6 @@
       <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/categories/ci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://zls3201.github.io/categories/linux/</link>
-      <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
-      
-      <guid>https://zls3201.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
