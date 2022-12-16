@@ -7,10 +7,10 @@
     <title>Manjaro I3安装配置 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 驱动 声音设置 显卡驱动与Cuda 中文与字体 壁纸 系统软件安装 终">
+    <meta name="description" content="Manjaro I3安装配置 系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 Manjaro-KDE安装配置全攻略 arch">
     
     <meta itemprop="name" content="Manjaro I3安装配置 - 珍珑阁">
-    <meta itemprop="description" content="系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 驱动 声音设置 显卡驱动与Cuda 中文与字体 壁纸 系统软件安装 终">
+    <meta itemprop="description" content="Manjaro I3安装配置 系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 Manjaro-KDE安装配置全攻略 arch">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -96,72 +96,278 @@
 </ul>
 
   <div class="post-content" itemprop="articleBody">
-    <h1 id="系统安装设置">系统安装设置</h1>
+    <h1 id="manjaro-i3安装配置">Manjaro I3安装配置</h1>
+<h2 id="系统安装设置">系统安装设置</h2>
 <p>参考资料
 <a href="https://github.com/NakanoMikuOrg/arch-guide">archlinux 简明指南</a></p>
 <p><a href="http://www.ruanyifeng.com/blog/2019/10/tmux.html">Tmux 使用教程</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/137715607">Tmux的常用快捷键</a></p>
 <p><a href="https://www.ruanyifeng.com/blog/2022/01/cli-alternative-tools.html">命令行常用工具的替代品</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/114296129">Manjaro-KDE安装配置全攻略</a></p>
+<p><a href="https://arch.icekylin.online/prologue.html">arch安装</a></p>
+<p>chro
+<a href="https://www.cnblogs.com/sparkdev/p/6842805.html">SSH 远程执行任务 </a></p>
 <!-- raw HTML omitted -->
-<h2 id="驱动">驱动</h2>
-<h3 id="声音设置">声音设置</h3>
-<h3 id="显卡驱动与cuda">显卡驱动与Cuda</h3>
-<h3 id="中文与字体">中文与字体</h3>
-<h3 id="壁纸">壁纸</h3>
-<h2 id="系统软件安装">系统软件安装</h2>
-<h3 id="终端应用">终端应用</h3>
-<p>VirtualBox
-Rofi
-Polybar
-Fish
-Picom
-Alacritty
-Tmux
-fd
-rg
-htop</p>
-<h1 id="软件安装">软件安装</h1>
-<h2 id="系统软件">系统软件</h2>
-<h3 id="文本编辑器">文本编辑器</h3>
-<h4 id="vim">vim</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看字体</span>
+fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
+
+<span class="c1"># 下获取pid并杀死进程</span>
+<span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep python <span class="p">|</span>grep ****.py <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+
+<span class="c1"># archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87</span>
+systemctl start dnsmasq
+
+<span class="c1"># 开启 ssh sudo </span>
+pacman -S openssh 
+<span class="c1">#启动SSH </span>
+systemctl start sshd.service
+
+<span class="c1"># pacman 的常用命令语法：</span>
+pacman -S package_name        <span class="c1"># 安装软件  </span>
+pacman -S extra/package_name  <span class="c1"># 安装不同仓库中的版本</span>
+pacman -Syu                   <span class="c1"># 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span>
+pacman -Ss string             <span class="c1"># 在包数据库中查询软件</span>
+pacman -Si package_name       <span class="c1"># 显示软件的详细信息</span>
+pacman -Sc                    <span class="c1"># 清除软件缓存，即/var/cache/pacman/pkg目录下的文件</span>
+pacman -R package_name        <span class="c1"># 删除单个软件</span>
+pacman -Rs package_name       <span class="c1"># 删除指定软件及其没有被其他已安装软件使用的依赖关系</span>
+pacman -Qs string             <span class="c1"># 查询已安装的软件包</span>
+pacman -Qi package_name       <span class="c1"># 查询本地安装包的详细信息</span>
+pacman -Ql package_name       <span class="c1"># 获取已安装软件所包含的文件的列表</span>
+pacman -U package.tar.zx      <span class="c1"># 从本地文件安装</span>
+pactree package_name          <span class="c1"># 显示软件的依赖树</span>
+
+yay 的用法和 pacman 完全类似，上述所有 pacman xxx 命令，均可替换成 yay xxx 执行。
+
+此外，还有一条 yay 命令值得记一下：
+
+yay -c  <span class="c1"># 卸载所有无用的依赖。类比 apt-get autoremove</span>
+
+<span class="c1"># 终端设置代理</span>
+<span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
+<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
+
+<span class="c1"># 取消终端代理</span>
+<span class="nb">unset</span> http_proxy
+<span class="nb">unset</span> https_proxy
+
+<span class="c1">#查看ip</span>
+
+curl ipinfo.me
+curl ifconfig.me
+https://www.ip111.cn
+
+</code></pre></div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">alias pc=proxychains
+
+alias idea=intellij-idea-ultimate-edition 
+
+alias useproxy=&#34;
+ export http_proxy=http://127.0.0.1:2081;
+ export https_proxy=http://127.0.0.1:2081;
+ export all_proxy=http://127.0.0.1:2081;
+&#34;
+
+alias unproxy=&#34;
+ unset http_proxy;
+ unset https_proxy;
+ unset all_proxy;
+&#34;
+
+alias killdota=&#34;
+sudo kill -9 `ps -ef | grep dota.sh | awk &#39;{print $2}&#39;`
+&#34; 
+
+
+# 解决 fcitx5 光标不跟随
+export IDEA_JDK=/home/zls/workspaces/sdk/jbr_jcef-17.0.4-x64-b469
+export RIDER_JDK=/home/zls/workspaces/sdk/jbr_jcef-17.0.4-x64-b469
+export GOLAND_JDK=/home/zls/workspaces/sdk/jbr_jcef-17.0.4-x64-b469
+
+
+# 系统默认使用 jdk 1.8
+export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+export ANDROID_HOME=/home/zls/workspaces/sdk/Android
+export FLUTTER_HOME=/home/zls/workspaces/sdk/flutter
+export PATH=$PATH:$ANDROID_HOME/tools:$FLUTTER_HOME/bin
+
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+export DOTNET_ROOT=/home/zls/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+
+export GO111MODULE=on
+export GOPATH=/home/zls/workspaces/sdk/GOPATH
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+ 
+export DENO_INSTALL=&#34;/home/zls/.deno&#34;
+export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
+</code></pre></div><!-- raw HTML omitted -->
+<h3 id="设置软件源">设置软件源</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman-mirrors -i -c China -m rank
+sudo pacman -Syu
+sudo pacman -Sy base-devel
+sudo pacman -S yay
+</code></pre></div><h3 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h3>
+<p><a href="https://www.cnblogs.com/fly2wind/p/8486019.html">https://www.cnblogs.com/fly2wind/p/8486019.html</a></p>
+<p><a href="https://linuxconfig.org/turn-off-beep-bell-on-linux-terminal">https://linuxconfig.org/turn-off-beep-bell-on-linux-terminal</a></p>
+<h3 id="驱动">驱动</h3>
+<h4 id="声音设置">声音设置</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">install_pulse
+</code></pre></div><h4 id="显卡驱动与cuda">显卡驱动与Cuda</h4>
+<h4 id="中文与字体">中文与字体</h4>
+<p>xterm与uxterm中文显示设置 编辑 ～/.Xresources</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
+!XTerm*background:        <span class="c1">#222D31</span>
+!XTerm*foreground:        <span class="c1">#d8d8d8</span>
+XTerm*pointerColor:      <span class="c1">#1ABB9B</span>
+!XTerm*faceName:          Fixed
+XTerm*faceSize:          <span class="m">11</span>
+XTerm*reverseVideo:      on
+XTerm*selectToClipboard: <span class="nb">true</span>
+
+! English font
+xterm*faceName: JetBrainsMono Nerd Font:antialias<span class="o">=</span>True:pixelsize<span class="o">=</span><span class="m">14</span>
+! Chinese font
+xterm*faceNameDoublesize: WenQuanYi Micro Hei:pixelsize<span class="o">=</span><span class="m">14</span>
+
+xterm*vt100*geometry: 100x30
+xterm*saveLines: <span class="m">16384</span>
+xterm*loginShell: <span class="nb">true</span>
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-color
+xterm*eightBitInput: <span class="nb">false</span>
+xterm*scrollBar: <span class="nb">true</span>
+xterm*rightScrollBar: <span class="nb">true</span>
+!XTerm*locale: zh_CN.UTF-8
+XTerm*background: lightgreen
+XTerm*foreground: black
+
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
+yay -S  adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-droid ttf-fira-code ttf-fira-mono ttf-font-awesome ttf-ms-fonts ttf-roboto ttf-wps-fonts wps-office-fonts wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei wqy-zenhei
+ttf-material-icons
+
+yay -S nerd-fonts-jetbrains-mono
+
+
+yay -S fcitx5  fcitx5-chinese-addons fcitx5-configtool  fcitx5-gtk  fcitx5-lua  fcitx5-material-color fcitx5-pinyin-zhwiki-rime fcitx5-qt 
+kcm-fcitx5
+
+
+</code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
+编辑 /etc/environment 并添加以下几行，然后重新登录</p>
+<pre><code>
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+GLFW_IM_MODULE=ibus
+</code></pre><!-- raw HTML omitted -->
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE  DEFAULT=fcitx
+XMODIFIERS    DEFAULT=@im=fcitx
+INPUT_METHOD  DEFAULT=fcitx
+SDL_IM_MODULE DEFAULT=fcitx
+
+</code></pre></div><!-- raw HTML omitted -->
+<p><a href="https://www.cnblogs.com/fatalord/p/13850072.html">manjaro linux安装配置中文输入法fcitx5</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/468426138">Manjaro安装Fcitx5中文输入法</a></p>
+<p><a href="https://github.com/hosxy/Fcitx5-Material-Color">https://github.com/hosxy/Fcitx5-Material-Color</a></p>
+<h4 id="壁纸">壁纸</h4>
+<h3 id="系统软件安装">系统软件安装</h3>
+<h4 id="终端应用">终端应用</h4>
+<ul>
+<li>
+<p>yay</p>
+</li>
+<li>
+<p>Rofi
+<a href="https://zhuanlan.zhihu.com/p/385368435">i3wm - rofi</a>
+<a href="https://www.cnblogs.com/siyingcheng/p/11706215.html">Rofi 配置</a>
+[Rofi fd集成]（）</p>
+</li>
+<li>
+<p>Polybar</p>
+</li>
+<li>
+<p>Fish</p>
+</li>
+<li>
+<p>Picom</p>
+</li>
+<li>
+<p>Alacritty</p>
+</li>
+<li>
+<p>Tmux</p>
+</li>
+<li>
+<p>fd</p>
+</li>
+<li>
+<p>rg</p>
+</li>
+<li>
+<p>choose</p>
+</li>
+<li>
+<p>proxychains</p>
+</li>
+<li>
+<p>htop</p>
+</li>
+<li>
+<p>xbindkey
+<a href="https://hustergs.github.io/archives/ec23118f.html">Archlinux设置鼠标宏(按键映射)</a></p>
+</li>
+</ul>
+<h2 id="软件安装">软件安装</h2>
+<h3 id="系统软件">系统软件</h3>
+<h4 id="文本编辑器">文本编辑器</h4>
+<h5 id="vim">vim</h5>
 <p>配置方案</p>
-<h4 id="helix-editor">Helix Editor</h4>
+<h5 id="helix-editor">Helix Editor</h5>
 <p><a href="https://docs.helix-editor.com">Helix</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S helix-git
-</code></pre></div><h4 id="lapce">lapce</h4>
+</code></pre></div><h5 id="lapce">lapce</h5>
 <p><a href="https://github.com/lapce/lapce">https://github.com/lapce/lapce</a></p>
-<h3 id="虚拟化">虚拟化</h3>
-<h4 id="virtualbox">VirtualBox</h4>
-<h4 id="virtmanager">VirtManager</h4>
-<h4 id="docker">Docker</h4>
-<h2 id="办公软件cd-ro">办公软件cd ro</h2>
-<h3 id="xmind">XMind</h3>
+<h4 id="虚拟化">虚拟化</h4>
+<h5 id="virtualbox">VirtualBox</h5>
+<h5 id="virtmanager">VirtManager</h5>
+<h5 id="docker">Docker</h5>
+<h3 id="办公软件cd-ro">办公软件cd ro</h3>
+<h4 id="xmind">XMind</h4>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S xmind8
-</code></pre></div><h3 id="wiznote">WizNote</h3>
-<h3 id="telegram">Telegram</h3>
-<h2 id="多媒体">多媒体</h2>
-<h3 id="mpv">mpv</h3>
-<h3 id="lx-music">lx-music</h3>
-<h3 id="flamshot">Flamshot</h3>
-<h2 id="网络应用">网络应用</h2>
-<h3 id="v2raya">V2rayA</h3>
-<h3 id="chrome">Chrome</h3>
-<h3 id="edge">Edge</h3>
-<h3 id="迅雷">迅雷</h3>
-<h2 id="应用开发">应用开发</h2>
-<h3 id="git">git</h3>
-<h3 id="sdkman">sdkman</h3>
-<h3 id="nvs">nvs</h3>
-<h3 id="golang">golang</h3>
-<h3 id="rust">Rust</h3>
-<h3 id="dotnet">DotNet</h3>
-<h3 id="sublime-text">sublime-text</h3>
-<h3 id="vscode">vscode</h3>
-<h3 id="dbeaver">DBeaver</h3>
-<h3 id="jetbrains全家桶">JetBrains全家桶</h3>
-<h4 id="idea">IDEA</h4>
-<h4 id="rider">Rider</h4>
-<h4 id="goland">Goland</h4>
+</code></pre></div><h4 id="wiznote">WizNote</h4>
+<h4 id="telegram">Telegram</h4>
+<h3 id="多媒体">多媒体</h3>
+<h4 id="mpv">mpv</h4>
+<p><a href="https://ttys3.dev/post/archlinux-mpv-undefined-symbol-vkcreatewaylandsurfacekhr/">ArchLinux 下 mpv: undefined symbol: vkCreateWaylandSurfaceKHR 问题解决</a></p>
+<h4 id="lx-music">lx-music</h4>
+<h4 id="flamshot">Flamshot</h4>
+<h3 id="网络应用">网络应用</h3>
+<h4 id="v2raya">V2rayA</h4>
+<h4 id="chrome">Chrome</h4>
+<h4 id="edge">Edge</h4>
+<h4 id="迅雷">迅雷</h4>
+<h3 id="应用开发">应用开发</h3>
+<h4 id="git">git</h4>
+<h4 id="sdkman">sdkman</h4>
+<h4 id="nvs">nvs</h4>
+<h4 id="golang">golang</h4>
+<h4 id="rust">Rust</h4>
+<h4 id="dotnet">DotNet</h4>
+<h4 id="sublime-text">sublime-text</h4>
+<h4 id="vscode">vscode</h4>
+<h4 id="dbeaver">DBeaver</h4>
+<h4 id="jetbrains全家桶">JetBrains全家桶</h4>
+<p>jerbrains中文输入 光标跟随</p>
+<h5 id="idea">IDEA</h5>
+<h5 id="rider">Rider</h5>
+<h5 id="goland">Goland</h5>
 
   </div>
   
@@ -177,65 +383,24 @@ htop</p>
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 171</h4> 
+    <h4>Manjaro I3安装配置の字数: 1079</h4> 
     </header><nav id="TableOfContents">
   <ul>
-    <li><a href="#驱动">驱动</a>
+    <li><a href="#系统安装设置">系统安装设置</a>
       <ul>
-        <li><a href="#声音设置">声音设置</a></li>
-        <li><a href="#显卡驱动与cuda">显卡驱动与Cuda</a></li>
-        <li><a href="#中文与字体">中文与字体</a></li>
-        <li><a href="#壁纸">壁纸</a></li>
+        <li><a href="#设置软件源">设置软件源</a></li>
+        <li><a href="#关闭主板蜂鸣器">关闭主板蜂鸣器</a></li>
+        <li><a href="#驱动">驱动</a></li>
+        <li><a href="#系统软件安装">系统软件安装</a></li>
       </ul>
     </li>
-    <li><a href="#系统软件安装">系统软件安装</a>
+    <li><a href="#软件安装">软件安装</a>
       <ul>
-        <li><a href="#终端应用">终端应用</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#系统软件">系统软件</a>
-      <ul>
-        <li><a href="#文本编辑器">文本编辑器</a></li>
-        <li><a href="#虚拟化">虚拟化</a></li>
-      </ul>
-    </li>
-    <li><a href="#办公软件cd-ro">办公软件cd ro</a>
-      <ul>
-        <li><a href="#xmind">XMind</a></li>
-        <li><a href="#wiznote">WizNote</a></li>
-        <li><a href="#telegram">Telegram</a></li>
-      </ul>
-    </li>
-    <li><a href="#多媒体">多媒体</a>
-      <ul>
-        <li><a href="#mpv">mpv</a></li>
-        <li><a href="#lx-music">lx-music</a></li>
-        <li><a href="#flamshot">Flamshot</a></li>
-      </ul>
-    </li>
-    <li><a href="#网络应用">网络应用</a>
-      <ul>
-        <li><a href="#v2raya">V2rayA</a></li>
-        <li><a href="#chrome">Chrome</a></li>
-        <li><a href="#edge">Edge</a></li>
-        <li><a href="#迅雷">迅雷</a></li>
-      </ul>
-    </li>
-    <li><a href="#应用开发">应用开发</a>
-      <ul>
-        <li><a href="#git">git</a></li>
-        <li><a href="#sdkman">sdkman</a></li>
-        <li><a href="#nvs">nvs</a></li>
-        <li><a href="#golang">golang</a></li>
-        <li><a href="#rust">Rust</a></li>
-        <li><a href="#dotnet">DotNet</a></li>
-        <li><a href="#sublime-text">sublime-text</a></li>
-        <li><a href="#vscode">vscode</a></li>
-        <li><a href="#dbeaver">DBeaver</a></li>
-        <li><a href="#jetbrains全家桶">JetBrains全家桶</a></li>
+        <li><a href="#系统软件">系统软件</a></li>
+        <li><a href="#办公软件cd-ro">办公软件cd ro</a></li>
+        <li><a href="#多媒体">多媒体</a></li>
+        <li><a href="#网络应用">网络应用</a></li>
+        <li><a href="#应用开发">应用开发</a></li>
       </ul>
     </li>
   </ul>
