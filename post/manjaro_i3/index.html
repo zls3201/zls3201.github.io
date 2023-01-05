@@ -111,8 +111,18 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看字体</span>
 fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
 
-<span class="c1"># 下获取pid并杀死进程</span>
-<span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep python <span class="p">|</span>grep ****.py <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+<span class="c1"># 导出软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages</span>
+pacman -Qqe &gt; pkglist.txt
+<span class="c1"># 还原软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Install_packages_from_a_list</span>
+pacman -S --needed - &lt; pkglist.txt
+
+<span class="c1">#Linux查看端口占用情况</span>
+netstat -anp <span class="p">|</span> grep <span class="m">8080</span>
+
+<span class="c1"># 下获取pid并杀死进程 ( grep -v grep  排除grep自身查找 )</span>
+<span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep python <span class="p">|</span>grep ****.py <span class="p">|</span> <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+
+<span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep  JrebelBrainsLicenseServerforJava <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
 
 <span class="c1"># archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87</span>
 systemctl start dnsmasq
@@ -209,17 +219,20 @@ export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
 <h3 id="设置软件源">设置软件源</h3>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman-mirrors -i -c China -m rank
 sudo pacman -Syu
-sudo pacman -Sy base-devel
-sudo pacman -S yay
-</code></pre></div><h3 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h3>
-<p><a href="https://www.cnblogs.com/fly2wind/p/8486019.html">https://www.cnblogs.com/fly2wind/p/8486019.html</a></p>
-<p><a href="https://linuxconfig.org/turn-off-beep-bell-on-linux-terminal">https://linuxconfig.org/turn-off-beep-bell-on-linux-terminal</a></p>
+sudo pacman -Sy base-devel yay net-tools
+
+yay  -S tree pstree htop
+
+</code></pre></div><p>配置 <a href="https://github.com/archlinuxcn/repo">archlinuxcn</a></p>
+<h3 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h3>
+<p><a href="https://wiki.archlinuxcn.org/wiki/PC_speaker?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DPC_speaker_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno">PC speaker</a></p>
 <h3 id="驱动">驱动</h3>
 <h4 id="声音设置">声音设置</h4>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">install_pulse
 </code></pre></div><h4 id="显卡驱动与cuda">显卡驱动与Cuda</h4>
 <h4 id="中文与字体">中文与字体</h4>
 <p>xterm与uxterm中文显示设置 编辑 ～/.Xresources</p>
+<p><a href="https://segmentfault.com/a/1190000037454534">manjaro 主路径中文改英文</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
 !XTerm*background:        <span class="c1">#222D31</span>
 !XTerm*foreground:        <span class="c1">#d8d8d8</span>
@@ -247,15 +260,10 @@ XTerm*background: lightgreen
 XTerm*foreground: black
 
 </code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
-yay -S  adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-droid ttf-fira-code ttf-fira-mono ttf-font-awesome ttf-ms-fonts ttf-roboto ttf-wps-fonts wps-office-fonts wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei wqy-zenhei
-ttf-material-icons
-
-yay -S nerd-fonts-jetbrains-mono
-
-
-yay -S fcitx5  fcitx5-chinese-addons fcitx5-configtool  fcitx5-gtk  fcitx5-lua  fcitx5-material-color fcitx5-pinyin-zhwiki-rime fcitx5-qt 
-kcm-fcitx5
-
+yay -S  adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts nerd-fonts-jetbrains-mono noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-droid ttf-fira-code ttf-fira-mono ttf-font-awesome ttf-material-icons
+ ttf-ms-fonts ttf-roboto ttf-wps-fonts wps-office-fonts wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
+ 
+yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki-rime fcitx5-qt
 
 </code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
 编辑 /etc/environment 并添加以下几行，然后重新登录</p>
@@ -302,7 +310,8 @@ SDL_IM_MODULE DEFAULT=fcitx
 <p>Alacritty</p>
 </li>
 <li>
-<p>Tmux</p>
+<p>Tmux
+<a href="https://github.com/erikw/tmux-powerline">tmux-powerline</a></p>
 </li>
 <li>
 <p>fd</p>
@@ -318,6 +327,12 @@ SDL_IM_MODULE DEFAULT=fcitx
 </li>
 <li>
 <p>htop</p>
+</li>
+<li>
+<p>choose</p>
+</li>
+<li>
+<p>zip unzip</p>
 </li>
 <li>
 <p>xbindkey
@@ -338,31 +353,54 @@ SDL_IM_MODULE DEFAULT=fcitx
 <h5 id="virtualbox">VirtualBox</h5>
 <h5 id="virtmanager">VirtManager</h5>
 <h5 id="docker">Docker</h5>
+<p><a href="https://blog.csdn.net/taotieren/article/details/107321202">在 Arch/Manjaro Linux 系统安装 Docker</a>
+<a href="https://www.geeksforgeeks.org/how-to-install-and-configure-docker-on-arch-based-linux-distributionsmanjaro/">How to install and configure Docker on Arch-based Linux Distributions(Manjaro) ?</a></p>
 <h3 id="办公软件cd-ro">办公软件cd ro</h3>
 <h4 id="xmind">XMind</h4>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S xmind8
+</code></pre></div><h3 id="typora-free">typora-free</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S typora-free 
 </code></pre></div><h4 id="wiznote">WizNote</h4>
 <h4 id="telegram">Telegram</h4>
 <h3 id="多媒体">多媒体</h3>
 <h4 id="mpv">mpv</h4>
 <p><a href="https://ttys3.dev/post/archlinux-mpv-undefined-symbol-vkcreatewaylandsurfacekhr/">ArchLinux 下 mpv: undefined symbol: vkCreateWaylandSurfaceKHR 问题解决</a></p>
 <h4 id="lx-music">lx-music</h4>
-<h4 id="flamshot">Flamshot</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S lx-music-desktop
+</code></pre></div><h4 id="flamshot">Flamshot</h4>
 <h3 id="网络应用">网络应用</h3>
 <h4 id="v2raya">V2rayA</h4>
 <h4 id="chrome">Chrome</h4>
+<p>google-chrome-stable &ndash;proxy-server=&ldquo;socks://127.0.0.1:2080&rdquo; &amp;</p>
 <h4 id="edge">Edge</h4>
 <h4 id="迅雷">迅雷</h4>
 <h3 id="应用开发">应用开发</h3>
 <h4 id="git">git</h4>
 <h4 id="sdkman">sdkman</h4>
-<h4 id="nvs">nvs</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
+ sdk install java 17.0.5-zulu 
+ sdk install java 11.0.17-zulu  
+ sdk install java 8.0.352-zulu
+
+</code></pre></div><h4 id="nvs">nvs</h4>
 <h4 id="golang">golang</h4>
 <h4 id="rust">Rust</h4>
 <h4 id="dotnet">DotNet</h4>
 <h4 id="sublime-text">sublime-text</h4>
 <h4 id="vscode">vscode</h4>
-<h4 id="dbeaver">DBeaver</h4>
+<p><a href="https://blog.csdn.net/NoodleMaster/article/details/113328341">Manjaro安装了vscode之后，打开文件管理器的快捷键变成打开了vscode</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
+xdg-mime query default inode/directory
+
+如果显示visual-studio-code.desktop或者是code.desktop,那么说明默认的文件管理器已经被修改为vscode了。
+ 
+// nautilus.desktop是默认文件管理器的desktop文件，在目录/usr/share/applications下，不同
+// 的操作系统文件名可能不同，以Manjaro gnome为例，文件名为org.gnome.nautilus.desktop,
+// 替换为正确的文件后，问题解决
+xdg-mime default nautilus.desktop inode/directory
+
+
+</code></pre></div><h4 id="dbeaver">DBeaver</h4>
 <h4 id="jetbrains全家桶">JetBrains全家桶</h4>
 <p>jerbrains中文输入 光标跟随</p>
 <h5 id="idea">IDEA</h5>
@@ -383,7 +421,7 @@ SDL_IM_MODULE DEFAULT=fcitx
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 1079</h4> 
+    <h4>Manjaro I3安装配置の字数: 1477</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#系统安装设置">系统安装设置</a>
@@ -398,6 +436,7 @@ SDL_IM_MODULE DEFAULT=fcitx
       <ul>
         <li><a href="#系统软件">系统软件</a></li>
         <li><a href="#办公软件cd-ro">办公软件cd ro</a></li>
+        <li><a href="#typora-free">typora-free</a></li>
         <li><a href="#多媒体">多媒体</a></li>
         <li><a href="#网络应用">网络应用</a></li>
         <li><a href="#应用开发">应用开发</a></li>
