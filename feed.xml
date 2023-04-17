@@ -94,7 +94,7 @@
       <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/wsl_tips/</guid>
-      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;quot;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;quot; -s wsl --set-version</description>
+      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s wsl --set-version</description>
     </item>
     
     <item>
@@ -247,7 +247,7 @@
       <pubDate>Sun, 15 Jul 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/logistic_regression/</guid>
-      <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$\end{aligned}} $$</description>
+      <description>逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$ \end{aligned}} $$</description>
     </item>
     
     <item>
@@ -265,7 +265,7 @@
       <pubDate>Mon, 11 Jun 2018 08:00:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/mathjax_test/</guid>
-      <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
+      <description>Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&amp;gt;|Link text| B(Round edge) B --&amp;gt; C{Decision} C --&amp;gt;|One| D[Result one] C --&amp;gt;|Two| E[Result two] graph LR; A[Hard edge] --&gt;|Link text| B(Round edge) B --&gt; C{Decision} C --&gt;|One| D[Result one] C --&gt;|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[&#34; 提交申请 熊大 &#34;]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[&#34; 负责人</description>
     </item>
     
     <item>
@@ -274,7 +274,7 @@
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/devoptips/</guid>
-      <description>系统管理与自动化 ansible salt puppet chef zipkin AB测试和灰度发布关系是什么 阅读资料ansible和puppet的安装和比较翻译-Salt与Ansible全方位比</description>
+      <description>系统管理与自动化 ansible salt puppet chef zipkin AB测试和灰度发布关系是什么 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位比</description>
     </item>
     
     <item>
@@ -337,16 +337,7 @@
       <pubDate>Mon, 21 Mar 2016 12:13:19 +0800</pubDate>
       
       <guid>https://zls3201.github.io/post/first/</guid>
-      <description>主题概况 Balalalalala&amp;hellip; Balalalalala&amp;hellip; 安装指南 aaaaaaa bbbbbbb ccccccc 安装 bold 启用 print(&#39;hello world!&#39;) 更新 Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. 配置指南 Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 属性 说明 First ordered list item</description>
-    </item>
-    
-    <item>
-      <title>分类</title>
-      <link>https://zls3201.github.io/categories/</link>
-      <pubDate>Sun, 20 Mar 2016 23:28:02 +0800</pubDate>
-      
-      <guid>https://zls3201.github.io/categories/</guid>
-      <description></description>
+      <description>主题概况 Balalalalala&amp;hellip; Balalalalala&amp;hellip; 安装指南 aaaaaaa bbbbbbb ccccccc 安装 bold 启用 print(&amp;#39;hello world!&amp;#39;) 更新 Blockquotes are very handy in email to emulate reply text. This line is part of the same quote. 配置指南 Tables Are Cool col 3 is right-aligned $1600 col 2 is centered $12 zebra stripes are neat $1 属性 说明 First ordered list item</description>
     </item>
     
     <item>
@@ -359,12 +350,21 @@
     </item>
     
     <item>
+      <title>分类</title>
+      <link>https://zls3201.github.io/categories/</link>
+      <pubDate>Sun, 20 Mar 2016 23:28:02 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>链接</title>
       <link>https://zls3201.github.io/links/</link>
       <pubDate>Sun, 20 Mar 2016 23:28:02 +0800</pubDate>
       
       <guid>https://zls3201.github.io/links/</guid>
-      <description>关于 Hugo 主题 balabalbalbalbal&amp;hellip; var playerElement = document.getElementById(&#34;player-wrapper&#34;); var player = new Clappr.Player({ source: &#34;https://storage.live.com/items/D2F9826103223F89!1131:</description>
+      <description>关于 Hugo 主题 balabalbalbalbal&amp;hellip;</description>
     </item>
     
     <item>

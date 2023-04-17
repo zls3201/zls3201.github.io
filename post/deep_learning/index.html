@@ -158,21 +158,20 @@ pip install &ldquo;tensorflow&lt;2.11&rdquo;</p>
 <p><a href="https://www.tensorflow.org/install/pip#windows-native">https://www.tensorflow.org/install/pip#windows-native</a></p>
 <p>pip install <a href="https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.10.0-cp39-cp39-win_amd64.whl">https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.10.0-cp39-cp39-win_amd64.whl</a></p>
 <p>测试文件 main.py 内容</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>  
-
-<span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>  
-
-<span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="s1">&#39;GPU&#39;</span><span class="p">)</span>  
-
-<span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> 
-
-</code></pre></div><p>tensorflow lite 2.3.2 编译</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">github 拉取 tag 2.3.2 的代码
-安装 msys bazel
-执行
-bazel build -c opt //tensorflow/lite/c:tensorflowlite_c.dll --action_env <span class="nv">PYTHON_BIN_PATH</span><span class="o">=</span><span class="s2">&#34;C://Program Files//Python38//python.exe&#34;</span>  --action_env  <span class="nv">BAZEL_SH</span><span class="o">=</span><span class="s2">&#34;C://msys64//usr//bin//bash.exe&#34;</span>
-</code></pre></div><h2 id="数学基础">数学基础</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">a</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="s1">&#39;GPU&#39;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> 
+</span></span></code></pre></div><p>tensorflow lite 2.3.2 编译</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">github 拉取 tag 2.3.2 的代码
+</span></span><span class="line"><span class="cl">安装 msys bazel
+</span></span><span class="line"><span class="cl">执行
+</span></span><span class="line"><span class="cl">bazel build -c opt //tensorflow/lite/c:tensorflowlite_c.dll --action_env <span class="nv">PYTHON_BIN_PATH</span><span class="o">=</span><span class="s2">&#34;C://Program Files//Python38//python.exe&#34;</span>  --action_env  <span class="nv">BAZEL_SH</span><span class="o">=</span><span class="s2">&#34;C://msys64//usr//bin//bash.exe&#34;</span>
+</span></span></code></pre></div><h2 id="数学基础">数学基础</h2>
 <h3 id="微积分">微积分</h3>
 <h3 id="概率论与数理统计">概率论与数理统计</h3>
 <h3 id="线性代数">线性代数</h3>
@@ -222,7 +221,7 @@ $$</p>
 <p>Leaky relu</p>
 <p>$$
 g(x)=\begin{cases}
-x &amp;\text{if } x&gt;0 \<br>
+x &amp;\text{if } x&gt;0 \
 0.01x &amp;\text{otherwise}
 \end{cases}
 $$</p>

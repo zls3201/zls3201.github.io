@@ -1,575 +1,347 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://zls3201.github.io/categories/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/linux/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/linux/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/manjaro/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/manjaro_i3/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/</loc>
     <lastmod>2022-12-14T09:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/deno/</loc>
     <lastmod>2022-05-12T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/deno/</loc>
     <lastmod>2022-05-12T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/dev/</loc>
     <lastmod>2022-05-12T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/config/</loc>
     <lastmod>2022-01-17T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/rust/</loc>
     <lastmod>2022-01-17T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/rust_lang/</loc>
     <lastmod>2022-01-17T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/bi/</loc>
     <lastmod>2021-11-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/bigdata/</loc>
     <lastmod>2021-11-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/bi/</loc>
     <lastmod>2021-11-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/categories/3d/</loc>
-    <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/3d/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/categories/3d/</loc>
+    <lastmod>2021-06-17T07:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/tags/web/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/webgl_webgis/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/dl/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/dl/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/filter/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/kcf/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/object-trace/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/object_trace/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/kalman_filter/</loc>
     <lastmod>2021-05-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/kalman_filter/</loc>
     <lastmod>2021-05-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/ros/</loc>
     <lastmod>2021-05-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/ros/</loc>
     <lastmod>2021-05-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/ros/</loc>
     <lastmod>2021-05-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/face-detection/</loc>
     <lastmod>2021-05-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/mediapipe/</loc>
     <lastmod>2021-05-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/human_detection_trace/</loc>
     <lastmod>2021-05-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/socket/</loc>
     <lastmod>2021-05-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/wsl_tips/</loc>
     <lastmod>2021-05-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2021-05-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2021-05-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E8%B0%83%E8%AF%95/</loc>
     <lastmod>2021-05-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2021-05-10T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://zls3201.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2021-05-10T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/categories/blockchain/</loc>
     <lastmod>2021-04-01T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E4%B8%AA%E4%BA%BA/</loc>
     <lastmod>2021-04-01T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/blockchain/</loc>
     <lastmod>2021-04-01T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2021-02-24T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/windows_mingw_vcpkg/</loc>
     <lastmod>2021-02-24T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/</loc>
-    <lastmod>2021-02-22T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/post/3d_rebuild/</loc>
-    <lastmod>2021-02-22T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E5%BB%BA%E6%A8%A1/</loc>
     <lastmod>2021-02-22T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/tags/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/</loc>
+    <lastmod>2021-02-22T07:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://zls3201.github.io/post/3d_rebuild/</loc>
+    <lastmod>2021-02-22T07:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/tags/asl/</loc>
     <lastmod>2021-02-02T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/bar/</loc>
     <lastmod>2021-02-02T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/compilation_principle/</loc>
     <lastmod>2021-02-02T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2021-02-02T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/meta_programming/</loc>
     <lastmod>2021-01-08T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/haxe/</loc>
     <lastmod>2021-01-08T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/nim/</loc>
     <lastmod>2021-01-08T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/%E5%85%83%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2021-01-08T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2021-01-08T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/tags/%E5%85%83%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2021-01-08T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-01-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-01-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/deep_learning/</loc>
     <lastmod>2021-01-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2021-01-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/calcute/</loc>
     <lastmod>2020-09-11T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/gpu_program/</loc>
     <lastmod>2020-09-11T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/study/</loc>
     <lastmod>2020-09-11T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/dotnet/</loc>
     <lastmod>2020-09-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/dotnet_micro_services/</loc>
     <lastmod>2020-09-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
-    <lastmod>2020-09-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2020-09-10T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2020-09-10T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E6%83%85%E7%BB%AA/</loc>
     <lastmod>2019-05-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/20190506_think/</loc>
     <lastmod>2019-05-06T01:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/</loc>
-    <lastmod>2019-03-27T02:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/post/camera_video_rtsp_player/</loc>
-    <lastmod>2019-03-27T02:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E8%A7%86%E9%A2%91/</loc>
     <lastmod>2019-03-27T02:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/post/camera_video_rtsp_player/</loc>
+    <lastmod>2019-03-27T02:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/</loc>
+    <lastmod>2019-03-27T02:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/categories/blender/</loc>
     <lastmod>2019-01-31T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/blender_study_resources/</loc>
     <lastmod>2019-01-31T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/game/</loc>
     <lastmod>2019-01-31T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</loc>
     <lastmod>2018-12-08T09:56:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2018-12-08T09:56:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/centos_config/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/ci/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/ci/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/server/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2018-09-06T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/ml_note/</loc>
     <lastmod>2018-09-06T07:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/wireshark_tip/</loc>
     <lastmod>2018-09-05T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/useful_derivative/</loc>
     <lastmod>2018-07-15T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/</loc>
-    <lastmod>2018-07-15T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2018-07-15T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/logistic_regression/</loc>
     <lastmod>2018-07-15T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/</loc>
+    <lastmod>2018-07-15T08:00:35+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/post/linear_regression/</loc>
     <lastmod>2018-07-12T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/mathjax_test/</loc>
     <lastmod>2018-06-11T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2018-06-11T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2018-06-11T08:00:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/devoptips/</loc>
     <lastmod>2018-05-23T09:36:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2018-05-23T09:36:35+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/todo/</loc>
     <lastmod>2017-08-28T17:22:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/todo/wf2/</loc>
     <lastmod>2017-08-28T17:22:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/impression/</loc>
     <lastmod>2016-12-13T15:49:50+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
     <lastmod>2016-06-01T15:32:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/rasp_use_root_accout/</loc>
     <lastmod>2016-06-01T15:32:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/asp.net/</loc>
     <lastmod>2016-06-01T15:25:04+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/mono/</loc>
     <lastmod>2016-06-01T15:25:04+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/rasp_install_mono_runtime/</loc>
     <lastmod>2016-06-01T15:25:04+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/chatter/</loc>
     <lastmod>2016-05-30T15:16:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/about/</loc>
     <lastmod>2016-03-21T23:28:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/first/</loc>
     <lastmod>2016-03-21T12:13:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/foo/</loc>
     <lastmod>2016-03-21T12:13:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2016-03-21T12:13:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zls3201.github.io/categories/</loc>
-    <lastmod>2016-03-20T23:28:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/</loc>
     <lastmod>2016-03-20T23:28:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://zls3201.github.io/categories/</loc>
+    <lastmod>2016-03-20T23:28:02+08:00</lastmod>
+  </url><url>
     <loc>https://zls3201.github.io/links/</loc>
     <lastmod>2016-03-20T23:28:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/post/hello-hugo/</loc>
     <lastmod>2016-02-20T15:34:05+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/tags/test/</loc>
     <lastmod>2016-02-20T15:34:05+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://zls3201.github.io/categories/%E6%80%9D%E8%80%83%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2016-02-20T15:34:05+08:00</lastmod>
   </url>
-  
 </urlset>

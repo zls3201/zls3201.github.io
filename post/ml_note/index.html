@@ -116,35 +116,35 @@
 <li>参数学习与非参数学习</li>
 <li>判定模型与生成模型</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">
-https://www.zhihu.com/question/20446337/answer/45130939
-
- 
-
-我是这样理解的： 
-
-生成模型，就是生成（数据的分布）的模型； 
-
-判别模型，就是判别（数据输出量）的模型； 
-
-更进一步： 
-
-从结果角度，两种模型都能给你 输出量（label 或 y etc.)。 
-
-但，生成模型的处理过程会告诉你关于数据的一些统计信息（p(x|y) 分布 etc.），更接近于统计学； 
-
-而 判别模型则是通过一系列处理得到结果，这个结果可能是概率的或不是，这个并不改变他是不是判别的。 
-
-如，决策树的if then说不是这个就是那个（而很多属性都是有分布的）【即分支】，明显是一种 判别 嘛； 
-
-而朴素贝叶斯说，p( cancer , fat ) = x% etc.，模型 生成 了一个分布给你了，即使你没意识到/没用到，只用到 p( cancer | fat ) = y% 这个最终的判别。 
-
-你再理解一下： 
-
-k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向量机、提升方法是判别模型； 
-
-隐马尔可夫模型（重点的EM算法）是生成模型。 
-</code></pre></div><pre><code class="language-mermaid" data-lang="mermaid">graph LR
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://www.zhihu.com/question/20446337/answer/45130939
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我是这样理解的： 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">生成模型，就是生成（数据的分布）的模型； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">判别模型，就是判别（数据输出量）的模型； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">更进一步： 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">从结果角度，两种模型都能给你 输出量（label 或 y etc.)。 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">但，生成模型的处理过程会告诉你关于数据的一些统计信息（p(x|y) 分布 etc.），更接近于统计学； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而 判别模型则是通过一系列处理得到结果，这个结果可能是概率的或不是，这个并不改变他是不是判别的。 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如，决策树的if then说不是这个就是那个（而很多属性都是有分布的）【即分支】，明显是一种 判别 嘛； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而朴素贝叶斯说，p( cancer , fat ) = x% etc.，模型 生成 了一个分布给你了，即使你没意识到/没用到，只用到 p( cancer | fat ) = y% 这个最终的判别。 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">你再理解一下： 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向量机、提升方法是判别模型； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">隐马尔可夫模型（重点的EM算法）是生成模型。 
+</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
     A[Hard edge] --&gt;|Link textQQ  | B(Round edge)
     B --&gt; C{Decision}
     C --&gt;|One| D[Result one]
@@ -152,7 +152,7 @@ k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向�
 </code></pre><h2 id="2常用算法">2.常用算法</h2>
 <h3 id="21-线性回归">2.1 线性回归</h3>
 <h4 id="211-局部加权线性回归">2.1.1 局部加权线性回归</h4>
-<pre><code>https://blog.csdn.net/Allenalex/article/details/16370245 
+<pre tabindex="0"><code>https://blog.csdn.net/Allenalex/article/details/16370245 
 https://blog.csdn.net/tianse12/article/details/70161591 
 https://blog.csdn.net/herosofearth/article/details/51969517 
 </code></pre><h4 id="212-广义线性模型">2.1.2 广义线性模型</h4>

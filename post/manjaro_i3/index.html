@@ -108,135 +108,127 @@
 <p>chro
 <a href="https://www.cnblogs.com/sparkdev/p/6842805.html">SSH 远程执行任务 </a></p>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看字体</span>
-fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
-
-<span class="c1">#Linux查看端口占用情况</span>
-netstat -anp <span class="p">|</span> grep <span class="m">8080</span>
-
-<span class="c1"># 下获取pid并杀死进程 ( grep -v grep  排除grep自身查找 )</span>
-<span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep python <span class="p">|</span>grep ****.py <span class="p">|</span> <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
-
-<span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep  JrebelBrainsLicenseServerforJava <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
-
-<span class="c1"># archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87</span>
-systemctl start dnsmasq
-
-<span class="c1"># 开启 ssh sudo </span>
-pacman -S openssh 
-<span class="c1">#启动SSH </span>
-systemctl start sshd.service
-
-
-<span class="c1"># 终端设置代理</span>
-<span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
-<span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
-
-<span class="c1"># 取消终端代理</span>
-<span class="nb">unset</span> http_proxy
-<span class="nb">unset</span> https_proxy
-
-<span class="c1">#查看ip</span>
-
-curl ipinfo.me
-curl ifconfig.me
-https://www.ip111.cn
-
-</code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看字体</span>
+</span></span><span class="line"><span class="cl">fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Linux查看端口占用情况</span>
+</span></span><span class="line"><span class="cl">netstat -anp <span class="p">|</span> grep <span class="m">8080</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 下获取pid并杀死进程 ( grep -v grep  排除grep自身查找 )</span>
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep python <span class="p">|</span>grep ****.py <span class="p">|</span> <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep  JrebelBrainsLicenseServerforJava <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87</span>
+</span></span><span class="line"><span class="cl">systemctl start dnsmasq
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 开启 ssh sudo </span>
+</span></span><span class="line"><span class="cl">pacman -S openssh 
+</span></span><span class="line"><span class="cl"><span class="c1">#启动SSH </span>
+</span></span><span class="line"><span class="cl">systemctl start sshd.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 终端设置代理</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 取消终端代理</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> http_proxy
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> https_proxy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#查看ip</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl ipinfo.me
+</span></span><span class="line"><span class="cl">curl ifconfig.me
+</span></span><span class="line"><span class="cl">https://www.ip111.cn
+</span></span></code></pre></div><!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">
-
-# 系统默认使用 jdk 1.8
-export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-export PATH=$PATH:$JAVA_HOME/bin
-
- 
-
-export GO111MODULE=on
-export GOPATH=/home/zls/workspaces/sdk/GOPATH
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
- 
-export DENO_INSTALL=&#34;/home/zls/.deno&#34;
-export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
-</code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 系统默认使用 jdk 1.8
+</span></span><span class="line"><span class="cl">export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
+</span></span><span class="line"><span class="cl">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+</span></span><span class="line"><span class="cl">export PATH=$PATH:$JAVA_HOME/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">export GO111MODULE=on
+</span></span><span class="line"><span class="cl">export GOPATH=/home/zls/workspaces/sdk/GOPATH
+</span></span><span class="line"><span class="cl">export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">export DENO_INSTALL=&#34;/home/zls/.deno&#34;
+</span></span><span class="line"><span class="cl">export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
+</span></span></code></pre></div><!-- raw HTML omitted -->
 <h3 id="系统安装">系统安装</h3>
-<h3 id="12-驱动设置">1.2 驱动设置</h3>
-<h4 id="121-音频使用pulse">1.2.1 音频使用pulse</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">install_pulse
-</code></pre></div><h4 id="122-显卡使用闭源驱动为了使用cuda">1.2.2 显卡使用闭源驱动（为了使用cuda）</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装闭源驱动</span>
-sudo mhwd -a pci nonfree <span class="m">0300</span>
-<span class="c1">#查看驱动</span>
-mhwd -li
-</code></pre></div><h3 id="设置软件源">设置软件源</h3>
+<h3 id="驱动设置">驱动设置</h3>
+<h4 id="音频使用pulse">音频使用pulse</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">install_pulse
+</span></span></code></pre></div><h4 id="显卡使用闭源驱动为了使用cuda">显卡使用闭源驱动（为了使用cuda）</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装闭源驱动</span>
+</span></span><span class="line"><span class="cl">sudo mhwd -a pci nonfree <span class="m">0300</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#查看驱动</span>
+</span></span><span class="line"><span class="cl">mhwd -li
+</span></span></code></pre></div><h4 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h4>
+<p><a href="https://wiki.archlinuxcn.org/wiki/PC_speaker?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DPC_speaker_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno">PC speaker</a></p>
+<h3 id="设置软件源">设置软件源</h3>
 <p>配置 <a href="https://github.com/archlinuxcn/repo">archlinuxcn</a>,编辑 /etc/pacman.conf   文件末尾追加</p>
-<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">[archlinuxcn]
-Server = https://repo.archlinuxcn.org/$arch
-</code></pre></div><p>后执行</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Sy <span class="o">&amp;&amp;</span> sudo pacman -S archlinuxcn-keyring
-sudo pacman-mirrors -i -c China -m rank
-sudo pacman -Syyu base-devel yay net-tools
-</code></pre></div><h4 id="pacman-yay用法">pacman yay用法</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># pacman 的常用命令语法：</span>
-pacman -S package_name        <span class="c1"># 安装软件  </span>
-pacman -S extra/package_name  <span class="c1"># 安装不同仓库中的版本</span>
-pacman -Syu                   <span class="c1"># 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span>
-pacman -Ss string             <span class="c1"># 在包数据库中查询软件</span>
-pacman -Si package_name       <span class="c1"># 显示软件的详细信息</span>
-pacman -Sc                    <span class="c1"># 清除软件缓存，即/var/cache/pacman/pkg目录下的文件</span>
-pacman -R package_name        <span class="c1"># 删除单个软件</span>
-pacman -Rs package_name       <span class="c1"># 删除指定软件及其没有被其他已安装软件使用的依赖关系</span>
-pacman -Qs string             <span class="c1"># 查询已安装的软件包</span>
-pacman -Qi package_name       <span class="c1"># 查询本地安装包的详细信息</span>
-pacman -Ql package_name       <span class="c1"># 获取已安装软件所包含的文件的列表</span>
-pacman -U package.tar.zx      <span class="c1"># 从本地文件安装</span>
-pactree package_name          <span class="c1"># 显示软件的依赖树</span>
-
-
-<span class="c1"># 导出软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages</span>
-pacman -Qqe &gt; pkglist.txt
-<span class="c1"># 还原软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Install_packages_from_a_list</span>
-pacman -S --needed - &lt; pkglist.txt
-
-</code></pre></div><p>yay 的用法和 pacman 完全类似，上述所有 pacman xxx 命令，均可替换成 yay xxx 执行。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[archlinuxcn]
+</span></span><span class="line"><span class="cl">Server = https://repo.archlinuxcn.org/$arch
+</span></span></code></pre></div><p>后执行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -Sy <span class="o">&amp;&amp;</span> sudo pacman -S archlinuxcn-keyring
+</span></span><span class="line"><span class="cl">sudo pacman-mirrors -i -c China -m rank
+</span></span><span class="line"><span class="cl">sudo pacman -Syyu base-devel yay net-tools
+</span></span></code></pre></div><h4 id="pacman-yay用法">pacman yay用法</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># pacman 的常用命令语法：</span>
+</span></span><span class="line"><span class="cl">pacman -S package_name        <span class="c1"># 安装软件  </span>
+</span></span><span class="line"><span class="cl">pacman -S extra/package_name  <span class="c1"># 安装不同仓库中的版本</span>
+</span></span><span class="line"><span class="cl">pacman -Syu                   <span class="c1"># 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span>
+</span></span><span class="line"><span class="cl">pacman -Ss string             <span class="c1"># 在包数据库中查询软件</span>
+</span></span><span class="line"><span class="cl">pacman -Si package_name       <span class="c1"># 显示软件的详细信息</span>
+</span></span><span class="line"><span class="cl">pacman -Sc                    <span class="c1"># 清除软件缓存，即/var/cache/pacman/pkg目录下的文件</span>
+</span></span><span class="line"><span class="cl">pacman -R package_name        <span class="c1"># 删除单个软件</span>
+</span></span><span class="line"><span class="cl">pacman -Rs package_name       <span class="c1"># 删除指定软件及其没有被其他已安装软件使用的依赖关系</span>
+</span></span><span class="line"><span class="cl">pacman -Qs string             <span class="c1"># 查询已安装的软件包</span>
+</span></span><span class="line"><span class="cl">pacman -Qi package_name       <span class="c1"># 查询本地安装包的详细信息</span>
+</span></span><span class="line"><span class="cl">pacman -Ql package_name       <span class="c1"># 获取已安装软件所包含的文件的列表</span>
+</span></span><span class="line"><span class="cl">pacman -U package.tar.zx      <span class="c1"># 从本地文件安装</span>
+</span></span><span class="line"><span class="cl">pactree package_name          <span class="c1"># 显示软件的依赖树</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 导出软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages</span>
+</span></span><span class="line"><span class="cl">pacman -Qqe &gt; pkglist.txt
+</span></span><span class="line"><span class="cl"><span class="c1"># 还原软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Install_packages_from_a_list</span>
+</span></span><span class="line"><span class="cl">pacman -S --needed - &lt; pkglist.txt
+</span></span></code></pre></div><p>yay 的用法和 pacman 完全类似，上述所有 pacman xxx 命令，均可替换成 yay xxx 执行。</p>
 <p>此外，还有一条 yay 命令值得记一下：</p>
 <p>yay -c  # 卸载所有无用的依赖。类比 apt-get autoremove</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay  -S   pstree  
-
-</code></pre></div><h3 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h3>
-<p><a href="https://wiki.archlinuxcn.org/wiki/PC_speaker?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DPC_speaker_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno">PC speaker</a></p>
-<h3 id="驱动">驱动</h3>
-<h4 id="声音设置">声音设置</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">install_pulse
-</code></pre></div><h4 id="显卡驱动与cuda">显卡驱动与Cuda</h4>
-<h3 id="xbindkeys安装设置">xbindkeys安装设置</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy xbindkeys xdotool
-xbindkeys --defaults &gt; ~/.xbindkeysrc
-</code></pre></div><p>编辑 ~/.config/autostart/xbindkeys_start.sh</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
-</span><span class="cp"></span><span class="nv">p_id</span><span class="o">=</span><span class="nv">$$</span>
-
-<span class="nv">pid</span><span class="o">=</span><span class="k">$(</span>ps -ef <span class="p">|</span>grep  xbindkeys <span class="p">|</span> grep -v grep <span class="p">|</span> grep -v <span class="si">${</span><span class="nv">p_id</span><span class="si">}</span> <span class="p">|</span>  awk <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span>
-
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$pid</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&#34;KILL </span><span class="nv">$pid</span><span class="s2">&#34;</span>
-    <span class="nb">kill</span> -9 <span class="nv">$pid</span>   
-<span class="k">fi</span>
-
-xbindkeys
-</code></pre></div><h4 id="中文与字体">中文与字体</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts 
-yay -Sy nerd-fonts-jetbrains-mono nerd-fonts-ubuntu 
-yay -Sy noto-fonts-cjk noto-fonts-emoji   ttf-fira-code ttf-fira-mono   awesome-terminal-fonts
- 
-yay -Sy wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei 
-
-yay -Sy  ttf-font-awesome ttf-font-awesome-4 ttf-font-awesome-5 ttf-ms-fonts  ttf-wps-fonts wps-office-fonts 
-
-</code></pre></div><p>conky日期乱码</p>
-<pre><code>在安装和安装好以后，右上角的日期 某月 星期几 都是框框乱码。解决办法如下：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay  -S   pstree  
+</span></span></code></pre></div><h3 id="xbindkeys安装设置">xbindkeys安装设置</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy xbindkeys xdotool
+</span></span><span class="line"><span class="cl">xbindkeys --defaults &gt; ~/.xbindkeysrc
+</span></span></code></pre></div><p>编辑 ~/.config/autostart/xbindkeys_start.sh</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">p_id</span><span class="o">=</span><span class="nv">$$</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">pid</span><span class="o">=</span><span class="k">$(</span>ps -ef <span class="p">|</span>grep  xbindkeys <span class="p">|</span> grep -v grep <span class="p">|</span> grep -v <span class="si">${</span><span class="nv">p_id</span><span class="si">}</span> <span class="p">|</span>  awk <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$pid</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;KILL </span><span class="nv">$pid</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">kill</span> -9 <span class="nv">$pid</span>   
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">xbindkeys
+</span></span></code></pre></div><h4 id="中文与字体">中文与字体</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts 
+</span></span><span class="line"><span class="cl">yay -Sy nerd-fonts-jetbrains-mono nerd-fonts-ubuntu 
+</span></span><span class="line"><span class="cl">yay -Sy noto-fonts-cjk noto-fonts-emoji   ttf-fira-code ttf-fira-mono   awesome-terminal-fonts
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">yay -Sy wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yay -Sy  ttf-font-awesome ttf-font-awesome-4 ttf-font-awesome-5 ttf-ms-fonts  ttf-wps-fonts wps-office-fonts 
+</span></span></code></pre></div><p>conky日期乱码</p>
+<pre tabindex="0"><code>在安装和安装好以后，右上角的日期 某月 星期几 都是框框乱码。解决办法如下：
 
 找到 /usr/share/conky/conky_maia
 
@@ -244,30 +236,29 @@ yay -Sy  ttf-font-awesome ttf-font-awesome-4 ttf-font-awesome-5 ttf-ms-fonts  tt
 
 然后就方块就变成中文了。
 </code></pre><p><a href="https://segmentfault.com/a/1190000037454534">manjaro 主路径中文改英文</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S xdg-user-dirs-gtk
-<span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
-xdg-user-dirs-gtk-update
-<span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8
-xdg-user-dirs-gtk-update 
-</code></pre></div><p>Fcitx5 安装</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-pinyin-custom-pinyin-dictionary fcitx5-pinyin-moegirl  fcitx5-input-support
-
-</code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S xdg-user-dirs-gtk
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+</span></span><span class="line"><span class="cl">xdg-user-dirs-gtk-update
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8
+</span></span><span class="line"><span class="cl">xdg-user-dirs-gtk-update 
+</span></span></code></pre></div><p>Fcitx5 安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-pinyin-custom-pinyin-dictionary fcitx5-pinyin-moegirl  fcitx5-input-support
+</span></span></code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
 编辑 /etc/environment 并添加以下几行，然后重新登录</p>
-<pre><code>
+<pre tabindex="0"><code>
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 GLFW_IM_MODULE=ibus
 </code></pre><!-- raw HTML omitted -->
-<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">GTK_IM_MODULE DEFAULT=fcitx
-QT_IM_MODULE  DEFAULT=fcitx
-XMODIFIERS    DEFAULT=@im=fcitx
-INPUT_METHOD  DEFAULT=fcitx
-SDL_IM_MODULE DEFAULT=fcitx
-
-</code></pre></div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">GTK_IM_MODULE DEFAULT=fcitx
+</span></span><span class="line"><span class="cl">QT_IM_MODULE  DEFAULT=fcitx
+</span></span><span class="line"><span class="cl">XMODIFIERS    DEFAULT=@im=fcitx
+</span></span><span class="line"><span class="cl">INPUT_METHOD  DEFAULT=fcitx
+</span></span><span class="line"><span class="cl">SDL_IM_MODULE DEFAULT=fcitx
+</span></span></code></pre></div><!-- raw HTML omitted -->
 <p><a href="https://www.cnblogs.com/fatalord/p/13850072.html">manjaro linux安装配置中文输入法fcitx5</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/468426138">Manjaro安装Fcitx5中文输入法</a></p>
 <p><a href="https://github.com/hosxy/Fcitx5-Material-Color">https://github.com/hosxy/Fcitx5-Material-Color</a></p>
@@ -333,168 +324,161 @@ SDL_IM_MODULE DEFAULT=fcitx
 <p>配置方案</p>
 <h5 id="helix-editor">Helix Editor</h5>
 <p><a href="https://docs.helix-editor.com">Helix</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S helix-git
-</code></pre></div><h5 id="lapce">lapce</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S helix-git
+</span></span></code></pre></div><h5 id="lapce">lapce</h5>
 <p><a href="https://github.com/lapce/lapce">https://github.com/lapce/lapce</a></p>
 <h4 id="虚拟化">虚拟化</h4>
 <h5 id="virtualbox">VirtualBox</h5>
 <p><a href="https://download.virtualbox.org/virtualbox/">https://download.virtualbox.org/virtualbox/</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">uaneme a
-yay -S virtualbox virtualbox-ext-oracle
-
-groups 
-sudo usermod -aG vboxusers <span class="s2">&#34;</span><span class="nv">$USER</span><span class="s2">&#34;</span>
-groups zls
-</code></pre></div><h5 id="virtmanager">VirtManager</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uaneme a
+</span></span><span class="line"><span class="cl">yay -S virtualbox virtualbox-ext-oracle
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">groups 
+</span></span><span class="line"><span class="cl">sudo usermod -aG vboxusers <span class="s2">&#34;</span><span class="nv">$USER</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">groups zls
+</span></span></code></pre></div><h5 id="virtmanager">VirtManager</h5>
 <h5 id="docker">Docker</h5>
 <p><a href="https://blog.csdn.net/taotieren/article/details/107321202">在 Arch/Manjaro Linux 系统安装 Docker</a>
 <a href="https://www.geeksforgeeks.org/how-to-install-and-configure-docker-on-arch-based-linux-distributionsmanjaro/">How to install and configure Docker on Arch-based Linux Distributions(Manjaro) ?</a></p>
-<h3 id="办公软件cd-ro">办公软件cd ro</h3>
+<h3 id="办公软件">办公软件</h3>
 <h4 id="xmind">XMind</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S xmind8
-</code></pre></div><h3 id="typora-free">typora-free</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S typora-free 
-</code></pre></div><h4 id="wiznote">WizNote</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S xmind8
+</span></span></code></pre></div><h4 id="typora-free">typora-free</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S typora-free 
+</span></span></code></pre></div><h4 id="wiznote">WizNote</h4>
 <h4 id="telegram">Telegram</h4>
 <h3 id="多媒体">多媒体</h3>
 <h4 id="mpv">mpv</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy mpv
-</code></pre></div><p><a href="https://ttys3.dev/post/archlinux-mpv-undefined-symbol-vkcreatewaylandsurfacekhr/">ArchLinux 下 mpv: undefined symbol: vkCreateWaylandSurfaceKHR 问题解决</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy mpv
+</span></span></code></pre></div><p><a href="https://ttys3.dev/post/archlinux-mpv-undefined-symbol-vkcreatewaylandsurfacekhr/">ArchLinux 下 mpv: undefined symbol: vkCreateWaylandSurfaceKHR 问题解决</a></p>
 <h4 id="lx-music">lx-music</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy lx-music-desktop-appimage
-</code></pre></div><h4 id="flamshot">Flamshot</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy lx-music-desktop-appimage
+</span></span></code></pre></div><h4 id="flamshot">Flamshot</h4>
 <h3 id="网络应用">网络应用</h3>
 <p>禁用IPv6</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Add this opjtion to /etc/default/grub:</span>
-
-<span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34; ipv6.disable=1 &#34;</span>
-
-<span class="c1">#Comment out the IPv6 line in /etc/hosts:</span>
-
-<span class="c1"># ::1 localhost ip6-localhost ip6-loopback</span>
-<span class="c1"># Generate a new grub.cfg file:</span>
-
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-Reboot.
-</code></pre></div><h4 id="v2rayv2rayaproxychains安装设置">v2ray、v2raya、proxychains安装设置</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Sy v2ray v2raya-git proxychains-ng
-systemctl start v2raya
-systemctl <span class="nb">enable</span>  v2raya
-<span class="c1"># 浏览器访问 http://127.0.0.1:2017 进行设置</span>
-<span class="c1"># 编辑 /etc/proxychains.conf </span>
-
-curl ipinfo.io
-proxychains curl ipinfo.io
-
-</code></pre></div><h4 id="warp安装设置">warp安装设置</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy cloudflare-warp-bin
-systemctl start warp-svc
-warp-cli teams-enroll  zls3201 <span class="c1"># 获取链接</span>
-systemctl --user start warp-taskbar
-
-warp-cli teams-enroll-token com.cloudflare.warp://zls3201.cloudflareaccess.com/auth?token<span class="o">=</span>... <span class="c1"># token登陆</span>
-warp-cli register
-warp-cli connect <span class="c1"># 开启warp</span>
-warp-cli enable-always-on <span class="c1"># 设置开机自启warp</span>
-
-warp-cli settings <span class="c1"># 检查一下设置</span>
-
-warp-cli status
-systemctl --user cat  warp-taskbar
-systemctl cat warp-svc
-warp-cli disconnect 
-warp-cli set-mode proxy <span class="c1"># 设置socks5代理，默认是127.0.0.1:40000</span>
-</code></pre></div><h4 id="chrome">Chrome</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy google-chrome
-
-<span class="c1"># 使用代理浏览</span>
-google-chrome-stable --proxy-server<span class="o">=</span><span class="s2">&#34;socks5://127.0.0.1:2080&#34;</span> <span class="p">&amp;</span>
-</code></pre></div><p>设置默认浏览器
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Add this opjtion to /etc/default/grub:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34; ipv6.disable=1 &#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Comment out the IPv6 line in /etc/hosts:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ::1 localhost ip6-localhost ip6-loopback</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Generate a new grub.cfg file:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo grub-mkconfig -o /boot/grub/grub.cfg
+</span></span><span class="line"><span class="cl">Reboot.
+</span></span></code></pre></div><h4 id="v2rayv2rayaproxychains安装设置">v2ray、v2raya、proxychains安装设置</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -Sy v2ray v2raya-git proxychains-ng
+</span></span><span class="line"><span class="cl">systemctl start v2raya
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span>  v2raya
+</span></span><span class="line"><span class="cl"><span class="c1"># 浏览器访问 http://127.0.0.1:2017 进行设置</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 编辑 /etc/proxychains.conf </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl ipinfo.io
+</span></span><span class="line"><span class="cl">proxychains curl ipinfo.io
+</span></span></code></pre></div><h4 id="warp安装设置">warp安装设置</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy cloudflare-warp-bin
+</span></span><span class="line"><span class="cl">systemctl start warp-svc
+</span></span><span class="line"><span class="cl">warp-cli teams-enroll  zls3201 <span class="c1"># 获取链接</span>
+</span></span><span class="line"><span class="cl">systemctl --user start warp-taskbar
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">warp-cli teams-enroll-token com.cloudflare.warp://zls3201.cloudflareaccess.com/auth?token<span class="o">=</span>... <span class="c1"># token登陆</span>
+</span></span><span class="line"><span class="cl">warp-cli register
+</span></span><span class="line"><span class="cl">warp-cli connect <span class="c1"># 开启warp</span>
+</span></span><span class="line"><span class="cl">warp-cli enable-always-on <span class="c1"># 设置开机自启warp</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">warp-cli settings <span class="c1"># 检查一下设置</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">warp-cli status
+</span></span><span class="line"><span class="cl">systemctl --user cat  warp-taskbar
+</span></span><span class="line"><span class="cl">systemctl cat warp-svc
+</span></span><span class="line"><span class="cl">warp-cli disconnect 
+</span></span><span class="line"><span class="cl">warp-cli set-mode proxy <span class="c1"># 设置socks5代理，默认是127.0.0.1:40000</span>
+</span></span></code></pre></div><h4 id="chrome">Chrome</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy google-chrome
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用代理浏览</span>
+</span></span><span class="line"><span class="cl">google-chrome-stable --proxy-server<span class="o">=</span><span class="s2">&#34;socks5://127.0.0.1:2080&#34;</span> <span class="p">&amp;</span>
+</span></span></code></pre></div><p>设置默认浏览器
 vim ~/.config/mimeapps.list</p>
 <p>批量替换
 ::%s/userapp-Pale Moon/google-chrome/g</p>
 <h4 id="edge">Edge</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S microsoft-edge-stable-bin
-
-</code></pre></div><h4 id="迅雷">迅雷</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy xunlei-bin
-
-</code></pre></div><h3 id="应用开发">应用开发</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S microsoft-edge-stable-bin
+</span></span></code></pre></div><h4 id="迅雷">迅雷</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy xunlei-bin
+</span></span></code></pre></div><h3 id="程序开发">程序开发</h3>
 <h4 id="git">git</h4>
 <h4 id="java开发设置">Java开发设置</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy jre17-openjdk-headless jre17-openjdk jdk17-openjdk
-</code></pre></div><h5 id="sdkman安装jdk-maven">sdkman安装jdk maven</h5>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy zip unzip
-curl -s <span class="s2">&#34;https://get.sdkman.io&#34;</span> <span class="p">|</span> bash
-<span class="nb">source</span> <span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.sdkman/bin/sdkman-init.sh&#34;</span>
-<span class="nb">source</span> <span class="s2">&#34;/home/zls/.sdkman/bin/sdkman-init.sh&#34;</span>
-
-sdk install java 11.0.17-zulu  
-sdk version
-sdk install java 8.0.352-zulu
-sdk install java 11.0.17-zulu  
-sdk install java 17.0.5-zulu 
-sdk install maven 3.8.6
-
-yay -Sy intellij-idea-ultimate-edition
- 
-</code></pre></div><h4 id="nvs">nvs</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay nvm
-<span class="nb">echo</span> <span class="s1">&#39;source /usr/share/nvm/init-nvm.sh&#39;</span> &gt;&gt; ~/.bashrc
-<span class="nb">source</span> ~/.bashrc 
-nvm
-
-nvm install  --lts
-nvm use  --lts
-nvm link  --lts
-nvm ls
-nvm ls-remote
-</code></pre></div><h4 id="golang">golang</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy jre17-openjdk-headless jre17-openjdk jdk17-openjdk
+</span></span></code></pre></div><h5 id="sdkman安装jdk-maven">sdkman安装jdk maven</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy zip unzip
+</span></span><span class="line"><span class="cl">curl -s <span class="s2">&#34;https://get.sdkman.io&#34;</span> <span class="p">|</span> bash
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> <span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.sdkman/bin/sdkman-init.sh&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> <span class="s2">&#34;/home/zls/.sdkman/bin/sdkman-init.sh&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sdk install java 11.0.17-zulu  
+</span></span><span class="line"><span class="cl">sdk version
+</span></span><span class="line"><span class="cl">sdk install java 8.0.352-zulu
+</span></span><span class="line"><span class="cl">sdk install java 11.0.17-zulu  
+</span></span><span class="line"><span class="cl">sdk install java 17.0.5-zulu 
+</span></span><span class="line"><span class="cl">sdk install maven 3.8.6
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yay -Sy intellij-idea-ultimate-edition
+</span></span><span class="line"><span class="cl"> 
+</span></span></code></pre></div><h4 id="nvs">nvs</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay nvm
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;source /usr/share/nvm/init-nvm.sh&#39;</span> &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc 
+</span></span><span class="line"><span class="cl">nvm
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nvm install  --lts
+</span></span><span class="line"><span class="cl">nvm use  --lts
+</span></span><span class="line"><span class="cl">nvm link  --lts
+</span></span><span class="line"><span class="cl">nvm ls
+</span></span><span class="line"><span class="cl">nvm ls-remote
+</span></span></code></pre></div><h4 id="golang">golang</h4>
 <h4 id="rust">Rust</h4>
 <h4 id="dotnet">DotNet</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
-mkdir .dotnet
-<span class="nb">cd</span> .dotnet/
-wget https://dot.net/v1/dotnet-install.sh 
-chmod +x ./dotnet-install.sh 
- 
-./dotnet-install.sh --version latest
-./dotnet-install.sh --channel 7.0
-./dotnet --list-sdks
-<span class="nb">echo</span> <span class="s1">&#39;export DOTNET_ROOT=$HOME/.dotnet&#39;</span> &gt;&gt; ~/.bashrc
-<span class="nb">echo</span> <span class="s1">&#39;export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools&#39;</span> &gt;&gt; ~/.bashrc
-
-yay -Sy rider 
-</code></pre></div><h4 id="python深度学习">Python深度学习</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nvidia-smi 
-yay -Sy cuda cudnn
-yay -Sy miniconda
-
-<span class="nb">source</span> /opt/miniconda/etc/profile.d/conda.sh
-<span class="nb">source</span> ~/.bashrc 
-conda env list
-
-conda create -n  dl39  <span class="nv">python</span><span class="o">=</span>3.9
-conda activate dl39
- 
-pip3 --no-cache-dir install tensorflow torch torchvision torchaudio   
-pip3  --no-cache-dir install scipy  tensorboard opencv-python pandas seaborn Pillow psutil  PyYAML requests thop tqdm ipython  ipykernel gitpython tensorrt
-
-</code></pre></div><h4 id="sublime-text">sublime-text</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
- yay -Sy  sublime-text-4 
-
-</code></pre></div><h4 id="vscode">vscode</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> yay -Sy  visual-studio-code-bin
-
-</code></pre></div><p>关于文件夹默认用vscode打开的问题处理</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ xdg-mime query default inode/directory
-$ ls /usr/share/applications  <span class="p">|</span> grep pcman
-pcmanfm.desktop
-$ xdg-mime default pcmanfm.desktop inode/directory
-$ xdg-mime query default inode/directory
-
-</code></pre></div><h4 id="dbeaver">DBeaver</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir .dotnet
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> .dotnet/
+</span></span><span class="line"><span class="cl">wget https://dot.net/v1/dotnet-install.sh 
+</span></span><span class="line"><span class="cl">chmod +x ./dotnet-install.sh 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">./dotnet-install.sh --version latest
+</span></span><span class="line"><span class="cl">./dotnet-install.sh --channel 7.0
+</span></span><span class="line"><span class="cl">./dotnet --list-sdks
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;export DOTNET_ROOT=$HOME/.dotnet&#39;</span> &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools&#39;</span> &gt;&gt; ~/.bashrc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yay -Sy rider 
+</span></span></code></pre></div><h4 id="python深度学习">Python深度学习</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvidia-smi 
+</span></span><span class="line"><span class="cl">yay -Sy cuda cudnn
+</span></span><span class="line"><span class="cl">yay -Sy miniconda
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> /opt/miniconda/etc/profile.d/conda.sh
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc 
+</span></span><span class="line"><span class="cl">conda env list
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">conda create -n  dl39  <span class="nv">python</span><span class="o">=</span>3.9
+</span></span><span class="line"><span class="cl">conda activate dl39
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">pip3 --no-cache-dir install tensorflow torch torchvision torchaudio   
+</span></span><span class="line"><span class="cl">pip3  --no-cache-dir install scipy  tensorboard opencv-python pandas seaborn Pillow psutil  PyYAML requests thop tqdm ipython  ipykernel gitpython tensorrt
+</span></span></code></pre></div><h4 id="sublime-text">sublime-text</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> yay -Sy  sublime-text-4 
+</span></span></code></pre></div><h4 id="vscode">vscode</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> yay -Sy  visual-studio-code-bin
+</span></span></code></pre></div><p>关于文件夹默认用vscode打开的问题处理</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ xdg-mime query default inode/directory
+</span></span><span class="line"><span class="cl">$ ls /usr/share/applications  <span class="p">|</span> grep pcman
+</span></span><span class="line"><span class="cl">pcmanfm.desktop
+</span></span><span class="line"><span class="cl">$ xdg-mime default pcmanfm.desktop inode/directory
+</span></span><span class="line"><span class="cl">$ xdg-mime query default inode/directory
+</span></span></code></pre></div><h4 id="dbeaver">DBeaver</h4>
 <h4 id="navicat">Navicat</h4>
 <h4 id="jetbrains全家桶">JetBrains全家桶</h4>
 <p><a href="https://github.com/RikudouPatrickstar/JetBrainsRuntime-for-Linux-x64">fcitx 输入法候选框不跟随光标</a></p>
@@ -516,16 +500,14 @@ $ xdg-mime query default inode/directory
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 1795</h4> 
+    <h4>Manjaro I3安装配置の字数: 1773</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#系统安装设置">系统安装设置</a>
       <ul>
         <li><a href="#系统安装">系统安装</a></li>
-        <li><a href="#12-驱动设置">1.2 驱动设置</a></li>
+        <li><a href="#驱动设置">驱动设置</a></li>
         <li><a href="#设置软件源">设置软件源</a></li>
-        <li><a href="#关闭主板蜂鸣器">关闭主板蜂鸣器</a></li>
-        <li><a href="#驱动">驱动</a></li>
         <li><a href="#xbindkeys安装设置">xbindkeys安装设置</a></li>
         <li><a href="#系统软件安装">系统软件安装</a></li>
       </ul>
@@ -533,11 +515,10 @@ $ xdg-mime query default inode/directory
     <li><a href="#软件安装">软件安装</a>
       <ul>
         <li><a href="#系统软件">系统软件</a></li>
-        <li><a href="#办公软件cd-ro">办公软件cd ro</a></li>
-        <li><a href="#typora-free">typora-free</a></li>
+        <li><a href="#办公软件">办公软件</a></li>
         <li><a href="#多媒体">多媒体</a></li>
         <li><a href="#网络应用">网络应用</a></li>
-        <li><a href="#应用开发">应用开发</a></li>
+        <li><a href="#程序开发">程序开发</a></li>
       </ul>
     </li>
   </ul>

@@ -113,23 +113,23 @@
 <p><a href="https://github.com/Pines-Cheng/blog/issues/55">13 个示例快速入门 JS 抽象语法树</a></p>
 <p><a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/315">babel 怎么把字符串解析成 AST</a></p>
 <p><a href="https://esprima.org/">esprima</a> js词法语法解析</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">esprima</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;esprima&#39;</span><span class="p">);</span>
-<span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">program</span> <span class="o">=</span> <span class="s1">&#39;const answer = 42&#39;</span><span class="p">;</span>
-
-<span class="o">&gt;</span> <span class="nx">esprima</span><span class="p">.</span><span class="nx">tokenize</span><span class="p">(</span><span class="nx">program</span><span class="p">);</span>
-<span class="p">[</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Keyword&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;const&#39;</span> <span class="p">},</span>
-  <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Identifier&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;answer&#39;</span> <span class="p">},</span>
-  <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Punctuator&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;=&#39;</span> <span class="p">},</span>
-  <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Numeric&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;42&#39;</span> <span class="p">}</span> <span class="p">]</span>
-  
-<span class="o">&gt;</span> <span class="nx">esprima</span><span class="p">.</span><span class="nx">parseScript</span><span class="p">(</span><span class="nx">program</span><span class="p">);</span>
-<span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Program&#39;</span><span class="p">,</span>
-  <span class="nx">body</span><span class="o">:</span>
-   <span class="p">[</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;VariableDeclaration&#39;</span><span class="p">,</span>
-       <span class="nx">declarations</span><span class="o">:</span> <span class="p">[</span><span class="nb">Object</span><span class="p">],</span>
-       <span class="nx">kind</span><span class="o">:</span> <span class="s1">&#39;const&#39;</span> <span class="p">}</span> <span class="p">],</span>
-  <span class="nx">sourceType</span><span class="o">:</span> <span class="s1">&#39;script&#39;</span> <span class="p">}</span>
-</code></pre></div><p><a href="https://www.youtube.com/watch?v=oMpqj_nMsg0">The Future of Programming Languages</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">esprima</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;esprima&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">program</span> <span class="o">=</span> <span class="s1">&#39;const answer = 42&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="nx">esprima</span><span class="p">.</span><span class="nx">tokenize</span><span class="p">(</span><span class="nx">program</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Keyword&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;const&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Identifier&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;answer&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Punctuator&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;=&#39;</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Numeric&#39;</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;42&#39;</span> <span class="p">}</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="nx">esprima</span><span class="p">.</span><span class="nx">parseScript</span><span class="p">(</span><span class="nx">program</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;Program&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">body</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="p">[</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;VariableDeclaration&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="nx">declarations</span><span class="o">:</span> <span class="p">[</span><span class="nb">Object</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">       <span class="nx">kind</span><span class="o">:</span> <span class="s1">&#39;const&#39;</span> <span class="p">}</span> <span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sourceType</span><span class="o">:</span> <span class="s1">&#39;script&#39;</span> <span class="p">}</span>
+</span></span></code></pre></div><p><a href="https://www.youtube.com/watch?v=oMpqj_nMsg0">The Future of Programming Languages</a></p>
 <p><a href="https://ziglang.org/">Zig</a></p>
 <p><a href="https://nim-lang.org/">Nim</a></p>
 <p><a href="https://github.com/ValeLang/Vale">Vale</a></p>

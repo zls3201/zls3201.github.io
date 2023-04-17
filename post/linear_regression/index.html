@@ -111,106 +111,104 @@ J(\theta)=\frac 1 m  \sum^{m}<em>{i=1} \frac 1 2 (h</em>{\theta}(x^{(i)})-y^{(i)
 $$</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="s2">&#34;&#34;&#34;
-</span><span class="s2">Created on Sat Jun  9 08:18:10 2018
-</span><span class="s2">
-</span><span class="s2">@author: zls3201@gmail.com
-</span><span class="s2">&#34;&#34;&#34;</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">animation</span> <span class="k">as</span> <span class="n">amat</span>
-
-<span class="k">def</span> <span class="nf">loadDataSet</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;从文本文件加载数据.
-</span><span class="s2">
-</span><span class="s2">    文件内容格式.
-</span><span class="s2">
-</span><span class="s2">    Args:
-</span><span class="s2">        path: 传入文件名称.
-</span><span class="s2">
-</span><span class="s2">    Returns:
-</span><span class="s2">        返回一个参数矩阵x和一个结论列向量y. 
-</span><span class="s2">    
-</span><span class="s2">    &#34;&#34;&#34;</span>
-    <span class="n">dataX</span><span class="o">=</span><span class="p">[];</span><span class="n">dataY</span><span class="o">=</span><span class="p">[]</span>
-    <span class="n">fr</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fr</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-        <span class="n">dataArr</span><span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span>  <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">):</span>
-            <span class="n">dataArr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
-       
-        <span class="n">dataX</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-        <span class="n">dataY</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-    
-    <span class="k">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">dataX</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;对数据进行归一化处理.
-</span><span class="s2">
-</span><span class="s2">    文件内容格式.
-</span><span class="s2">
-</span><span class="s2">    Args:
-</span><span class="s2">        matriX: 参数组成的矩阵x，每行为一组样本个例参数.
-</span><span class="s2">        vertY: 结论值组成的向量y.
-</span><span class="s2">
-</span><span class="s2">    Returns:
-</span><span class="s2">        返回归一化后的一个参数矩阵x和一个结论列向量y
-</span><span class="s2">    
-</span><span class="s2">    &#34;&#34;&#34;</span>
-    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
-    <span class="n">colMaxMin</span><span class="o">=</span><span class="p">[</span><span class="n">dataX</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">dataX</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)]</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-            <span class="c1">#print (i,j,dataX[i][j])</span>
-            <span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span> <span class="p">(</span><span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="o">/</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-
-    <span class="n">minY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">min</span><span class="p">();</span><span class="n">maxY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataY</span><span class="p">)):</span>
-        <span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">minY</span><span class="p">)</span><span class="o">/</span><span class="n">maxY</span>
-
-    <span class="k">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span>
-
-<span class="k">def</span> <span class="nf">computeCost</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
-    <span class="n">m</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1">#     J = (np.sum((X.dot(theta) - y)**2)) / (2*m)</span>
-    <span class="n">C</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span>
-    <span class="n">J2</span> <span class="o">=</span> <span class="p">(</span><span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">C</span><span class="p">))</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">J2</span>
-
-<span class="k">def</span> <span class="nf">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">):</span>
-    <span class="n">matX</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
-    <span class="n">matY</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
-    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matX</span><span class="p">)</span>
-    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.001</span>
-    <span class="n">theta</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-    <span class="n">maxTimes</span><span class="o">=</span><span class="mi">500</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxTimes</span><span class="p">):</span>
-        <span class="n">theta</span><span class="o">=</span><span class="n">theta</span><span class="o">-</span><span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">matY</span><span class="p">))</span>
-        <span class="n">cost</span><span class="o">=</span><span class="n">computeCost</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">matY</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">theta</span>
-
-<span class="k">def</span> <span class="nf">stochastieGradientDeccent</span><span class="p">():</span>
-    <span class="k">return</span> <span class="mi">3</span>
-
-<span class="k">def</span> <span class="nf">miniBatchGradientDescent</span><span class="p">():</span>
-    <span class="k">return</span> <span class="mi">4</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">loadDataSet</span><span class="p">(</span><span class="s1">&#39;house_prize.txt&#39;</span><span class="p">)</span>
-    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
-    <span class="n">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
-
-
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">Created on Sat Jun  9 08:18:10 2018
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">@author: zls3201@gmail.com
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">animation</span> <span class="k">as</span> <span class="n">amat</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">loadDataSet</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;从文本文件加载数据.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    文件内容格式.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        path: 传入文件名称.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        返回一个参数矩阵x和一个结论列向量y. 
+</span></span></span><span class="line"><span class="cl"><span class="s2">    
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="o">=</span><span class="p">[];</span><span class="n">dataY</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fr</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fr</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dataArr</span><span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span>  <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dataArr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">       
+</span></span><span class="line"><span class="cl">        <span class="n">dataX</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dataY</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">dataX</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;对数据进行归一化处理.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    文件内容格式.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        matriX: 参数组成的矩阵x，每行为一组样本个例参数.
+</span></span></span><span class="line"><span class="cl"><span class="s2">        vertY: 结论值组成的向量y.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        返回归一化后的一个参数矩阵x和一个结论列向量y
+</span></span></span><span class="line"><span class="cl"><span class="s2">    
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">colMaxMin</span><span class="o">=</span><span class="p">[</span><span class="n">dataX</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">dataX</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">#print (i,j,dataX[i][j])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span> <span class="p">(</span><span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="o">/</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">minY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">min</span><span class="p">();</span><span class="n">maxY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataY</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">minY</span><span class="p">)</span><span class="o">/</span><span class="n">maxY</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">computeCost</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#     J = (np.sum((X.dot(theta) - y)**2)) / (2*m)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">C</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">J2</span> <span class="o">=</span> <span class="p">(</span><span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">C</span><span class="p">))</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">J2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">matX</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">matY</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.001</span>
+</span></span><span class="line"><span class="cl">    <span class="n">theta</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">maxTimes</span><span class="o">=</span><span class="mi">500</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxTimes</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">theta</span><span class="o">=</span><span class="n">theta</span><span class="o">-</span><span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">matY</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cost</span><span class="o">=</span><span class="n">computeCost</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">matY</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">theta</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">stochastieGradientDeccent</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">miniBatchGradientDescent</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">loadDataSet</span><span class="p">(</span><span class="s1">&#39;house_prize.txt&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
+</span></span></code></pre></div>
   </div>
   
 </article>
