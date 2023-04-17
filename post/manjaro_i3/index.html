@@ -111,11 +111,6 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 查看字体</span>
 fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
 
-<span class="c1"># 导出软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages</span>
-pacman -Qqe &gt; pkglist.txt
-<span class="c1"># 还原软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Install_packages_from_a_list</span>
-pacman -S --needed - &lt; pkglist.txt
-
 <span class="c1">#Linux查看端口占用情况</span>
 netstat -anp <span class="p">|</span> grep <span class="m">8080</span>
 
@@ -132,26 +127,6 @@ pacman -S openssh
 <span class="c1">#启动SSH </span>
 systemctl start sshd.service
 
-<span class="c1"># pacman 的常用命令语法：</span>
-pacman -S package_name        <span class="c1"># 安装软件  </span>
-pacman -S extra/package_name  <span class="c1"># 安装不同仓库中的版本</span>
-pacman -Syu                   <span class="c1"># 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span>
-pacman -Ss string             <span class="c1"># 在包数据库中查询软件</span>
-pacman -Si package_name       <span class="c1"># 显示软件的详细信息</span>
-pacman -Sc                    <span class="c1"># 清除软件缓存，即/var/cache/pacman/pkg目录下的文件</span>
-pacman -R package_name        <span class="c1"># 删除单个软件</span>
-pacman -Rs package_name       <span class="c1"># 删除指定软件及其没有被其他已安装软件使用的依赖关系</span>
-pacman -Qs string             <span class="c1"># 查询已安装的软件包</span>
-pacman -Qi package_name       <span class="c1"># 查询本地安装包的详细信息</span>
-pacman -Ql package_name       <span class="c1"># 获取已安装软件所包含的文件的列表</span>
-pacman -U package.tar.zx      <span class="c1"># 从本地文件安装</span>
-pactree package_name          <span class="c1"># 显示软件的依赖树</span>
-
-yay 的用法和 pacman 完全类似，上述所有 pacman xxx 命令，均可替换成 yay xxx 执行。
-
-此外，还有一条 yay 命令值得记一下：
-
-yay -c  <span class="c1"># 卸载所有无用的依赖。类比 apt-get autoremove</span>
 
 <span class="c1"># 终端设置代理</span>
 <span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
@@ -169,45 +144,14 @@ https://www.ip111.cn
 
 </code></pre></div><!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">alias pc=proxychains
-
-alias idea=intellij-idea-ultimate-edition 
-
-alias useproxy=&#34;
- export http_proxy=http://127.0.0.1:2081;
- export https_proxy=http://127.0.0.1:2081;
- export all_proxy=http://127.0.0.1:2081;
-&#34;
-
-alias unproxy=&#34;
- unset http_proxy;
- unset https_proxy;
- unset all_proxy;
-&#34;
-
-alias killdota=&#34;
-sudo kill -9 `ps -ef | grep dota.sh | awk &#39;{print $2}&#39;`
-&#34; 
-
-
-# 解决 fcitx5 光标不跟随
-export IDEA_JDK=/home/zls/workspaces/sdk/jbr_jcef-17.0.4-x64-b469
-export RIDER_JDK=/home/zls/workspaces/sdk/jbr_jcef-17.0.4-x64-b469
-export GOLAND_JDK=/home/zls/workspaces/sdk/jbr_jcef-17.0.4-x64-b469
-
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">
 
 # 系统默认使用 jdk 1.8
 export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export PATH=$PATH:$JAVA_HOME/bin
 
-export ANDROID_HOME=/home/zls/workspaces/sdk/Android
-export FLUTTER_HOME=/home/zls/workspaces/sdk/flutter
-export PATH=$PATH:$ANDROID_HOME/tools:$FLUTTER_HOME/bin
-
-export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
-export DOTNET_ROOT=/home/zls/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+ 
 
 export GO111MODULE=on
 export GOPATH=/home/zls/workspaces/sdk/GOPATH
@@ -216,54 +160,97 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export DENO_INSTALL=&#34;/home/zls/.deno&#34;
 export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
 </code></pre></div><!-- raw HTML omitted -->
-<h3 id="设置软件源">设置软件源</h3>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman-mirrors -i -c China -m rank
-sudo pacman -Syu
-sudo pacman -Sy base-devel yay net-tools
+<h3 id="系统安装">系统安装</h3>
+<h3 id="12-驱动设置">1.2 驱动设置</h3>
+<h4 id="121-音频使用pulse">1.2.1 音频使用pulse</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">install_pulse
+</code></pre></div><h4 id="122-显卡使用闭源驱动为了使用cuda">1.2.2 显卡使用闭源驱动（为了使用cuda）</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装闭源驱动</span>
+sudo mhwd -a pci nonfree <span class="m">0300</span>
+<span class="c1">#查看驱动</span>
+mhwd -li
+</code></pre></div><h3 id="设置软件源">设置软件源</h3>
+<p>配置 <a href="https://github.com/archlinuxcn/repo">archlinuxcn</a>,编辑 /etc/pacman.conf   文件末尾追加</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">[archlinuxcn]
+Server = https://repo.archlinuxcn.org/$arch
+</code></pre></div><p>后执行</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Sy <span class="o">&amp;&amp;</span> sudo pacman -S archlinuxcn-keyring
+sudo pacman-mirrors -i -c China -m rank
+sudo pacman -Syyu base-devel yay net-tools
+</code></pre></div><h4 id="pacman-yay用法">pacman yay用法</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># pacman 的常用命令语法：</span>
+pacman -S package_name        <span class="c1"># 安装软件  </span>
+pacman -S extra/package_name  <span class="c1"># 安装不同仓库中的版本</span>
+pacman -Syu                   <span class="c1"># 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span>
+pacman -Ss string             <span class="c1"># 在包数据库中查询软件</span>
+pacman -Si package_name       <span class="c1"># 显示软件的详细信息</span>
+pacman -Sc                    <span class="c1"># 清除软件缓存，即/var/cache/pacman/pkg目录下的文件</span>
+pacman -R package_name        <span class="c1"># 删除单个软件</span>
+pacman -Rs package_name       <span class="c1"># 删除指定软件及其没有被其他已安装软件使用的依赖关系</span>
+pacman -Qs string             <span class="c1"># 查询已安装的软件包</span>
+pacman -Qi package_name       <span class="c1"># 查询本地安装包的详细信息</span>
+pacman -Ql package_name       <span class="c1"># 获取已安装软件所包含的文件的列表</span>
+pacman -U package.tar.zx      <span class="c1"># 从本地文件安装</span>
+pactree package_name          <span class="c1"># 显示软件的依赖树</span>
 
-yay  -S tree pstree htop
 
-</code></pre></div><p>配置 <a href="https://github.com/archlinuxcn/repo">archlinuxcn</a></p>
-<h3 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h3>
+<span class="c1"># 导出软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages</span>
+pacman -Qqe &gt; pkglist.txt
+<span class="c1"># 还原软件列表 https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Install_packages_from_a_list</span>
+pacman -S --needed - &lt; pkglist.txt
+
+</code></pre></div><p>yay 的用法和 pacman 完全类似，上述所有 pacman xxx 命令，均可替换成 yay xxx 执行。</p>
+<p>此外，还有一条 yay 命令值得记一下：</p>
+<p>yay -c  # 卸载所有无用的依赖。类比 apt-get autoremove</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay  -S   pstree  
+
+</code></pre></div><h3 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h3>
 <p><a href="https://wiki.archlinuxcn.org/wiki/PC_speaker?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DPC_speaker_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno">PC speaker</a></p>
 <h3 id="驱动">驱动</h3>
 <h4 id="声音设置">声音设置</h4>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">install_pulse
 </code></pre></div><h4 id="显卡驱动与cuda">显卡驱动与Cuda</h4>
-<h4 id="中文与字体">中文与字体</h4>
-<p>xterm与uxterm中文显示设置 编辑 ～/.Xresources</p>
-<p><a href="https://segmentfault.com/a/1190000037454534">manjaro 主路径中文改英文</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
-!XTerm*background:        <span class="c1">#222D31</span>
-!XTerm*foreground:        <span class="c1">#d8d8d8</span>
-XTerm*pointerColor:      <span class="c1">#1ABB9B</span>
-!XTerm*faceName:          Fixed
-XTerm*faceSize:          <span class="m">11</span>
-XTerm*reverseVideo:      on
-XTerm*selectToClipboard: <span class="nb">true</span>
+<h3 id="xbindkeys安装设置">xbindkeys安装设置</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy xbindkeys xdotool
+xbindkeys --defaults &gt; ~/.xbindkeysrc
+</code></pre></div><p>编辑 ~/.config/autostart/xbindkeys_start.sh</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span><span class="nv">p_id</span><span class="o">=</span><span class="nv">$$</span>
 
-! English font
-xterm*faceName: JetBrainsMono Nerd Font:antialias<span class="o">=</span>True:pixelsize<span class="o">=</span><span class="m">14</span>
-! Chinese font
-xterm*faceNameDoublesize: WenQuanYi Micro Hei:pixelsize<span class="o">=</span><span class="m">14</span>
+<span class="nv">pid</span><span class="o">=</span><span class="k">$(</span>ps -ef <span class="p">|</span>grep  xbindkeys <span class="p">|</span> grep -v grep <span class="p">|</span> grep -v <span class="si">${</span><span class="nv">p_id</span><span class="si">}</span> <span class="p">|</span>  awk <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span>
 
-xterm*vt100*geometry: 100x30
-xterm*saveLines: <span class="m">16384</span>
-xterm*loginShell: <span class="nb">true</span>
-xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
-xterm*termName: xterm-color
-xterm*eightBitInput: <span class="nb">false</span>
-xterm*scrollBar: <span class="nb">true</span>
-xterm*rightScrollBar: <span class="nb">true</span>
-!XTerm*locale: zh_CN.UTF-8
-XTerm*background: lightgreen
-XTerm*foreground: black
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$pid</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&#34;KILL </span><span class="nv">$pid</span><span class="s2">&#34;</span>
+    <span class="nb">kill</span> -9 <span class="nv">$pid</span>   
+<span class="k">fi</span>
 
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
-yay -S  adobe-source-code-pro-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts nerd-fonts-jetbrains-mono noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-droid ttf-fira-code ttf-fira-mono ttf-font-awesome ttf-material-icons
- ttf-ms-fonts ttf-roboto ttf-wps-fonts wps-office-fonts wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
+xbindkeys
+</code></pre></div><h4 id="中文与字体">中文与字体</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts 
+yay -Sy nerd-fonts-jetbrains-mono nerd-fonts-ubuntu 
+yay -Sy noto-fonts-cjk noto-fonts-emoji   ttf-fira-code ttf-fira-mono   awesome-terminal-fonts
  
-yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki-rime fcitx5-qt
+yay -Sy wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei 
+
+yay -Sy  ttf-font-awesome ttf-font-awesome-4 ttf-font-awesome-5 ttf-ms-fonts  ttf-wps-fonts wps-office-fonts 
+
+</code></pre></div><p>conky日期乱码</p>
+<pre><code>在安装和安装好以后，右上角的日期 某月 星期几 都是框框乱码。解决办法如下：
+
+找到 /usr/share/conky/conky_maia
+
+使用 vim 命令 ：%s/Bitstream Vera/anti/ 统一修改把 Bitstream Vera 修改为 anti
+
+然后就方块就变成中文了。
+</code></pre><p><a href="https://segmentfault.com/a/1190000037454534">manjaro 主路径中文改英文</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S xdg-user-dirs-gtk
+<span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+xdg-user-dirs-gtk-update
+<span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8
+xdg-user-dirs-gtk-update 
+</code></pre></div><p>Fcitx5 安装</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-pinyin-custom-pinyin-dictionary fcitx5-pinyin-moegirl  fcitx5-input-support
 
 </code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
 编辑 /etc/environment 并添加以下几行，然后重新登录</p>
@@ -351,12 +338,14 @@ SDL_IM_MODULE DEFAULT=fcitx
 <p><a href="https://github.com/lapce/lapce">https://github.com/lapce/lapce</a></p>
 <h4 id="虚拟化">虚拟化</h4>
 <h5 id="virtualbox">VirtualBox</h5>
-<p>uname -a
+<p><a href="https://download.virtualbox.org/virtualbox/">https://download.virtualbox.org/virtualbox/</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">uaneme a
 yay -S virtualbox virtualbox-ext-oracle
-groups &ldquo;$USER&rdquo;
-sudo usermod -aG vboxusers &ldquo;$USER&rdquo;
-groups &ldquo;$USER&rdquo;</p>
-<h5 id="virtmanager">VirtManager</h5>
+
+groups 
+sudo usermod -aG vboxusers <span class="s2">&#34;</span><span class="nv">$USER</span><span class="s2">&#34;</span>
+groups zls
+</code></pre></div><h5 id="virtmanager">VirtManager</h5>
 <h5 id="docker">Docker</h5>
 <p><a href="https://blog.csdn.net/taotieren/article/details/107321202">在 Arch/Manjaro Linux 系统安装 Docker</a>
 <a href="https://www.geeksforgeeks.org/how-to-install-and-configure-docker-on-arch-based-linux-distributionsmanjaro/">How to install and configure Docker on Arch-based Linux Distributions(Manjaro) ?</a></p>
@@ -369,45 +358,146 @@ groups &ldquo;$USER&rdquo;</p>
 <h4 id="telegram">Telegram</h4>
 <h3 id="多媒体">多媒体</h3>
 <h4 id="mpv">mpv</h4>
-<p><a href="https://ttys3.dev/post/archlinux-mpv-undefined-symbol-vkcreatewaylandsurfacekhr/">ArchLinux 下 mpv: undefined symbol: vkCreateWaylandSurfaceKHR 问题解决</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy mpv
+</code></pre></div><p><a href="https://ttys3.dev/post/archlinux-mpv-undefined-symbol-vkcreatewaylandsurfacekhr/">ArchLinux 下 mpv: undefined symbol: vkCreateWaylandSurfaceKHR 问题解决</a></p>
 <h4 id="lx-music">lx-music</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S lx-music-desktop
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy lx-music-desktop-appimage
 </code></pre></div><h4 id="flamshot">Flamshot</h4>
 <h3 id="网络应用">网络应用</h3>
-<h4 id="v2raya">V2rayA</h4>
-<h4 id="chrome">Chrome</h4>
-<p>google-chrome-stable &ndash;proxy-server=&ldquo;socks://127.0.0.1:2080&rdquo; &amp;</p>
-<h4 id="edge">Edge</h4>
-<h4 id="迅雷">迅雷</h4>
-<h3 id="应用开发">应用开发</h3>
-<h4 id="git">git</h4>
-<h4 id="sdkman">sdkman</h4>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
- sdk install java 17.0.5-zulu 
- sdk install java 11.0.17-zulu  
- sdk install java 8.0.352-zulu
+<p>禁用IPv6</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Add this opjtion to /etc/default/grub:</span>
 
+<span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34; ipv6.disable=1 &#34;</span>
+
+<span class="c1">#Comment out the IPv6 line in /etc/hosts:</span>
+
+<span class="c1"># ::1 localhost ip6-localhost ip6-loopback</span>
+<span class="c1"># Generate a new grub.cfg file:</span>
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+Reboot.
+</code></pre></div><h4 id="v2rayv2rayaproxychains安装设置">v2ray、v2raya、proxychains安装设置</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Sy v2ray v2raya-git proxychains-ng
+systemctl start v2raya
+systemctl <span class="nb">enable</span>  v2raya
+<span class="c1"># 浏览器访问 http://127.0.0.1:2017 进行设置</span>
+<span class="c1"># 编辑 /etc/proxychains.conf </span>
+
+curl ipinfo.io
+proxychains curl ipinfo.io
+
+</code></pre></div><h4 id="warp安装设置">warp安装设置</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy cloudflare-warp-bin
+systemctl start warp-svc
+warp-cli teams-enroll  zls3201 <span class="c1"># 获取链接</span>
+systemctl --user start warp-taskbar
+
+warp-cli teams-enroll-token com.cloudflare.warp://zls3201.cloudflareaccess.com/auth?token<span class="o">=</span>... <span class="c1"># token登陆</span>
+warp-cli register
+warp-cli connect <span class="c1"># 开启warp</span>
+warp-cli enable-always-on <span class="c1"># 设置开机自启warp</span>
+
+warp-cli settings <span class="c1"># 检查一下设置</span>
+
+warp-cli status
+systemctl --user cat  warp-taskbar
+systemctl cat warp-svc
+warp-cli disconnect 
+warp-cli set-mode proxy <span class="c1"># 设置socks5代理，默认是127.0.0.1:40000</span>
+</code></pre></div><h4 id="chrome">Chrome</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy google-chrome
+
+<span class="c1"># 使用代理浏览</span>
+google-chrome-stable --proxy-server<span class="o">=</span><span class="s2">&#34;socks5://127.0.0.1:2080&#34;</span> <span class="p">&amp;</span>
+</code></pre></div><p>设置默认浏览器
+vim ~/.config/mimeapps.list</p>
+<p>批量替换
+::%s/userapp-Pale Moon/google-chrome/g</p>
+<h4 id="edge">Edge</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -S microsoft-edge-stable-bin
+
+</code></pre></div><h4 id="迅雷">迅雷</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy xunlei-bin
+
+</code></pre></div><h3 id="应用开发">应用开发</h3>
+<h4 id="git">git</h4>
+<h4 id="java开发设置">Java开发设置</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy jre17-openjdk-headless jre17-openjdk jdk17-openjdk
+</code></pre></div><h5 id="sdkman安装jdk-maven">sdkman安装jdk maven</h5>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay -Sy zip unzip
+curl -s <span class="s2">&#34;https://get.sdkman.io&#34;</span> <span class="p">|</span> bash
+<span class="nb">source</span> <span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.sdkman/bin/sdkman-init.sh&#34;</span>
+<span class="nb">source</span> <span class="s2">&#34;/home/zls/.sdkman/bin/sdkman-init.sh&#34;</span>
+
+sdk install java 11.0.17-zulu  
+sdk version
+sdk install java 8.0.352-zulu
+sdk install java 11.0.17-zulu  
+sdk install java 17.0.5-zulu 
+sdk install maven 3.8.6
+
+yay -Sy intellij-idea-ultimate-edition
+ 
 </code></pre></div><h4 id="nvs">nvs</h4>
-<h4 id="golang">golang</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">yay nvm
+<span class="nb">echo</span> <span class="s1">&#39;source /usr/share/nvm/init-nvm.sh&#39;</span> &gt;&gt; ~/.bashrc
+<span class="nb">source</span> ~/.bashrc 
+nvm
+
+nvm install  --lts
+nvm use  --lts
+nvm link  --lts
+nvm ls
+nvm ls-remote
+</code></pre></div><h4 id="golang">golang</h4>
 <h4 id="rust">Rust</h4>
 <h4 id="dotnet">DotNet</h4>
-<h4 id="sublime-text">sublime-text</h4>
-<h4 id="vscode">vscode</h4>
-<p><a href="https://blog.csdn.net/NoodleMaster/article/details/113328341">Manjaro安装了vscode之后，打开文件管理器的快捷键变成打开了vscode</a></p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
-xdg-mime query default inode/directory
-
-如果显示visual-studio-code.desktop或者是code.desktop,那么说明默认的文件管理器已经被修改为vscode了。
+mkdir .dotnet
+<span class="nb">cd</span> .dotnet/
+wget https://dot.net/v1/dotnet-install.sh 
+chmod +x ./dotnet-install.sh 
  
-// nautilus.desktop是默认文件管理器的desktop文件，在目录/usr/share/applications下，不同
-// 的操作系统文件名可能不同，以Manjaro gnome为例，文件名为org.gnome.nautilus.desktop,
-// 替换为正确的文件后，问题解决
-xdg-mime default nautilus.desktop inode/directory
+./dotnet-install.sh --version latest
+./dotnet-install.sh --channel 7.0
+./dotnet --list-sdks
+<span class="nb">echo</span> <span class="s1">&#39;export DOTNET_ROOT=$HOME/.dotnet&#39;</span> &gt;&gt; ~/.bashrc
+<span class="nb">echo</span> <span class="s1">&#39;export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools&#39;</span> &gt;&gt; ~/.bashrc
 
+yay -Sy rider 
+</code></pre></div><h4 id="python深度学习">Python深度学习</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nvidia-smi 
+yay -Sy cuda cudnn
+yay -Sy miniconda
+
+<span class="nb">source</span> /opt/miniconda/etc/profile.d/conda.sh
+<span class="nb">source</span> ~/.bashrc 
+conda env list
+
+conda create -n  dl39  <span class="nv">python</span><span class="o">=</span>3.9
+conda activate dl39
+ 
+pip3 --no-cache-dir install tensorflow torch torchvision torchaudio   
+pip3  --no-cache-dir install scipy  tensorboard opencv-python pandas seaborn Pillow psutil  PyYAML requests thop tqdm ipython  ipykernel gitpython tensorrt
+
+</code></pre></div><h4 id="sublime-text">sublime-text</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">
+ yay -Sy  sublime-text-4 
+
+</code></pre></div><h4 id="vscode">vscode</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> yay -Sy  visual-studio-code-bin
+
+</code></pre></div><p>关于文件夹默认用vscode打开的问题处理</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ xdg-mime query default inode/directory
+$ ls /usr/share/applications  <span class="p">|</span> grep pcman
+pcmanfm.desktop
+$ xdg-mime default pcmanfm.desktop inode/directory
+$ xdg-mime query default inode/directory
 
 </code></pre></div><h4 id="dbeaver">DBeaver</h4>
+<h4 id="navicat">Navicat</h4>
 <h4 id="jetbrains全家桶">JetBrains全家桶</h4>
-<p>jerbrains中文输入 光标跟随</p>
+<p><a href="https://github.com/RikudouPatrickstar/JetBrainsRuntime-for-Linux-x64">fcitx 输入法候选框不跟随光标</a></p>
 <h5 id="idea">IDEA</h5>
 <h5 id="rider">Rider</h5>
 <h5 id="goland">Goland</h5>
@@ -426,14 +516,17 @@ xdg-mime default nautilus.desktop inode/directory
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 1492</h4> 
+    <h4>Manjaro I3安装配置の字数: 1795</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#系统安装设置">系统安装设置</a>
       <ul>
+        <li><a href="#系统安装">系统安装</a></li>
+        <li><a href="#12-驱动设置">1.2 驱动设置</a></li>
         <li><a href="#设置软件源">设置软件源</a></li>
         <li><a href="#关闭主板蜂鸣器">关闭主板蜂鸣器</a></li>
         <li><a href="#驱动">驱动</a></li>
+        <li><a href="#xbindkeys安装设置">xbindkeys安装设置</a></li>
         <li><a href="#系统软件安装">系统软件安装</a></li>
       </ul>
     </li>

@@ -144,6 +144,7 @@ nvidia-smi</p>
 <p>conda env export &gt; environment.yml</p>
 <p>conda deactivate</p>
 <p>conda remove &ndash;name tf-gpu &ndash;all</p>
+<p>// 使用nvidia-smi 查看系统已安装cuda版本</p>
 <p>参考 <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/">https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/</a>
 conda create -n tf-gpu  conda-forge tensorflow-gpu cudatoolkit=11.1 cudnn==7.6.4</p>
 <p><a href="https://pytorch.org/get-started/locally/">https://pytorch.org/get-started/locally/</a></p>
@@ -151,6 +152,11 @@ conda create -n tf-gpu  conda-forge tensorflow-gpu cudatoolkit=11.1 cudnn==7.6.4
 <p>pip install &ndash;upgrade &ndash;ignore-installed tensorflow</p>
 <p>pip3 install <a href="https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl">https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl</a></p>
 <p>pip3 install ipykernel</p>
+<p>pip3 install torch torchvision torchaudio &ndash;index-url <a href="https://download.pytorch.org/whl/cu117">https://download.pytorch.org/whl/cu117</a></p>
+<p>// windows tensorflow-gpu只支持到2.10
+pip install &ldquo;tensorflow&lt;2.11&rdquo;</p>
+<p><a href="https://www.tensorflow.org/install/pip#windows-native">https://www.tensorflow.org/install/pip#windows-native</a></p>
+<p>pip install <a href="https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.10.0-cp39-cp39-win_amd64.whl">https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-2.10.0-cp39-cp39-win_amd64.whl</a></p>
 <p>测试文件 main.py 内容</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">
 <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>  
@@ -515,7 +521,7 @@ $$</p>
 
 <aside>
     <header>
-    <h4>深度学习Tipsの字数: 3080</h4> 
+    <h4>深度学习Tipsの字数: 3144</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#一相关资料">一.相关资料</a></li>
