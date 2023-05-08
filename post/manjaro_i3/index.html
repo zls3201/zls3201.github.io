@@ -219,6 +219,12 @@
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">xbindkeys
+</span></span></code></pre></div><h3 id="nohang或者earlyoom阻止oom自动注销重启">Nohang或者earlyoom，阻止OOM自动注销重启</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ yay -S nohang-git
+</span></span><span class="line"><span class="cl">$ sudo systemctl <span class="nb">enable</span> --now nohang-desktop.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S earlyoom
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now earlyoom
 </span></span></code></pre></div><h4 id="中文与字体">中文与字体</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts 
 </span></span><span class="line"><span class="cl">yay -Sy nerd-fonts-jetbrains-mono nerd-fonts-ubuntu 
@@ -241,6 +247,24 @@
 </span></span><span class="line"><span class="cl">xdg-user-dirs-gtk-update
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8
 </span></span><span class="line"><span class="cl">xdg-user-dirs-gtk-update 
+</span></span></code></pre></div><p>manjaro KDE右键添加Alacritty</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">touch ～/.local/share/kservices5/ServiceMenus/openTermHere.desktop
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">内容
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Desktop Entry<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Type</span><span class="o">=</span>Service
+</span></span><span class="line"><span class="cl"><span class="nv">ServiceTypes</span><span class="o">=</span>KonqPopupMenu/Plugin
+</span></span><span class="line"><span class="cl"><span class="nv">MimeType</span><span class="o">=</span>inode/directory
+</span></span><span class="line"><span class="cl"><span class="nv">Actions</span><span class="o">=</span>openTilix<span class="p">;</span>
+</span></span><span class="line"><span class="cl">X-KDE-Priority<span class="o">=</span>TopLevel
+</span></span><span class="line"><span class="cl">X-KDE-StartupNotify<span class="o">=</span><span class="nb">false</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Icon</span><span class="o">=</span>Alacritty
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>Desktop Action openTilix<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Name</span><span class="o">=</span>Open Alacritty Here
+</span></span><span class="line"><span class="cl"><span class="nv">Icon</span><span class="o">=</span>Alacritty
+</span></span><span class="line"><span class="cl"><span class="c1">#Exec=wezterm start --cwd %f</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Exec</span><span class="o">=</span>alacritty --config-file ~/.config/alacritty/alacritty.yml --working-directory %f
 </span></span></code></pre></div><p>Fcitx5 安装</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-pinyin-custom-pinyin-dictionary fcitx5-pinyin-moegirl  fcitx5-input-support
 </span></span></code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
@@ -266,9 +290,6 @@ GLFW_IM_MODULE=ibus
 <h3 id="系统软件安装">系统软件安装</h3>
 <h4 id="终端应用">终端应用</h4>
 <ul>
-<li>
-<p>yay</p>
-</li>
 <li>
 <p>Rofi
 <a href="https://zhuanlan.zhihu.com/p/385368435">i3wm - rofi</a>
@@ -317,7 +338,14 @@ GLFW_IM_MODULE=ibus
 <a href="https://hustergs.github.io/archives/ec23118f.html">Archlinux设置鼠标宏(按键映射)</a></p>
 </li>
 </ul>
-<h2 id="软件安装">软件安装</h2>
+<h5 id="alacrittytmuxpowerline设置">Alacritty、tmux、powerline设置</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy tmux alacritty powerline powerline-fonts 
+</span></span></code></pre></div><h5 id="rofi">Rofi</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy fd choose 
+</span></span><span class="line"><span class="cl">yay -Sy rofi
+</span></span></code></pre></div><h5 id="polybar">Polybar</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy polybar
+</span></span></code></pre></div><h2 id="软件安装">软件安装</h2>
 <h3 id="系统软件">系统软件</h3>
 <h4 id="文本编辑器">文本编辑器</h4>
 <h5 id="vim">vim</h5>
@@ -423,6 +451,7 @@ vim ~/.config/mimeapps.list</p>
 </span></span><span class="line"><span class="cl">sdk install java 11.0.17-zulu  
 </span></span><span class="line"><span class="cl">sdk install java 17.0.5-zulu 
 </span></span><span class="line"><span class="cl">sdk install maven 3.8.6
+</span></span><span class="line"><span class="cl">sdk default java 17.0.5-zulu
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">yay -Sy intellij-idea-ultimate-edition
 </span></span><span class="line"><span class="cl"> 
@@ -500,7 +529,7 @@ vim ~/.config/mimeapps.list</p>
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 1773</h4> 
+    <h4>Manjaro I3安装配置の字数: 1971</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#系统安装设置">系统安装设置</a>
@@ -509,6 +538,7 @@ vim ~/.config/mimeapps.list</p>
         <li><a href="#驱动设置">驱动设置</a></li>
         <li><a href="#设置软件源">设置软件源</a></li>
         <li><a href="#xbindkeys安装设置">xbindkeys安装设置</a></li>
+        <li><a href="#nohang或者earlyoom阻止oom自动注销重启">Nohang或者earlyoom，阻止OOM自动注销重启</a></li>
         <li><a href="#系统软件安装">系统软件安装</a></li>
       </ul>
     </li>

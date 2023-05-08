@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 14 Dec 2022 09:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 May 2023 18:42:40 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/post/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rocky9开发服务器设置</title>
+      <link>https://zls3201.github.io/post/rocky9_dev_config/</link>
+      <pubDate>Mon, 08 May 2023 18:42:40 +0800</pubDate>
+      
+      <guid>https://zls3201.github.io/post/rocky9_dev_config/</guid>
+      <description>基础安装 alias useproxy=&amp;#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &amp;#34; alias unproxy=&amp;#34; unset http_proxy; unset https_proxy; unset all_proxy; &amp;#34; ## 移除多于内核 echo &amp;#34;-- BEFORE --&amp;#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &amp;#34;--- AFTER ---&amp;#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf</description>
+    </item>
+    
     <item>
       <title>Manjaro I3安装配置</title>
       <link>https://zls3201.github.io/post/manjaro_i3/</link>

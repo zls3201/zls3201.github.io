@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <title>Rocky9开发服务器设置 - 珍珑阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="description" content="基础安装 alias useproxy=&#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &#34; alias unproxy=&#34; unset http_proxy; unset https_proxy; unset all_proxy; &#34; ## 移除多于内核 echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &#34;--- AFTER ---&#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf">
+    
+    <meta itemprop="name" content="Rocky9开发服务器设置 - 珍珑阁">
+    <meta itemprop="description" content="基础安装 alias useproxy=&#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &#34; alias unproxy=&#34; unset http_proxy; unset https_proxy; unset all_proxy; &#34; ## 移除多于内核 echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &#34;--- AFTER ---&#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf">
+    <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
+    
+    
+    <meta name="twitter:description" content="">
+    <link rel="alternate" type="application/rss+xml" href="https://zls3201.github.io/post/rocky9_dev_config/feed.xml" title="珍珑阁" />
+    <link rel="shortcut icon" href="https://zls3201.github.io/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://zls3201.github.io/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://zls3201.github.io/highlight/styles/solarized-light.css">
+    <script src="https://zls3201.github.io/highlight/highlight.pack.js"></script>
+    <script src="https://zls3201.github.io/js/qrcode.js"></script>
+    <script src="https://zls3201.github.io/js/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://zls3201.github.io/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zls3201.github.io/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://zls3201.github.io/main.css" >
+</head>
+
+
+<body>
+    <div class="navbar-menu">
+
+  
+  <a   href="/">首页</a>
+  
+  <a   href="/post/">归档</a>
+  
+  <a   href="/categories/">分类</a>
+  
+  <a   href="/tags/">标签</a>
+  
+  <a   href="/links/">链接</a>
+  
+  <a   href="/about/">关于</a>
+  
+  <a   href="/todo/">TODO</a>
+  
+</div>
+    <div class="wrapper">
+        <div class="sidebar">
+  <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
+  <div class="bottom-block">
+    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <h1>珍珑阁</h1>
+    <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
+    <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
+  </div>
+</div>
+        <div class="main">
+            <div class="page-title clearfix">
+    <ul class="navigation clearfix">
+        <li><a href="/">首页</a> »</li>
+        <li class="active"><a href="javascript:;">最近更新</a></li>
+        <li class="search">
+            <form class="search-form" method="post" action="./" role="search">
+                <input type="text" name="s" class="text" placeholder="输入关键字搜索" autocomplete="off">
+                <button type="submit" class="btn s3"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+    </ul>
+</div>
+            <div class="main-container">
+                <article class="post preview" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <h1 itemprop="name">
+    <a href="https://zls3201.github.io/post/rocky9_dev_config/" title="Rocky9开发服务器设置" itemprop="url">Rocky9开发服务器设置</a>
+</h1>
+
+<ul class="post-meta clearfix">
+    
+    <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+       
+    <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/default">default</a></li>
+     
+
+    <li><i class="fa fa-clock-o"></i>
+        <time datetime="2017-08-17T15:27:00+08:00" itemprop="datePublished">2023-05-08</time>
+    </li>
+    
+    <li class="post-qrcode"><i class="fa fa-qrcode"></i>
+        <div id="qrcode-img"></div>
+    </li>
+</ul>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="基础安装">基础安装</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">useproxy</span><span class="o">=</span><span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> export http_proxy=http://10.0.2.2:2080;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> export https_proxy=http://10.0.2.2:2080;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> export all_proxy=http://10.0.2.2:2080;
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">unproxy</span><span class="o">=</span><span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> unset http_proxy;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> unset https_proxy;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> unset all_proxy;
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 移除多于内核</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-- BEFORE --&#34;</span><span class="p">;</span>rpm -qa <span class="p">|</span> grep ^kernel<span class="p">;</span>  rpm -qa  <span class="p">|</span>grep ^kernel  <span class="p">|</span>grep -E -v <span class="sb">`</span>uname -r<span class="sb">`</span>  <span class="p">|</span>xargs  rpm  -e  --nodeps<span class="p">;</span>  <span class="nb">echo</span> <span class="s2">&#34;--- AFTER ---&#34;</span><span class="p">;</span>  rpm -qa <span class="p">|</span> grep ^kernel
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rpm -qa<span class="p">|</span>grep kernel
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install epel-release nano  net-tools htop -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install langpacks-en glibc-all-langpacks -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install langpacks-en glibc-all-langpacks  -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">localectl list-locales <span class="p">|</span> grep zh
+</span></span><span class="line"><span class="cl">localectl set-locale <span class="nv">LANG</span><span class="o">=</span><span class="s2">&#34;zh_CN.utf8&#34;</span>
+</span></span><span class="line"><span class="cl">localectl status
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf groupinstall <span class="s1">&#39;Development Tools&#39;</span>  -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install  cmake -y 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 搜索文件Pkg</span>
+</span></span><span class="line"><span class="cl">yum provides <span class="s2">&#34;*/pg_config&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl --proto <span class="s1">&#39;=https&#39;</span> --tlsv1.2 -sSf https://sh.rustup.rs <span class="p">|</span> sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cargo install fd-find
+</span></span><span class="line"><span class="cl">cargo install ripgrep
+</span></span><span class="line"><span class="cl">cargo install lsd
+</span></span></code></pre></div><h3 id="关闭selinux">关闭SELinux</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nano /etc/selinux/config
+</span></span></code></pre></div><h2 id="docker安装">Docker安装</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</span></span><span class="line"><span class="cl">dnf install docker-ce docker-ce-cli containerd.io
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now docker
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">systemctl status docker
+</span></span></code></pre></div><h3 id="doacker安装mariadb">Doacker安装MariaDB</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/mariadb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run --name mariadb  --restart<span class="o">=</span>always  -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
+</span></span></code></pre></div><h3 id="doacker安装redis">Doacker安装Redis</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p /opt/docker/redis
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -itd --name redis --restart<span class="o">=</span>always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
+</span></span><span class="line"><span class="cl">docker ps
+</span></span></code></pre></div><h3 id="doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/postgresql
+</span></span><span class="line"><span class="cl">docker run --name postgres  --restart<span class="o">=</span>always  -e <span class="nv">POSTGRES_USER</span><span class="o">=</span>postgres -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
+</span></span><span class="line"><span class="cl">docker ps
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -it postgres bash
+</span></span><span class="line"><span class="cl"><span class="c1"># 启动失败时 查看日志</span>
+</span></span><span class="line"><span class="cl">docker inspect --format <span class="s1">&#39;{{.LogPath}}&#39;</span> 6343f20e07f9
+</span></span><span class="line"><span class="cl">cat /var/lib/docker/containers/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29-json.log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -it postgres bash
+</span></span><span class="line"><span class="cl">docker stop  6343f20e07f9
+</span></span><span class="line"><span class="cl">docker rm 6343f20e07f9
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> 
+</span></span></code></pre></div><h2 id="mariadb">MariaDB</h2>
+<p><a href="https://mariadb.org/download/?t=repo-config&amp;d=Red+Hat+Enterprise+Linux+9&amp;v=10.11&amp;r_m=aliyun">设置软件源并安装</a></p>
+<p><a href="https://www.centlinux.com/2022/10/setup-mariadb-database-server-on-rocky-linux-9.html">Setup MariaDB Database Server on Rocky Linux 9</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mariadb-secure-installation
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mysql -u root -p
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firewall-cmd --permanent --add-service<span class="o">=</span>mysql
+</span></span><span class="line"><span class="cl">firewall-cmd --reload
+</span></span></code></pre></div><h2 id="redis">Redis</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dnf install redis -y
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now redis.service
+</span></span><span class="line"><span class="cl">systemctl status redis.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>6379/tcp --permanent
+</span></span><span class="line"><span class="cl">firewall-cmd --reload
+</span></span></code></pre></div><h2 id="postgresql安装">PostgreSQL安装</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+</span></span><span class="line"><span class="cl">dnf -qy module disable postgresql
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install postgresql14-contrib  postgresql14-devel postgresql14-server
+</span></span><span class="line"><span class="cl">/usr/pgsql-14/bin/postgresql-14-setup initdb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now postgresql-14
+</span></span><span class="line"><span class="cl">systemctl status postgresql-14
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo -u postgres psql -c <span class="s2">&#34;SELECT version();&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>5432/tcp --permanent 
+</span></span><span class="line"><span class="cl">firewall-cmd  --reload
+</span></span></code></pre></div><p><a href="https://blog.csdn.net/qq_46110497/article/details/127653954">PostgreSQL14开启远程连接</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sed -i <span class="s1">&#39;/^local/s/peer/trust/&#39;</span>  /var/lib/pgsql/14/data/pg_hba.conf 
+</span></span><span class="line"><span class="cl">sed -i <span class="s1">&#39;/^host/s/ident/md5/&#39;</span> /var/lib/pgsql/14/data/pg_hba.conf 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pg_hba.conf 追加
+</span></span><span class="line"><span class="cl">host    all             all             0.0.0.0/0               trust
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cat  /var/lib/pgsql/14/data/postgresql.conf <span class="p">|</span> grep listen_addresses
+</span></span><span class="line"><span class="cl">nano /var/lib/pgsql/14/data/postgresql.conf 修改 <span class="nv">listen_addresses</span><span class="o">=</span>*
+</span></span></code></pre></div><p><a href="https://www.cnblogs.com/kaituorensheng/p/4735191.html">修改PostgreSQL数据库默认用户postgres的密码</a></p>
+<p>安装pg——jieba</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl">mkdir workspaces  
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> workspaces/
+</span></span><span class="line"><span class="cl">git clone https://github.com/jaiminpan/pg_jieba
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> pg_jieba/
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">git submodule update --init --recursive
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir build 
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/pgsql-14/bin:<span class="nv">$PATH</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 定位 include文件位置</span>
+</span></span><span class="line"><span class="cl">fd postgres.h /
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cmake -DPostgreSQL_INCLUDE_DIR<span class="o">=</span>/usr/pgsql-14/include/server/   -DPostgreSQL_LIBRARY<span class="o">=</span>/usr/pgsql-14/lib/    ..
+</span></span><span class="line"><span class="cl">cmake -DPostgreSQL_TYPE_INCLUDE_DIR<span class="o">=</span>/usr/pgsql-14/include/server/ ..
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">make 
+</span></span><span class="line"><span class="cl">make install
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">systemctl restart postgresql-14
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo -u postgres psql -c <span class="s2">&#34;create extension pg_jieba;&#34;</span>
+</span></span></code></pre></div>
+  </div>
+  
+</article>
+
+                <div id="git-comments"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "toc-wrapper">
+        <div class="post-toc">
+
+<aside>
+    <header>
+    <h4>Rocky9开发服务器设置の字数: 550</h4> 
+    </header><nav id="TableOfContents">
+  <ul>
+    <li><a href="#基础安装">基础安装</a>
+      <ul>
+        <li><a href="#关闭selinux">关闭SELinux</a></li>
+      </ul>
+    </li>
+    <li><a href="#docker安装">Docker安装</a>
+      <ul>
+        <li><a href="#doacker安装mariadb">Doacker安装MariaDB</a></li>
+        <li><a href="#doacker安装redis">Doacker安装Redis</a></li>
+        <li><a href="#doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</a></li>
+      </ul>
+    </li>
+    <li><a href="#mariadb">MariaDB</a></li>
+    <li><a href="#redis">Redis</a></li>
+    <li><a href="#postgresql安装">PostgreSQL安装</a></li>
+  </ul>
+</nav></aside>
+<a href="#" id="toc-toggle"></a>
+
+</div>
+    </div>
+    
+    
+
+    <footer>
+  <div class="footer-inner">
+    <p>
+      <a href="https://zls3201.github.io/about" title="关于">关于</a> |
+      <a href="https://zls3201.github.io//feed.xml">RSS</a>
+    </p>
+    <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a>
+      © 2017 <a href="http://www.zls3201.com/" target="_blank"> 珍珑阁 </a> /
+      Powered by
+      <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    var mathjaxBlocks = document.getElementsByClassName('language-mathjax');
+    for (i = 0; i < mathjaxBlocks.length; i++) {
+        mathjaxBlocks[i].parentNode.innerHTML = '$$' + mathjaxBlocks[i].innerHTML +'$$';
+    }
+
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre code'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+
+    MathJax.Hub.Queue(function () {
+        
+        
+        
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i = 0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script>
+  var mermaids = document.getElementsByClassName("language-mermaid");
+  for (i = 0; i < mermaids.length; i++) {
+    mermaids[i].className = "nohighlight mermaid";
+  }
+
+  hljs.initHighlightingOnLoad();
+  mermaid.initialize({
+    
+    
+    logLevel: 3,
+    flowchart: { curve: "linear" },
+    gantt: { axisFormat: "%m/%d/%Y" },
+    sequence: { actorMargin: 50 }
+    
+  });
+</script>
+
+</div>
+
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode-img"), {
+        width: 96,
+        height: 96
+        });
+        if (qrcode) {
+            qrcode.makeCode("https:\/\/zls3201.github.io\/post\/rocky9_dev_config\/");
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+
+</body>
+
+</html>

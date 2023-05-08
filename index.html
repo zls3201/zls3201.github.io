@@ -80,6 +80,22 @@
          
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://zls3201.github.io/post/rocky9_dev_config/"> Rocky9开发服务器设置</a></h2>
+    <ul class="post-meta">
+        
+        <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author">zls3201</a></li>
+           
+        <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/default">default</a></li>
+         
+        <li><i class="fa fa-clock-o"></i>
+            <time datetime="2023-05-08" itemprop="datePublished">2023-05-08</time>
+        </li>
+    </ul>
+    <div class="post-content" itemprop="articleBody">
+        基础安装 alias useproxy=&#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &#34; alias unproxy=&#34; unset http_proxy; unset https_proxy; unset all_proxy; &#34; ## 移除多于内核 echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &#34;--- AFTER ---&#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf </div>
+</article> 
+         
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
     <h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://zls3201.github.io/post/manjaro_i3/"> Manjaro I3安装配置</a></h2>
     <ul class="post-meta">
         
@@ -221,22 +237,6 @@
     </ul>
     <div class="post-content" itemprop="articleBody">
         关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人体姿态估计论文笔记-Hourglass lightweight-human-pose-estimation.pytorch openpose 人脸识别与人脸检测 cmusatyalab/openface ageitgey/face_recognition 99%准确率 BlazeFace-PyTorch </div>
-</article> 
-         
-        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-    <h2 class="post-title" itemprop="name headline"><a itemtype="url" href="https://zls3201.github.io/post/wsl_tips/"> WSL 常用命令</a></h2>
-    <ul class="post-meta">
-        
-        <li itemprop="author" itemscope="" itemtype="http://schema.org/Person"><i class="fa fa-user"></i> <a itemprop="name" href="http://www.zls3201.com/" rel="author"></a></li>
-           
-        <li><i class="fa fa-book"></i> <a href="https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF">技术</a></li>
-         
-        <li><i class="fa fa-clock-o"></i>
-            <time datetime="2021-05-10" itemprop="datePublished">2021-05-10</time>
-        </li>
-    </ul>
-    <div class="post-content" itemprop="articleBody">
-        # 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version </div>
 </article> 
          
         <nav class="pagination pager align-center">
