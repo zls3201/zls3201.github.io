@@ -264,28 +264,24 @@
 </span></span><span class="line"><span class="cl"><span class="nv">Name</span><span class="o">=</span>Open Alacritty Here
 </span></span><span class="line"><span class="cl"><span class="nv">Icon</span><span class="o">=</span>Alacritty
 </span></span><span class="line"><span class="cl"><span class="c1">#Exec=wezterm start --cwd %f</span>
-</span></span><span class="line"><span class="cl"><span class="nv">Exec</span><span class="o">=</span>alacritty --config-file ~/.config/alacritty/alacritty.yml --working-directory %f
+</span></span><span class="line"><span class="cl"><span class="nv">Exec</span><span class="o">=</span>env <span class="nv">WINIT_UNIX_BACKEND</span><span class="o">=</span>x11 alacritty --config-file ~/.config/alacritty/alacritty.yml --working-directory %f
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">执行
+</span></span><span class="line"><span class="cl">update-desktop-database 生效
 </span></span></code></pre></div><p>Fcitx5 安装</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -S fcitx5 fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-lua fcitx5-material-color fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-pinyin-custom-pinyin-dictionary fcitx5-pinyin-moegirl  fcitx5-input-support
 </span></span></code></pre></div><p>设置参考 <a href="https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93">https://wiki.archlinux.org/title/Fcitx5_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E8%AF%8D%E5%BA%93</a>
 编辑 /etc/environment 并添加以下几行，然后重新登录</p>
-<pre tabindex="0"><code>
-GTK_IM_MODULE=fcitx
+<pre tabindex="0"><code>GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
+INPUT_METHOD=fcitx
 SDL_IM_MODULE=fcitx
 GLFW_IM_MODULE=ibus
-</code></pre><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">GTK_IM_MODULE DEFAULT=fcitx
-</span></span><span class="line"><span class="cl">QT_IM_MODULE  DEFAULT=fcitx
-</span></span><span class="line"><span class="cl">XMODIFIERS    DEFAULT=@im=fcitx
-</span></span><span class="line"><span class="cl">INPUT_METHOD  DEFAULT=fcitx
-</span></span><span class="line"><span class="cl">SDL_IM_MODULE DEFAULT=fcitx
-</span></span></code></pre></div><!-- raw HTML omitted -->
-<p><a href="https://www.cnblogs.com/fatalord/p/13850072.html">manjaro linux安装配置中文输入法fcitx5</a></p>
+</code></pre><p><a href="https://www.cnblogs.com/fatalord/p/13850072.html">manjaro linux安装配置中文输入法fcitx5</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/468426138">Manjaro安装Fcitx5中文输入法</a></p>
-<p><a href="https://github.com/hosxy/Fcitx5-Material-Color">https://github.com/hosxy/Fcitx5-Material-Color</a></p>
+<p><a href="https://github.com/hosxy/Fcitx5-Material-Color">Fcitx5-Material-Color皮肤</a></p>
 <h4 id="壁纸">壁纸</h4>
 <h3 id="系统软件安装">系统软件安装</h3>
 <h4 id="终端应用">终端应用</h4>
@@ -450,8 +446,10 @@ vim ~/.config/mimeapps.list</p>
 </span></span><span class="line"><span class="cl">sdk install java 8.0.352-zulu
 </span></span><span class="line"><span class="cl">sdk install java 11.0.17-zulu  
 </span></span><span class="line"><span class="cl">sdk install java 17.0.5-zulu 
-</span></span><span class="line"><span class="cl">sdk install maven 3.8.6
-</span></span><span class="line"><span class="cl">sdk default java 17.0.5-zulu
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sdk install maven
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sdk install gradle
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">yay -Sy intellij-idea-ultimate-edition
 </span></span><span class="line"><span class="cl"> 
@@ -529,7 +527,7 @@ vim ~/.config/mimeapps.list</p>
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 1971</h4> 
+    <h4>Manjaro I3安装配置の字数: 1989</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#系统安装设置">系统安装设置</a>
