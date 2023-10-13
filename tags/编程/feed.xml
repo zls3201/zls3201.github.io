@@ -6,16 +6,7 @@
     <description>Recent content in 编程 on 珍珑阁</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/%E7%BC%96%E7%A8%8B/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>dotnet微服务</title>
-      <link>https://zls3201.github.io/post/dotnet_micro_services/</link>
-      <pubDate>Thu, 10 Sep 2020 00:00:00 +0800</pubDate>
-      
-      <guid>https://zls3201.github.io/post/dotnet_micro_services/</guid>
-      <description>eShopOnContainers API网关 服务注册 发现 治理 限流 熔断 缓存 日志与跟踪 服务拆分设计 分布式事务同步 性能优化优化 dotnet docker微服务 ASP.NET Core 3.0 使用gRPC MediatR Clean ASP.NET Core API using MediatR</description>
-    </item>
-    
+    <lastBuildDate>Sun, 15 Jul 2018 08:00:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/%E7%BC%96%E7%A8%8B/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>逻辑回归</title>
       <link>https://zls3201.github.io/post/logistic_regression/</link>

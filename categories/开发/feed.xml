@@ -16,14 +16,5 @@
       <description>CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 rebuild 目前orchardcore，个人认为最好的实</description>
     </item>
     
-    <item>
-      <title>dotnet微服务</title>
-      <link>https://zls3201.github.io/post/dotnet_micro_services/</link>
-      <pubDate>Thu, 10 Sep 2020 00:00:00 +0800</pubDate>
-      
-      <guid>https://zls3201.github.io/post/dotnet_micro_services/</guid>
-      <description>eShopOnContainers API网关 服务注册 发现 治理 限流 熔断 缓存 日志与跟踪 服务拆分设计 分布式事务同步 性能优化优化 dotnet docker微服务 ASP.NET Core 3.0 使用gRPC MediatR Clean ASP.NET Core API using MediatR</description>
-    </item>
-    
   </channel>
 </rss>
