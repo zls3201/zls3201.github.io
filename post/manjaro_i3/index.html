@@ -150,8 +150,6 @@
 </span></span><span class="line"><span class="cl">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 </span></span><span class="line"><span class="cl">export PATH=$PATH:$JAVA_HOME/bin
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> 
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">export GO111MODULE=on
 </span></span><span class="line"><span class="cl">export GOPATH=/home/zls/workspaces/sdk/GOPATH
 </span></span><span class="line"><span class="cl">export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
@@ -357,6 +355,9 @@ GLFW_IM_MODULE=ibus
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uaneme a
 </span></span><span class="line"><span class="cl">yay -S virtualbox virtualbox-ext-oracle
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">virtualbox-7.0.10-2  virtualbox-ext-oracle-7.0.12-1 
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">groups 
 </span></span><span class="line"><span class="cl">sudo usermod -aG vboxusers <span class="s2">&#34;</span><span class="nv">$USER</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">groups zls
@@ -436,12 +437,12 @@ vim ~/.config/mimeapps.list</p>
 <h4 id="java开发设置">Java开发设置</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy jre17-openjdk-headless jre17-openjdk jdk17-openjdk
 </span></span></code></pre></div><h5 id="sdkman安装jdk-maven">sdkman安装jdk maven</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay -Sy zip unzip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">yay -Sy zip unzip
 </span></span><span class="line"><span class="cl">curl -s <span class="s2">&#34;https://get.sdkman.io&#34;</span> <span class="p">|</span> bash
 </span></span><span class="line"><span class="cl"><span class="nb">source</span> <span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.sdkman/bin/sdkman-init.sh&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">source</span> <span class="s2">&#34;/home/zls/.sdkman/bin/sdkman-init.sh&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">sdk install java 11.0.17-zulu  
 </span></span><span class="line"><span class="cl">sdk version
 </span></span><span class="line"><span class="cl">sdk install java 8.0.352-zulu
 </span></span><span class="line"><span class="cl">sdk install java 11.0.17-zulu  
@@ -454,16 +455,13 @@ vim ~/.config/mimeapps.list</p>
 </span></span><span class="line"><span class="cl">yay -Sy intellij-idea-ultimate-edition
 </span></span><span class="line"><span class="cl"> 
 </span></span></code></pre></div><h4 id="nvs">nvs</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yay nvm
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;source /usr/share/nvm/init-nvm.sh&#39;</span> &gt;&gt; ~/.bashrc
-</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.bashrc 
-</span></span><span class="line"><span class="cl">nvm
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">NVS_HOME</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/.nvs&#34;</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/jasongin/nvs <span class="s2">&#34;</span><span class="nv">$NVS_HOME</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">. <span class="s2">&#34;</span><span class="nv">$NVS_HOME</span><span class="s2">/nvs.sh&#34;</span> install
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">nvm install  --lts
-</span></span><span class="line"><span class="cl">nvm use  --lts
-</span></span><span class="line"><span class="cl">nvm link  --lts
-</span></span><span class="line"><span class="cl">nvm ls
-</span></span><span class="line"><span class="cl">nvm ls-remote
+</span></span><span class="line"><span class="cl">nvs add lts
+</span></span><span class="line"><span class="cl">nvs use lts
+</span></span><span class="line"><span class="cl">nvs link lts
 </span></span></code></pre></div><h4 id="golang">golang</h4>
 <h4 id="rust">Rust</h4>
 <h4 id="dotnet">DotNet</h4>
@@ -505,6 +503,8 @@ vim ~/.config/mimeapps.list</p>
 </span></span><span class="line"><span class="cl">pcmanfm.desktop
 </span></span><span class="line"><span class="cl">$ xdg-mime default pcmanfm.desktop inode/directory
 </span></span><span class="line"><span class="cl">$ xdg-mime query default inode/directory
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ xdg-mime default org.gnome.Nautilus.desktop inode/directory
 </span></span></code></pre></div><h4 id="dbeaver">DBeaver</h4>
 <h4 id="navicat">Navicat</h4>
 <h4 id="jetbrains全家桶">JetBrains全家桶</h4>
@@ -527,7 +527,7 @@ vim ~/.config/mimeapps.list</p>
 
 <aside>
     <header>
-    <h4>Manjaro I3安装配置の字数: 1989</h4> 
+    <h4>Manjaro I3安装配置の字数: 1987</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#系统安装设置">系统安装设置</a>
