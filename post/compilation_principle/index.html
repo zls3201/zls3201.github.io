@@ -7,10 +7,10 @@
     <title>编译原理实践 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 7 行代码 3 分钟：从零开始实现一门编程语言 QBE 1.0 正式发布，编译器后端 OCaml lexer(词">
+    <meta name="description" content="编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 7 行代码 3 分钟：从零开始实现一门编程语言 QBE 1.0 正式发布，编译器后端 The Super Tiny Compiler 超小型编">
     
     <meta itemprop="name" content="编译原理实践 - 珍珑阁">
-    <meta itemprop="description" content="编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 7 行代码 3 分钟：从零开始实现一门编程语言 QBE 1.0 正式发布，编译器后端 OCaml lexer(词">
+    <meta itemprop="description" content="编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 7 行代码 3 分钟：从零开始实现一门编程语言 QBE 1.0 正式发布，编译器后端 The Super Tiny Compiler 超小型编">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -100,20 +100,25 @@
 <p><a href="https://www.cnblogs.com/goloving/p/14078228.html">浅析AST抽象语法树及如何利用AST转换JS代码</a></p>
 <p><a href="https://www.infoq.cn/article/QFsd4uAQCQMUs79YKiLD?utm_source=feedly&amp;utm_medium=article">7 行代码 3 分钟：从零开始实现一门编程语言</a></p>
 <p><a href="https://www.oschina.net/news/200695/qbe-1-0-released">QBE 1.0 正式发布，编译器后端</a></p>
+<p><a href="https://github.com/jamiebuilds/the-super-tiny-compiler">The Super Tiny Compiler 超小型编译器</a> The Super Tiny Compiler 是一个仅有约 1000 行代码的迷你编译器，可用于把 LISP 语言编译成我们熟悉的 JavaScript 语言。</p>
 <p>OCaml</p>
 <p>lexer(词法分析)</p>
 <p>parser(语法解析)</p>
-<p><a href="https://github.com/antlr/antlr4">antlr4</a> <a href="https://zhuanlan.zhihu.com/p/69294769">Antlr - 强大的开源语法分析工具</a></p>
+<p><a href="https://github.com/antlr/antlr4">antlr4</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/69294769">Antlr - 强大的开源语法分析工具</a></p>
 <p><a href="https://ssw.jku.at/Research/Projects/Coco/">Coco/R</a> 较早的一个语法分析器生成工具。其生成语法分析器的语言极其之多，包括C#、 Java、 C++、F#、VB.Net、Oberon等等。</p>
-<p><a href="http://dinosaur.compilertools.net/">Lex &amp; Yacc</a> <a href="https://www.open-open.com/lib/view/open1325298492499.html">语法分析器生成工具 YACC</a></p>
-<p><a href="https://aquamentus.com/flex_bison.html">Flex &amp; Bison</a> <a href="http://www.calvinneo.com/2016/07/29/flex%E5%92%8Cbison%E4%BD%BF%E7%94%A8/">flex和bison使用</a></p>
+<p><a href="http://dinosaur.compilertools.net">Lex &amp; Yacc</a></p>
+<p><a href="https://www.open-open.com/lib/view/open1325298492499.html">语法分析器生成工具 YACC</a></p>
+<p><a href="https://aquamentus.com/flex_bison.html">Flex &amp; Bison</a></p>
+<p><a href="http://www.calvinneo.com/2016/07/29/flex%E5%92%8Cbison%E4%BD%BF%E7%94%A8/">flex和bison使用</a></p>
 <p><a href="https://github.com/javacc/javacc">JavaCC</a> ：开源语法解析</p>
 <p><a href="https://grammatica.percederberg.net/">Grammatica</a> is a C# and Java parser generator (compiler compiler)</p>
 <p><a href="https://astexplorer.net/">astexplorer</a></p>
 <p><a href="https://github.com/Pines-Cheng/blog/issues/55">13 个示例快速入门 JS 抽象语法树</a></p>
 <p><a href="https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/315">babel 怎么把字符串解析成 AST</a></p>
 <p><a href="https://esprima.org/">esprima</a> js词法语法解析</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">esprima</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;esprima&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">esprima</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;esprima&#39;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="kd">var</span> <span class="nx">program</span> <span class="o">=</span> <span class="s1">&#39;const answer = 42&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="nx">esprima</span><span class="p">.</span><span class="nx">tokenize</span><span class="p">(</span><span class="nx">program</span><span class="p">);</span>
@@ -150,7 +155,7 @@
 
 <aside>
     <header>
-    <h4>编译原理实践の字数: 316</h4> 
+    <h4>编译原理实践の字数: 366</h4> 
     </header><nav id="TableOfContents"></nav></aside>
 <a href="#" id="toc-toggle"></a>
 
