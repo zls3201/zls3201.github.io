@@ -7,10 +7,38 @@
     <title>萤石摄像头视频网页播放 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu">
+    <meta name="description" content="1.获取摄像头的局域网rtsp地址
+2.将rtsp视频流转换为Hls视频
+a.采用FFMpeg转换，较为耗费资源
+b.使用srs服务，基于linux
+c.使用Live555相关代码自定义开发
+3.网页采用Hls.js播放
+SRS、EasyDarwin、ZLMediaKit、Monibuca对比分析
+Monibuca 快速起步
+相关项目
+nginx-rtmp-module
+srs
+ZLMediaKit
+ZLMediaKit
+sms
+livego">
     
     <meta itemprop="name" content="萤石摄像头视频网页播放 - 珍珑阁">
-    <meta itemprop="description" content="1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu">
+    <meta itemprop="description" content="1.获取摄像头的局域网rtsp地址
+2.将rtsp视频流转换为Hls视频
+a.采用FFMpeg转换，较为耗费资源
+b.使用srs服务，基于linux
+c.使用Live555相关代码自定义开发
+3.网页采用Hls.js播放
+SRS、EasyDarwin、ZLMediaKit、Monibuca对比分析
+Monibuca 快速起步
+相关项目
+nginx-rtmp-module
+srs
+ZLMediaKit
+ZLMediaKit
+sms
+livego">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +81,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -100,7 +128,7 @@
 <h3 id="2将rtsp视频流转换为hls视频">2.将rtsp视频流转换为Hls视频</h3>
 <h4 id="a采用ffmpeg转换较为耗费资源">a.采用FFMpeg转换，较为耗费资源</h4>
 <h4 id="b使用srs服务基于linux">b.使用srs服务，基于linux</h4>
-<h4 id="c使用live555httpwwwlive555com相关代码自定义开发">c.使用<a href="http://www.live555.com/">Live555</a>相关代码自定义开发</h4>
+<h4 id="c使用live555相关代码自定义开发">c.使用<a href="http://www.live555.com/">Live555</a>相关代码自定义开发</h4>
 <h3 id="3网页采用hlsjs播放">3.网页采用Hls.js播放</h3>
 <p><a href="https://juejin.cn/post/6926739029496954888">SRS、EasyDarwin、ZLMediaKit、Monibuca对比分析</a></p>
 <p><a href="http://docs.monibuca.com/">Monibuca 快速起步</a></p>
@@ -116,7 +144,20 @@
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: '萤石摄像头视频网页播放',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -144,7 +185,6 @@
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

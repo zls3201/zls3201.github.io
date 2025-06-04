@@ -4,17 +4,16 @@
     <title>ROS on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/ros/</link>
     <description>Recent content in ROS on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/ros/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/ros/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ROS实践</title>
       <link>https://zls3201.github.io/post/ros/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/ros/</guid>
-      <description>ROS实践 ROS学习入门（抛砖引玉篇） 机器人操作系统ROS | 简介篇 古月居 Webots是一种免费的开源3D机器人 安装 https://docs.ros.org/en/dashing/Installation.html 验证 ros2 run demo_nodes_cpp talker https://github.com/ros2/examples StartGuide Tutorials 读ca</description>
+      <description>&lt;h1 id=&#34;ros实践&#34;&gt;ROS实践&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/26007106&#34;&gt;ROS学习入门（抛砖引玉篇）&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&amp;amp;mid=2652786427&amp;amp;idx=1&amp;amp;sn=ac4b9a890fec3d68773c6cb65ed86946&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0326mGy0nXBqFqBWxQCeNv6B&amp;amp;pass_ticket=1eHBdZLk6YjR3YAN0wCTt5ZXh4HtyqvVaLglwMh4ZRmOyALdqcjLhuOqe+BWkmJm#rd&#34;&gt;机器人操作系统ROS | 简介篇&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.guyuehome.com/&#34;&gt;古月居&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://cyberbotics.com/&#34;&gt;Webots是一种免费的开源3D机器人&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.ros.org/en/dashing/Installation.html&#34;&gt;https://docs.ros.org/en/dashing/Installation.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;验证&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ros2 run demo_nodes_cpp talker&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ros2/examples&#34;&gt;https://github.com/ros2/examples&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://wiki.ros.org/cn/ROS/StartGuide&#34;&gt;StartGuide&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://wiki.ros.org/cn/ROS/Tutorials&#34;&gt;Tutorials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/86537652&#34;&gt;读cartographer源码前的一些重要知识储备&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

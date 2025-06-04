@@ -7,10 +7,50 @@
     <title>树莓派安装mono运行环境 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install">
+    <meta name="description" content="
+sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev
+sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev
+
+sudo apt-get install libcairo2-dev
+
+
+wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz
+tar zxf libgdiplus-4.2.tar.gz
+cd libgdiplus-4.2 
+./configure --prefix=/usr
+make
+sudo make install
+
+wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2
+tar jvxf mono-4.4.0.122.tar.bz2
+cd mono-4.4.0.122
+./configure --prefix=/usr
+make
+sudo make install
+">
     
     <meta itemprop="name" content="树莓派安装mono运行环境 - 珍珑阁">
-    <meta itemprop="description" content="sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install">
+    <meta itemprop="description" content="
+sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev
+sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev
+
+sudo apt-get install libcairo2-dev
+
+
+wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz
+tar zxf libgdiplus-4.2.tar.gz
+cd libgdiplus-4.2 
+./configure --prefix=/usr
+make
+sudo make install
+
+wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2
+tar jvxf mono-4.4.0.122.tar.bz2
+cd mono-4.4.0.122
+./configure --prefix=/usr
+make
+sudo make install
+">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +93,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -121,7 +161,20 @@
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: '树莓派安装mono运行环境',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -133,7 +186,6 @@
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

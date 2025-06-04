@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.110.0">
+	<meta name="generator" content="Hugo 0.147.7">
     
     
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
     <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -92,7 +92,88 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        基础安装 alias useproxy=&#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &#34; alias unproxy=&#34; unset http_proxy; unset https_proxy; unset all_proxy; &#34; ## 移除多于内核 echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &#34;--- AFTER ---&#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf </div>
+        <h2 id="基础安装">基础安装</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">useproxy</span><span class="o">=</span><span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> export http_proxy=http://10.0.2.2:2080;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> export https_proxy=http://10.0.2.2:2080;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> export all_proxy=http://10.0.2.2:2080;
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">unproxy</span><span class="o">=</span><span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> unset http_proxy;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> unset https_proxy;
+</span></span></span><span class="line"><span class="cl"><span class="s2"> unset all_proxy;
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 移除多于内核</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-- BEFORE --&#34;</span><span class="p">;</span>rpm -qa <span class="p">|</span> grep ^kernel<span class="p">;</span>  rpm -qa  <span class="p">|</span>grep ^kernel  <span class="p">|</span>grep -E -v <span class="sb">`</span>uname -r<span class="sb">`</span>  <span class="p">|</span>xargs  rpm  -e  --nodeps<span class="p">;</span>  <span class="nb">echo</span> <span class="s2">&#34;--- AFTER ---&#34;</span><span class="p">;</span>  rpm -qa <span class="p">|</span> grep ^kernel
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rpm -qa<span class="p">|</span>grep kernel
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install epel-release nano  net-tools htop -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install langpacks-en glibc-all-langpacks -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install langpacks-en glibc-all-langpacks  -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">localectl list-locales <span class="p">|</span> grep zh
+</span></span><span class="line"><span class="cl">localectl set-locale <span class="nv">LANG</span><span class="o">=</span><span class="s2">&#34;zh_CN.utf8&#34;</span>
+</span></span><span class="line"><span class="cl">localectl status
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf groupinstall <span class="s1">&#39;Development Tools&#39;</span>  -y
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf install  cmake -y 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 搜索文件Pkg</span>
+</span></span><span class="line"><span class="cl">yum provides <span class="s2">&#34;*/pg_config&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl --proto <span class="s1">&#39;=https&#39;</span> --tlsv1.2 -sSf https://sh.rustup.rs <span class="p">|</span> sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cargo install fd-find
+</span></span><span class="line"><span class="cl">cargo install ripgrep
+</span></span><span class="line"><span class="cl">cargo install lsd
+</span></span></code></pre></div><h3 id="关闭selinux">关闭SELinux</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nano /etc/selinux/config
+</span></span></code></pre></div><h2 id="docker安装">Docker安装</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</span></span><span class="line"><span class="cl">dnf install docker-ce docker-ce-cli containerd.io
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now docker
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">systemctl status docker
+</span></span></code></pre></div><h3 id="doacker安装mariadb">Doacker安装MariaDB</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/mariadb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run --name mariadb  --restart<span class="o">=</span>always  -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
+</span></span></code></pre></div><h3 id="doacker安装redis">Doacker安装Redis</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -p /opt/docker/redis
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -itd --name redis --restart<span class="o">=</span>always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
+</span></span><span class="line"><span class="cl">docker ps
+</span></span></code></pre></div><h3 id="doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/postgresql
+</span></span><span class="line"><span class="cl">docker run --name postgres  --restart<span class="o">=</span>always  -e <span class="nv">POSTGRES_USER</span><span class="o">=</span>postgres -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
+</span></span><span class="line"><span class="cl">docker ps
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -it postgres bash
+</span></span><span class="line"><span class="cl"><span class="c1"># 启动失败时 查看日志</span>
+</span></span><span class="line"><span class="cl">docker inspect --format <span class="s1">&#39;{{.LogPath}}&#39;</span> 6343f20e07f9
+</span></span><span class="line"><span class="cl">cat /var/lib/docker/containers/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29-json.log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -it postgres bash
+</span></span><span class="line"><span class="cl">docker stop  6343f20e07f9
+</span></span><span class="line"><span class="cl">docker rm 6343f20e07f9
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> 
+</span></span></code></pre></div><h2 id="mariadb">MariaDB</h2>
+<p><a href="https://mariadb.org/download/?t=repo-config&amp;d=Red+Hat+Enterprise+Linux+9&amp;v=10.11&amp;r_m=aliyun">设置软件源并安装</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -108,7 +189,78 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        Manjaro I3安装配置 系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 Manjaro-KDE安装配置全攻略 arch </div>
+        <h1 id="manjaro-i3安装配置">Manjaro I3安装配置</h1>
+<h2 id="系统安装设置">系统安装设置</h2>
+<p>参考资料
+<a href="https://github.com/NakanoMikuOrg/arch-guide">archlinux 简明指南</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2019/10/tmux.html">Tmux 使用教程</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/137715607">Tmux的常用快捷键</a></p>
+<p><a href="https://www.ruanyifeng.com/blog/2022/01/cli-alternative-tools.html">命令行常用工具的替代品</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/114296129">Manjaro-KDE安装配置全攻略</a></p>
+<p><a href="https://arch.icekylin.online/prologue.html">arch安装</a></p>
+<p>chro
+<a href="https://www.cnblogs.com/sparkdev/p/6842805.html">SSH 远程执行任务 </a></p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看字体</span>
+</span></span><span class="line"><span class="cl">fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Linux查看端口占用情况</span>
+</span></span><span class="line"><span class="cl">netstat -anp <span class="p">|</span> grep <span class="m">8080</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 下获取pid并杀死进程 ( grep -v grep  排除grep自身查找 )</span>
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep python <span class="p">|</span>grep ****.py <span class="p">|</span> <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="sb">`</span>ps -ef <span class="p">|</span>grep  JrebelBrainsLicenseServerforJava <span class="p">|</span> grep -v grep <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87</span>
+</span></span><span class="line"><span class="cl">systemctl start dnsmasq
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 开启 ssh sudo </span>
+</span></span><span class="line"><span class="cl">pacman -S openssh 
+</span></span><span class="line"><span class="cl"><span class="c1">#启动SSH </span>
+</span></span><span class="line"><span class="cl">systemctl start sshd.service
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 终端设置代理</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">http_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">https_proxy</span><span class="o">=</span>socks5://127.0.0.1:2080
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 取消终端代理</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> http_proxy
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> https_proxy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#查看ip</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">curl ipinfo.me
+</span></span><span class="line"><span class="cl">curl ifconfig.me
+</span></span><span class="line"><span class="cl">https://www.ip111.cn
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 系统默认使用 jdk 1.8
+</span></span><span class="line"><span class="cl">export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
+</span></span><span class="line"><span class="cl">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+</span></span><span class="line"><span class="cl">export PATH=$PATH:$JAVA_HOME/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">export GO111MODULE=on
+</span></span><span class="line"><span class="cl">export GOPATH=/home/zls/workspaces/sdk/GOPATH
+</span></span><span class="line"><span class="cl">export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">export DENO_INSTALL=&#34;/home/zls/.deno&#34;
+</span></span><span class="line"><span class="cl">export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<h3 id="系统安装">系统安装</h3>
+<h3 id="驱动设置">驱动设置</h3>
+<h4 id="音频使用pulse">音频使用pulse</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">install_pulse
+</span></span></code></pre></div><h4 id="显卡使用闭源驱动为了使用cuda">显卡使用闭源驱动（为了使用cuda）</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装闭源驱动</span>
+</span></span><span class="line"><span class="cl">sudo mhwd -a pci nonfree <span class="m">0300</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#查看驱动</span>
+</span></span><span class="line"><span class="cl">mhwd -li
+</span></span></code></pre></div><h4 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h4>
+<p><a href="https://wiki.archlinuxcn.org/wiki/PC_speaker?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DPC_speaker_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno">PC speaker</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -124,7 +276,10 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        Deno实践 every-web-api-in-deno deno-api-rest-jwt aleph.js </div>
+        <h2 id="deno实践">Deno实践</h2>
+<p><a href="https://deno.com/blog/every-web-api-in-deno">every-web-api-in-deno</a></p>
+<p><a href="https://github.com/Trobyss/deno-api-rest-jwt">deno-api-rest-jwt</a></p>
+<p><a href="https://github.com/alephjs/aleph.js">aleph.js</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -140,7 +295,17 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        KeyValue Storage sled tikv GUI druid dioxus ORM https://rbatis.github.io/rbatis.io 语法解析 Rust can be difficult to learn and frustrating, but it&rsquo;s also the most exciting thing in software development in a long time Monkey Rust </div>
+        <h1 id="keyvalue-storage">KeyValue Storage</h1>
+<p><a href="https://github.com/spacejam/sled">sled</a></p>
+<p><a href="https://github.com/tikv/tikv">tikv</a></p>
+<h1 id="gui">GUI</h1>
+<p><a href="https://github.com/linebender/druid">druid</a></p>
+<p><a href="https://github.com/DioxusLabs/dioxus">dioxus</a></p>
+<h1 id="orm">ORM</h1>
+<p><a href="https://rbatis.github.io/rbatis.io">https://rbatis.github.io/rbatis.io</a></p>
+<h1 id="语法解析">语法解析</h1>
+<p><a href="https://www.influxdata.com/blog/rust-can-be-difficult-to-learn-and-frustrating-but-its-also-the-most-exciting-thing-in-software-development-in-a-long-time/">Rust can be difficult to learn and frustrating, but it&rsquo;s also the most exciting thing in software development in a long time</a></p>
+<p><a href="https://github.com/pauldix/monkey-rust">Monkey Rust</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -156,7 +321,10 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        BI大数据分析 集算器 java 8 函数式 vavr 这是注释 </div>
+        <h2 id="bi大数据分析">BI大数据分析</h2>
+<p><a href="http://www.raqsoft.com.cn/p">集算器</a></p>
+<p>java 8 函数式 <a href="https://github.com/vavr-io/vavr">vavr</a></p>
+<p>这是注释</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -172,7 +340,24 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        [内部项目]3D大屏功能梳理,基于高德地图的大屏展示项目 图解WebGL&amp;Three.js工作原理 WebGIS vs WebGL图形编程 街道仿真3D 高 </div>
+        <p><a href="https://juejin.cn/post/6844903977776054279">[内部项目]3D大屏功能梳理,基于高德地图的大屏展示项目</a></p>
+<p><a href="https://www.cnblogs.com/wanbo/p/6754066.html">图解WebGL&amp;Three.js工作原理</a></p>
+<p><a href="https://www.cnblogs.com/ihardcoder/p/14892276.html">WebGIS vs WebGL图形编程</a></p>
+<p><a href="https://demos.littleworkshop.fr/infinitown">街道仿真3D</a></p>
+<h2 id="高德地图">高德地图</h2>
+<p><a href="https://lbs.amap.com/demo/javascript-api/example/3d/3d-model">三维模型</a></p>
+<p><a href="https://lbs.amap.com/demo/javascript-api/example/points/points">带高度的点</a></p>
+<p><a href="https://lbs.amap.com/demo/loca-v2/demos/cat-polygon/cadmall">3D建筑楼层展开</a></p>
+<p><a href="https://lbs.amap.com/demo/loca-v2/demos/cat-scatter/sz-road">深圳高峰期路口</a></p>
+<p><a href="https://lbs.amap.com/demo/loca-v2/demos/cat-scatter/china-traffic-event">全国交通事件响应</a></p>
+<p><a href="https://lbs.amap.com/demo/loca-v2/demos/cat-icon/icon_traffic">智慧交通道路事件情况</a></p>
+<p><a href="https://lbs.amap.com/demo/loca-v2/demos/cat-pulseline/bj_in_out">北京人口流入流出情况</a></p>
+<p><a href="https://lbs.amap.com/demo/loca-v2/demos/cat-pulseline/bj_bus_pulse">北京不同类型公交线路</a></p>
+<p><a href="https://www.cnblogs.com/jiach/p/12427786.html">在高德地图上用svg.js绘制简单图形</a></p>
+<p><a href="https://lbs.amap.com/demo/javascript-api/example/mouse-operate-map/mouse-draw-overlayers">鼠标工具-绘制覆盖物</a></p>
+<p><a href="https://lbs.amap.com/api/javascript-api/guide/object3d/points">接受光照的 Mesh</a></p>
+<p><a href="https://lbs.amap.com/demo/javascript-api/example/mesh/mesh-accept-lights">接受光照的 Mesh</a></p>
+<p>[点]https://lbs.amap.com/demo/javascript-api/example/object3d-base/event</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -188,7 +373,18 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        可视化展示 One Euro Filter Noise Filtering Using 1€ Filter 从概念上理解滤波~ 1.核相关滤波跟踪算法（KCF） 【滤波器】各种滤波器的理解与学习 从放弃到精通！卡尔曼滤波从理论 </div>
+        <p><a href="http://www.lifl.fr/~casiez/1euro/InteractiveDemo/">可视化展示</a></p>
+<p><a href="https://github.com/jaantollander/OneEuroFilter/blob/master/README.md">One Euro Filter</a></p>
+<p><a href="https://jaantollander.com/post/noise-filtering-using-one-euro-filter/">Noise Filtering Using 1€ Filter</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/39505138">从概念上理解滤波~</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/327116748">1.核相关滤波跟踪算法（KCF）</a></p>
+<p><a href="https://blog.csdn.net/weixin_44229927/article/details/107956010">【滤波器】各种滤波器的理解与学习</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Rh41117MT?from=search&amp;seid=224183406259408951">从放弃到精通！卡尔曼滤波从理论到实践~</a></p>
+<p>Kernelized Correlation Filters</p>
+<p><a href="https://zhuanlan.zhihu.com/p/48249974">KCF相关滤波跟踪算法</a></p>
+<p><a href="https://www.bilibili.com/video/BV1nT4y1u7LL?from=search&amp;seid=11990364806278138989">什么是滤波器？滤波器有什么功能？有哪些类型？RC无源、有源滤波器</a></p>
+<p><a href="https://www.bilibili.com/video/BV1HJ411d7YF?p=2&amp;spm_id_from=pageDriver">目标跟踪：相关滤波算法KCF实现代码讲解</a></p>
+<p><a href="https://github.com/Superlee506/Correlation_Filtering_Tracking_Lib">C++实现的与相关滤波相关的跟踪算法（KCF, DSST, Staple）</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -204,7 +400,18 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        基础知识 协方差矩阵 如何直观地理解「协方差矩阵」 协方差 如何理解先验概率与后验概率 PID控制器 安装 卡尔曼滤波 图说卡尔曼滤波，一份通俗易懂的教程 从 </div>
+        <h1 id="基础知识">基础知识</h1>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8D%8F%E6%96%B9%E5%B7%AE%E7%9F%A9%E9%98%B5">协方差矩阵</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/37609917">如何直观地理解「协方差矩阵」</a></p>
+<p><a href="https://baike.baidu.com/item/%E5%8D%8F%E6%96%B9%E5%B7%AE">协方差</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/26464206">如何理解先验概率与后验概率</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/PID%E6%8E%A7%E5%88%B6%E5%99%A8">PID控制器</a></p>
+<h2 id="安装">安装</h2>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2">卡尔曼滤波</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/39912633">图说卡尔曼滤波，一份通俗易懂的教程</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Rh41117MT">从放弃到精通！卡尔曼滤波从理论到实践~</a></p>
+<p><a href="https://blog.csdn.net/hjxu2016/article/details/114102906">卡尔曼滤波的五大公式及python代码示例</a></p>
+<p><a href="https://blog.csdn.net/qq_23981335/article/details/82968422">卡尔曼滤波器的两种python实现方法：（1）opencv自带的cv2.KalmanFilter （2）pykalman算法库</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -220,7 +427,19 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        ROS实践 ROS学习入门（抛砖引玉篇） 机器人操作系统ROS | 简介篇 古月居 Webots是一种免费的开源3D机器人 安装 https://docs.ros.org/en/dashing/Installation.html 验证 ros2 run demo_nodes_cpp talker https://github.com/ros2/examples StartGuide Tutorials 读ca </div>
+        <h1 id="ros实践">ROS实践</h1>
+<p><a href="https://zhuanlan.zhihu.com/p/26007106">ROS学习入门（抛砖引玉篇）</a></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&amp;mid=2652786427&amp;idx=1&amp;sn=ac4b9a890fec3d68773c6cb65ed86946&amp;mpshare=1&amp;scene=1&amp;srcid=0326mGy0nXBqFqBWxQCeNv6B&amp;pass_ticket=1eHBdZLk6YjR3YAN0wCTt5ZXh4HtyqvVaLglwMh4ZRmOyALdqcjLhuOqe+BWkmJm#rd">机器人操作系统ROS | 简介篇</a></p>
+<p><a href="https://www.guyuehome.com/">古月居</a></p>
+<p><a href="https://cyberbotics.com/">Webots是一种免费的开源3D机器人</a></p>
+<h2 id="安装">安装</h2>
+<p><a href="https://docs.ros.org/en/dashing/Installation.html">https://docs.ros.org/en/dashing/Installation.html</a></p>
+<p>验证</p>
+<pre tabindex="0"><code>ros2 run demo_nodes_cpp talker
+</code></pre><p><a href="https://github.com/ros2/examples">https://github.com/ros2/examples</a></p>
+<p><a href="http://wiki.ros.org/cn/ROS/StartGuide">StartGuide</a></p>
+<p><a href="http://wiki.ros.org/cn/ROS/Tutorials">Tutorials</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/86537652">读cartographer源码前的一些重要知识储备</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -236,7 +455,46 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        关键点检测 谷歌极速人脸、手、人体姿态分析Blaze算法家族 mediapipe/solutions 人体姿态估计论文笔记-Hourglass lightweight-human-pose-estimation.pytorch openpose 人脸识别与人脸检测 cmusatyalab/openface ageitgey/face_recognition 99%准确率 BlazeFace-PyTorch </div>
+        <p><a href="https://mna12478.github.io/keypoint/">关键点检测</a></p>
+<p><a href="https://www.52cv.net/?p=5382">谷歌极速人脸、手、人体姿态分析Blaze算法家族</a></p>
+<p><a href="https://google.github.io/mediapipe/solutions/solutions.html">mediapipe/solutions</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/270171118">人体姿态估计论文笔记-Hourglass</a></p>
+<p><a href="https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch">lightweight-human-pose-estimation.pytorch</a></p>
+<p><a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">openpose</a></p>
+<h2 id="人脸识别与人脸检测">人脸识别与人脸检测</h2>
+<p><a href="https://github.com/cmusatyalab/openface">cmusatyalab/openface</a></p>
+<p><a href="https://github.com/ageitgey/face_recognition">ageitgey/face_recognition</a> 99%准确率</p>
+<p><a href="https://github.com/hollance/BlazeFace-PyTorch">BlazeFace-PyTorch</a></p>
+<p><a href="https://github.com/serengil/deepface">deepface</a></p>
+<p><a href="https://github.com/davidsandberg/facenet">davidsandberg/facenet</a></p>
+<p><a href="https://github.com/ShiqiYu/libfacedetection">libfacedetection</a></p>
+<p><a href="https://github.com/timesler/facenet-pytorch">facenet-pytorch</a></p>
+<h3 id="数据集">数据集</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/48347016">一文道尽“人脸数据集”</a></p>
+<p><a href="https://www.080910t.com/2020/03/09/face-recognition-data-collection-in-2020/">2020 年人脸识别数据集汇总</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/31378836">人脸识别常用数据集大全（6/11更新</a></p>
+<p><a href="https://blog.csdn.net/moxibingdao/article/details/112598140">分享几个业界新出人脸识别数据集</a></p>
+<h3 id="landmark-关键点检测">landmark 关键点检测</h3>
+<p><a href="https://github.com/1adrianb/face-alignment">1adrianb/face-alignment</a></p>
+<p><a href="https://github.com/HRNet/HRNet-Facial-Landmark-Detection">HRNet/HRNet-Facial-Landmark-Detection</a></p>
+<p><a href="https://github.com/cunjian/pytorch_face_landmark">cunjian/pytorch_face_landmark</a></p>
+<p><a href="https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB">超轻量级通用人脸检测模型</a></p>
+<p><a href="https://niuyuanyuanna.github.io/2018/11/08/computer_version/face-keypoint-detection">人脸关键点检测</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/42968117">人脸关键点检测综述</a></p>
+<p><a href="https://www.jiqizhixin.com/articles/2017-12-17-7">从传统方法到深度学习，人脸关键点检测方法综述</a></p>
+<p><a href="https://blog.csdn.net/flyfor2013/article/details/107724519">PFLD：高精度实时人脸关键点检测算法</a></p>
+<h2 id="视线追踪">视线追踪</h2>
+<p><a href="https://github.com/elucideye/drishti">elucideye/drishti</a> Mobile APP</p>
+<p><a href="https://github.com/antoinelame/GazeTracking">antoinelame/GazeTracking</a></p>
+<p><a href="https://github.com/CSAILVision/GazeCapture">CSAILVision/GazeCapture</a></p>
+<p><a href="https://github.com/pupil-labs/pupil">pupil-labs/pupil</a></p>
+<p><a href="https://github.com/trishume/eyeLike">eyeLike</a></p>
+<p><a href="https://github.com/cpury/lookie-lookie">cpury/lookie-lookie</a></p>
+<p><a href="https://github.com/simonarvin/eyeloop">simonarvin/eyeloop</a></p>
+<p><a href="https://github.com/psychoinformatics-de/remodnav">psychoinformatics-de/remodnav</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/97642772">用于交互式应用的视线追踪技术</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/44208978">三分钟训练眼球追踪术，AI就知道你在看哪个妹子</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/86909998">简述基于计算机视觉的各种追踪解决方案</a></p> </div>
 </article> 
          
         <nav class="pagination pager align-center">

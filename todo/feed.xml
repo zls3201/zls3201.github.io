@@ -4,17 +4,16 @@
     <title>Todoes on 珍珑阁</title>
     <link>https://zls3201.github.io/todo/</link>
     <description>Recent content in Todoes on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 28 Aug 2017 17:22:52 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/todo/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2017 17:22:52 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/todo/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working</title>
       <link>https://zls3201.github.io/todo/wf2/</link>
       <pubDate>Mon, 28 Aug 2017 17:22:52 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/todo/wf2/</guid>
-      <description>工作流服务 Model设计 ContentType定义 Property Validator Formator RenderTemplate 代码行为执行 已初步通过 返回委托 委托缓存</description>
+      <description>&lt;h2 id=&#34;工作流服务&#34;&gt;工作流服务&lt;/h2&gt;&#xA;&lt;p&gt;Model设计&lt;/p&gt;&#xA;&lt;p&gt;ContentType定义  Property   Validator Formator  RenderTemplate&#xA;代码行为执行  已初步通过  返回委托 委托缓存&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

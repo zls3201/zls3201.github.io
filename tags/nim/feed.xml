@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nim on 珍珑阁</title>
+    <title>Nim on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/nim/</link>
-    <description>Recent content in nim on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Nim on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/nim/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/nim/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CMS，元编程与Graphql</title>
       <link>https://zls3201.github.io/post/meta_programming/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/meta_programming/</guid>
-      <description>CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 rebuild 目前orchardcore，个人认为最好的实</description>
+      <description>&lt;h1 id=&#34;cms&#34;&gt;CMS&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;!https://strapi.io/documentation/developer-docs/latest/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project&#34;&gt;StrAPI&lt;/a&gt; Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/getrebuild/rebuild&#34;&gt;rebuild&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;目前orchardcore，个人认为最好的实现，问题是实际使用时可否自定义后端栏目，隐藏系统管理相关选项&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

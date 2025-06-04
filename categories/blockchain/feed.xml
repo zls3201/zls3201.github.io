@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blockchain on 珍珑阁</title>
+    <title>Blockchain on 珍珑阁</title>
     <link>https://zls3201.github.io/categories/blockchain/</link>
-    <description>Recent content in blockchain on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Blockchain on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 Apr 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/blockchain/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/categories/blockchain/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>区块链扫盲</title>
       <link>https://zls3201.github.io/post/blockchain/</link>
       <pubDate>Thu, 01 Apr 2021 01:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/blockchain/</guid>
-      <description>区块链扫盲 Web3.0应用程序架构 区块链教程 BlockGeeks 深入指南 区块链技术快速入门教程（非常详细） 区块链是什么，如何简单易懂地介绍区块链？ substrate solidity ethers.js 前端如</description>
+      <description>&lt;h2 id=&#34;区块链扫盲&#34;&gt;区块链扫盲&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/itbsl/p/16252335.html&#34;&gt;Web3.0应用程序架构&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/1207298049439968&#34;&gt;区块链教程&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ethfans.org/posts/blockchain-developer-crash-course&#34;&gt;BlockGeeks 深入指南&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://c.biancheng.net/blockchain/&#34;&gt;区块链技术快速入门教程（非常详细）&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/37290469/answer/107612456&#34;&gt;区块链是什么，如何简单易懂地介绍区块链？&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://substrate.dev/docs/en/tutorials&#34;&gt;substrate&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://soliditylang.org/&#34;&gt;solidity&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://learnblockchain.cn/docs/ethers.js/&#34;&gt;ethers.js&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://juejin.cn/post/7037374607560540190&#34;&gt;前端如何基于solidity与Truffle快速创建智能合约开发环境&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://trufflesuite.com/ganache/&#34;&gt;ganache&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;这是注释&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

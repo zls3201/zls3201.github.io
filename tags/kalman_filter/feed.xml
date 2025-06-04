@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kalman_filter on 珍珑阁</title>
+    <title>Kalman_filter on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/kalman_filter/</link>
-    <description>Recent content in kalman_filter on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Kalman_filter on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/kalman_filter/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/kalman_filter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>卡尔曼滤波器</title>
       <link>https://zls3201.github.io/post/kalman_filter/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/kalman_filter/</guid>
-      <description>基础知识 协方差矩阵 如何直观地理解「协方差矩阵」 协方差 如何理解先验概率与后验概率 PID控制器 安装 卡尔曼滤波 图说卡尔曼滤波，一份通俗易懂的教程 从</description>
+      <description>&lt;h1 id=&#34;基础知识&#34;&gt;基础知识&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%8D%8F%E6%96%B9%E5%B7%AE%E7%9F%A9%E9%98%B5&#34;&gt;协方差矩阵&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/37609917&#34;&gt;如何直观地理解「协方差矩阵」&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://baike.baidu.com/item/%E5%8D%8F%E6%96%B9%E5%B7%AE&#34;&gt;协方差&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/26464206&#34;&gt;如何理解先验概率与后验概率&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/PID%E6%8E%A7%E5%88%B6%E5%99%A8&#34;&gt;PID控制器&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2&#34;&gt;卡尔曼滤波&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/39912633&#34;&gt;图说卡尔曼滤波，一份通俗易懂的教程&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Rh41117MT&#34;&gt;从放弃到精通！卡尔曼滤波从理论到实践~&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/hjxu2016/article/details/114102906&#34;&gt;卡尔曼滤波的五大公式及python代码示例&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_23981335/article/details/82968422&#34;&gt;卡尔曼滤波器的两种python实现方法：（1）opencv自带的cv2.KalmanFilter （2）pykalman算法库&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

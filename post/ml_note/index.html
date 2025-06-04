@@ -7,10 +7,150 @@
     <title>机器学习笔记 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="ML 资料整理 机器学习课程 CS229 网易公开课_吴恩达_机器学习_2008 CS229 课程讲义中文翻译 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习">
+    <meta name="description" content="ML
+资料整理
+机器学习课程
+CS229 网易公开课_吴恩达_机器学习_2008
+CS229 课程讲义中文翻译
+斯坦福机器学习笔记
+机器学习第九期
+数据挖掘十大算法详解
+机器学习基础：案例研究
+神经网络_fast.ai
+西瓜书
+南瓜书
+机器学习实践
+https://www.csie.ntu.edu.tw/~htlin/
+1.常见问题
+
+监督学习与非监督学习
+参数学习与非参数学习
+判定模型与生成模型
+
+
+https://www.zhihu.com/question/20446337/answer/45130939
+
+ 
+
+我是这样理解的： 
+
+生成模型，就是生成（数据的分布）的模型； 
+
+判别模型，就是判别（数据输出量）的模型； 
+
+更进一步： 
+
+从结果角度，两种模型都能给你 输出量（label 或 y etc.)。 
+
+但，生成模型的处理过程会告诉你关于数据的一些统计信息（p(x|y) 分布 etc.），更接近于统计学； 
+
+而 判别模型则是通过一系列处理得到结果，这个结果可能是概率的或不是，这个并不改变他是不是判别的。 
+
+如，决策树的if then说不是这个就是那个（而很多属性都是有分布的）【即分支】，明显是一种 判别 嘛； 
+
+而朴素贝叶斯说，p( cancer , fat ) = x% etc.，模型 生成 了一个分布给你了，即使你没意识到/没用到，只用到 p( cancer | fat ) = y% 这个最终的判别。 
+
+你再理解一下： 
+
+k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向量机、提升方法是判别模型； 
+
+隐马尔可夫模型（重点的EM算法）是生成模型。 
+graph LR
+    A[Hard edge] --&gt;|Link textQQ  | B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+2.常用算法
+2.1 线性回归
+2.1.1 局部加权线性回归
+https://blog.csdn.net/Allenalex/article/details/16370245 
+https://blog.csdn.net/tianse12/article/details/70161591 
+https://blog.csdn.net/herosofearth/article/details/51969517 
+2.1.2 广义线性模型
+2.2 逻辑回归
+2.2.1 SoftMax回归
+2.3 感知器算法
+生成学习算法
+高斯判别分析
+朴素贝叶斯
+垃圾邮件分类
+Laplcae平滑
+SVM（支持向量机）
+KNN(K近邻算法)
+https://blog.csdn.net/suipingsp/article/details/41964713">
     
     <meta itemprop="name" content="机器学习笔记 - 珍珑阁">
-    <meta itemprop="description" content="ML 资料整理 机器学习课程 CS229 网易公开课_吴恩达_机器学习_2008 CS229 课程讲义中文翻译 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习">
+    <meta itemprop="description" content="ML
+资料整理
+机器学习课程
+CS229 网易公开课_吴恩达_机器学习_2008
+CS229 课程讲义中文翻译
+斯坦福机器学习笔记
+机器学习第九期
+数据挖掘十大算法详解
+机器学习基础：案例研究
+神经网络_fast.ai
+西瓜书
+南瓜书
+机器学习实践
+https://www.csie.ntu.edu.tw/~htlin/
+1.常见问题
+
+监督学习与非监督学习
+参数学习与非参数学习
+判定模型与生成模型
+
+
+https://www.zhihu.com/question/20446337/answer/45130939
+
+ 
+
+我是这样理解的： 
+
+生成模型，就是生成（数据的分布）的模型； 
+
+判别模型，就是判别（数据输出量）的模型； 
+
+更进一步： 
+
+从结果角度，两种模型都能给你 输出量（label 或 y etc.)。 
+
+但，生成模型的处理过程会告诉你关于数据的一些统计信息（p(x|y) 分布 etc.），更接近于统计学； 
+
+而 判别模型则是通过一系列处理得到结果，这个结果可能是概率的或不是，这个并不改变他是不是判别的。 
+
+如，决策树的if then说不是这个就是那个（而很多属性都是有分布的）【即分支】，明显是一种 判别 嘛； 
+
+而朴素贝叶斯说，p( cancer , fat ) = x% etc.，模型 生成 了一个分布给你了，即使你没意识到/没用到，只用到 p( cancer | fat ) = y% 这个最终的判别。 
+
+你再理解一下： 
+
+k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向量机、提升方法是判别模型； 
+
+隐马尔可夫模型（重点的EM算法）是生成模型。 
+graph LR
+    A[Hard edge] --&gt;|Link textQQ  | B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+2.常用算法
+2.1 线性回归
+2.1.1 局部加权线性回归
+https://blog.csdn.net/Allenalex/article/details/16370245 
+https://blog.csdn.net/tianse12/article/details/70161591 
+https://blog.csdn.net/herosofearth/article/details/51969517 
+2.1.2 广义线性模型
+2.2 逻辑回归
+2.2.1 SoftMax回归
+2.3 感知器算法
+生成学习算法
+高斯判别分析
+朴素贝叶斯
+垃圾邮件分类
+Laplcae平滑
+SVM（支持向量机）
+KNN(K近邻算法)
+https://blog.csdn.net/suipingsp/article/details/41964713">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +193,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -214,7 +354,20 @@ Join似然估计
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: '机器学习笔记',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -258,7 +411,6 @@ Join似然估计
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

@@ -4,17 +4,16 @@
     <title>C&#43;&#43; on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/c++/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Feb 2021 07:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/c++/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 10 mingw vcpkg配置</title>
       <link>https://zls3201.github.io/post/windows_mingw_vcpkg/</link>
       <pubDate>Wed, 24 Feb 2021 07:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
-      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&amp;quot;bin&amp;quot</description>
+      <description>&lt;h2 id=&#34;安装-git&#34;&gt;安装 Git&lt;/h2&gt;&#xA;&lt;h2 id=&#34;安装-cmake&#34;&gt;安装 CMake&lt;/h2&gt;&#xA;&lt;h2 id=&#34;安装-vcpkg&#34;&gt;安装 vcpkg&lt;/h2&gt;&#xA;&lt;p&gt;查看triplet&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vcpkg help triplet&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;配置环境变量 VCPKG_DEFAULT_TRIPLET&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;安装配置mingw-distro&#34;&gt;安装配置&lt;a href=&#34;https://nuwen.net/mingw.html&#34;&gt;mingw-distro&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;解压Mingw&lt;br&gt;&#xA;添加&amp;quot;bin&amp;quot; &amp;ldquo;x86_64-w64-mingw32\bin&amp;quot;两个子目录到Path&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,17 +4,16 @@
     <title>直播 on 珍珑阁</title>
     <link>https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/</link>
     <description>Recent content in 直播 on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 27 Mar 2019 02:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2019 02:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/categories/%E7%9B%B4%E6%92%AD/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>萤石摄像头视频网页播放</title>
       <link>https://zls3201.github.io/post/camera_video_rtsp_player/</link>
       <pubDate>Wed, 27 Mar 2019 02:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/camera_video_rtsp_player/</guid>
-      <description>1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu</description>
+      <description>&lt;h3 id=&#34;1获取摄像头的局域网rtsp地址&#34;&gt;1.获取摄像头的局域网rtsp地址&lt;/h3&gt;&#xA;&lt;h3 id=&#34;2将rtsp视频流转换为hls视频&#34;&gt;2.将rtsp视频流转换为Hls视频&lt;/h3&gt;&#xA;&lt;h4 id=&#34;a采用ffmpeg转换较为耗费资源&#34;&gt;a.采用FFMpeg转换，较为耗费资源&lt;/h4&gt;&#xA;&lt;h4 id=&#34;b使用srs服务基于linux&#34;&gt;b.使用srs服务，基于linux&lt;/h4&gt;&#xA;&lt;h4 id=&#34;c使用live555相关代码自定义开发&#34;&gt;c.使用&lt;a href=&#34;http://www.live555.com/&#34;&gt;Live555&lt;/a&gt;相关代码自定义开发&lt;/h4&gt;&#xA;&lt;h3 id=&#34;3网页采用hlsjs播放&#34;&gt;3.网页采用Hls.js播放&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://juejin.cn/post/6926739029496954888&#34;&gt;SRS、EasyDarwin、ZLMediaKit、Monibuca对比分析&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://docs.monibuca.com/&#34;&gt;Monibuca 快速起步&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;相关项目&#xA;&lt;a href=&#34;https://github.com/arut/nginx-rtmp-module&#34;&gt;nginx-rtmp-module&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/ossrs/srs&#34;&gt;srs&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/xiongziliang/ZLMediaKit&#34;&gt;ZLMediaKit&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/xiongziliang/ZLMediaKit&#34;&gt;ZLMediaKit&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/sheepbao/sms&#34;&gt;sms&lt;/a&gt;&#xA;&lt;a href=&#34;https://github.com/gwuhaolin/livego&#34;&gt;livego&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

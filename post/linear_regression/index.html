@@ -7,10 +7,234 @@
     <title>线性回归 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &#34;&#34;&#34; Created on Sat Jun 9 08:18:10 2018 @author: zls3201@gmail.com &#34;&#34;&#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &#34;&#34">
+    <meta name="description" content="线性回归
+1.线性回归数学
+
+
+
+
+
+
+
+\begin{aligned}
+J(\theta)=\frac 1 m  \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2
+\end{aligned}
+$$
+
+
+# -*- coding: utf-8 -*-
+&#34;&#34;&#34;
+Created on Sat Jun  9 08:18:10 2018
+
+@author: zls3201@gmail.com
+&#34;&#34;&#34;
+import numpy as np
+from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import animation as amat
+
+def loadDataSet(fileName):
+    &#34;&#34;&#34;从文本文件加载数据.
+
+    文件内容格式.
+
+    Args:
+        path: 传入文件名称.
+
+    Returns:
+        返回一个参数矩阵x和一个结论列向量y. 
+    
+    &#34;&#34;&#34;
+    dataX=[];dataY=[]
+    fr=open(fileName)
+    for line in fr.readlines():
+        dataArr= []
+        for item in  line.strip().split(&#39;\t&#39;):
+            dataArr.append(float(item))
+       
+        dataX.append( dataArr[0:-1])
+        dataY.append( dataArr[-1])
+    
+    print(dataX)
+    print(dataY)
+    return np.array( dataX),np.array(dataY)
+
+def dataNomalize(dataX,dataY):
+    &#34;&#34;&#34;对数据进行归一化处理.
+
+    文件内容格式.
+
+    Args:
+        matriX: 参数组成的矩阵x，每行为一组样本个例参数.
+        vertY: 结论值组成的向量y.
+
+    Returns:
+        返回归一化后的一个参数矩阵x和一个结论列向量y
+    
+    &#34;&#34;&#34;
+    m,n=np.shape(dataX)
+    colMaxMin=[dataX.max(axis=0),dataX.min(axis=0)]
+
+    for i in range(m):
+        for j in range(n):
+            #print (i,j,dataX[i][j])
+            dataX[i][j]= (dataX[i][j]-colMaxMin[1][j])/colMaxMin[0][j]
+
+    minY=dataY.min();maxY=dataY.max()
+
+    for i in range(len(dataY)):
+        dataY[i]=(dataY[i]-minY)/maxY
+
+    print(dataX)
+    print(dataY)
+    return dataX,dataY
+
+def computeCost(x,y,theta):
+    m = y.shape[0]
+#     J = (np.sum((X.dot(theta) - y)**2)) / (2*m)
+    C = x.dot(theta) - y
+    J2 = (C.T.dot(C))/ (2*m)
+    return J2
+
+def batchGradientDescent(dataX,dataY):
+    matX=np.mat(dataX)
+    matY=np.mat(dataY).transpose()
+    m,n=np.shape(matX)
+    alpha=0.001
+    theta=np.ones((n,1))
+    maxTimes=500
+    for k in range(maxTimes):
+        theta=theta-(alpha/m)*(np.dot(matX.T,np.dot(matX,theta)-matY))
+        cost=computeCost(matX,matY,theta)
+        print(theta,cost)
+    return theta
+
+def stochastieGradientDeccent():
+    return 3
+
+def miniBatchGradientDescent():
+    return 4
+
+if __name__ == &#39;__main__&#39;:
+    dataX,dataY=loadDataSet(&#39;house_prize.txt&#39;)
+    dataX,dataY=dataNomalize(dataX,dataY)
+    batchGradientDescent(dataX,dataY)
+">
     
     <meta itemprop="name" content="线性回归 - 珍珑阁">
-    <meta itemprop="description" content="线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &#34;&#34;&#34; Created on Sat Jun 9 08:18:10 2018 @author: zls3201@gmail.com &#34;&#34;&#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &#34;&#34">
+    <meta itemprop="description" content="线性回归
+1.线性回归数学
+
+
+
+
+
+
+
+\begin{aligned}
+J(\theta)=\frac 1 m  \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2
+\end{aligned}
+$$
+
+
+# -*- coding: utf-8 -*-
+&#34;&#34;&#34;
+Created on Sat Jun  9 08:18:10 2018
+
+@author: zls3201@gmail.com
+&#34;&#34;&#34;
+import numpy as np
+from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import animation as amat
+
+def loadDataSet(fileName):
+    &#34;&#34;&#34;从文本文件加载数据.
+
+    文件内容格式.
+
+    Args:
+        path: 传入文件名称.
+
+    Returns:
+        返回一个参数矩阵x和一个结论列向量y. 
+    
+    &#34;&#34;&#34;
+    dataX=[];dataY=[]
+    fr=open(fileName)
+    for line in fr.readlines():
+        dataArr= []
+        for item in  line.strip().split(&#39;\t&#39;):
+            dataArr.append(float(item))
+       
+        dataX.append( dataArr[0:-1])
+        dataY.append( dataArr[-1])
+    
+    print(dataX)
+    print(dataY)
+    return np.array( dataX),np.array(dataY)
+
+def dataNomalize(dataX,dataY):
+    &#34;&#34;&#34;对数据进行归一化处理.
+
+    文件内容格式.
+
+    Args:
+        matriX: 参数组成的矩阵x，每行为一组样本个例参数.
+        vertY: 结论值组成的向量y.
+
+    Returns:
+        返回归一化后的一个参数矩阵x和一个结论列向量y
+    
+    &#34;&#34;&#34;
+    m,n=np.shape(dataX)
+    colMaxMin=[dataX.max(axis=0),dataX.min(axis=0)]
+
+    for i in range(m):
+        for j in range(n):
+            #print (i,j,dataX[i][j])
+            dataX[i][j]= (dataX[i][j]-colMaxMin[1][j])/colMaxMin[0][j]
+
+    minY=dataY.min();maxY=dataY.max()
+
+    for i in range(len(dataY)):
+        dataY[i]=(dataY[i]-minY)/maxY
+
+    print(dataX)
+    print(dataY)
+    return dataX,dataY
+
+def computeCost(x,y,theta):
+    m = y.shape[0]
+#     J = (np.sum((X.dot(theta) - y)**2)) / (2*m)
+    C = x.dot(theta) - y
+    J2 = (C.T.dot(C))/ (2*m)
+    return J2
+
+def batchGradientDescent(dataX,dataY):
+    matX=np.mat(dataX)
+    matY=np.mat(dataY).transpose()
+    m,n=np.shape(matX)
+    alpha=0.001
+    theta=np.ones((n,1))
+    maxTimes=500
+    for k in range(maxTimes):
+        theta=theta-(alpha/m)*(np.dot(matX.T,np.dot(matX,theta)-matY))
+        cost=computeCost(matX,matY,theta)
+        print(theta,cost)
+    return theta
+
+def stochastieGradientDeccent():
+    return 3
+
+def miniBatchGradientDescent():
+    return 4
+
+if __name__ == &#39;__main__&#39;:
+    dataX,dataY=loadDataSet(&#39;house_prize.txt&#39;)
+    dataX,dataY=dataNomalize(dataX,dataY)
+    batchGradientDescent(dataX,dataY)
+">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +277,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -213,7 +437,20 @@ $$</p>
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: '线性回归',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -240,7 +477,6 @@ $$</p>
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

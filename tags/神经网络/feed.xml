@@ -4,17 +4,16 @@
     <title>神经网络 on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
     <description>Recent content in 神经网络 on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 06 Jan 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>深度学习Tips</title>
       <link>https://zls3201.github.io/post/deep_learning/</link>
       <pubDate>Wed, 06 Jan 2021 01:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/deep_learning/</guid>
-      <description>一.相关资料 【爬虫+情感判定+Top10高频词+词云图】“刘畊宏“热门弹幕python舆情分析 30天吃掉那只TensorFlow2 fast.ai/ Darknet c语言</description>
+      <description>&lt;h2 id=&#34;一相关资料&#34;&gt;一.相关资料&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/mashukui/p/16253184.html&#34;&gt;【爬虫+情感判定+Top10高频词+词云图】“刘畊宏“热门弹幕python舆情分析 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/lyhue1991/eat_tensorflow2_in_30_days&#34;&gt;30天吃掉那只TensorFlow2&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.fast.ai/&#34;&gt;fast.ai/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pjreddie/darknet/blob/master/include/darknet.h&#34;&gt;Darknet&lt;/a&gt; c语言实现&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/thtrieu/darkflow&#34;&gt;thtrieu/darkflow&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.paddlepaddle.org.cn/&#34;&gt;Paddle&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Tencent/ncnn&#34;&gt;NCNN&lt;/a&gt;实践&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/xboot/libonnx&#34;&gt;xboot/libonnx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/karpathy/convnetjs&#34;&gt;convnetjs&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/onnxruntime&#34;&gt;ONNX Runtime&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.openvinotoolkit.org/latest/index.html&#34;&gt;openvino&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://microsoft.github.io/onnxjs-demo&#34;&gt;onnxjs-demo&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/onnx/models#onnx-model-zoo&#34;&gt;ONNX Model Zoo&lt;/a&gt; 常见网络&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.paddlepaddle.org.cn/&#34;&gt;paddle&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/xiaohu2015/DeepLearning_tutorials&#34;&gt;xiaohu2015/DeepLearning_tutorials&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/tensorflow/models&#34;&gt;tensorflow/models&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/pinard/&#34;&gt;刘建平Pinard - 博客园&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ouyanghuiyu/chineseocr_lite&#34;&gt;超轻量级中文ocr&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/pinard/p/6007200.html&#34;&gt;机器学习研究与开发平台的选择&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/wanbo/p/9100962.html&#34;&gt;Javascript如何实现GPU加速？&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/massquantity/p/13842139.html&#34;&gt;Flink + 强化学习 搭建实时推荐系统 - massquantity - 博客园&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules&#34;&gt;MuZero: Mastering Go, chess, shogi and Atari without rules&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

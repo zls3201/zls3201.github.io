@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>asl on 珍珑阁</title>
+    <title>Asl on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/asl/</link>
-    <description>Recent content in asl on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Asl on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/asl/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/asl/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编译原理实践</title>
       <link>https://zls3201.github.io/post/compilation_principle/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/compilation_principle/</guid>
-      <description>编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 7 行代码 3 分钟：从零开始实现一门编程语言 QBE 1.0 正式发布，编译器后端 The Super Tiny Compiler 超小型编</description>
+      <description>&lt;h1 id=&#34;编译原理实践&#34;&gt;编译原理实践&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/goloving/p/14078228.html&#34;&gt;浅析AST抽象语法树及如何利用AST转换JS代码&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.infoq.cn/article/QFsd4uAQCQMUs79YKiLD?utm_source=feedly&amp;amp;utm_medium=article&#34;&gt;7 行代码 3 分钟：从零开始实现一门编程语言&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.oschina.net/news/200695/qbe-1-0-released&#34;&gt;QBE 1.0 正式发布，编译器后端&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/jamiebuilds/the-super-tiny-compiler&#34;&gt;The Super Tiny Compiler 超小型编译器&lt;/a&gt; The Super Tiny Compiler 是一个仅有约 1000 行代码的迷你编译器，可用于把 LISP 语言编译成我们熟悉的 JavaScript 语言。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

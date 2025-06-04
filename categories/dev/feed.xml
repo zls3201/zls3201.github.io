@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dev on 珍珑阁</title>
+    <title>Dev on 珍珑阁</title>
     <link>https://zls3201.github.io/categories/dev/</link>
-    <description>Recent content in dev on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Dev on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 May 2022 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/dev/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 May 2022 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/categories/dev/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deno实践</title>
       <link>https://zls3201.github.io/post/deno/</link>
       <pubDate>Thu, 12 May 2022 01:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/deno/</guid>
-      <description>Deno实践 every-web-api-in-deno deno-api-rest-jwt aleph.js</description>
+      <description>&lt;h2 id=&#34;deno实践&#34;&gt;Deno实践&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://deno.com/blog/every-web-api-in-deno&#34;&gt;every-web-api-in-deno&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Trobyss/deno-api-rest-jwt&#34;&gt;deno-api-rest-jwt&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/alephjs/aleph.js&#34;&gt;aleph.js&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rust编程</title>
       <link>https://zls3201.github.io/post/rust_lang/</link>
       <pubDate>Mon, 17 Jan 2022 01:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/rust_lang/</guid>
-      <description>KeyValue Storage sled tikv GUI druid dioxus ORM https://rbatis.github.io/rbatis.io 语法解析 Rust can be difficult to learn and frustrating, but it&amp;rsquo;s also the most exciting thing in software development in a long time Monkey Rust</description>
+      <description>&lt;h1 id=&#34;keyvalue-storage&#34;&gt;KeyValue Storage&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/spacejam/sled&#34;&gt;sled&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/tikv/tikv&#34;&gt;tikv&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;gui&#34;&gt;GUI&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/linebender/druid&#34;&gt;druid&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/DioxusLabs/dioxus&#34;&gt;dioxus&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;orm&#34;&gt;ORM&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://rbatis.github.io/rbatis.io&#34;&gt;https://rbatis.github.io/rbatis.io&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;语法解析&#34;&gt;语法解析&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.influxdata.com/blog/rust-can-be-difficult-to-learn-and-frustrating-but-its-also-the-most-exciting-thing-in-software-development-in-a-long-time/&#34;&gt;Rust can be difficult to learn and frustrating, but it&amp;rsquo;s also the most exciting thing in software development in a long time&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pauldix/monkey-rust&#34;&gt;Monkey Rust&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Windows 10 mingw vcpkg配置</title>
       <link>https://zls3201.github.io/post/windows_mingw_vcpkg/</link>
       <pubDate>Wed, 24 Feb 2021 07:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/windows_mingw_vcpkg/</guid>
-      <description>安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&amp;quot;bin&amp;quot</description>
+      <description>&lt;h2 id=&#34;安装-git&#34;&gt;安装 Git&lt;/h2&gt;&#xA;&lt;h2 id=&#34;安装-cmake&#34;&gt;安装 CMake&lt;/h2&gt;&#xA;&lt;h2 id=&#34;安装-vcpkg&#34;&gt;安装 vcpkg&lt;/h2&gt;&#xA;&lt;p&gt;查看triplet&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vcpkg help triplet&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;配置环境变量 VCPKG_DEFAULT_TRIPLET&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;安装配置mingw-distro&#34;&gt;安装配置&lt;a href=&#34;https://nuwen.net/mingw.html&#34;&gt;mingw-distro&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;解压Mingw&lt;br&gt;&#xA;添加&amp;quot;bin&amp;quot; &amp;ldquo;x86_64-w64-mingw32\bin&amp;quot;两个子目录到Path&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GPU计算与编程</title>
       <link>https://zls3201.github.io/post/gpu_program/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/gpu_program/</guid>
-      <description>1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow</description>
+      <description>&lt;h2 id=&#34;1cpu-gpu-tpu&#34;&gt;1.CPU GPU TPU&lt;/h2&gt;&#xA;&lt;h2 id=&#34;2cuda-与-rocm&#34;&gt;2.CUDA 与 ROCm&lt;/h2&gt;&#xA;&lt;h2 id=&#34;3pytorch-与-tensorflow&#34;&gt;3.PyTorch 与 Tensorflow&lt;/h2&gt;</description>
     </item>
-    
   </channel>
 </rss>

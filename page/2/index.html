@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.110.0">
+	<meta name="generator" content="Hugo 0.147.7">
     
     
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
     <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -92,7 +92,51 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        # 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version </div>
+        <pre tabindex="0"><code># 安装
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+wsl --set-default-version 2
+
+# 查看实例
+wsl -l -v
+LxRunOffline l
+
+# 查看实例IP
+wsl hostname -I
+
+# 安装Ubuntu-16.04.2
+LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s
+
+wsl --set-version Ubuntu-16.04.2 2
+wsl --set-version Ubuntu-20.04 2
+
+主机查看文件
+type \\wsl$\zls-wsl\root\.profile
+
+# 注册
+LxRunOffline rg -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+LxRunOffline rg -n Ubuntu-16.04.2 f:\wsl\Ubuntu-16.04.2
+
+# 删除注册（保留文件）
+LxRunOffline ur -n zls-wsl
+
+# 卸载并删除文件！！！
+LxRunOffline ui -n zls-wsl
+
+# 修改WSL安装路径
+LxRunOffline move -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+
+# 查看
+LxRunOffline get-dir -n Ubuntu-20.04
+
+# 导出
+wsl --export Ubuntu-20.04  ubuntu20.04.tar.gz
+
+wsl --import &lt;Image Name&gt; &lt;Directory where you want to store the imported image&gt; &lt;Directory where the exported .tar file exists&gt;
+</code></pre> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -108,7 +152,18 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        区块链扫盲 Web3.0应用程序架构 区块链教程 BlockGeeks 深入指南 区块链技术快速入门教程（非常详细） 区块链是什么，如何简单易懂地介绍区块链？ substrate solidity ethers.js 前端如 </div>
+        <h2 id="区块链扫盲">区块链扫盲</h2>
+<p><a href="https://www.cnblogs.com/itbsl/p/16252335.html">Web3.0应用程序架构</a></p>
+<p><a href="https://www.liaoxuefeng.com/wiki/1207298049439968">区块链教程</a></p>
+<p><a href="https://ethfans.org/posts/blockchain-developer-crash-course">BlockGeeks 深入指南</a></p>
+<p><a href="http://c.biancheng.net/blockchain/">区块链技术快速入门教程（非常详细）</a></p>
+<p><a href="https://www.zhihu.com/question/37290469/answer/107612456">区块链是什么，如何简单易懂地介绍区块链？</a></p>
+<p><a href="https://substrate.dev/docs/en/tutorials">substrate</a></p>
+<p><a href="https://soliditylang.org/">solidity</a></p>
+<p><a href="https://learnblockchain.cn/docs/ethers.js/">ethers.js</a></p>
+<p><a href="https://juejin.cn/post/7037374607560540190">前端如何基于solidity与Truffle快速创建智能合约开发环境</a></p>
+<p><a href="https://trufflesuite.com/ganache/">ganache</a></p>
+<p>这是注释</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -124,7 +179,16 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        安装 Git 安装 CMake 安装 vcpkg 查看triplet vcpkg help triplet 配置环境变量 VCPKG_DEFAULT_TRIPLET VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic 安装配置mingw-distro 解压Mingw 添加&quot;bin&quot </div>
+        <h2 id="安装-git">安装 Git</h2>
+<h2 id="安装-cmake">安装 CMake</h2>
+<h2 id="安装-vcpkg">安装 vcpkg</h2>
+<p>查看triplet</p>
+<pre tabindex="0"><code>vcpkg help triplet
+</code></pre><p>配置环境变量 VCPKG_DEFAULT_TRIPLET</p>
+<pre tabindex="0"><code>VCPKG_DEFAULT_TRIPLET = x64-mingw-dynamic
+</code></pre><h2 id="安装配置mingw-distro">安装配置<a href="https://nuwen.net/mingw.html">mingw-distro</a></h2>
+<p>解压Mingw<br>
+添加&quot;bin&quot; &ldquo;x86_64-w64-mingw32\bin&quot;两个子目录到Path</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -140,7 +204,40 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        相关阅读 详解VR定位：如何在虚拟中自由行走？ 基于深度学习的三维重建算法综述 基于深度学习的视觉三维重建研究总结 3D重建传统算法对比深度学习，S </div>
+        <h2 id="相关阅读">相关阅读</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/21595093">详解VR定位：如何在虚拟中自由行走？</a>
+<a href="https://zhuanlan.zhihu.com/p/108198728">基于深度学习的三维重建算法综述</a>
+<a href="https://zhuanlan.zhihu.com/p/79628068">基于深度学习的视觉三维重建研究总结</a>
+<a href="https://cloud.tencent.com/developer/article/1466577">3D重建传统算法对比深度学习，SFU谭平：更需要的是二者的融合</a>
+<a href="https://sensor.ofweek.com/2018-10/ART-81011-11000-30272433.html">盘点视觉SLAM技术在各领域的应用</a></p>
+<p><a href="https://www.cnblogs.com/shang-slam/p/7044045.html">VINS（一）简介与代码结构</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/155683006">从零手写VIO</a></p>
+<p><a href="https://github.com/iamwangyabin/VIO-SLAM">从零开始手写VIO</a></p>
+<p><a href="https://github.com/HKUST-Aerial-Robotics/VINS-Mono">VINS-Mono实现</a>，分析见 <a href="https://www.cnblogs.com/shang-slam/p/7044045.html">VINS（一）简介与代码结构</a></p>
+<h2 id="基础知识">基础知识</h2>
+<p>针孔成像与凸透镜成像
+AR
+VR
+MR
+<a href="https://krpano.milly.me/docs/">Krpano 3D漫游</a>
+<a href="http://www.krpano360.com/krpanorumenjiaocheng/">krpano入门教程（共16讲）</a>
+<a href="https://www.jianshu.com/p/fc601036ee83">iOS计算机视觉—ARKit</a>
+<a href="https://developers.google.com/ar/discover?hl=zh_cn">ARCore概述</a>
+<a href="https://github.com/miliPolo/Amazing-ARkit">Amazing ARKit</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/26277569">自学C4D，不要错过这些教程</a></p>
+<p><a href="https://www.bilibili.com/video/av33597725?from=search&amp;seid=2770821868736869812">【C4D】郭术生-C4D自学四部曲</a></p>
+<p><a href="https://blog.csdn.net/guduruyu/article/details/69573824">【OpenCV3】棋盘格角点检测与绘制——cv::findChessboardCorners()与cv::drawChessboardCorners()详解</a></p>
+<p><a href="https://blog.csdn.net/qccz123456/article/details/86593000">基于OpenCV的三维重建python实现</a></p>
+<p><a href="https://www.yanxishe.com/TextTranslation/1412">教程：使用iPhone相机和openCV来完成3D重建（第一部分）</a></p>
+<p><a href="https://becominghuman.ai/stereo-3d-reconstruction-with-opencv-using-an-iphone-camera-part-i-c013907d1ab5">Tutorial: Stereo 3D reconstruction with openCV using an iPhone camera. Part I</a></p>
+<p>相关代码  <a href="https://github.com/OmarPadierna/3DReconstruction">https://github.com/OmarPadierna/3DReconstruction</a></p>
+<h2 id="sfm">SFM</h2>
+<p><a href="https://github.com/834810071/OpenCV_SFM">https://github.com/834810071/OpenCV_SFM</a></p>
+<p><a href="https://github.com/chengzhag/sfm_learn">https://github.com/chengzhag/sfm_learn</a></p>
+<p><a href="https://blog.csdn.net/AIchipmunk/article/details/48132109">OpenCV实现SfM（一）：相机模型</a></p>
+<h2 id="slam">SLAM</h2>
+<p>同时定位与地图构建（英語：Simultaneous localization and mapping，一般直接称SLAM）
+<a href="https://zhuanlan.zhihu.com/p/37161498">SLAM 技术基础</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -156,7 +253,11 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        编译原理实践 浅析AST抽象语法树及如何利用AST转换JS代码 7 行代码 3 分钟：从零开始实现一门编程语言 QBE 1.0 正式发布，编译器后端 The Super Tiny Compiler 超小型编 </div>
+        <h1 id="编译原理实践">编译原理实践</h1>
+<p><a href="https://www.cnblogs.com/goloving/p/14078228.html">浅析AST抽象语法树及如何利用AST转换JS代码</a></p>
+<p><a href="https://www.infoq.cn/article/QFsd4uAQCQMUs79YKiLD?utm_source=feedly&amp;utm_medium=article">7 行代码 3 分钟：从零开始实现一门编程语言</a></p>
+<p><a href="https://www.oschina.net/news/200695/qbe-1-0-released">QBE 1.0 正式发布，编译器后端</a></p>
+<p><a href="https://github.com/jamiebuilds/the-super-tiny-compiler">The Super Tiny Compiler 超小型编译器</a> The Super Tiny Compiler 是一个仅有约 1000 行代码的迷你编译器，可用于把 LISP 语言编译成我们熟悉的 JavaScript 语言。</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -172,7 +273,10 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        CMS StrAPI Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作 rebuild 目前orchardcore，个人认为最好的实 </div>
+        <h1 id="cms">CMS</h1>
+<p><a href="!https://strapi.io/documentation/developer-docs/latest/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project">StrAPI</a> Headless CMS 自动生成数据库架构，生成openapi和graphql服务，支持拦截器，自定义数据操作</p>
+<p><a href="https://github.com/getrebuild/rebuild">rebuild</a></p>
+<p>目前orchardcore，个人认为最好的实现，问题是实际使用时可否自定义后端栏目，隐藏系统管理相关选项</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -188,7 +292,29 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        一.相关资料 【爬虫+情感判定+Top10高频词+词云图】“刘畊宏“热门弹幕python舆情分析 30天吃掉那只TensorFlow2 fast.ai/ Darknet c语言 </div>
+        <h2 id="一相关资料">一.相关资料</h2>
+<p><a href="https://www.cnblogs.com/mashukui/p/16253184.html">【爬虫+情感判定+Top10高频词+词云图】“刘畊宏“热门弹幕python舆情分析 </a></p>
+<p><a href="https://github.com/lyhue1991/eat_tensorflow2_in_30_days">30天吃掉那只TensorFlow2</a></p>
+<p><a href="https://www.fast.ai/">fast.ai/</a></p>
+<p><a href="https://github.com/pjreddie/darknet/blob/master/include/darknet.h">Darknet</a> c语言实现</p>
+<p><a href="https://github.com/thtrieu/darkflow">thtrieu/darkflow</a></p>
+<p><a href="https://www.paddlepaddle.org.cn/">Paddle</a></p>
+<p><a href="https://github.com/Tencent/ncnn">NCNN</a>实践</p>
+<p><a href="https://github.com/xboot/libonnx">xboot/libonnx</a></p>
+<p><a href="https://github.com/karpathy/convnetjs">convnetjs</a></p>
+<p><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a></p>
+<p><a href="https://docs.openvinotoolkit.org/latest/index.html">openvino</a></p>
+<p><a href="https://microsoft.github.io/onnxjs-demo">onnxjs-demo</a></p>
+<p><a href="https://github.com/onnx/models#onnx-model-zoo">ONNX Model Zoo</a> 常见网络</p>
+<p><a href="https://www.paddlepaddle.org.cn/">paddle</a></p>
+<p><a href="https://github.com/xiaohu2015/DeepLearning_tutorials">xiaohu2015/DeepLearning_tutorials</a></p>
+<p><a href="https://github.com/tensorflow/models">tensorflow/models</a></p>
+<p><a href="https://www.cnblogs.com/pinard/">刘建平Pinard - 博客园</a></p>
+<p><a href="https://github.com/ouyanghuiyu/chineseocr_lite">超轻量级中文ocr</a></p>
+<p><a href="https://www.cnblogs.com/pinard/p/6007200.html">机器学习研究与开发平台的选择</a></p>
+<p><a href="https://www.cnblogs.com/wanbo/p/9100962.html">Javascript如何实现GPU加速？</a></p>
+<p><a href="https://www.cnblogs.com/massquantity/p/13842139.html">Flink + 强化学习 搭建实时推荐系统 - massquantity - 博客园</a></p>
+<p><a href="https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules">MuZero: Mastering Go, chess, shogi and Atari without rules</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -204,7 +330,9 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow </div>
+        <h2 id="1cpu-gpu-tpu">1.CPU GPU TPU</h2>
+<h2 id="2cuda-与-rocm">2.CUDA 与 ROCm</h2>
+<h2 id="3pytorch-与-tensorflow">3.PyTorch 与 Tensorflow</h2> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -220,7 +348,11 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        随感 有时，觉得生活索然无味，还畅想着远方。 有时想我若是不再在乎这些小节，是不是会好过一点。 这天下，其想去看看了。 我种的花，有些发芽了啊。 </div>
+        <h2 id="随感">随感</h2>
+<p>有时，觉得生活索然无味，还畅想着远方。</p>
+<p>有时想我若是不再在乎这些小节，是不是会好过一点。</p>
+<p>这天下，其想去看看了。</p>
+<p>我种的花，有些发芽了啊。</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -236,7 +368,21 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        1.获取摄像头的局域网rtsp地址 2.将rtsp视频流转换为Hls视频 a.采用FFMpeg转换，较为耗费资源 b.使用srs服务，基于linu </div>
+        <h3 id="1获取摄像头的局域网rtsp地址">1.获取摄像头的局域网rtsp地址</h3>
+<h3 id="2将rtsp视频流转换为hls视频">2.将rtsp视频流转换为Hls视频</h3>
+<h4 id="a采用ffmpeg转换较为耗费资源">a.采用FFMpeg转换，较为耗费资源</h4>
+<h4 id="b使用srs服务基于linux">b.使用srs服务，基于linux</h4>
+<h4 id="c使用live555相关代码自定义开发">c.使用<a href="http://www.live555.com/">Live555</a>相关代码自定义开发</h4>
+<h3 id="3网页采用hlsjs播放">3.网页采用Hls.js播放</h3>
+<p><a href="https://juejin.cn/post/6926739029496954888">SRS、EasyDarwin、ZLMediaKit、Monibuca对比分析</a></p>
+<p><a href="http://docs.monibuca.com/">Monibuca 快速起步</a></p>
+<p>相关项目
+<a href="https://github.com/arut/nginx-rtmp-module">nginx-rtmp-module</a>
+<a href="https://github.com/ossrs/srs">srs</a>
+<a href="https://github.com/xiongziliang/ZLMediaKit">ZLMediaKit</a>
+<a href="https://github.com/xiongziliang/ZLMediaKit">ZLMediaKit</a>
+<a href="https://github.com/sheepbao/sms">sms</a>
+<a href="https://github.com/gwuhaolin/livego">livego</a></p> </div>
 </article> 
          
         <nav class="pagination pager align-center">

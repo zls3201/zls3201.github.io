@@ -4,17 +4,16 @@
     <title>运维 on 珍珑阁</title>
     <link>https://zls3201.github.io/categories/%E8%BF%90%E7%BB%B4/</link>
     <description>Recent content in 运维 on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 23 May 2018 09:36:35 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E8%BF%90%E7%BB%B4/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 May 2018 09:36:35 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/categories/%E8%BF%90%E7%BB%B4/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分布式运维Tips</title>
       <link>https://zls3201.github.io/post/devoptips/</link>
       <pubDate>Wed, 23 May 2018 09:36:35 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/devoptips/</guid>
-      <description>系统管理与自动化 ansible salt puppet chef zipkin zipdig AB测试和灰度发布关系是什么 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位</description>
+      <description>&lt;h3 id=&#34;系统管理与自动化&#34;&gt;系统管理与自动化&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ansible/ansible&#34;&gt;ansible&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/saltstack/salt&#34;&gt;salt&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/puppetlabs/puppet&#34;&gt;puppet&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/chef/chef&#34;&gt;chef&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/openzipkin/zipkin&#34;&gt;zipkin&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/koderover/zadig/blob/main/README-zh-CN.md&#34;&gt;zipdig&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.appadhoc.com/blog/abtest-gatedlaunch-differences/&#34;&gt;AB测试和灰度发布关系是什么&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;阅读资料&lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;https://blog.csdn.net/wn_hello/article/details/52130573&#34;&gt;ansible和puppet的安装和比较&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;http://www.cnblogs.com/huang0925/p/4664608.html&#34;&gt;翻译-Salt与Ansible全方位比较&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;http://blog.51cto.com/liqilong2010/1850617&#34;&gt;Puppet、Chef、Ansible和SaltStack四大运维管理工具&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;http://ansible-tran.readthedocs.io/en/latest/index.html&#34;&gt;Ansible中文权威指南&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;容器与容器管理&#34;&gt;容器与容器管理&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/docker/docker-ce&#34;&gt;Docker&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/rkt/rkt&#34;&gt;Rocket（已改名rkt）&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://podman.io/&#34;&gt;podman&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://hyper.sh/&#34;&gt;hyper&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/opencontainers/runc&#34;&gt;runC&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/google/gvisor&#34;&gt;gvisor&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/young233/p/16439698.html&#34;&gt;docker的平替&amp;ndash;podman&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/lxc/incus&#34;&gt;lxd&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;阅读资料&lt;!-- raw HTML omitted --&gt;&#xA;&lt;a href=&#34;http://www.yunweipai.com/archives/10328.html&#34;&gt;容器，你还只用Docker吗？（上）&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.yunweipai.com/archives/10358.html&#34;&gt;容器，你还只用Docker吗？（下）&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

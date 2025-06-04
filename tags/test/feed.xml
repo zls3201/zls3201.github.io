@@ -4,17 +4,16 @@
     <title>Test on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/test/</link>
     <description>Recent content in Test on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 20 Feb 2016 15:34:05 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/test/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Feb 2016 15:34:05 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/test/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hello hugo</title>
       <link>https://zls3201.github.io/post/hello-hugo/</link>
       <pubDate>Sat, 20 Feb 2016 15:34:05 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/hello-hugo/</guid>
-      <description>Hello Hugo Balalala&amp;hellip; Balalala&amp;hellip; Balalala&amp;hellip;</description>
+      <description>&lt;h1 id=&#34;hello-hugo&#34;&gt;Hello Hugo&lt;/h1&gt;&#xA;&lt;p&gt;Balalala&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Balalala&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Balalala&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

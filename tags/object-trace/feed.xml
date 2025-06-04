@@ -4,17 +4,16 @@
     <title>Object Trace on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/object-trace/</link>
     <description>Recent content in Object Trace on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/object-trace/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 May 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/object-trace/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>目标跟踪及相关滤波器</title>
       <link>https://zls3201.github.io/post/object_trace/</link>
       <pubDate>Sat, 29 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/object_trace/</guid>
-      <description>可视化展示 One Euro Filter Noise Filtering Using 1€ Filter 从概念上理解滤波~ 1.核相关滤波跟踪算法（KCF） 【滤波器】各种滤波器的理解与学习 从放弃到精通！卡尔曼滤波从理论</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.lifl.fr/~casiez/1euro/InteractiveDemo/&#34;&gt;可视化展示&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/jaantollander/OneEuroFilter/blob/master/README.md&#34;&gt;One Euro Filter&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://jaantollander.com/post/noise-filtering-using-one-euro-filter/&#34;&gt;Noise Filtering Using 1€ Filter&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/39505138&#34;&gt;从概念上理解滤波~&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/327116748&#34;&gt;1.核相关滤波跟踪算法（KCF）&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_44229927/article/details/107956010&#34;&gt;【滤波器】各种滤波器的理解与学习&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Rh41117MT?from=search&amp;amp;seid=224183406259408951&#34;&gt;从放弃到精通！卡尔曼滤波从理论到实践~&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Kernelized Correlation Filters&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/48249974&#34;&gt;KCF相关滤波跟踪算法&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1nT4y1u7LL?from=search&amp;amp;seid=11990364806278138989&#34;&gt;什么是滤波器？滤波器有什么功能？有哪些类型？RC无源、有源滤波器&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1HJ411d7YF?p=2&amp;amp;spm_id_from=pageDriver&#34;&gt;目标跟踪：相关滤波算法KCF实现代码讲解&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Superlee506/Correlation_Filtering_Tracking_Lib&#34;&gt;C++实现的与相关滤波相关的跟踪算法（KCF, DSST, Staple）&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,26 +4,23 @@
     <title>网络 on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/%E7%BD%91%E7%BB%9C/</link>
     <description>Recent content in 网络 on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/%E7%BD%91%E7%BB%9C/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WSL 常用命令</title>
       <link>https://zls3201.github.io/post/wsl_tips/</link>
       <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/wsl_tips/</guid>
-      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s wsl --set-version</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 安装&#xA;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart&#xA;dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart&#xA;&#xA;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux&#xA;&#xA;wsl --set-default-version 2&#xA;&#xA;# 查看实例&#xA;wsl -l -v&#xA;LxRunOffline l&#xA;&#xA;# 查看实例IP&#xA;wsl hostname -I&#xA;&#xA;# 安装Ubuntu-16.04.2&#xA;LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s&#xA;&#xA;wsl --set-version Ubuntu-16.04.2 2&#xA;wsl --set-version Ubuntu-20.04 2&#xA;&#xA;主机查看文件&#xA;type \\wsl$\zls-wsl\root\.profile&#xA;&#xA;# 注册&#xA;LxRunOffline rg -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04&#xA;LxRunOffline rg -n Ubuntu-16.04.2 f:\wsl\Ubuntu-16.04.2&#xA;&#xA;# 删除注册（保留文件）&#xA;LxRunOffline ur -n zls-wsl&#xA;&#xA;# 卸载并删除文件！！！&#xA;LxRunOffline ui -n zls-wsl&#xA;&#xA;# 修改WSL安装路径&#xA;LxRunOffline move -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04&#xA;&#xA;# 查看&#xA;LxRunOffline get-dir -n Ubuntu-20.04&#xA;&#xA;# 导出&#xA;wsl --export Ubuntu-20.04  ubuntu20.04.tar.gz&#xA;&#xA;wsl --import &amp;lt;Image Name&amp;gt; &amp;lt;Directory where you want to store the imported image&amp;gt; &amp;lt;Directory where the exported .tar file exists&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Wireshark查看网络通讯数据包</title>
       <link>https://zls3201.github.io/post/wireshark_tip/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/wireshark_tip/</guid>
-      <description>过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下 (ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090) 关于localhost通讯抓包 要求卸载winpcap</description>
+      <description>&lt;p&gt;过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;(ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;关于localhost通讯抓包 要求卸载winpcap 安装npcap&#xA;效果如图&#xA;&lt;img src=&#34;https://zls3201.github.io/wireshark_tip/1.jpg&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

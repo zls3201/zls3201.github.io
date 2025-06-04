@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bigdata on 珍珑阁</title>
+    <title>Bigdata on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/bigdata/</link>
-    <description>Recent content in bigdata on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Bigdata on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 06 Nov 2021 01:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/bigdata/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Nov 2021 01:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/bigdata/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BI杂记</title>
       <link>https://zls3201.github.io/post/bi/</link>
       <pubDate>Sat, 06 Nov 2021 01:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/bi/</guid>
-      <description>BI大数据分析 集算器 java 8 函数式 vavr 这是注释</description>
+      <description>&lt;h2 id=&#34;bi大数据分析&#34;&gt;BI大数据分析&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.raqsoft.com.cn/p&#34;&gt;集算器&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;java 8 函数式 &lt;a href=&#34;https://github.com/vavr-io/vavr&#34;&gt;vavr&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;这是注释&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

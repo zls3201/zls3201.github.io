@@ -7,10 +7,152 @@
     <title>Manjaro I3安装配置 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="Manjaro I3安装配置 系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 Manjaro-KDE安装配置全攻略 arch">
+    <meta name="description" content="Manjaro I3安装配置
+系统安装设置
+参考资料
+archlinux 简明指南
+Tmux 使用教程
+Tmux的常用快捷键
+命令行常用工具的替代品
+Manjaro-KDE安装配置全攻略
+arch安装
+chro
+SSH 远程执行任务 
+
+# 查看字体
+fc-list | cut -f2 -d: | sort -u
+
+#Linux查看端口占用情况
+netstat -anp | grep 8080
+
+# 下获取pid并杀死进程 ( grep -v grep  排除grep自身查找 )
+kill -9 `ps -ef |grep python |grep ****.py | | grep -v grep | awk &#39;{print $2}&#39;`
+
+kill -9 `ps -ef |grep  JrebelBrainsLicenseServerforJava | grep -v grep | awk &#39;{print $2}&#39;`
+
+# archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87
+systemctl start dnsmasq
+
+# 开启 ssh sudo 
+pacman -S openssh 
+#启动SSH 
+systemctl start sshd.service
+
+
+# 终端设置代理
+export http_proxy=socks5://127.0.0.1:2080
+export https_proxy=socks5://127.0.0.1:2080
+
+# 取消终端代理
+unset http_proxy
+unset https_proxy
+
+#查看ip
+
+curl ipinfo.me
+curl ifconfig.me
+https://www.ip111.cn
+
+
+
+
+# 系统默认使用 jdk 1.8
+export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+export GO111MODULE=on
+export GOPATH=/home/zls/workspaces/sdk/GOPATH
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+ 
+export DENO_INSTALL=&#34;/home/zls/.deno&#34;
+export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
+
+系统安装
+驱动设置
+音频使用pulse
+install_pulse
+显卡使用闭源驱动（为了使用cuda）
+# 安装闭源驱动
+sudo mhwd -a pci nonfree 0300
+#查看驱动
+mhwd -li
+关闭主板蜂鸣器
+PC speaker">
     
     <meta itemprop="name" content="Manjaro I3安装配置 - 珍珑阁">
-    <meta itemprop="description" content="Manjaro I3安装配置 系统安装设置 参考资料 archlinux 简明指南 Tmux 使用教程 Tmux的常用快捷键 命令行常用工具的替代品 Manjaro-KDE安装配置全攻略 arch">
+    <meta itemprop="description" content="Manjaro I3安装配置
+系统安装设置
+参考资料
+archlinux 简明指南
+Tmux 使用教程
+Tmux的常用快捷键
+命令行常用工具的替代品
+Manjaro-KDE安装配置全攻略
+arch安装
+chro
+SSH 远程执行任务 
+
+# 查看字体
+fc-list | cut -f2 -d: | sort -u
+
+#Linux查看端口占用情况
+netstat -anp | grep 8080
+
+# 下获取pid并杀死进程 ( grep -v grep  排除grep自身查找 )
+kill -9 `ps -ef |grep python |grep ****.py | | grep -v grep | awk &#39;{print $2}&#39;`
+
+kill -9 `ps -ef |grep  JrebelBrainsLicenseServerforJava | grep -v grep | awk &#39;{print $2}&#39;`
+
+# archlinux 清除dns缓存 （新） 参考 ：https://wiki.archlinux.org/title/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87
+systemctl start dnsmasq
+
+# 开启 ssh sudo 
+pacman -S openssh 
+#启动SSH 
+systemctl start sshd.service
+
+
+# 终端设置代理
+export http_proxy=socks5://127.0.0.1:2080
+export https_proxy=socks5://127.0.0.1:2080
+
+# 取消终端代理
+unset http_proxy
+unset https_proxy
+
+#查看ip
+
+curl ipinfo.me
+curl ifconfig.me
+https://www.ip111.cn
+
+
+
+
+# 系统默认使用 jdk 1.8
+export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+export GO111MODULE=on
+export GOPATH=/home/zls/workspaces/sdk/GOPATH
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+ 
+export DENO_INSTALL=&#34;/home/zls/.deno&#34;
+export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
+
+系统安装
+驱动设置
+音频使用pulse
+install_pulse
+显卡使用闭源驱动（为了使用cuda）
+# 安装闭源驱动
+sudo mhwd -a pci nonfree 0300
+#查看驱动
+mhwd -li
+关闭主板蜂鸣器
+PC speaker">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +195,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -517,7 +659,20 @@ vim ~/.config/mimeapps.list</p>
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: 'Manjaro I3安装配置',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -557,7 +712,6 @@ vim ~/.config/mimeapps.list</p>
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

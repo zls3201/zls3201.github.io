@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zls3201.github.io/categories/</loc>
-    <lastmod>2023-05-08T18:42:40+08:00</lastmod>
-  </url><url>
     <loc>https://zls3201.github.io/tags/centos/</loc>
     <lastmod>2023-05-08T18:42:40+08:00</lastmod>
   </url><url>
@@ -18,9 +15,6 @@
     <lastmod>2023-05-08T18:42:40+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/post/rocky9_dev_config/</loc>
-    <lastmod>2023-05-08T18:42:40+08:00</lastmod>
-  </url><url>
-    <loc>https://zls3201.github.io/tags/</loc>
     <lastmod>2023-05-08T18:42:40+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/</loc>
@@ -62,10 +56,10 @@
     <loc>https://zls3201.github.io/post/bi/</loc>
     <lastmod>2021-11-06T01:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/tags/3d/</loc>
+    <loc>https://zls3201.github.io/categories/3d/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/categories/3d/</loc>
+    <loc>https://zls3201.github.io/tags/3d/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/tags/web/</loc>
@@ -74,10 +68,10 @@
     <loc>https://zls3201.github.io/post/webgl_webgis/</loc>
     <lastmod>2021-06-17T07:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/tags/dl/</loc>
+    <loc>https://zls3201.github.io/categories/dl/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/categories/dl/</loc>
+    <loc>https://zls3201.github.io/tags/dl/</loc>
     <lastmod>2021-05-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/tags/filter/</loc>
@@ -98,10 +92,10 @@
     <loc>https://zls3201.github.io/post/kalman_filter/</loc>
     <lastmod>2021-05-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/tags/ros/</loc>
+    <loc>https://zls3201.github.io/categories/ros/</loc>
     <lastmod>2021-05-18T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/categories/ros/</loc>
+    <loc>https://zls3201.github.io/tags/ros/</loc>
     <lastmod>2021-05-18T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/post/ros/</loc>
@@ -149,10 +143,10 @@
     <loc>https://zls3201.github.io/tags/%E5%BB%BA%E6%A8%A1/</loc>
     <lastmod>2021-02-22T07:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/tags/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/</loc>
+    <loc>https://zls3201.github.io/post/3d_rebuild/</loc>
     <lastmod>2021-02-22T07:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/post/3d_rebuild/</loc>
+    <loc>https://zls3201.github.io/tags/%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA/</loc>
     <lastmod>2021-02-22T07:00:00+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/tags/asl/</loc>
@@ -236,10 +230,10 @@
     <loc>https://zls3201.github.io/post/centos_config/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/tags/ci/</loc>
+    <loc>https://zls3201.github.io/categories/ci/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/categories/ci/</loc>
+    <loc>https://zls3201.github.io/tags/ci/</loc>
     <lastmod>2018-09-13T08:00:35+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/categories/server/</loc>
@@ -275,10 +269,10 @@
     <loc>https://zls3201.github.io/post/mathjax_test/</loc>
     <lastmod>2018-06-11T08:00:35+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://zls3201.github.io/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2018-06-11T08:00:35+08:00</lastmod>
   </url><url>
-    <loc>https://zls3201.github.io/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://zls3201.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2018-06-11T08:00:35+08:00</lastmod>
   </url><url>
     <loc>https://zls3201.github.io/post/devoptips/</loc>

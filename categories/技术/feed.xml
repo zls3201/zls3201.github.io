@@ -4,53 +4,44 @@
     <title>技术 on 珍珑阁</title>
     <link>https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/categories/%E6%8A%80%E6%9C%AF/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WSL 常用命令</title>
       <link>https://zls3201.github.io/post/wsl_tips/</link>
       <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/wsl_tips/</guid>
-      <description># 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s wsl --set-version</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 安装&#xA;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart&#xA;dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart&#xA;&#xA;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux&#xA;&#xA;wsl --set-default-version 2&#xA;&#xA;# 查看实例&#xA;wsl -l -v&#xA;LxRunOffline l&#xA;&#xA;# 查看实例IP&#xA;wsl hostname -I&#xA;&#xA;# 安装Ubuntu-16.04.2&#xA;LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &amp;#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&amp;#34; -s&#xA;&#xA;wsl --set-version Ubuntu-16.04.2 2&#xA;wsl --set-version Ubuntu-20.04 2&#xA;&#xA;主机查看文件&#xA;type \\wsl$\zls-wsl\root\.profile&#xA;&#xA;# 注册&#xA;LxRunOffline rg -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04&#xA;LxRunOffline rg -n Ubuntu-16.04.2 f:\wsl\Ubuntu-16.04.2&#xA;&#xA;# 删除注册（保留文件）&#xA;LxRunOffline ur -n zls-wsl&#xA;&#xA;# 卸载并删除文件！！！&#xA;LxRunOffline ui -n zls-wsl&#xA;&#xA;# 修改WSL安装路径&#xA;LxRunOffline move -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04&#xA;&#xA;# 查看&#xA;LxRunOffline get-dir -n Ubuntu-20.04&#xA;&#xA;# 导出&#xA;wsl --export Ubuntu-20.04  ubuntu20.04.tar.gz&#xA;&#xA;wsl --import &amp;lt;Image Name&amp;gt; &amp;lt;Directory where you want to store the imported image&amp;gt; &amp;lt;Directory where the exported .tar file exists&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>Virtualbox安装配置alpine</title>
       <link>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</link>
       <pubDate>Sat, 08 Dec 2018 09:56:19 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/virtualbox_alpine_install_configure/</guid>
-      <description>1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中</description>
+      <description>&lt;h1 id=&#34;1安装virtualbox&#34;&gt;1.安装virtualbox&lt;/h1&gt;&#xA;&lt;h1 id=&#34;2安装alpine-linux&#34;&gt;2.安装alpine linux&lt;/h1&gt;&#xA;&lt;p&gt;参考 &lt;a href=&#34;https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox&#34;&gt;https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox&lt;/a&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    apk add nano vim curl wget git mercurial subversion&#xA;    curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh&#xA;    nano /etc/ssh/sshd_config&#xA;    rc-service sshd restart&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;服务管理&#xA;&lt;a href=&#34;https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System&#34;&gt;https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;3在alpine-linux中安装共享文件夹支持&#34;&gt;3.在alpine linux中安装共享文件夹支持&lt;/h1&gt;&#xA;&lt;p&gt;参考 &lt;a href=&#34;https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders&#34;&gt;https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders&lt;/a&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;http://dl-cdn.alpinelinux.org/alpine/edge/community&amp;#34; &amp;gt;&amp;gt; /etc/apk/repositories&#xA;apk update&#xA;apk add virtualbox-guest-additions virtualbox-guest-modules-virt&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;4在alpine-linux中安装docker&#34;&gt;4.在alpine linux中安装Docker&lt;/h1&gt;&#xA;&lt;p&gt;参考 &lt;a href=&#34;https://wiki.alpinelinux.org/wiki/Docker&#34;&gt;https://wiki.alpinelinux.org/wiki/Docker&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Wireshark查看网络通讯数据包</title>
       <link>https://zls3201.github.io/post/wireshark_tip/</link>
       <pubDate>Wed, 05 Sep 2018 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/wireshark_tip/</guid>
-      <description>过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下 (ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090) 关于localhost通讯抓包 要求卸载winpcap</description>
+      <description>&lt;p&gt;过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;(ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;关于localhost通讯抓包 要求卸载winpcap 安装npcap&#xA;效果如图&#xA;&lt;img src=&#34;https://zls3201.github.io/wireshark_tip/1.jpg&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>树莓派使用root账户</title>
       <link>https://zls3201.github.io/post/rasp_use_root_accout/</link>
       <pubDate>Wed, 01 Jun 2016 15:32:51 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/rasp_use_root_accout/</guid>
-      <description>树莓派默认账户是pi 默认密码是raspberry 在默认账户下激活root账户 输入一下命令 sudo passwd root 在执行完该命令后 系统会提示 输入两次密码 那么就输</description>
+      <description>&lt;p&gt;树莓派默认账户是pi 默认密码是raspberry&lt;/p&gt;&#xA;&lt;p&gt;在默认账户下激活root账户&lt;/p&gt;&#xA;&lt;p&gt;输入一下命令&#xA;sudo passwd root&#xA;在执行完该命令后 系统会提示 输入两次密码 那么就输入 你设定的密码&#xA;再执行解锁账户命令&#xA;sudo passwd -unlock root&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>树莓派安装mono运行环境</title>
       <link>https://zls3201.github.io/post/rasp_install_mono_runtime/</link>
       <pubDate>Wed, 01 Jun 2016 15:25:04 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/rasp_install_mono_runtime/</guid>
-      <description>sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev sudo apt-get install libcairo2-dev wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz tar zxf libgdiplus-4.2.tar.gz cd libgdiplus-4.2 ./configure --prefix=/usr make sudo make install wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2 tar jvxf mono-4.4.0.122.tar.bz2 cd mono-4.4.0.122 ./configure --prefix=/usr make sudo make install</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install build-essential automake autoconf bison gettext libtool libglib2.0-dev libfreetype6-dev libfontconfig-dev&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install libgif-dev libtiff4-dev libpng12-dev libexif-dev libx11-dev libxft-dev libjpeg-dev&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install libcairo2-dev&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget http://download.mono-project.com/sources/libgdiplus/libgdiplus-4.2.tar.gz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tar zxf libgdiplus-4.2.tar.gz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; libgdiplus-4.2 &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./configure --prefix&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;make&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo make install&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget http://download.mono-project.com/sources/mono/mono-4.4.0.148.tar.bz2&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tar jvxf mono-4.4.0.122.tar.bz2&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; mono-4.4.0.122&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./configure --prefix&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/usr&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;make&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo make install&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

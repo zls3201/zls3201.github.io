@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.110.0">
+	<meta name="generator" content="Hugo 0.147.7">
     
     
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
     <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -92,7 +92,25 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        Blender学习资料 零基础BLENDER2.8中文开源系统快速入门教程\ 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov </div>
+        <h3 id="blender学习资料">Blender学习资料</h3>
+<p><a href="https://www.bilibili.com/video/BV1T4411N7GE?from=search&amp;seid=4077117725274007206">零基础BLENDER2.8中文开源系统快速入门教程</a>\</p>
+<p>官方中文教程
+<a href="https://docs.blender.org/manual/zh-hans/dev/interface/index.html">https://docs.blender.org/manual/zh-hans/dev/interface/index.html</a></p>
+<p>台湾大神的blender教程全集
+<a href="https://www.bilibili.com/video/av909518">https://www.bilibili.com/video/av909518</a>
+<a href="https://www.bilibili.com/video/av11035426">https://www.bilibili.com/video/av11035426</a></p>
+<p>Blender tutorials and quick tips by Gleb Alexandrov
+<a href="https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X">https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X</a></p>
+<p>BlenderGuru Blender Beginner Tutorial Series
+<a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P">https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P</a></p>
+<p>视频下载</p>
+<pre><code>youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080  -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P
+
+youtube-dl --write-sub --convert-subs srt --all-subs --proxy socks5://127.0.0.1:1080  -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P
+
+
+youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X
+</code></pre> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -108,7 +126,22 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        1.安装virtualbox 2.安装alpine linux 参考 https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox apk add nano vim curl wget git mercurial subversion curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh nano /etc/ssh/sshd_config rc-service sshd restart 服务管理 https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System 3.在alpine linux中 </div>
+        <h1 id="1安装virtualbox">1.安装virtualbox</h1>
+<h1 id="2安装alpine-linux">2.安装alpine linux</h1>
+<p>参考 <a href="https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox">https://wiki.alpinelinux.org/wiki/Install_Alpine_on_VirtualBox</a></p>
+<pre tabindex="0"><code>    apk add nano vim curl wget git mercurial subversion
+    curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh
+    nano /etc/ssh/sshd_config
+    rc-service sshd restart
+</code></pre><p>服务管理
+<a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System">https://wiki.alpinelinux.org/wiki/Alpine_Linux_Init_System</a></p>
+<h1 id="3在alpine-linux中安装共享文件夹支持">3.在alpine linux中安装共享文件夹支持</h1>
+<p>参考 <a href="https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders">https://wiki.alpinelinux.org/wiki/VirtualBox_shared_folders</a></p>
+<pre tabindex="0"><code>echo &#34;http://dl-cdn.alpinelinux.org/alpine/edge/community&#34; &gt;&gt; /etc/apk/repositories
+apk update
+apk add virtualbox-guest-additions virtualbox-guest-modules-virt
+</code></pre><h1 id="4在alpine-linux中安装docker">4.在alpine linux中安装Docker</h1>
+<p>参考 <a href="https://wiki.alpinelinux.org/wiki/Docker">https://wiki.alpinelinux.org/wiki/Docker</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -124,7 +157,25 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        CentOS服务器安装配置 设置主机名 hostnamectl set-hostname gntyxg.cn hostnamectl set-hostname hong.hntyxg.cn 安装git hg svn 安装v2ray https://www.v2ray.com/chapter_00/install.html 安装openvpn https://github.com/Nyr/openvpn-install 安装 mono https://www.mono-project.com/download/stable/#download-lin-centos 安装 dotnet core https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current 安装caddy https://caddyserver.com/docs/install#fedora-redhat-centos https://3mile.github.io/archives/118/ journalctl -xe 安 </div>
+        <h3 id="centos服务器安装配置">CentOS服务器安装配置</h3>
+<p>设置主机名
+hostnamectl set-hostname gntyxg.cn</p>
+<p>hostnamectl set-hostname hong.hntyxg.cn</p>
+<p>安装git hg svn</p>
+<p>安装v2ray
+<a href="https://www.v2ray.com/chapter_00/install.html">https://www.v2ray.com/chapter_00/install.html</a></p>
+<p>安装openvpn
+<a href="https://github.com/Nyr/openvpn-install">https://github.com/Nyr/openvpn-install</a></p>
+<p>安装 mono
+<a href="https://www.mono-project.com/download/stable/#download-lin-centos">https://www.mono-project.com/download/stable/#download-lin-centos</a></p>
+<p>安装 dotnet core
+<a href="https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current">https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current</a></p>
+<p>安装caddy
+<a href="https://caddyserver.com/docs/install#fedora-redhat-centos">https://caddyserver.com/docs/install#fedora-redhat-centos</a></p>
+<p><a href="https://3mile.github.io/archives/118/">https://3mile.github.io/archives/118/</a></p>
+<p>journalctl -xe</p>
+<p>安装gitea
+<a href="https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service">https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -140,7 +191,77 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        ML 资料整理 机器学习课程 CS229 网易公开课_吴恩达_机器学习_2008 CS229 课程讲义中文翻译 斯坦福机器学习笔记 机器学习第九期 数据挖掘十大算法详解 机器学习 </div>
+        <h1 id="ml">ML</h1>
+<h2 id="资料整理">资料整理</h2>
+<p><a href="https://zh.coursera.org/learn/machine-learning">机器学习课程</a>
+<a href="http://open.163.com/special/opencourse/machinelearning.html">CS229 网易公开课_吴恩达_机器学习_2008</a>
+<a href="https://github.com/Kivy-CN/Stanford-CS-229-CN">CS229 课程讲义中文翻译</a>
+<a href="https://www.gitbook.com/book/yoyoyohamapi/mit-ml">斯坦福机器学习笔记</a>
+<a href="https://www.julyedu.com/course/getDetail/110">机器学习第九期</a>
+<a href="https://legacy.gitbook.com/book/wizardforcel/dm-algo-top10/details">数据挖掘十大算法详解</a>
+<a href="https://www.coursera.org/learn/ml-foundations">机器学习基础：案例研究</a>
+<a href="http://www.fast.ai/">神经网络_fast.ai</a>
+<a href="">西瓜书</a>
+<a href="">南瓜书</a>
+机器学习实践</p>
+<p><a href="https://www.csie.ntu.edu.tw/~htlin/">https://www.csie.ntu.edu.tw/~htlin/</a></p>
+<h2 id="1常见问题">1.常见问题</h2>
+<ol>
+<li>监督学习与非监督学习</li>
+<li>参数学习与非参数学习</li>
+<li>判定模型与生成模型</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">https://www.zhihu.com/question/20446337/answer/45130939
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">我是这样理解的： 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">生成模型，就是生成（数据的分布）的模型； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">判别模型，就是判别（数据输出量）的模型； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">更进一步： 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">从结果角度，两种模型都能给你 输出量（label 或 y etc.)。 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">但，生成模型的处理过程会告诉你关于数据的一些统计信息（p(x|y) 分布 etc.），更接近于统计学； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而 判别模型则是通过一系列处理得到结果，这个结果可能是概率的或不是，这个并不改变他是不是判别的。 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如，决策树的if then说不是这个就是那个（而很多属性都是有分布的）【即分支】，明显是一种 判别 嘛； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而朴素贝叶斯说，p( cancer , fat ) = x% etc.，模型 生成 了一个分布给你了，即使你没意识到/没用到，只用到 p( cancer | fat ) = y% 这个最终的判别。 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">你再理解一下： 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向量机、提升方法是判别模型； 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">隐马尔可夫模型（重点的EM算法）是生成模型。 
+</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
+    A[Hard edge] --&gt;|Link textQQ  | B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+</code></pre><h2 id="2常用算法">2.常用算法</h2>
+<h3 id="21-线性回归">2.1 线性回归</h3>
+<h4 id="211-局部加权线性回归">2.1.1 局部加权线性回归</h4>
+<pre tabindex="0"><code>https://blog.csdn.net/Allenalex/article/details/16370245 
+https://blog.csdn.net/tianse12/article/details/70161591 
+https://blog.csdn.net/herosofearth/article/details/51969517 
+</code></pre><h4 id="212-广义线性模型">2.1.2 广义线性模型</h4>
+<h3 id="22-逻辑回归">2.2 逻辑回归</h3>
+<h4 id="221-softmax回归">2.2.1 SoftMax回归</h4>
+<h3 id="23-感知器算法">2.3 感知器算法</h3>
+<h3 id="生成学习算法">生成学习算法</h3>
+<h4 id="高斯判别分析">高斯判别分析</h4>
+<h4 id="朴素贝叶斯">朴素贝叶斯</h4>
+<h5 id="垃圾邮件分类">垃圾邮件分类</h5>
+<h5 id="laplcae平滑">Laplcae平滑</h5>
+<h3 id="svm支持向量机">SVM（支持向量机）</h3>
+<h3 id="knnk近邻算法">KNN(K近邻算法)</h3>
+<p><a href="https://blog.csdn.net/suipingsp/article/details/41964713">https://blog.csdn.net/suipingsp/article/details/41964713</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -156,7 +277,11 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下 (ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090) 关于localhost通讯抓包 要求卸载winpcap </div>
+        <p>过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">(ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090)
+</span></span></code></pre></div><p>关于localhost通讯抓包 要求卸载winpcap 安装npcap
+效果如图
+<img src="/wireshark_tip/1.jpg" alt="图片"></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -172,7 +297,10 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        常用导数 1.常用导数 导数列表 Katex语法 </div>
+        <h3 id="常用导数">常用导数</h3>
+<h2 id="1常用导数">1.常用导数</h2>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%AF%BC%E6%95%B0%E5%88%97%E8%A1%A8">导数列表</a></p>
+<p><a href="https://khan.github.io/KaTeX/function-support.html">Katex语法</a></p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -188,7 +316,24 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        逻辑回归 1.逻辑回归数学 p(y=0|x;\theta)=1-h_\theta(x) \end{cases} $$ \end{aligned}} $$ </div>
+        <h3 id="逻辑回归">逻辑回归</h3>
+<h2 id="1逻辑回归数学">1.逻辑回归数学</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>p(y=0|x;\theta)=1-h_\theta(x)<br>
+\end{cases} $$<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>\end{aligned}}
+$$</p> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -204,7 +349,119 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        线性回归 1.线性回归数学 \begin{aligned} J(\theta)=\frac 1 m \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2 \end{aligned} $$ # -*- coding: utf-8 -*- &#34;&#34;&#34; Created on Sat Jun 9 08:18:10 2018 @author: zls3201@gmail.com &#34;&#34;&#34; import numpy as np from matplotlib import pyplot as plt from mpl_toolkits.mplot3d import Axes3D from matplotlib import animation as amat def loadDataSet(fileName): &#34;&#34 </div>
+        <h3 id="线性回归">线性回归</h3>
+<h2 id="1线性回归数学">1.线性回归数学</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>\begin{aligned}
+J(\theta)=\frac 1 m  \sum^{m}<em>{i=1} \frac 1 2 (h</em>{\theta}(x^{(i)})-y^{(i)})^2
+\end{aligned}
+$$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">Created on Sat Jun  9 08:18:10 2018
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">@author: zls3201@gmail.com
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">animation</span> <span class="k">as</span> <span class="n">amat</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">loadDataSet</span><span class="p">(</span><span class="n">fileName</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;从文本文件加载数据.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    文件内容格式.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        path: 传入文件名称.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        返回一个参数矩阵x和一个结论列向量y. 
+</span></span></span><span class="line"><span class="cl"><span class="s2">    
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="o">=</span><span class="p">[];</span><span class="n">dataY</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fr</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">fileName</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fr</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dataArr</span><span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span>  <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dataArr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">       
+</span></span><span class="line"><span class="cl">        <span class="n">dataX</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dataY</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">dataArr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">dataX</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;对数据进行归一化处理.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    文件内容格式.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        matriX: 参数组成的矩阵x，每行为一组样本个例参数.
+</span></span></span><span class="line"><span class="cl"><span class="s2">        vertY: 结论值组成的向量y.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">        返回归一化后的一个参数矩阵x和一个结论列向量y
+</span></span></span><span class="line"><span class="cl"><span class="s2">    
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">colMaxMin</span><span class="o">=</span><span class="p">[</span><span class="n">dataX</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">dataX</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">#print (i,j,dataX[i][j])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span> <span class="p">(</span><span class="n">dataX</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="o">/</span><span class="n">colMaxMin</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">minY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">min</span><span class="p">();</span><span class="n">maxY</span><span class="o">=</span><span class="n">dataY</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataY</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">dataY</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">minY</span><span class="p">)</span><span class="o">/</span><span class="n">maxY</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">computeCost</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">theta</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#     J = (np.sum((X.dot(theta) - y)**2)) / (2*m)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">C</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">J2</span> <span class="o">=</span> <span class="p">(</span><span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">C</span><span class="p">))</span><span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">J2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">matX</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">matY</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="n">dataY</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">matX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.001</span>
+</span></span><span class="line"><span class="cl">    <span class="n">theta</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">maxTimes</span><span class="o">=</span><span class="mi">500</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxTimes</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">theta</span><span class="o">=</span><span class="n">theta</span><span class="o">-</span><span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="o">.</span><span class="n">T</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">matY</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cost</span><span class="o">=</span><span class="n">computeCost</span><span class="p">(</span><span class="n">matX</span><span class="p">,</span><span class="n">matY</span><span class="p">,</span><span class="n">theta</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">cost</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">theta</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">stochastieGradientDeccent</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">miniBatchGradientDescent</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">loadDataSet</span><span class="p">(</span><span class="s1">&#39;house_prize.txt&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
+</span></span></code></pre></div> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -220,7 +477,338 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        Hugo Mathjax测试 c^{2} = a^{2} + b^{2}. graph LR; A[Hard edge] --&gt;|Link text| B(Round edge) B --&gt; C{Decision} C --&gt;|One| D[Result one] C --&gt;|Two| E[Result two] graph LR; A[Hard edge] -->|Link text| B(Round edge) B --> C{Decision} C -->|One| D[Result one] C -->|Two| E[Result two] graph LR sid-B3655226-6C29-4D00-B685-3D5C734DC7E1[" 提交申请 熊大 "]; class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed; sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A[" 负责人 </div>
+        <h3 id="hugo-mathjax测试">Hugo Mathjax测试</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code class="language-mathjax" data-lang="mathjax">c^{2} = a^{2} + b^{2}.
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+</code></pre><div class="mermaid" align="left">
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+<div class="mermaid" align="left">
+graph LR
+sid-B3655226-6C29-4D00-B685-3D5C734DC7E1["
+提交申请
+熊大
+"];
+class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed;
+sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A["
+负责人审批
+强子
+"];
+class sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A node-executed;
+sid-E27C0367-E6D6-497F-9736-3CDC21FDE221["
+DBA审批
+强子
+"];
+class sid-E27C0367-E6D6-497F-9736-3CDC21FDE221 node-executed;
+sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD["
+SA审批
+阿美
+"];
+class sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD node-executed;
+sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7["
+主管审批
+光头强
+"];
+class sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7 node-executed;
+sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89["
+DBA确认
+强子
+"];
+class sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89 node-executed;
+sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937["
+SA确认
+阿美
+"];
+class sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937 node-executed;
+sid-4FC27B48-A6F9-460A-A675-021F5854FE22["
+结束
+"];
+class sid-4FC27B48-A6F9-460A-A675-021F5854FE22 node-executed;
+sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E["
+SA执行1
+强子
+"];
+class sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E node-executed;
+sid-6C2120F3-D940-4958-A067-0903DCE879C4["
+SA执行2
+强子
+"];
+class sid-6C2120F3-D940-4958-A067-0903DCE879C4 node-executed;
+sid-9180E2A0-5C4B-435F-B42F-0D152470A338["
+DBA执行1
+强子
+"];
+class sid-9180E2A0-5C4B-435F-B42F-0D152470A338 node-executed;
+sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD["
+DBA执行3
+强子
+"];
+class sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD node-executed;
+sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756["
+DBA执行2
+强子
+"];
+class sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756 node-executed;
+sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93["
+DBA执行4
+强子
+"];
+class sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93 node-executed;
+sid-1897B30A-9C5C-4D5B-B80B-76A038785070["
+负责人确认
+梁静茹
+"];
+class sid-1897B30A-9C5C-4D5B-B80B-76A038785070 node-executed;
+sid-B3655226-6C29-4D00-B685-3D5C734DC7E1-->sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7;
+sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A-->sid-1897B30A-9C5C-4D5B-B80B-76A038785070;
+sid-E27C0367-E6D6-497F-9736-3CDC21FDE221-->sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89;
+sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD-->sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937;
+sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E-->sid-6C2120F3-D940-4958-A067-0903DCE879C4;
+sid-9180E2A0-5C4B-435F-B42F-0D152470A338-->sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756;
+sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD-->sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93;
+sid-6C2120F3-D940-4958-A067-0903DCE879C4-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
+sid-1897B30A-9C5C-4D5B-B80B-76A038785070-->sid-4FC27B48-A6F9-460A-A675-021F5854FE22;
+sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937-->sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E;
+sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89-->sid-9180E2A0-5C4B-435F-B42F-0D152470A338;
+sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89-->sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD;
+sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
+sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
+sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD;
+sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-E27C0367-E6D6-497F-9736-3CDC21FDE221;
+sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937-->sid-6C2120F3-D940-4958-A067-0903DCE879C4;
+sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
+sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-4FC27B48-A6F9-460A-A675-021F5854FE22;
+</div>
+<div class="mermaid" align="left">
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me thinksssss<br/>ssssssssssssssssssssss<br/>sssssssssssssssssssssssssss}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[Car]
+</div>
+<div class="mermaid" align="left">
+graph LR
+47(SAM.CommonFA.FMESummary)-->48(SAM.CommonFA.CommonFAFinanceBudget)
+37(SAM.CommonFA.BudgetSubserviceLineVolume)-->48(SAM.CommonFA.CommonFAFinanceBudget)
+35(SAM.CommonFA.PopulationFME)-->47(SAM.CommonFA.FMESummary)
+41(SAM.CommonFA.MetricCost)-->47(SAM.CommonFA.FMESummary)
+44(SAM.CommonFA.MetricOutliers)-->47(SAM.CommonFA.FMESummary)
+46(SAM.CommonFA.MetricOpportunity)-->47(SAM.CommonFA.FMESummary)
+40(SAM.CommonFA.OPVisits)-->47(SAM.CommonFA.FMESummary)
+38(SAM.CommonFA.CommonFAFinanceRefund)-->47(SAM.CommonFA.FMESummary)
+43(SAM.CommonFA.CommonFAFinancePicuDays)-->47(SAM.CommonFA.FMESummary)
+42(SAM.CommonFA.CommonFAFinanceNurseryDays)-->47(SAM.CommonFA.FMESummary)
+45(SAM.CommonFA.MetricPreOpportunity)-->46(SAM.CommonFA.MetricOpportunity)
+35(SAM.CommonFA.PopulationFME)-->45(SAM.CommonFA.MetricPreOpportunity)
+41(SAM.CommonFA.MetricCost)-->45(SAM.CommonFA.MetricPreOpportunity)
+41(SAM.CommonFA.MetricCost)-->44(SAM.CommonFA.MetricOutliers)
+39(SAM.CommonFA.ChargeDetails)-->43(SAM.CommonFA.CommonFAFinancePicuDays)
+39(SAM.CommonFA.ChargeDetails)-->42(SAM.CommonFA.CommonFAFinanceNurseryDays)
+39(SAM.CommonFA.ChargeDetails)-->41(SAM.CommonFA.MetricCost)
+39(SAM.CommonFA.ChargeDetails)-->40(SAM.CommonFA.OPVisits)
+35(SAM.CommonFA.PopulationFME)-->39(SAM.CommonFA.ChargeDetails)
+36(SAM.CommonFA.PremetricCost)-->39(SAM.CommonFA.ChargeDetails)
+</div>
+<div class="mermaid" align="left">
+graph TD
+9e122290_1ec3_e711_8c5a_005056ad0002("fa:fa-creative-commons My System | Test Environment")
+82072290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs Shared Business Logic Server:Service 1")
+db052290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs Shared Business Logic Server:Service 2")
+4e112290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs Shared Report Server:Service 1")
+30122290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs Shared Report Server:Service 2")
+5e112290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs Dedicated Test Business Logic Server:Service 1")
+c1112290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs Dedicated Test Business Logic Server:Service 2")
+b7042290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[SupportDb]")
+8f102290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[DevelopmentDb]")
+0e102290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[TestDb]")
+07132290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[SharedReportingDb]")
+c7072290_1ec3_e711_8c5a_005056ad0002("fa:fa-server Shared Business Logic Server")
+ca122290_1ec3_e711_8c5a_005056ad0002("fa:fa-server Shared Report Server")
+68102290_1ec3_e711_8c5a_005056ad0002("fa:fa-server Dedicated Test Business Logic Server")
+f4112290_1ec3_e711_8c5a_005056ad0002("fa:fa-database [DBServer\SharedDbInstance]")
+d6072290_1ec3_e711_8c5a_005056ad0002("fa:fa-server DBServer")
+71082290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs DBServer\:MSSQLSERVER")
+c0102290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs DBServer\:SQLAgent")
+9a072290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs DBServer\:SQLBrowser")
+1d0a2290_1ec3_e711_8c5a_005056ad0002("fa:fa-server VmHost1")
+200a2290_1ec3_e711_8c5a_005056ad0002("fa:fa-server VmHost2")
+1c0a2290_1ec3_e711_8c5a_005056ad0002("fa:fa-server VmHost3")
+9e122290_1ec3_e711_8c5a_005056ad0002-->82072290_1ec3_e711_8c5a_005056ad0002
+9e122290_1ec3_e711_8c5a_005056ad0002-->db052290_1ec3_e711_8c5a_005056ad0002
+9e122290_1ec3_e711_8c5a_005056ad0002-->4e112290_1ec3_e711_8c5a_005056ad0002
+9e122290_1ec3_e711_8c5a_005056ad0002-->30122290_1ec3_e711_8c5a_005056ad0002
+9e122290_1ec3_e711_8c5a_005056ad0002-->5e112290_1ec3_e711_8c5a_005056ad0002
+9e122290_1ec3_e711_8c5a_005056ad0002-->c1112290_1ec3_e711_8c5a_005056ad0002
+82072290_1ec3_e711_8c5a_005056ad0002-->b7042290_1ec3_e711_8c5a_005056ad0002
+82072290_1ec3_e711_8c5a_005056ad0002-->8f102290_1ec3_e711_8c5a_005056ad0002
+82072290_1ec3_e711_8c5a_005056ad0002-->0e102290_1ec3_e711_8c5a_005056ad0002
+82072290_1ec3_e711_8c5a_005056ad0002-->c7072290_1ec3_e711_8c5a_005056ad0002
+db052290_1ec3_e711_8c5a_005056ad0002-->c7072290_1ec3_e711_8c5a_005056ad0002
+db052290_1ec3_e711_8c5a_005056ad0002-->82072290_1ec3_e711_8c5a_005056ad0002
+4e112290_1ec3_e711_8c5a_005056ad0002-->b7042290_1ec3_e711_8c5a_005056ad0002
+4e112290_1ec3_e711_8c5a_005056ad0002-->8f102290_1ec3_e711_8c5a_005056ad0002
+4e112290_1ec3_e711_8c5a_005056ad0002-->0e102290_1ec3_e711_8c5a_005056ad0002
+4e112290_1ec3_e711_8c5a_005056ad0002-->07132290_1ec3_e711_8c5a_005056ad0002
+4e112290_1ec3_e711_8c5a_005056ad0002-->ca122290_1ec3_e711_8c5a_005056ad0002
+30122290_1ec3_e711_8c5a_005056ad0002-->ca122290_1ec3_e711_8c5a_005056ad0002
+30122290_1ec3_e711_8c5a_005056ad0002-->4e112290_1ec3_e711_8c5a_005056ad0002
+5e112290_1ec3_e711_8c5a_005056ad0002-->8f102290_1ec3_e711_8c5a_005056ad0002
+5e112290_1ec3_e711_8c5a_005056ad0002-->68102290_1ec3_e711_8c5a_005056ad0002
+c1112290_1ec3_e711_8c5a_005056ad0002-->68102290_1ec3_e711_8c5a_005056ad0002
+c1112290_1ec3_e711_8c5a_005056ad0002-->5e112290_1ec3_e711_8c5a_005056ad0002
+b7042290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
+8f102290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
+0e102290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
+07132290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
+c7072290_1ec3_e711_8c5a_005056ad0002-->1d0a2290_1ec3_e711_8c5a_005056ad0002
+ca122290_1ec3_e711_8c5a_005056ad0002-->200a2290_1ec3_e711_8c5a_005056ad0002
+68102290_1ec3_e711_8c5a_005056ad0002-->1c0a2290_1ec3_e711_8c5a_005056ad0002
+f4112290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
+f4112290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
+f4112290_1ec3_e711_8c5a_005056ad0002-->c0102290_1ec3_e711_8c5a_005056ad0002
+f4112290_1ec3_e711_8c5a_005056ad0002-->9a072290_1ec3_e711_8c5a_005056ad0002
+d6072290_1ec3_e711_8c5a_005056ad0002-->1c0a2290_1ec3_e711_8c5a_005056ad0002
+71082290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
+c0102290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
+c0102290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
+9a072290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
+9a072290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
+</div>
+<div class="mermaid" align="left">
+graph TB
+subgraph One
+a1-->a2
+end
+</div>
+<div class="mermaid">
+graph LR
+456ac9b0d15a8b7f1e71073221059886[1051 AAA fa:fa-check]
+f7f580e11d00a75814d2ded41fe8e8fe[1141 BBB fa:fa-check]
+81dc9bdb52d04dc20036dbd8313ed055[1234 CCC fa:fa-check]
+456ac9b0d15a8b7f1e71073221059886 -->|Node| f7f580e11d00a75814d2ded41fe8e8fe
+f7f580e11d00a75814d2ded41fe8e8fe -->|Node| 81dc9bdb52d04dc20036dbd8313ed055
+click 456ac9b0d15a8b7f1e71073221059886 "/admin/user/view?id=1051" "AAA
+6000"
+click f7f580e11d00a75814d2ded41fe8e8fe "/admin/user/view?id=1141" "BBB
+600"
+click 81dc9bdb52d04dc20036dbd8313ed055 "/admin/user/view?id=1234" "CCC
+3000"
+style 456ac9b0d15a8b7f1e71073221059886 fill:#f9f,stroke:#333,stroke-width:4px
+</div>
+<div class="mermaid" align="left">
+graph TD
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me think}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[Car]
+click A "index.html#link-clicked" "link test"
+click B testClick "click test"
+classDef someclass fill:#f96;
+class A someclass;
+</div>
+<div class="mermaid" align="left">
+
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+Bob-->Alice: Checking with John...
+alt either this
+Alice->>John: Yes
+else or this
+Alice->>John: No
+else or this will happen
+Alice->John: Maybe
+end
+par this happens in parallel
+Alice -->> Bob: Parallel message 1
+and
+Alice -->> John: Parallel message 2
+end
+</div>
+<div class="mermaid" align="left">
+
+
+gantt
+dateFormat  YYYY-MM-DD
+axisFormat  %d/%m
+title Adding GANTT diagram to mermaid
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+
+section Critical tasks
+Completed task in the critical line :crit, done, 2014-01-06,24h
+Implement parser and jison          :crit, done, after des1, 2d
+Create tests for parser             :crit, active, 3d
+Future task in critical line        :crit, 5d
+Create tests for renderer           :2d
+Add to mermaid                      :1d
+
+section Documentation
+Describe gantt syntax               :active, a1, after des1, 3d
+Add gantt diagram to demo page      :after a1  , 20h
+Add another diagram to demo page    :doc1, after a1  , 48h
+
+section Last section
+Describe gantt syntax               :after doc1, 3d
+Add gantt diagram to demo page      : 20h
+Add another diagram to demo page    : 48h
+</div>
+<div class="mermaid" align="left">
+gitGraph:
+options
+{
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+</div>
+<div class="mermaid" align="left">
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+</div> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -236,7 +824,55 @@
         </li>
     </ul>
     <div class="post-content" itemprop="articleBody">
-        系统管理与自动化 ansible salt puppet chef zipkin zipdig AB测试和灰度发布关系是什么 阅读资料 ansible和puppet的安装和比较 翻译-Salt与Ansible全方位 </div>
+        <h3 id="系统管理与自动化">系统管理与自动化</h3>
+<ul>
+<li><a href="https://github.com/ansible/ansible">ansible</a><!-- raw HTML omitted --></li>
+<li><a href="https://github.com/saltstack/salt">salt</a><!-- raw HTML omitted --></li>
+<li><a href="https://github.com/puppetlabs/puppet">puppet</a><!-- raw HTML omitted --></li>
+<li><a href="https://github.com/chef/chef">chef</a><!-- raw HTML omitted --></li>
+</ul>
+<p><a href="https://github.com/openzipkin/zipkin">zipkin</a></p>
+<p><a href="https://github.com/koderover/zadig/blob/main/README-zh-CN.md">zipdig</a></p>
+<p><a href="http://www.appadhoc.com/blog/abtest-gatedlaunch-differences/">AB测试和灰度发布关系是什么</a></p>
+<p>阅读资料<!-- raw HTML omitted -->
+<a href="https://blog.csdn.net/wn_hello/article/details/52130573">ansible和puppet的安装和比较</a><!-- raw HTML omitted -->
+<a href="http://www.cnblogs.com/huang0925/p/4664608.html">翻译-Salt与Ansible全方位比较</a><!-- raw HTML omitted -->
+<a href="http://blog.51cto.com/liqilong2010/1850617">Puppet、Chef、Ansible和SaltStack四大运维管理工具</a><!-- raw HTML omitted -->
+<a href="http://ansible-tran.readthedocs.io/en/latest/index.html">Ansible中文权威指南</a></p>
+<h3 id="容器与容器管理">容器与容器管理</h3>
+<ul>
+<li>
+<p><a href="https://github.com/docker/docker-ce">Docker</a></p>
+</li>
+<li></li>
+<li>
+<p><a href="https://github.com/rkt/rkt">Rocket（已改名rkt）</a></p>
+</li>
+<li>
+<p><a href="https://podman.io/">podman</a></p>
+</li>
+<li>
+<p><a href="https://hyper.sh/">hyper</a></p>
+</li>
+<li></li>
+<li>
+<p><a href="https://github.com/opencontainers/runc">runC</a></p>
+</li>
+<li></li>
+<li>
+<p><a href="https://github.com/google/gvisor">gvisor</a></p>
+</li>
+<li>
+<p><a href="https://www.cnblogs.com/young233/p/16439698.html">docker的平替&ndash;podman</a></p>
+</li>
+<li></li>
+<li>
+<p><a href="https://github.com/lxc/incus">lxd</a></p>
+</li>
+</ul>
+<p>阅读资料<!-- raw HTML omitted -->
+<a href="http://www.yunweipai.com/archives/10328.html">容器，你还只用Docker吗？（上）</a><!-- raw HTML omitted --></p>
+<p><a href="http://www.yunweipai.com/archives/10358.html">容器，你还只用Docker吗？（下）</a><!-- raw HTML omitted --></p> </div>
 </article> 
          
         <nav class="pagination pager align-center">

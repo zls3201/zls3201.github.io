@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>study on 珍珑阁</title>
+    <title>Study on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/study/</link>
-    <description>Recent content in study on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Study on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/study/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/study/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPU计算与编程</title>
       <link>https://zls3201.github.io/post/gpu_program/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/gpu_program/</guid>
-      <description>1.CPU GPU TPU 2.CUDA 与 ROCm 3.PyTorch 与 Tensorflow</description>
+      <description>&lt;h2 id=&#34;1cpu-gpu-tpu&#34;&gt;1.CPU GPU TPU&lt;/h2&gt;&#xA;&lt;h2 id=&#34;2cuda-与-rocm&#34;&gt;2.CUDA 与 ROCm&lt;/h2&gt;&#xA;&lt;h2 id=&#34;3pytorch-与-tensorflow&#34;&gt;3.PyTorch 与 Tensorflow&lt;/h2&gt;</description>
     </item>
-    
     <item>
       <title>Blender学习资料</title>
       <link>https://zls3201.github.io/post/blender_study_resources/</link>
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
-      <description>Blender学习资料 零基础BLENDER2.8中文开源系统快速入门教程\ 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov</description>
+      <description>&lt;h3 id=&#34;blender学习资料&#34;&gt;Blender学习资料&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1T4411N7GE?from=search&amp;amp;seid=4077117725274007206&#34;&gt;零基础BLENDER2.8中文开源系统快速入门教程&lt;/a&gt;\&lt;/p&gt;&#xA;&lt;p&gt;官方中文教程&#xA;&lt;a href=&#34;https://docs.blender.org/manual/zh-hans/dev/interface/index.html&#34;&gt;https://docs.blender.org/manual/zh-hans/dev/interface/index.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;台湾大神的blender教程全集&#xA;&lt;a href=&#34;https://www.bilibili.com/video/av909518&#34;&gt;https://www.bilibili.com/video/av909518&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.bilibili.com/video/av11035426&#34;&gt;https://www.bilibili.com/video/av11035426&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Blender tutorials and quick tips by Gleb Alexandrov&#xA;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X&#34;&gt;https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;BlenderGuru Blender Beginner Tutorial Series&#xA;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#34;&gt;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;视频下载&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080  -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#xA;&#xA;youtube-dl --write-sub --convert-subs srt --all-subs --proxy socks5://127.0.0.1:1080  -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#xA;&#xA;&#xA;youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>CentOS服务器安装配置</title>
       <link>https://zls3201.github.io/post/centos_config/</link>
       <pubDate>Thu, 13 Sep 2018 08:00:35 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/centos_config/</guid>
-      <description>CentOS服务器安装配置 设置主机名 hostnamectl set-hostname gntyxg.cn hostnamectl set-hostname hong.hntyxg.cn 安装git hg svn 安装v2ray https://www.v2ray.com/chapter_00/install.html 安装openvpn https://github.com/Nyr/openvpn-install 安装 mono https://www.mono-project.com/download/stable/#download-lin-centos 安装 dotnet core https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current 安装caddy https://caddyserver.com/docs/install#fedora-redhat-centos https://3mile.github.io/archives/118/ journalctl -xe 安</description>
+      <description>&lt;h3 id=&#34;centos服务器安装配置&#34;&gt;CentOS服务器安装配置&lt;/h3&gt;&#xA;&lt;p&gt;设置主机名&#xA;hostnamectl set-hostname gntyxg.cn&lt;/p&gt;&#xA;&lt;p&gt;hostnamectl set-hostname hong.hntyxg.cn&lt;/p&gt;&#xA;&lt;p&gt;安装git hg svn&lt;/p&gt;&#xA;&lt;p&gt;安装v2ray&#xA;&lt;a href=&#34;https://www.v2ray.com/chapter_00/install.html&#34;&gt;https://www.v2ray.com/chapter_00/install.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;安装openvpn&#xA;&lt;a href=&#34;https://github.com/Nyr/openvpn-install&#34;&gt;https://github.com/Nyr/openvpn-install&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;安装 mono&#xA;&lt;a href=&#34;https://www.mono-project.com/download/stable/#download-lin-centos&#34;&gt;https://www.mono-project.com/download/stable/#download-lin-centos&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;安装 dotnet core&#xA;&lt;a href=&#34;https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current&#34;&gt;https://www.microsoft.com/net/download/linux-package-manager/centos/sdk-current&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;安装caddy&#xA;&lt;a href=&#34;https://caddyserver.com/docs/install#fedora-redhat-centos&#34;&gt;https://caddyserver.com/docs/install#fedora-redhat-centos&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://3mile.github.io/archives/118/&#34;&gt;https://3mile.github.io/archives/118/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;journalctl -xe&lt;/p&gt;&#xA;&lt;p&gt;安装gitea&#xA;&lt;a href=&#34;https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service&#34;&gt;https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

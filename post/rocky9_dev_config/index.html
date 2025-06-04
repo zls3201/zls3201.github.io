@@ -7,10 +7,172 @@
     <title>Rocky9开发服务器设置 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="基础安装 alias useproxy=&#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &#34; alias unproxy=&#34; unset http_proxy; unset https_proxy; unset all_proxy; &#34; ## 移除多于内核 echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &#34;--- AFTER ---&#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf">
+    <meta name="description" content="基础安装
+
+alias useproxy=&#34;
+ export http_proxy=http://10.0.2.2:2080;
+ export https_proxy=http://10.0.2.2:2080;
+ export all_proxy=http://10.0.2.2:2080;
+&#34;
+
+alias unproxy=&#34;
+ unset http_proxy;
+ unset https_proxy;
+ unset all_proxy;
+&#34;
+
+## 移除多于内核
+echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel;  rpm -qa  |grep ^kernel  |grep -E -v `uname -r`  |xargs  rpm  -e  --nodeps;  echo &#34;--- AFTER ---&#34;;  rpm -qa | grep ^kernel
+
+rpm -qa|grep kernel
+ 
+
+dnf install epel-release nano  net-tools htop -y
+
+
+dnf install langpacks-en glibc-all-langpacks -y
+
+dnf install langpacks-en glibc-all-langpacks  -y
+
+localectl list-locales | grep zh
+localectl set-locale LANG=&#34;zh_CN.utf8&#34;
+localectl status
+
+
+dnf groupinstall &#39;Development Tools&#39;  -y
+
+dnf install  cmake -y 
+
+# 搜索文件Pkg
+yum provides &#34;*/pg_config&#34;
+
+curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+cargo install fd-find
+cargo install ripgrep
+cargo install lsd
+关闭SELinux
+
+nano /etc/selinux/config
+Docker安装
+
+dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+dnf install docker-ce docker-ce-cli containerd.io
+
+systemctl enable --now docker
+ 
+systemctl status docker
+Doacker安装MariaDB
+mkdir -p /opt/docker/mariadb
+
+docker run --name mariadb  --restart=always  -e MYSQL_ROOT_PASSWORD=root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
+Doacker安装Redis
+
+mkdir -p /opt/docker/redis
+
+docker run -itd --name redis --restart=always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
+docker ps
+Doacker安装PostgreSQL（无中文字符集，中文排序不对）
+mkdir -p /opt/docker/postgresql
+docker run --name postgres  --restart=always  -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
+docker ps
+
+docker exec -it postgres bash
+# 启动失败时 查看日志
+docker inspect --format &#39;{{.LogPath}}&#39; 6343f20e07f9
+cat /var/lib/docker/containers/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29-json.log
+
+docker exec -it postgres bash
+docker stop  6343f20e07f9
+docker rm 6343f20e07f9
+
+ 
+MariaDB
+设置软件源并安装">
     
     <meta itemprop="name" content="Rocky9开发服务器设置 - 珍珑阁">
-    <meta itemprop="description" content="基础安装 alias useproxy=&#34; export http_proxy=http://10.0.2.2:2080; export https_proxy=http://10.0.2.2:2080; export all_proxy=http://10.0.2.2:2080; &#34; alias unproxy=&#34; unset http_proxy; unset https_proxy; unset all_proxy; &#34; ## 移除多于内核 echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel; rpm -qa |grep ^kernel |grep -E -v `uname -r` |xargs rpm -e --nodeps; echo &#34;--- AFTER ---&#34;; rpm -qa | grep ^kernel rpm -qa|grep kernel dnf install epel-release nano net-tools htop -y dnf">
+    <meta itemprop="description" content="基础安装
+
+alias useproxy=&#34;
+ export http_proxy=http://10.0.2.2:2080;
+ export https_proxy=http://10.0.2.2:2080;
+ export all_proxy=http://10.0.2.2:2080;
+&#34;
+
+alias unproxy=&#34;
+ unset http_proxy;
+ unset https_proxy;
+ unset all_proxy;
+&#34;
+
+## 移除多于内核
+echo &#34;-- BEFORE --&#34;;rpm -qa | grep ^kernel;  rpm -qa  |grep ^kernel  |grep -E -v `uname -r`  |xargs  rpm  -e  --nodeps;  echo &#34;--- AFTER ---&#34;;  rpm -qa | grep ^kernel
+
+rpm -qa|grep kernel
+ 
+
+dnf install epel-release nano  net-tools htop -y
+
+
+dnf install langpacks-en glibc-all-langpacks -y
+
+dnf install langpacks-en glibc-all-langpacks  -y
+
+localectl list-locales | grep zh
+localectl set-locale LANG=&#34;zh_CN.utf8&#34;
+localectl status
+
+
+dnf groupinstall &#39;Development Tools&#39;  -y
+
+dnf install  cmake -y 
+
+# 搜索文件Pkg
+yum provides &#34;*/pg_config&#34;
+
+curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+cargo install fd-find
+cargo install ripgrep
+cargo install lsd
+关闭SELinux
+
+nano /etc/selinux/config
+Docker安装
+
+dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+dnf install docker-ce docker-ce-cli containerd.io
+
+systemctl enable --now docker
+ 
+systemctl status docker
+Doacker安装MariaDB
+mkdir -p /opt/docker/mariadb
+
+docker run --name mariadb  --restart=always  -e MYSQL_ROOT_PASSWORD=root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
+Doacker安装Redis
+
+mkdir -p /opt/docker/redis
+
+docker run -itd --name redis --restart=always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
+docker ps
+Doacker安装PostgreSQL（无中文字符集，中文排序不对）
+mkdir -p /opt/docker/postgresql
+docker run --name postgres  --restart=always  -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
+docker ps
+
+docker exec -it postgres bash
+# 启动失败时 查看日志
+docker inspect --format &#39;{{.LogPath}}&#39; 6343f20e07f9
+cat /var/lib/docker/containers/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29/6343f20e07f905de0c53008e11659c82127447f07acc79923574fc72ea4cda29-json.log
+
+docker exec -it postgres bash
+docker stop  6343f20e07f9
+docker rm 6343f20e07f9
+
+ 
+MariaDB
+设置软件源并安装">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +215,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -253,7 +415,20 @@
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: 'Rocky9开发服务器设置',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -289,7 +464,6 @@
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

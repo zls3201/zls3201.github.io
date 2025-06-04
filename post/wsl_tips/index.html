@@ -7,10 +7,98 @@
     <title>WSL 常用命令 - 珍珑阁</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="description" content="# 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version">
+    <meta name="description" content="# 安装
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+wsl --set-default-version 2
+
+# 查看实例
+wsl -l -v
+LxRunOffline l
+
+# 查看实例IP
+wsl hostname -I
+
+# 安装Ubuntu-16.04.2
+LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s
+
+wsl --set-version Ubuntu-16.04.2 2
+wsl --set-version Ubuntu-20.04 2
+
+主机查看文件
+type \\wsl$\zls-wsl\root\.profile
+
+# 注册
+LxRunOffline rg -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+LxRunOffline rg -n Ubuntu-16.04.2 f:\wsl\Ubuntu-16.04.2
+
+# 删除注册（保留文件）
+LxRunOffline ur -n zls-wsl
+
+# 卸载并删除文件！！！
+LxRunOffline ui -n zls-wsl
+
+# 修改WSL安装路径
+LxRunOffline move -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+
+# 查看
+LxRunOffline get-dir -n Ubuntu-20.04
+
+# 导出
+wsl --export Ubuntu-20.04  ubuntu20.04.tar.gz
+
+wsl --import &lt;Image Name&gt; &lt;Directory where you want to store the imported image&gt; &lt;Directory where the exported .tar file exists&gt;
+">
     
     <meta itemprop="name" content="WSL 常用命令 - 珍珑阁">
-    <meta itemprop="description" content="# 安装 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux wsl --set-default-version 2 # 查看实例 wsl -l -v LxRunOffline l # 查看实例IP wsl hostname -I # 安装Ubuntu-16.04.2 LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s wsl --set-version">
+    <meta itemprop="description" content="# 安装
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+wsl --set-default-version 2
+
+# 查看实例
+wsl -l -v
+LxRunOffline l
+
+# 查看实例IP
+wsl hostname -I
+
+# 安装Ubuntu-16.04.2
+LxRunOffline i -n Ubuntu-16.04.2 -d f:\wsl\Ubuntu-16.04.2 -f &#34;F:\wsl\16.04.2-server-cloudimg-amd64-root.tar.gz&#34; -s
+
+wsl --set-version Ubuntu-16.04.2 2
+wsl --set-version Ubuntu-20.04 2
+
+主机查看文件
+type \\wsl$\zls-wsl\root\.profile
+
+# 注册
+LxRunOffline rg -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+LxRunOffline rg -n Ubuntu-16.04.2 f:\wsl\Ubuntu-16.04.2
+
+# 删除注册（保留文件）
+LxRunOffline ur -n zls-wsl
+
+# 卸载并删除文件！！！
+LxRunOffline ui -n zls-wsl
+
+# 修改WSL安装路径
+LxRunOffline move -n Ubuntu-20.04 -d f:\wsl\Ubuntu-20.04
+
+# 查看
+LxRunOffline get-dir -n Ubuntu-20.04
+
+# 导出
+wsl --export Ubuntu-20.04  ubuntu20.04.tar.gz
+
+wsl --import &lt;Image Name&gt; &lt;Directory where you want to store the imported image&gt; &lt;Directory where the exported .tar file exists&gt;
+">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
     
@@ -53,7 +141,7 @@
         <div class="sidebar">
   <dic class="cover-img" style="background-image: url(/img/bg.jpg)"></dic>
   <div class="bottom-block">
-    <img src="/img/avatar.png" alt="zls3201" class="avatar">
+    <img src="/img/avatar.png" alt="" class="avatar">
     <h1>珍珑阁</h1>
     <p>为卿采莲兮涉水，为卿夺旗兮长战.为卿遥望兮辞宫阙，为卿白发兮缓缓歌</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2022004449号</a></p>
@@ -145,7 +233,20 @@ wsl --import &lt;Image Name&gt; &lt;Directory where you want to store the import
   
 </article>
 
-                <div id="git-comments"></div>
+                <div id="git-comments"></div><link href="https://cmt.1024.us.kg/dist/ArtalkLite.css" rel="stylesheet" />
+<script src="https://cmt.1024.us.kg/dist/ArtalkLite.js"></script>
+
+<div id="Comments"></div>
+
+<script>
+    Artalk.init({
+        el: '#Comments',
+        pageKey: location.pathname,
+        pageTitle: 'WSL 常用命令',
+        server: 'https://cmt.1024.us.kg',
+        site: 'zls3201/blog',
+    })
+</script>
             </div>
         </div>
     </div>
@@ -163,7 +264,6 @@ wsl --import &lt;Image Name&gt; &lt;Directory where you want to store the import
     </div>
     
     
-
     <footer>
   <div class="footer-inner">
     <p>

@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3d on 珍珑阁</title>
+    <title>3D on 珍珑阁</title>
     <link>https://zls3201.github.io/tags/3d/</link>
-    <description>Recent content in 3d on 珍珑阁</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in 3D on 珍珑阁</description>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 17 Jun 2021 07:00:00 +0800</lastBuildDate><atom:link href="https://zls3201.github.io/tags/3d/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 07:00:00 +0800</lastBuildDate>
+    <atom:link href="https://zls3201.github.io/tags/3d/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WebGL WebGIS Tip</title>
       <link>https://zls3201.github.io/post/webgl_webgis/</link>
       <pubDate>Thu, 17 Jun 2021 07:00:00 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/webgl_webgis/</guid>
-      <description>[内部项目]3D大屏功能梳理,基于高德地图的大屏展示项目 图解WebGL&amp;amp;Three.js工作原理 WebGIS vs WebGL图形编程 街道仿真3D 高</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://juejin.cn/post/6844903977776054279&#34;&gt;[内部项目]3D大屏功能梳理,基于高德地图的大屏展示项目&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/wanbo/p/6754066.html&#34;&gt;图解WebGL&amp;amp;Three.js工作原理&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/ihardcoder/p/14892276.html&#34;&gt;WebGIS vs WebGL图形编程&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://demos.littleworkshop.fr/infinitown&#34;&gt;街道仿真3D&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;高德地图&#34;&gt;高德地图&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/javascript-api/example/3d/3d-model&#34;&gt;三维模型&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/javascript-api/example/points/points&#34;&gt;带高度的点&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/loca-v2/demos/cat-polygon/cadmall&#34;&gt;3D建筑楼层展开&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/loca-v2/demos/cat-scatter/sz-road&#34;&gt;深圳高峰期路口&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/loca-v2/demos/cat-scatter/china-traffic-event&#34;&gt;全国交通事件响应&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/loca-v2/demos/cat-icon/icon_traffic&#34;&gt;智慧交通道路事件情况&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/loca-v2/demos/cat-pulseline/bj_in_out&#34;&gt;北京人口流入流出情况&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/loca-v2/demos/cat-pulseline/bj_bus_pulse&#34;&gt;北京不同类型公交线路&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/jiach/p/12427786.html&#34;&gt;在高德地图上用svg.js绘制简单图形&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/javascript-api/example/mouse-operate-map/mouse-draw-overlayers&#34;&gt;鼠标工具-绘制覆盖物&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/api/javascript-api/guide/object3d/points&#34;&gt;接受光照的 Mesh&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://lbs.amap.com/demo/javascript-api/example/mesh/mesh-accept-lights&#34;&gt;接受光照的 Mesh&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;[点]https://lbs.amap.com/demo/javascript-api/example/object3d-base/event&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Blender学习资料</title>
       <link>https://zls3201.github.io/post/blender_study_resources/</link>
       <pubDate>Thu, 31 Jan 2019 08:00:35 +0800</pubDate>
-      
       <guid>https://zls3201.github.io/post/blender_study_resources/</guid>
-      <description>Blender学习资料 零基础BLENDER2.8中文开源系统快速入门教程\ 官方中文教程 https://docs.blender.org/manual/zh-hans/dev/interface/index.html 台湾大神的blender教程全集 https://www.bilibili.com/video/av909518 https://www.bilibili.com/video/av11035426 Blender tutorials and quick tips by Gleb Alexandrov</description>
+      <description>&lt;h3 id=&#34;blender学习资料&#34;&gt;Blender学习资料&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1T4411N7GE?from=search&amp;amp;seid=4077117725274007206&#34;&gt;零基础BLENDER2.8中文开源系统快速入门教程&lt;/a&gt;\&lt;/p&gt;&#xA;&lt;p&gt;官方中文教程&#xA;&lt;a href=&#34;https://docs.blender.org/manual/zh-hans/dev/interface/index.html&#34;&gt;https://docs.blender.org/manual/zh-hans/dev/interface/index.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;台湾大神的blender教程全集&#xA;&lt;a href=&#34;https://www.bilibili.com/video/av909518&#34;&gt;https://www.bilibili.com/video/av909518&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.bilibili.com/video/av11035426&#34;&gt;https://www.bilibili.com/video/av11035426&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Blender tutorials and quick tips by Gleb Alexandrov&#xA;&lt;a href=&#34;https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X&#34;&gt;https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;BlenderGuru Blender Beginner Tutorial Series&#xA;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#34;&gt;https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;视频下载&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080  -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#xA;&#xA;youtube-dl --write-sub --convert-subs srt --all-subs --proxy socks5://127.0.0.1:1080  -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&#xA;&#xA;&#xA;youtube-dl --write-sub --convert-subs srt --sub-lang en,zh,zh-CN --proxy socks5://127.0.0.1:1080 -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4 https://www.youtube.com/playlist?list=PL2aDImegRwZGd78IasKwZ8B7qvjS_fx_X&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
   </channel>
 </rss>
