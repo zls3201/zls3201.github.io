@@ -22,6 +22,107 @@ J(\theta)=\frac 1 m  \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2
 $$
 
 
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+
+
 # -*- coding: utf-8 -*-
 &#34;&#34;&#34;
 Created on Sat Jun  9 08:18:10 2018
@@ -119,6 +220,8 @@ if __name__ == &#39;__main__&#39;:
     dataX,dataY=loadDataSet(&#39;house_prize.txt&#39;)
     dataX,dataY=dataNomalize(dataX,dataY)
     batchGradientDescent(dataX,dataY)
+
+
 ">
     
     <meta itemprop="name" content="线性回归 - 珍珑阁">
@@ -137,6 +240,107 @@ J(\theta)=\frac 1 m  \sum^{m}{i=1} \frac 1 2 (h{\theta}(x^{(i)})-y^{(i)})^2
 $$
 
 
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+
+
 # -*- coding: utf-8 -*-
 &#34;&#34;&#34;
 Created on Sat Jun  9 08:18:10 2018
@@ -234,6 +438,8 @@ if __name__ == &#39;__main__&#39;:
     dataX,dataY=loadDataSet(&#39;house_prize.txt&#39;)
     dataX,dataY=dataNomalize(dataX,dataY)
     batchGradientDescent(dataX,dataY)
+
+
 ">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
     
@@ -256,21 +462,23 @@ if __name__ == &#39;__main__&#39;:
 
 <body>
     <div class="navbar-menu">
-
   
-  <a   href="/">首页</a>
   
-  <a   href="/post/">归档</a>
+  <a  href="/">首页</a>
   
-  <a   href="/categories/">分类</a>
+  <a  href="/post/">归档</a>
   
-  <a   href="/tags/">标签</a>
+  <a  href="/categories/">分类</a>
   
-  <a   href="/links/">链接</a>
+  <a  href="/tags/">标签</a>
   
-  <a   href="/about/">关于</a>
+  <a  href="/links/">链接</a>
   
-  <a   href="/todo/">TODO</a>
+  <a  href="/about/">关于</a>
+  
+  <a  href="/todo/">TODO</a>
+  
+  <a  href="/search/">🔍</a>
   
 </div>
     <div class="wrapper">
@@ -335,7 +543,108 @@ J(\theta)=\frac 1 m  \sum^{m}<em>{i=1} \frac 1 2 (h</em>{\theta}(x^{(i)})-y^{(i)
 $$</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
+</span><span class="lnt">96
+</span><span class="lnt">97
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">Created on Sat Jun  9 08:18:10 2018
 </span></span></span><span class="line"><span class="cl"><span class="s2">
@@ -432,7 +741,9 @@ $$</p>
 </span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">loadDataSet</span><span class="p">(</span><span class="s1">&#39;house_prize.txt&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
   </div>
   
 </article>
@@ -460,7 +771,7 @@ $$</p>
 
 <aside>
     <header>
-    <h4>线性回归の字数: 319</h4> 
+    <h4>线性回归の字数: 416</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li>

@@ -36,21 +36,23 @@
 
 <body>
   <div class="navbar-menu">
-
   
-  <a   class="active"  href="/">首页</a>
   
-  <a   href="/post/">归档</a>
+  <a  class="active"  href="/">首页</a>
   
-  <a   href="/categories/">分类</a>
+  <a  href="/post/">归档</a>
   
-  <a   href="/tags/">标签</a>
+  <a  href="/categories/">分类</a>
   
-  <a   href="/links/">链接</a>
+  <a  href="/tags/">标签</a>
   
-  <a   href="/about/">关于</a>
+  <a  href="/links/">链接</a>
   
-  <a   href="/todo/">TODO</a>
+  <a  href="/about/">关于</a>
+  
+  <a  href="/todo/">TODO</a>
+  
+  <a  href="/search/">🔍</a>
   
 </div>
   <div class="wrapper">
@@ -211,7 +213,39 @@ hostnamectl set-hostname gntyxg.cn</p>
 <li>参数学习与非参数学习</li>
 <li>判定模型与生成模型</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">https://www.zhihu.com/question/20446337/answer/45130939
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"> 
@@ -239,7 +273,9 @@ hostnamectl set-hostname gntyxg.cn</p>
 </span></span><span class="line"><span class="cl">k近邻法、感知机、逻辑斯谛回归模型、最大熵模型、支持向量机、提升方法是判别模型； 
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">隐马尔可夫模型（重点的EM算法）是生成模型。 
-</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
+</span></span></code></pre></td></tr></table>
+</div>
+</div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
     A[Hard edge] --&gt;|Link textQQ  | B(Round edge)
     B --&gt; C{Decision}
     C --&gt;|One| D[Result one]
@@ -278,8 +314,15 @@ https://blog.csdn.net/herosofearth/article/details/51969517
     </ul>
     <div class="post-content" itemprop="articleBody">
         <p>过滤条件窗口输入 目标主机的IP和Port组合条件即可,如下</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">(ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090)
-</span></span></code></pre></div><p>关于localhost通讯抓包 要求卸载winpcap 安装npcap
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">(ip.dst == 127.0.0.1 and tcp.dstport == 9090) or (ip.src == 127.0.0.1 and tcp.srcport == 9090)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关于localhost通讯抓包 要求卸载winpcap 安装npcap
 效果如图
 <img src="/wireshark_tip/1.jpg" alt="图片"></p> </div>
 </article> 
@@ -364,7 +407,108 @@ J(\theta)=\frac 1 m  \sum^{m}<em>{i=1} \frac 1 2 (h</em>{\theta}(x^{(i)})-y^{(i)
 $$</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
+</span><span class="lnt">96
+</span><span class="lnt">97
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
 </span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">Created on Sat Jun  9 08:18:10 2018
 </span></span></span><span class="line"><span class="cl"><span class="s2">
@@ -461,7 +605,9 @@ $$</p>
 </span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">loadDataSet</span><span class="p">(</span><span class="s1">&#39;house_prize.txt&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="o">=</span><span class="n">dataNomalize</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">batchGradientDescent</span><span class="p">(</span><span class="n">dataX</span><span class="p">,</span><span class="n">dataY</span><span class="p">)</span>
-</span></span></code></pre></div> </div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div> </div>
 </article> 
          
         <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">

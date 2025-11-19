@@ -36,21 +36,23 @@
 
 <body>
   <div class="navbar-menu">
-
   
-  <a   class="active"  href="/">首页</a>
   
-  <a   href="/post/">归档</a>
+  <a  class="active"  href="/">首页</a>
   
-  <a   href="/categories/">分类</a>
+  <a  href="/post/">归档</a>
   
-  <a   href="/tags/">标签</a>
+  <a  href="/categories/">分类</a>
   
-  <a   href="/links/">链接</a>
+  <a  href="/tags/">标签</a>
   
-  <a   href="/about/">关于</a>
+  <a  href="/links/">链接</a>
   
-  <a   href="/todo/">TODO</a>
+  <a  href="/about/">关于</a>
+  
+  <a  href="/todo/">TODO</a>
+  
+  <a  href="/search/">🔍</a>
   
 </div>
   <div class="wrapper">
@@ -93,7 +95,54 @@
     </ul>
     <div class="post-content" itemprop="articleBody">
         <h2 id="基础安装">基础安装</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">useproxy</span><span class="o">=</span><span class="s2">&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2"> export http_proxy=http://10.0.2.2:2080;
 </span></span></span><span class="line"><span class="cl"><span class="s2"> export https_proxy=http://10.0.2.2:2080;
@@ -136,29 +185,90 @@
 </span></span><span class="line"><span class="cl">cargo install fd-find
 </span></span><span class="line"><span class="cl">cargo install ripgrep
 </span></span><span class="line"><span class="cl">cargo install lsd
-</span></span></code></pre></div><h3 id="关闭selinux">关闭SELinux</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="关闭selinux">关闭SELinux</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">nano /etc/selinux/config
-</span></span></code></pre></div><h2 id="docker安装">Docker安装</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="docker安装">Docker安装</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 </span></span><span class="line"><span class="cl">dnf install docker-ce docker-ce-cli containerd.io
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now docker
 </span></span><span class="line"><span class="cl"> 
 </span></span><span class="line"><span class="cl">systemctl status docker
-</span></span></code></pre></div><h3 id="doacker安装mariadb">Doacker安装MariaDB</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/mariadb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="doacker安装mariadb">Doacker安装MariaDB</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/mariadb
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">docker run --name mariadb  --restart<span class="o">=</span>always  -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
-</span></span></code></pre></div><h3 id="doacker安装redis">Doacker安装Redis</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="doacker安装redis">Doacker安装Redis</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">mkdir -p /opt/docker/redis
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">docker run -itd --name redis --restart<span class="o">=</span>always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
 </span></span><span class="line"><span class="cl">docker ps
-</span></span></code></pre></div><h3 id="doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/postgresql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/postgresql
 </span></span><span class="line"><span class="cl">docker run --name postgres  --restart<span class="o">=</span>always  -e <span class="nv">POSTGRES_USER</span><span class="o">=</span>postgres -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
 </span></span><span class="line"><span class="cl">docker ps
 </span></span><span class="line"><span class="cl">
@@ -172,7 +282,9 @@
 </span></span><span class="line"><span class="cl">docker rm 6343f20e07f9
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"> 
-</span></span></code></pre></div><h2 id="mariadb">MariaDB</h2>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mariadb">MariaDB</h2>
 <p><a href="https://mariadb.org/download/?t=repo-config&amp;d=Red+Hat+Enterprise+Linux+9&amp;v=10.11&amp;r_m=aliyun">设置软件源并安装</a></p> </div>
 </article> 
          
@@ -201,7 +313,44 @@
 <p>chro
 <a href="https://www.cnblogs.com/sparkdev/p/6842805.html">SSH 远程执行任务 </a></p>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看字体</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看字体</span>
 </span></span><span class="line"><span class="cl">fc-list <span class="p">|</span> cut -f2 -d: <span class="p">|</span> sort -u
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#Linux查看端口占用情况</span>
@@ -234,9 +383,28 @@
 </span></span><span class="line"><span class="cl">curl ipinfo.me
 </span></span><span class="line"><span class="cl">curl ifconfig.me
 </span></span><span class="line"><span class="cl">https://www.ip111.cn
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></td></tr></table>
+</div>
+</div><!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># 系统默认使用 jdk 1.8
 </span></span><span class="line"><span class="cl">export JAVA_HOME=&#34;/home/zls/.sdkman/candidates/java/8.0.352-zulu&#34;
@@ -249,17 +417,36 @@
 </span></span><span class="line"><span class="cl"> 
 </span></span><span class="line"><span class="cl">export DENO_INSTALL=&#34;/home/zls/.deno&#34;
 </span></span><span class="line"><span class="cl">export PATH=&#34;$DENO_INSTALL/bin:$PATH&#34;
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></td></tr></table>
+</div>
+</div><!-- raw HTML omitted -->
 <h3 id="系统安装">系统安装</h3>
 <h3 id="驱动设置">驱动设置</h3>
 <h4 id="音频使用pulse">音频使用pulse</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">install_pulse
-</span></span></code></pre></div><h4 id="显卡使用闭源驱动为了使用cuda">显卡使用闭源驱动（为了使用cuda）</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装闭源驱动</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">install_pulse
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="显卡使用闭源驱动为了使用cuda">显卡使用闭源驱动（为了使用cuda）</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装闭源驱动</span>
 </span></span><span class="line"><span class="cl">sudo mhwd -a pci nonfree <span class="m">0300</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#查看驱动</span>
 </span></span><span class="line"><span class="cl">mhwd -li
-</span></span></code></pre></div><h4 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h4>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="关闭主板蜂鸣器">关闭主板蜂鸣器</h4>
 <p><a href="https://wiki.archlinuxcn.org/wiki/PC_speaker?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DPC_speaker_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29%26redirect%3Dno">PC speaker</a></p> </div>
 </article> 
          

@@ -9,6 +9,53 @@
     
     <meta name="description" content="基础安装
 
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+
+
+
 alias useproxy=&#34;
  export http_proxy=http://10.0.2.2:2080;
  export https_proxy=http://10.0.2.2:2080;
@@ -51,10 +98,31 @@ curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install fd-find
 cargo install ripgrep
 cargo install lsd
+
+
 关闭SELinux
 
+
+1
+2
+
+
+
 nano /etc/selinux/config
+
+
 Docker安装
+
+
+1
+2
+3
+4
+5
+6
+7
+
+
 
 dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 dnf install docker-ce docker-ce-cli containerd.io
@@ -62,17 +130,57 @@ dnf install docker-ce docker-ce-cli containerd.io
 systemctl enable --now docker
  
 systemctl status docker
+
+
 Doacker安装MariaDB
+
+
+1
+2
+3
+
+
 mkdir -p /opt/docker/mariadb
 
 docker run --name mariadb  --restart=always  -e MYSQL_ROOT_PASSWORD=root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
+
+
 Doacker安装Redis
+
+
+1
+2
+3
+4
+5
+
+
 
 mkdir -p /opt/docker/redis
 
 docker run -itd --name redis --restart=always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
 docker ps
+
+
 Doacker安装PostgreSQL（无中文字符集，中文排序不对）
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+
+
 mkdir -p /opt/docker/postgresql
 docker run --name postgres  --restart=always  -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
 docker ps
@@ -87,12 +195,61 @@ docker stop  6343f20e07f9
 docker rm 6343f20e07f9
 
  
+
+
 MariaDB
 设置软件源并安装">
     
     <meta itemprop="name" content="Rocky9开发服务器设置 - 珍珑阁">
     <meta itemprop="description" content="基础安装
 
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+
+
+
 alias useproxy=&#34;
  export http_proxy=http://10.0.2.2:2080;
  export https_proxy=http://10.0.2.2:2080;
@@ -135,10 +292,31 @@ curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install fd-find
 cargo install ripgrep
 cargo install lsd
+
+
 关闭SELinux
 
+
+1
+2
+
+
+
 nano /etc/selinux/config
+
+
 Docker安装
+
+
+1
+2
+3
+4
+5
+6
+7
+
+
 
 dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 dnf install docker-ce docker-ce-cli containerd.io
@@ -146,17 +324,57 @@ dnf install docker-ce docker-ce-cli containerd.io
 systemctl enable --now docker
  
 systemctl status docker
+
+
 Doacker安装MariaDB
+
+
+1
+2
+3
+
+
 mkdir -p /opt/docker/mariadb
 
 docker run --name mariadb  --restart=always  -e MYSQL_ROOT_PASSWORD=root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
+
+
 Doacker安装Redis
+
+
+1
+2
+3
+4
+5
+
+
 
 mkdir -p /opt/docker/redis
 
 docker run -itd --name redis --restart=always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
 docker ps
+
+
 Doacker安装PostgreSQL（无中文字符集，中文排序不对）
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+
+
 mkdir -p /opt/docker/postgresql
 docker run --name postgres  --restart=always  -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
 docker ps
@@ -171,6 +389,8 @@ docker stop  6343f20e07f9
 docker rm 6343f20e07f9
 
  
+
+
 MariaDB
 设置软件源并安装">
     <meta itemprop="image" content="https://zls3201.github.io/img/author.jpg">
@@ -194,21 +414,23 @@ MariaDB
 
 <body>
     <div class="navbar-menu">
-
   
-  <a   href="/">首页</a>
   
-  <a   href="/post/">归档</a>
+  <a  href="/">首页</a>
   
-  <a   href="/categories/">分类</a>
+  <a  href="/post/">归档</a>
   
-  <a   href="/tags/">标签</a>
+  <a  href="/categories/">分类</a>
   
-  <a   href="/links/">链接</a>
+  <a  href="/tags/">标签</a>
   
-  <a   href="/about/">关于</a>
+  <a  href="/links/">链接</a>
   
-  <a   href="/todo/">TODO</a>
+  <a  href="/about/">关于</a>
+  
+  <a  href="/todo/">TODO</a>
+  
+  <a  href="/search/">🔍</a>
   
 </div>
     <div class="wrapper">
@@ -259,7 +481,54 @@ MariaDB
 
   <div class="post-content" itemprop="articleBody">
     <h2 id="基础安装">基础安装</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">useproxy</span><span class="o">=</span><span class="s2">&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2"> export http_proxy=http://10.0.2.2:2080;
 </span></span></span><span class="line"><span class="cl"><span class="s2"> export https_proxy=http://10.0.2.2:2080;
@@ -302,29 +571,90 @@ MariaDB
 </span></span><span class="line"><span class="cl">cargo install fd-find
 </span></span><span class="line"><span class="cl">cargo install ripgrep
 </span></span><span class="line"><span class="cl">cargo install lsd
-</span></span></code></pre></div><h3 id="关闭selinux">关闭SELinux</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="关闭selinux">关闭SELinux</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">nano /etc/selinux/config
-</span></span></code></pre></div><h2 id="docker安装">Docker安装</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="docker安装">Docker安装</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 </span></span><span class="line"><span class="cl">dnf install docker-ce docker-ce-cli containerd.io
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now docker
 </span></span><span class="line"><span class="cl"> 
 </span></span><span class="line"><span class="cl">systemctl status docker
-</span></span></code></pre></div><h3 id="doacker安装mariadb">Doacker安装MariaDB</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/mariadb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="doacker安装mariadb">Doacker安装MariaDB</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/mariadb
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">docker run --name mariadb  --restart<span class="o">=</span>always  -e <span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>root  -v /opt/docker/mariadb:/var/lib/mysql  -p 3306:3306  -d mariadb:10.11.2
-</span></span></code></pre></div><h3 id="doacker安装redis">Doacker安装Redis</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="doacker安装redis">Doacker安装Redis</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">mkdir -p /opt/docker/redis
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">docker run -itd --name redis --restart<span class="o">=</span>always -v /opt/docker/redis:/data -p 6379:6379 redis:7.0.10
 </span></span><span class="line"><span class="cl">docker ps
-</span></span></code></pre></div><h3 id="doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/postgresql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="doacker安装postgresql无中文字符集中文排序不对">Doacker安装PostgreSQL（无中文字符集，中文排序不对）</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p /opt/docker/postgresql
 </span></span><span class="line"><span class="cl">docker run --name postgres  --restart<span class="o">=</span>always  -e <span class="nv">POSTGRES_USER</span><span class="o">=</span>postgres -e <span class="nv">POSTGRES_PASSWORD</span><span class="o">=</span>postgres -v /opt/docker/postgresql:/var/lib/postgresql/data  -p 5432:5432    -d  postgres:15.2
 </span></span><span class="line"><span class="cl">docker ps
 </span></span><span class="line"><span class="cl">
@@ -338,25 +668,71 @@ MariaDB
 </span></span><span class="line"><span class="cl">docker rm 6343f20e07f9
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"> 
-</span></span></code></pre></div><h2 id="mariadb">MariaDB</h2>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mariadb">MariaDB</h2>
 <p><a href="https://mariadb.org/download/?t=repo-config&amp;d=Red+Hat+Enterprise+Linux+9&amp;v=10.11&amp;r_m=aliyun">设置软件源并安装</a></p>
 <p><a href="https://www.centlinux.com/2022/10/setup-mariadb-database-server-on-rocky-linux-9.html">Setup MariaDB Database Server on Rocky Linux 9</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">mariadb-secure-installation
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">mysql -u root -p
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">firewall-cmd --permanent --add-service<span class="o">=</span>mysql
 </span></span><span class="line"><span class="cl">firewall-cmd --reload
-</span></span></code></pre></div><h2 id="redis">Redis</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dnf install redis -y
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="redis">Redis</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dnf install redis -y
 </span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now redis.service
 </span></span><span class="line"><span class="cl">systemctl status redis.service
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>6379/tcp --permanent
 </span></span><span class="line"><span class="cl">firewall-cmd --reload
-</span></span></code></pre></div><h2 id="postgresql安装">PostgreSQL安装</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="postgresql安装">PostgreSQL安装</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm
 </span></span><span class="line"><span class="cl">dnf -qy module disable postgresql
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">dnf install postgresql14-contrib  postgresql14-devel postgresql14-server
@@ -371,8 +747,23 @@ MariaDB
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>5432/tcp --permanent 
 </span></span><span class="line"><span class="cl">firewall-cmd  --reload
-</span></span></code></pre></div><p><a href="https://blog.csdn.net/qq_46110497/article/details/127653954">PostgreSQL14开启远程连接</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://blog.csdn.net/qq_46110497/article/details/127653954">PostgreSQL14开启远程连接</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sed -i <span class="s1">&#39;/^local/s/peer/trust/&#39;</span>  /var/lib/pgsql/14/data/pg_hba.conf 
 </span></span><span class="line"><span class="cl">sed -i <span class="s1">&#39;/^host/s/ident/md5/&#39;</span> /var/lib/pgsql/14/data/pg_hba.conf 
 </span></span><span class="line"><span class="cl">
@@ -381,9 +772,42 @@ MariaDB
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">cat  /var/lib/pgsql/14/data/postgresql.conf <span class="p">|</span> grep listen_addresses
 </span></span><span class="line"><span class="cl">nano /var/lib/pgsql/14/data/postgresql.conf 修改 <span class="nv">listen_addresses</span><span class="o">=</span>*
-</span></span></code></pre></div><p><a href="https://www.cnblogs.com/kaituorensheng/p/4735191.html">修改PostgreSQL数据库默认用户postgres的密码</a></p>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://www.cnblogs.com/kaituorensheng/p/4735191.html">修改PostgreSQL数据库默认用户postgres的密码</a></p>
 <p>安装pg——jieba</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
 </span></span><span class="line"><span class="cl">mkdir workspaces  
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> workspaces/
 </span></span><span class="line"><span class="cl">git clone https://github.com/jaiminpan/pg_jieba
@@ -410,7 +834,9 @@ MariaDB
 </span></span><span class="line"><span class="cl">systemctl restart postgresql-14
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sudo -u postgres psql -c <span class="s2">&#34;create extension pg_jieba;&#34;</span>
-</span></span></code></pre></div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
   </div>
   
 </article>
@@ -438,7 +864,7 @@ MariaDB
 
 <aside>
     <header>
-    <h4>Rocky9开发服务器设置の字数: 550</h4> 
+    <h4>Rocky9开发服务器设置の字数: 688</h4> 
     </header><nav id="TableOfContents">
   <ul>
     <li><a href="#基础安装">基础安装</a>
